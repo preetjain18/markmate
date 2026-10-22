@@ -20,9 +20,9 @@ export const TONE: Record<Tone, { badge: string; bar: string; dot: string; alert
  * red is reserved for incorrect or contradictory answers.
  */
 export const STATUS_META: Record<Status, { label: string; tone: Tone; pill: string; bar: string; dot: string; mark: string }> = {
-  correct_complete: { label: "Secured", tone: "success", ...pick("success"), mark: "evidence" },
-  correct_incomplete: { label: "Partly covered", tone: "attention", ...pick("attention"), mark: "evidence evidence-partial" },
-  incorrect: { label: "Incorrect", tone: "error", ...pick("error"), mark: "evidence evidence-wrong" },
+  correct_complete: { label: "Covered", tone: "success", ...pick("success"), mark: "evidence" },
+  correct_incomplete: { label: "Partially covered", tone: "attention", ...pick("attention"), mark: "evidence evidence-partial" },
+  incorrect: { label: "Contradicted", tone: "error", ...pick("error"), mark: "evidence evidence-wrong" },
   not_addressed: { label: "Missed", tone: "neutral", ...pick("neutral"), mark: "evidence" },
   uncertain: { label: "Needs review", tone: "attention", ...pick("attention"), mark: "evidence evidence-partial" },
 };

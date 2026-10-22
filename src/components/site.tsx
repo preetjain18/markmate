@@ -41,7 +41,7 @@ export function SiteFooter() {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <Logo />
-            <p className="mt-2 max-w-sm text-sm text-muted">Answer-writing practice for CA Final Audit.</p>
+            <p className="mt-2 max-w-sm text-sm text-muted">Answer-writing practice for CA students.</p>
           </div>
           <nav aria-label="Footer" className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
             <Link href="/" className="text-muted transition-colors hover:text-ink">

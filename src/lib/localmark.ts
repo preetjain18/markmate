@@ -80,9 +80,10 @@ function judgePoint(p: RubricPoint, df: Map<string, number>, answer: string, sen
     }
   }
 
+  // The rubric requirement itself is shown separately in the Lost Marks Map, so the advice names what to add.
   const recover = missingPhrases.length
-    ? `Cover this point fully. Use the terms: ${missingPhrases.join(", ")}. ${p.description}`
-    : `Cover this point fully. ${p.description}`;
+    ? `Add the key terms ${missingPhrases.map((k) => `“${k}”`).join(", ")} and explain how each applies to this question.`
+    : "State this point explicitly in your answer, in your own words.";
 
   if (!best || bestScore < 2 || ratio < 0.15) {
     return { pointId: p.id, status: "not_addressed", marks: 0, evidenceQuote: "", reason: "Your answer does not cover this point.", toRecover: recover };

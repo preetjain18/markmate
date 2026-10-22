@@ -24,6 +24,7 @@ export function scorePoints(rubric: Rubric, answer: string, output: ModelOutput)
     const base = {
       pointId: rp.id,
       label: rp.label,
+      requirement: rp.description,
       allocated: rp.marks,
     };
     if (!m) {

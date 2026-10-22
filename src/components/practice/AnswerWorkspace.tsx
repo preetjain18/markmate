@@ -3,7 +3,7 @@
 import { forwardRef } from "react";
 import { countWords, MAX_ANSWER_CHARS } from "@/lib/answer";
 import { cn } from "@/lib/ui";
-import { Button, Card, Icon } from "../ui";
+import { Alert, Button, Card, Icon } from "../ui";
 
 type Props = {
   value: string;
@@ -14,11 +14,13 @@ type Props = {
   /** Validation message shown under the editor (empty answer, too short, ...). */
   problem: string | null;
   hasResult: boolean;
+  /** Set when this question cannot be evaluated (no rubric yet). Writing still works; evaluating is blocked. */
+  unavailable?: string;
 };
 
 /** The main answer editor with word count, instructions, validation and the Evaluate button. */
 export const AnswerWorkspace = forwardRef<HTMLTextAreaElement, Props>(function AnswerWorkspace(
-  { value, onChange, onSubmit, maxMarks, busy, problem, hasResult },
+  { value, onChange, onSubmit, maxMarks, busy, problem, hasResult, unavailable },
   ref,
 ) {
   const words = countWords(value);
@@ -39,6 +41,13 @@ export const AnswerWorkspace = forwardRef<HTMLTextAreaElement, Props>(function A
           </label>
           {maxMarks !== undefined && <span className="text-[13px] text-muted">Out of {maxMarks} marks</span>}
         </div>
+        {unavailable && (
+          <div className="px-5 pt-4">
+            <Alert tone="attention" title="Evaluation isn't available for this question yet">
+              {unavailable}
+            </Alert>
+          </div>
+        )}
         <p id="answer-help" className="px-5 pt-3 text-[13px] text-muted">
           Answer in your own words. Marks are only given for points your answer actually makes.
         </p>
@@ -70,11 +79,13 @@ export const AnswerWorkspace = forwardRef<HTMLTextAreaElement, Props>(function A
             )}
             <span> · Draft kept in this browser</span>
           </p>
-          <Button type="submit" disabled={busy} aria-busy={busy} className="w-full sm:w-auto">
+          <Button type="submit" disabled={busy || !!unavailable} aria-busy={busy} className="w-full sm:w-auto">
             {busy ? (
               <>
                 <Icon name="loader" className="animate-spin" /> Evaluating…
               </>
+            ) : unavailable ? (
+              "Evaluation not available"
             ) : (
               <>
                 {hasResult ? "Evaluate Again" : "Evaluate My Answer"} <Icon name="arrow" />

@@ -129,6 +129,8 @@ export const RUBRIC_DRAFT_JSON_SCHEMA = {
 export type PointResult = {
   pointId: string;
   label: string;
+  /** What a complete answer to this point covers, copied from the rubric (reference text, not the student's words). */
+  requirement: string;
   allocated: number;
   aiStatus: Status;
   aiMarks: number;

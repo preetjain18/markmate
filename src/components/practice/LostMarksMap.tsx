@@ -1,236 +1,406 @@
 "use client";
 
-import { useMemo, useState } from "react";
+/**
+ * The Lost Marks Map: renders one validated evaluation result. Subject-agnostic: it only reads the
+ * result's marking points (labels, marks, statuses, verified quotes, feedback and rubric requirement).
+ * It never computes marks; summaries come from src/lib/insights.ts.
+ */
+import { useId, useMemo, useState } from "react";
+import { countOutcomes, OUTCOME_OF, overallAssessment, topPriorities, type Outcome, type Priority } from "@/lib/insights";
 import type { AttemptResult, PointResult } from "@/lib/schema";
-import { cn, fmt, highlightSegments, STATUS_META } from "@/lib/ui";
-import { Card, Icon, Pill, ScoreRing } from "../ui";
+import { cn, fmt, highlightSegments, STATUS_META, TONE, type Tone } from "@/lib/ui";
+import { Badge, Button, Card, Icon, ScoreRing, type IconName } from "../ui";
 
-type Filter = "all" | "lost" | "secured";
+const OUTCOME: Record<Outcome, { label: string; tone: Tone; icon: IconName }> = {
+  covered: { label: "Covered", tone: "success", icon: "success" },
+  partial: { label: "Partially covered", tone: "attention", icon: "partial" },
+  missed: { label: "Missed", tone: "neutral", icon: "minus" },
+  contradicted: { label: "Contradicted", tone: "error", icon: "error" },
+  review: { label: "Needs review", tone: "attention", icon: "alert" },
+};
 
-export default function LostMarksMap({ result, answer, title }: { result: AttemptResult; answer: string; title: string }) {
-  const [view, setView] = useState<"points" | "answer">("points");
-  const [filter, setFilter] = useState<Filter>("all");
+type Filter = "all" | "missed" | "partial" | "covered";
 
-  const counts = useMemo(() => {
-    const c = { secured: 0, partial: 0, missed: 0, review: 0 };
-    for (const p of result.points) {
-      if (p.needsReview) c.review++;
-      else if (p.aiMarks >= p.allocated) c.secured++;
-      else if (p.aiMarks > 0) c.partial++;
-      else c.missed++;
-    }
-    return c;
-  }, [result]);
+const marks = (n: number) => `${fmt(n)} mark${n === 1 ? "" : "s"}`;
 
+export default function LostMarksMap({
+  result,
+  answer,
+  title,
+  onImprove,
+  onBackToAnswer,
+}: {
+  result: AttemptResult;
+  answer: string;
+  title: string;
+  onImprove?: () => void;
+  onBackToAnswer?: () => void;
+}) {
+  const counts = useMemo(() => countOutcomes(result.points), [result]);
+  const priorities = useMemo(() => topPriorities(result.points), [result]);
+  const assessment = useMemo(() => overallAssessment(result), [result]);
   const lost = result.maxMarks - result.estimatedMarks;
-  const shown = result.points.filter((p) =>
-    filter === "all" ? true : filter === "lost" ? p.aiMarks < p.allocated : p.aiMarks >= p.allocated,
-  );
+  const headingId = useId();
 
   return (
-    <Card className="animate-fade-in overflow-hidden">
-      {/* Header */}
-      <div className="border-b border-line bg-surface p-5 sm:p-7">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
-          <ScoreRing value={result.estimatedMarks} max={result.maxMarks} size={128} />
-          <div className="min-w-0 flex-1">
-            <p className="font-display text-sm font-semibold text-brand-600">{title}</p>
-            <h2 className="mt-1 text-2xl font-semibold tracking-tight">
-              {lost > 0 ? (
-                <>
-                  You lost <span className="text-error">{fmt(lost)}</span> of {result.maxMarks} marks
-                </>
-              ) : (
-                "Full marks on every point"
-              )}
-            </h2>
-            <div className="mt-3 flex flex-wrap gap-2">
-              <Pill className={result.aiUsed ? "bg-brand-50 text-brand-700 ring-brand-600/20" : "bg-subtle text-ink ring-line-strong"}>
-                <Icon name="spark" className="size-3" />
-                {result.aiUsed ? "AI-estimated" : "Rule-based"} practice marks, not ICAI marks
-              </Pill>
-              <Pill className={result.verified ? "bg-success-soft text-success ring-success/20" : "bg-warning-soft text-warning ring-accent/30"}>
-                {result.verified ? "Verified scheme" : "Unverified scheme"}
-              </Pill>
+    <section aria-labelledby={headingId} className="animate-fade-in space-y-5">
+      {/* A. Performance summary */}
+      <Card className="overflow-hidden">
+        <div className="p-5 sm:p-7">
+          <p className="font-display text-sm font-semibold text-brand-600">{title}</p>
+          <div className="mt-4 flex flex-col gap-6 sm:flex-row sm:items-start">
+            <div className="flex shrink-0 flex-col items-center gap-2">
+              <ScoreRing value={result.estimatedMarks} max={result.maxMarks} size={132} />
+              <p className="text-[13px] text-muted">marks</p>
             </div>
-            <div className="mt-4 grid grid-cols-4 gap-2 text-center sm:max-w-md">
-              <Count n={counts.secured} label="Secured" dot="bg-success" />
-              <Count n={counts.partial} label="Partial" dot="bg-accent" />
-              <Count n={counts.missed} label="Missed" dot="bg-muted" />
-              <Count n={counts.review} label="Review" dot="bg-accent" />
+            <div className="min-w-0 flex-1">
+              <h2 id={headingId} className="text-[1.5rem] font-bold leading-tight">
+                {lost > 0 ? (
+                  <>
+                    You lost {marks(lost)} of {result.maxMarks}
+                  </>
+                ) : (
+                  "Full marks on every point"
+                )}
+              </h2>
+              <p className="mt-2 text-[16px] leading-relaxed text-ink">{assessment}</p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                <Badge tone="neutral">
+                  <Icon name="info" className="size-3.5" />
+                  {result.aiUsed ? "AI-generated practice estimate" : "Rule-based practice estimate"} · not an ICAI mark
+                </Badge>
+                <Badge tone={result.verified ? "success" : "neutral"}>{result.verified ? "Verified marking scheme" : "Unverified marking scheme"}</Badge>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Segmented bar: one segment per marking point, width = allocation. */}
-        <div className="mt-6 flex h-2.5 gap-1 overflow-hidden rounded-full">
-          {result.points.map((p) => (
-            <div key={p.pointId} className="relative h-full overflow-hidden rounded-full bg-subtle" style={{ flex: p.allocated }} title={`${p.label}: ${fmt(p.aiMarks)}/${fmt(p.allocated)}`}>
-              <div className={cn("h-full rounded-full", STATUS_META[p.aiStatus].bar)} style={{ width: `${(p.aiMarks / p.allocated) * 100}%` }} />
-            </div>
-          ))}
-        </div>
+          <ul className="mt-6 grid grid-cols-2 gap-2 sm:grid-cols-5" aria-label="Marking points by outcome">
+            {(Object.keys(OUTCOME) as Outcome[]).map((o) => (
+              <li key={o} className="rounded-control bg-canvas px-3 py-2.5 ring-1 ring-inset ring-line">
+                <p className="text-xl font-bold tabular-nums">{counts[o]}</p>
+                <p className="flex items-center gap-1.5 text-[13px] text-muted">
+                  <Icon name={OUTCOME[o].icon} className={cn("size-3.5", TONE[OUTCOME[o].tone].badge.split(" ").find((c) => c.startsWith("text-")))} />
+                  {OUTCOME[o].label}
+                </p>
+              </li>
+            ))}
+          </ul>
 
-        {result.aiError && (
-          <p className="mt-4 flex gap-2 rounded-xl bg-subtle p-3 text-sm text-ink">
-            <Icon name="alert" className="mt-0.5" />
-            The AI was not available ({result.aiError.replace(/\.$/, "")}), so the local rule-based marker checked this answer.
-          </p>
-        )}
-        {result.needsReview && (
-          <p className="mt-4 flex gap-2 rounded-xl bg-warning-soft p-3 text-sm text-warning">
-            <Icon name="alert" className="mt-0.5" />
-            {fmt(result.pendingReviewMarks)} marks are held for review because they could not be backed by a quote from your answer.
-          </p>
-        )}
-      </div>
-
-      {/* View switch */}
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line px-5 py-3 sm:px-7">
-        <div className="inline-flex rounded-xl bg-subtle p-1 text-sm">
-          {(["points", "answer"] as const).map((v) => (
-            <button
-              key={v}
-              onClick={() => setView(v)}
-              className={cn("rounded-lg px-3 py-1.5 font-medium transition", view === v ? "bg-surface text-ink shadow-soft" : "text-muted hover:text-ink")}
-            >
-              {v === "points" ? (
-                <>
-                  <span className="sm:hidden">Points</span>
-                  <span className="hidden sm:inline">Marking points</span>
-                </>
-              ) : (
-                <>
-                  <span className="sm:hidden">Annotated</span>
-                  <span className="hidden sm:inline">Your answer, annotated</span>
-                </>
-              )}
-            </button>
-          ))}
-        </div>
-        {view === "points" && (
-          <div className="flex gap-1 text-[13px]">
-            {(["all", "lost", "secured"] as const).map((f) => (
-              <button
-                key={f}
-                onClick={() => setFilter(f)}
-                className={cn("rounded-lg px-2.5 py-1 transition", filter === f ? "bg-brand-dark text-white" : "text-muted hover:bg-subtle")}
-              >
-                {f === "all" ? "All" : f === "lost" ? "Lost marks" : "Secured"}
-              </button>
+          {/* One segment per marking point; width follows its marks. Decorative: the counts above say the same. */}
+          <div className="mt-4 flex h-2 gap-1" aria-hidden>
+            {result.points.map((p) => (
+              <div key={p.pointId} className="relative h-full overflow-hidden rounded-full bg-subtle" style={{ flex: p.allocated }}>
+                <div className={cn("h-full rounded-full", STATUS_META[p.aiStatus].bar)} style={{ width: `${(p.aiMarks / p.allocated) * 100}%` }} />
+              </div>
             ))}
           </div>
-        )}
-      </div>
 
-      <div className="p-5 sm:p-7">
-        {view === "points" ? (
-          <div className="space-y-3">
-            {shown.map((p, i) => (
-              <PointCard key={p.pointId} p={p} index={result.points.indexOf(p) + 1} delay={i * 50} />
+          {result.aiError && (
+            <p className="mt-4 flex gap-2 rounded-control bg-subtle p-3 text-sm text-ink">
+              <Icon name="info" className="mt-0.5" />
+              The AI was not available ({result.aiError.replace(/\.$/, "")}), so the local rule-based marker checked this answer. Its judgements are less nuanced.
+            </p>
+          )}
+          {result.needsReview && (
+            <p className="mt-4 flex gap-2 rounded-control bg-warning-soft p-3 text-sm text-ink">
+              <Icon name="alert" className="mt-0.5 text-warning" />
+              {marks(result.pendingReviewMarks)} {result.pendingReviewMarks === 1 ? "is" : "are"} held for review: the marker couldn&apos;t back
+              {result.pendingReviewMarks === 1 ? " it" : " them"} with wording from your answer, so no marks were given there.
+            </p>
+          )}
+        </div>
+
+        {(onImprove || onBackToAnswer) && (
+          <div className="flex flex-col-reverse gap-2 border-t border-line bg-canvas px-5 py-3 sm:flex-row sm:items-center sm:justify-end sm:px-7">
+            {onBackToAnswer && (
+              <Button variant="ghost" size="sm" onClick={onBackToAnswer}>
+                <Icon name="back" /> Back to my answer
+              </Button>
+            )}
+            {onImprove && (
+              <Button onClick={onImprove}>
+                Improve My Answer <Icon name="arrow" />
+              </Button>
+            )}
+          </div>
+        )}
+      </Card>
+
+      {/* D + E. Priorities with suggested improvements */}
+      {priorities.length > 0 && <Priorities items={priorities} />}
+
+      {/* B. The map */}
+      <MarkingPoints result={result} answer={answer} counts={counts} />
+
+      {/* Supporting information */}
+      {(result.missingReferences.length > 0 || result.missingKeywords.length > 0 || result.presentationTips.length > 0) && (
+        <div className="grid gap-3 md:grid-cols-3">
+          <Extra title="References not mentioned" icon="book" empty="None. Good.">
+            {result.missingReferences.map((r) => (
+              <span key={r} className="rounded-md bg-surface px-2 py-1 text-[13px] font-medium text-ink ring-1 ring-line">
+                {r}
+              </span>
             ))}
-            {!shown.length && <p className="py-6 text-center text-sm text-muted">Nothing in this view.</p>}
-          </div>
-        ) : (
-          <AnnotatedAnswer result={result} answer={answer} />
-        )}
+          </Extra>
+          <Extra title="Key terms not used" icon="spark" empty="None. Good.">
+            {result.missingKeywords.map((k) => (
+              <span key={k} className="rounded-md bg-surface px-2 py-1 text-[13px] text-ink ring-1 ring-line">
+                {k}
+              </span>
+            ))}
+          </Extra>
+          <Extra title="Presentation tips" icon="edit" empty="No tips.">
+            {result.presentationTips.length > 0 && (
+              <ul className="space-y-1.5 text-[13px] text-ink">
+                {result.presentationTips.map((t) => (
+                  <li key={t} className="flex gap-1.5">
+                    <span className="mt-1.5 size-1 shrink-0 rounded-full bg-muted" /> {t}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </Extra>
+        </div>
+      )}
+    </section>
+  );
+}
 
-        {(result.missingReferences.length > 0 || result.missingKeywords.length > 0 || result.presentationTips.length > 0) && (
-          <div className="mt-6 grid gap-3 md:grid-cols-3">
-            <Extra title="Missing SA references" icon="book" empty="None. Good.">
-              {result.missingReferences.map((r) => (
-                <span key={r} className="rounded-md bg-error-soft px-2 py-1 text-[13px] font-medium text-error ring-1 ring-error/20">{r}</span>
-              ))}
-            </Extra>
-            <Extra title="Missing keywords" icon="spark" empty="None. Good.">
-              {result.missingKeywords.map((k) => (
-                <span key={k} className="rounded-md bg-canvas px-2 py-1 text-[13px] text-ink ring-1 ring-line">{k}</span>
-              ))}
-            </Extra>
-            <Extra title="Presentation tips" icon="edit" empty="No tips.">
-              {result.presentationTips.length > 0 && (
-                <ul className="space-y-1.5 text-[13px] text-ink">
-                  {result.presentationTips.map((t) => (
-                    <li key={t} className="flex gap-1.5">
-                      <span className="mt-1.5 size-1 shrink-0 rounded-full bg-muted" /> {t}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </Extra>
-          </div>
-        )}
-      </div>
+/* ------------------------------ Priorities ------------------------------ */
+
+function Priorities({ items }: { items: Priority[] }) {
+  return (
+    <Card className="p-5 sm:p-7">
+      <h3 className="text-card font-semibold">Your Top Improvement Priorities</h3>
+      <p className="mt-1 text-sm text-muted">The changes that would recover the most marks, starting with the biggest.</p>
+      <ol className="mt-5 space-y-4">
+        {items.map((p, i) => {
+          const o = OUTCOME[p.outcome];
+          return (
+            <li key={p.pointId} className="flex gap-4">
+              <span className="grid size-8 shrink-0 place-items-center rounded-full bg-brand font-display text-sm font-bold text-white">{i + 1}</span>
+              <div className="min-w-0 flex-1">
+                <div className="flex flex-wrap items-center gap-2">
+                  <p className="font-medium text-ink">{p.label}</p>
+                  <Badge tone={o.tone}>
+                    <Icon name={o.icon} className="size-3.5" /> {o.label}
+                  </Badge>
+                  <span className="text-[13px] tabular-nums text-muted">{marks(p.marksAtStake)} at stake</span>
+                </div>
+                <p className="mt-1.5 text-[15px] leading-relaxed text-ink">
+                  {p.outcome === "contradicted" ? "Correct this: " : p.outcome === "partial" ? "Make it complete: " : "Add this: "}
+                  {p.action}
+                </p>
+                <SuggestedImprovement text={p.requirement} className="mt-2.5" />
+              </div>
+            </li>
+          );
+        })}
+      </ol>
     </Card>
   );
 }
 
-function Count({ n, label, dot }: { n: number; label: string; dot: string }) {
+/** Reference text from the marking scheme, never presented as the student's words or an official answer. */
+function SuggestedImprovement({ text, className }: { text: string; className?: string }) {
   return (
-    <div className="rounded-xl bg-surface px-2 py-2 ring-1 ring-line">
-      <p className="text-lg font-semibold tabular-nums">{n}</p>
-      <p className="flex items-center justify-center gap-1 text-[11px] text-muted">
-        <span className={cn("size-1.5 rounded-full", dot)} /> {label}
+    <div className={cn("rounded-control border-l-[3px] border-brand-300 bg-brand-50 px-3.5 py-2.5", className)}>
+      <p className="flex items-center gap-1.5 text-[12px] font-semibold text-brand">
+        <Icon name="idea" className="size-3.5" /> Suggested improvement
       </p>
+      <p className="mt-1 text-[14px] leading-relaxed text-ink">A complete answer to this point covers: {text}</p>
+      <p className="mt-1 text-[12px] text-muted">From the question&apos;s marking scheme. Not your wording, and not an official model answer.</p>
     </div>
   );
 }
 
-function PointCard({ p, index, delay }: { p: PointResult; index: number; delay: number }) {
-  const m = STATUS_META[p.aiStatus];
-  const full = p.aiMarks >= p.allocated;
+/* ---------------------------- Marking points ---------------------------- */
+
+function MarkingPoints({ result, answer, counts }: { result: AttemptResult; answer: string; counts: ReturnType<typeof countOutcomes> }) {
+  const [view, setView] = useState<"points" | "answer">("points");
+  const [filter, setFilter] = useState<Filter>("all");
+  // Points that lost marks start open; covered ones start closed.
+  const [open, setOpen] = useState<Set<string>>(() => new Set(result.points.filter((p) => p.aiMarks < p.allocated).map((p) => p.pointId)));
+
+  const matches = (p: PointResult) => {
+    const o = OUTCOME_OF[p.aiStatus];
+    if (filter === "missed") return o === "missed" || o === "contradicted";
+    if (filter === "partial") return o === "partial";
+    if (filter === "covered") return o === "covered";
+    return true;
+  };
+  const shown = result.points.filter(matches);
+  const filters: { id: Filter; label: string; n: number }[] = [
+    { id: "all", label: "All", n: result.points.length },
+    { id: "missed", label: "Missed or contradicted", n: counts.missed + counts.contradicted },
+    { id: "partial", label: "Partially covered", n: counts.partial },
+    { id: "covered", label: "Covered", n: counts.covered },
+  ];
+  const allOpen = shown.every((p) => open.has(p.pointId));
+  const toggle = (id: string) =>
+    setOpen((s) => {
+      const n = new Set(s);
+      if (n.has(id)) n.delete(id);
+      else n.add(id);
+      return n;
+    });
+
   return (
-    <div className="animate-fade-in relative overflow-hidden rounded-xl bg-surface ring-1 ring-line" style={{ animationDelay: `${delay}ms` }}>
-      <span className={cn("absolute inset-y-0 left-0 w-1", m.bar)} />
-      <div className="p-4 pl-5">
-        <div className="flex items-start justify-between gap-3">
-          <div className="min-w-0">
-            <p className="text-[13px] text-muted">Point {index}</p>
-            <h3 className="font-medium leading-snug">{p.label}</h3>
+    <Card className="overflow-hidden">
+      <div className="border-b border-line p-5 sm:p-7">
+        <h3 className="text-[1.375rem] font-bold">Lost Marks Map</h3>
+        <p className="mt-1 text-[15px] text-muted">Every marking point in the scheme, and where your answer stands on it.</p>
+        <div className="mt-4 inline-flex rounded-control bg-subtle p-1 text-sm" role="tablist" aria-label="View">
+          {(["points", "answer"] as const).map((v) => (
+            <button
+              key={v}
+              role="tab"
+              aria-selected={view === v}
+              onClick={() => setView(v)}
+              className={cn("rounded-[8px] px-3 py-1.5 font-medium transition-colors", view === v ? "bg-surface text-ink shadow-soft" : "text-muted hover:text-ink")}
+            >
+              {v === "points" ? "Marking points" : "Your answer, annotated"}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {view === "points" ? (
+        <div className="p-5 sm:p-7">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div className="flex flex-wrap gap-2" role="group" aria-label="Filter marking points">
+              {filters.map((f) => (
+                <button
+                  key={f.id}
+                  type="button"
+                  aria-pressed={filter === f.id}
+                  onClick={() => setFilter(f.id)}
+                  className={cn(
+                    "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[13px] font-medium ring-1 ring-inset transition-colors",
+                    filter === f.id ? "bg-brand text-white ring-brand" : "bg-surface text-ink ring-line-strong hover:bg-canvas",
+                  )}
+                >
+                  {f.label} <span className={cn("tabular-nums", filter === f.id ? "text-white/75" : "text-muted")}>{f.n}</span>
+                </button>
+              ))}
+            </div>
+            {shown.length > 0 && (
+              <button
+                type="button"
+                onClick={() => setOpen((s) => (allOpen ? new Set([...s].filter((id) => !shown.some((p) => p.pointId === id))) : new Set([...s, ...shown.map((p) => p.pointId)])))}
+                className="rounded text-[13px] font-medium text-brand hover:underline"
+              >
+                {allOpen ? "Collapse all" : "Expand all"}
+              </button>
+            )}
           </div>
-          <div className="shrink-0 text-right">
-            <p className="text-lg font-semibold tabular-nums">
-              {fmt(p.aiMarks)}
-              <span className="text-sm font-normal text-muted"> / {fmt(p.allocated)}</span>
-            </p>
+
+          <ul className="mt-4 space-y-3">
+            {shown.map((p) => (
+              <li key={p.pointId}>
+                <PointItem p={p} index={result.points.indexOf(p) + 1} open={open.has(p.pointId)} onToggle={() => toggle(p.pointId)} />
+              </li>
+            ))}
+          </ul>
+          {!shown.length && <p className="py-8 text-center text-sm text-muted">No marking points in this view.</p>}
+        </div>
+      ) : (
+        <div className="p-5 sm:p-7">
+          <AnnotatedAnswer result={result} answer={answer} />
+        </div>
+      )}
+    </Card>
+  );
+}
+
+function PointItem({ p, index, open, onToggle }: { p: PointResult; index: number; open: boolean; onToggle: () => void }) {
+  const outcome = OUTCOME_OF[p.aiStatus];
+  const o = OUTCOME[outcome];
+  const full = p.aiMarks >= p.allocated;
+  const panelId = useId();
+  const hasEvidence = p.evidenceVerified && p.evidenceQuote.trim() !== "";
+  const preview = full ? "Full marks for this point." : p.reason || p.reviewReason || "No supporting evidence found in your answer.";
+
+  return (
+    <div className="relative overflow-hidden rounded-card bg-surface ring-1 ring-line">
+      <span className={cn("absolute inset-y-0 left-0 w-1", STATUS_META[p.aiStatus].bar)} aria-hidden />
+      <button
+        type="button"
+        onClick={onToggle}
+        aria-expanded={open}
+        aria-controls={panelId}
+        className="flex w-full items-start gap-3 py-4 pl-5 pr-4 text-left transition-colors hover:bg-canvas/60 focus-visible:-outline-offset-2"
+      >
+        <div className="min-w-0 flex-1">
+          <p className="text-[12px] text-muted">Marking point {index}</p>
+          <p className="mt-0.5 font-medium leading-snug text-ink">{p.label}</p>
+          <div className="mt-2 flex flex-wrap items-center gap-2">
+            <Badge tone={o.tone}>
+              <Icon name={o.icon} className="size-3.5" /> {o.label}
+            </Badge>
+            {!open && <span className="line-clamp-1 text-[13px] text-muted">{preview}</span>}
           </div>
         </div>
-        <Pill className={cn("mt-2", m.pill)}>
-          <span className={cn("size-1.5 rounded-full", m.dot)} /> {m.label}
-        </Pill>
-
-        {p.evidenceQuote && p.evidenceVerified ? (
-          <blockquote className="mt-3 rounded-lg bg-canvas p-3 text-sm text-ink">
-            <span className="mb-1 flex items-center gap-1 text-[11px] font-medium text-muted">
-              <Icon name="quote" className="size-3" /> From your answer · quote verified
-            </span>
-            <mark className={m.mark}>{p.evidenceQuote}</mark>
-          </blockquote>
-        ) : (
-          !full && (
-            <p className="mt-3 rounded-lg border border-dashed border-line p-3 text-sm text-muted">
-              No evidence for this point was found in your answer.
-            </p>
-          )
-        )}
-
-        {p.reason && !full && (
-          <p className="mt-3 text-sm text-ink">
-            <span className="font-medium text-ink">Why marks were lost: </span>
-            {p.reason}
+        <div className="flex shrink-0 items-center gap-3">
+          <p className="text-right font-display text-lg font-bold tabular-nums">
+            {fmt(p.aiMarks)}
+            <span className="text-sm font-medium text-muted"> / {fmt(p.allocated)}</span>
           </p>
-        )}
-        {p.reviewReason && <p className="mt-2 text-sm text-warning">{p.reviewReason}</p>}
-        {p.toRecover && !full && (
-          <div className="mt-3 flex gap-2 rounded-lg bg-brand-50/70 p-3 text-sm text-brand-900 ring-1 ring-brand-100">
-            <Icon name="arrow" className="mt-0.5 text-brand-600" />
-            <p>
-              <span className="font-medium">To recover: </span>
-              {p.toRecover}
-            </p>
-          </div>
-        )}
-      </div>
+          <Icon name="chevron" className={cn("text-muted transition-transform", open && "rotate-90")} />
+        </div>
+      </button>
+
+      {open && (
+        <div id={panelId} className="space-y-4 border-t border-line py-4 pl-5 pr-4 text-[14px]">
+          <Detail label="What this point needs">
+            <p className="leading-relaxed text-ink">{p.requirement}</p>
+          </Detail>
+
+          <Detail label="Evidence from your answer">
+            {hasEvidence ? (
+              <blockquote className="rounded-control bg-canvas px-3.5 py-2.5 leading-relaxed">
+                <mark className={STATUS_META[p.aiStatus].mark}>“{p.evidenceQuote}”</mark>
+                <p className="mt-1.5 flex items-center gap-1 text-[12px] text-muted">
+                  <Icon name="check" className="size-3.5" /> Your exact words, checked against your answer
+                </p>
+              </blockquote>
+            ) : outcome === "review" && p.evidenceQuote ? (
+              <p className="rounded-control border border-dashed border-accent/60 px-3.5 py-2.5 text-ink">
+                The marker pointed to wording that isn&apos;t in your answer, so it isn&apos;t shown here and this point is held for review.
+              </p>
+            ) : (
+              <p className="rounded-control border border-dashed border-line-strong px-3.5 py-2.5 text-muted">No supporting evidence found in your answer.</p>
+            )}
+          </Detail>
+
+          {!full && p.reason && (
+            <Detail label="Why marks may have been lost">
+              <p className="leading-relaxed text-ink">{p.reason}</p>
+            </Detail>
+          )}
+          {p.reviewReason && (
+            <Detail label="Why this is held for review">
+              <p className="leading-relaxed text-ink">{p.reviewReason}</p>
+            </Detail>
+          )}
+          {!full && p.toRecover && (
+            <Detail label="How to improve">
+              <p className="flex gap-2 leading-relaxed text-brand">
+                <Icon name="arrow" className="mt-1" /> {p.toRecover}
+              </p>
+            </Detail>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function Detail({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div>
+      <p className="mb-1 text-[12px] font-semibold text-muted">{label}</p>
+      {children}
     </div>
   );
 }
@@ -240,17 +410,23 @@ function AnnotatedAnswer({ result, answer }: { result: AttemptResult; answer: st
     answer,
     result.points
       .filter((p) => p.evidenceVerified && p.evidenceQuote)
-      .map((p) => ({ text: p.evidenceQuote, cls: STATUS_META[p.aiStatus].mark, id: p.label })),
+      .map((p) => ({ text: p.evidenceQuote, cls: STATUS_META[p.aiStatus].mark, id: `${p.label}: ${STATUS_META[p.aiStatus].label}` })),
   );
   return (
     <div>
-      <div className="mb-3 flex flex-wrap gap-3 text-xs text-muted">
-        <span className="flex items-center gap-1.5"><mark className="evidence">text</mark> earned full marks</span>
-        <span className="flex items-center gap-1.5"><mark className="evidence evidence-partial">text</mark> partly earned</span>
-        <span className="flex items-center gap-1.5"><mark className="evidence evidence-wrong">text</mark> incorrect</span>
-        <span>Plain text earned nothing.</span>
+      <div className="mb-3 flex flex-wrap gap-x-4 gap-y-2 text-[13px] text-muted">
+        <span className="flex items-center gap-1.5">
+          <mark className="evidence">text</mark> covered a point
+        </span>
+        <span className="flex items-center gap-1.5">
+          <mark className="evidence evidence-partial">text</mark> partly covered
+        </span>
+        <span className="flex items-center gap-1.5">
+          <mark className="evidence evidence-wrong">text</mark> contradicted
+        </span>
+        <span>Unmarked text earned nothing.</span>
       </div>
-      <div className="whitespace-pre-wrap rounded-xl bg-canvas p-4 text-[15px] leading-7 text-ink ring-1 ring-line">
+      <div className="whitespace-pre-wrap rounded-control bg-canvas p-4 text-[15px] leading-7 text-ink ring-1 ring-inset ring-line">
         {segs.map((s, i) =>
           s.cls ? (
             <mark key={i} className={s.cls} title={s.id}>
@@ -265,10 +441,10 @@ function AnnotatedAnswer({ result, answer }: { result: AttemptResult; answer: st
   );
 }
 
-function Extra({ title, icon, empty, children }: { title: string; icon: "book" | "spark" | "edit"; empty: string; children: React.ReactNode }) {
+function Extra({ title, icon, empty, children }: { title: string; icon: IconName; empty: string; children: React.ReactNode }) {
   const has = Array.isArray(children) ? children.length > 0 : !!children;
   return (
-    <div className="rounded-xl bg-canvas p-4 ring-1 ring-line">
+    <div className="rounded-card bg-surface p-4 ring-1 ring-line">
       <p className="flex items-center gap-1.5 text-sm font-medium">
         <Icon name={icon} className="text-muted" /> {title}
       </p>

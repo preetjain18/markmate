@@ -1,0 +1,106 @@
+{
+  "source": "Levels and papers follow the ICAI New Scheme of Education and Training (2023). The syllabus can change, so check icai.org for the current version.",
+  "levels": [
+    {
+      "id": "foundation",
+      "name": "CA Foundation",
+      "subjects": [
+        { "id": "foundation-accounting", "name": "Accounting", "paper": "Paper 1", "category": "accounting", "chapters": [] },
+        { "id": "foundation-business-laws", "name": "Business Laws", "paper": "Paper 2", "category": "law", "chapters": [] },
+        {
+          "id": "foundation-quantitative-aptitude",
+          "name": "Quantitative Aptitude",
+          "paper": "Paper 3",
+          "category": "maths",
+          "chapters": []
+        },
+        { "id": "foundation-business-economics", "name": "Business Economics", "paper": "Paper 4", "category": "economics", "chapters": [] }
+      ]
+    },
+    {
+      "id": "intermediate",
+      "name": "CA Intermediate",
+      "subjects": [
+        { "id": "inter-advanced-accounting", "name": "Advanced Accounting", "paper": "Paper 1", "category": "accounting", "chapters": [] },
+        { "id": "inter-corporate-laws", "name": "Corporate and Other Laws", "paper": "Paper 2", "category": "law", "chapters": [] },
+        { "id": "inter-taxation", "name": "Taxation", "short": "Income Tax and GST", "paper": "Paper 3", "category": "tax", "chapters": [] },
+        { "id": "inter-cost-management", "name": "Cost and Management Accounting", "paper": "Paper 4", "category": "cost", "chapters": [] },
+        { "id": "inter-audit", "name": "Auditing and Ethics", "paper": "Paper 5", "category": "audit", "chapters": [] },
+        {
+          "id": "inter-fm-sm",
+          "name": "Financial Management and Strategic Management",
+          "paper": "Paper 6",
+          "category": "finance",
+          "chapters": []
+        }
+      ]
+    },
+    {
+      "id": "final",
+      "name": "CA Final",
+      "subjects": [
+        { "id": "final-financial-reporting", "name": "Financial Reporting", "paper": "Paper 1", "category": "accounting", "chapters": [] },
+        { "id": "final-afm", "name": "Advanced Financial Management", "paper": "Paper 2", "category": "finance", "chapters": [] },
+        {
+          "id": "final-audit",
+          "name": "Advanced Auditing, Assurance and Professional Ethics",
+          "short": "Audit",
+          "paper": "Paper 3",
+          "category": "audit",
+          "chapterNote": "Chapters here are MarkMate's grouping by Standards on Auditing series, not the ICAI study material's chapter order.",
+          "chapters": [
+            {
+              "id": "sa-200-series",
+              "name": "General principles and responsibilities",
+              "note": "SA 200–299",
+              "topics": [
+                { "id": "sa-230", "name": "SA 230 · Audit Documentation", "questions": ["sa-230-audit-documentation"] },
+                { "id": "sa-240", "name": "SA 240 · Fraud", "questions": ["sa-240-fraud"] },
+                { "id": "sa-265", "name": "SA 265 · Communicating Deficiencies in Internal Control", "questions": ["sa-265-control-deficiencies"] }
+              ]
+            },
+            {
+              "id": "sa-300-series",
+              "name": "Risk assessment and response to assessed risks",
+              "note": "SA 300–499",
+              "topics": []
+            },
+            {
+              "id": "sa-500-series",
+              "name": "Audit evidence",
+              "note": "SA 500–599",
+              "topics": [
+                { "id": "sa-505", "name": "SA 505 · External Confirmations", "questions": ["sa-505-external-confirmations"] },
+                { "id": "sa-530", "name": "SA 530 · Audit Sampling", "questions": ["sa-530-audit-sampling"] },
+                { "id": "sa-560", "name": "SA 560 · Subsequent Events", "questions": ["sa-560-subsequent-events"] },
+                { "id": "sa-570", "name": "SA 570 · Going Concern", "questions": ["sa-570-going-concern"] },
+                { "id": "sa-580", "name": "SA 580 · Written Representations", "questions": ["sa-580-written-representations"] }
+              ]
+            },
+            {
+              "id": "sa-600-series",
+              "name": "Using the work of others",
+              "note": "SA 600–699",
+              "topics": [{ "id": "sa-610", "name": "SA 610 · Using the Work of Internal Auditors", "questions": ["sa-610-internal-auditors"] }]
+            },
+            {
+              "id": "sa-700-series",
+              "name": "Audit conclusions and reporting",
+              "note": "SA 700–799",
+              "topics": [{ "id": "sa-701", "name": "SA 701 · Key Audit Matters", "questions": ["sa-701-key-audit-matters"] }]
+            },
+            {
+              "id": "sa-800-series",
+              "name": "Specialised areas",
+              "note": "SA 800–899",
+              "topics": []
+            }
+          ]
+        },
+        { "id": "final-direct-tax", "name": "Direct Tax Laws and International Taxation", "paper": "Paper 4", "category": "tax", "chapters": [] },
+        { "id": "final-indirect-tax", "name": "Indirect Tax Laws", "paper": "Paper 5", "category": "tax", "chapters": [] },
+        { "id": "final-ibs", "name": "Integrated Business Solutions", "paper": "Paper 6", "category": "strategy", "chapters": [] }
+      ]
+    }
+  ]
+}

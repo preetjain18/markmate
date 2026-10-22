@@ -4,7 +4,7 @@ import { VersionMismatchError } from "@/lib/compare";
 import { evaluate, InputError } from "@/lib/evaluate";
 import { aiConfigured, callModel } from "@/lib/llm";
 import { logAttempt } from "@/lib/logging";
-import { getRubric } from "@/lib/rubrics";
+import { loadCatalog, resolveForEvaluation } from "@/lib/catalog";
 import { PreviousAttemptSchema, RubricSchema } from "@/lib/schema";
 
 export const runtime = "nodejs";
@@ -31,8 +31,11 @@ export async function POST(req: Request) {
 
   let rubric;
   if (body.questionId) {
-    rubric = getRubric(body.questionId);
-    if (!rubric) return fail("That question was not found.", 404);
+    const found = resolveForEvaluation(loadCatalog(), body.questionId);
+    if (found.kind === "not-found") return fail("That question was not found.", 404);
+    // A question without a rubric is practice-only: never produce a score for it.
+    if (found.kind === "unsupported") return fail("Evaluation isn't available for this question yet, so no marks can be given.", 422);
+    rubric = found.rubric;
   } else {
     const parsed = RubricSchema.safeParse(body.rubric);
     if (!parsed.success) return fail("The marking points must add up to the total marks.", 400);
