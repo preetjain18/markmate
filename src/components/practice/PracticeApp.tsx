@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { answerProblem } from "@/lib/answer";
 import type { CatalogView } from "@/lib/catalog-types";
 import { appendHistory, failedRecord, recordFromResult, type QuestionMeta } from "@/lib/history";
+import { practiceHref } from "@/lib/progress";
 import type { AttemptResult, Rubric } from "@/lib/schema";
 import { cn, fmt } from "@/lib/ui";
 import { Button, Card, ErrorMessage, Icon, LoadingState, Pill } from "../ui";
@@ -93,6 +94,8 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
   // Custom questions: the marking scheme Attempt 1 was marked with, reused for every rewrite.
   const [firstRubric, setFirstRubric] = useState<Rubric | null>(null);
   const [rewriteProblem, setRewriteProblem] = useState<string | null>(null);
+  /** True when Attempt 1 came from a scanned, student-checked transcription. */
+  const [fromScan, setFromScan] = useState(false);
   const [triedRewrite, setTriedRewrite] = useState(false);
   const [busy, setBusy] = useState<Busy>(null);
   const [failure, setFailure] = useState<{ attempt: 1 | 2; message: string } | null>(null);
@@ -131,6 +134,20 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
   // otherwise restore the remembered level. Read after mount so server and client render the same first.
   useEffect(() => {
     const p = new URLSearchParams(window.location.search);
+    // From Scan My Answer with a typed or photographed question: open "your own question", pre-filled.
+    if (p.get("custom") === "1") {
+      try {
+        const pre = JSON.parse(sessionStorage.getItem("markmate-custom-prefill") ?? "null");
+        sessionStorage.removeItem("markmate-custom-prefill");
+        if (pre) {
+          setCQuestion(String(pre.question ?? ""));
+          setCModel(String(pre.modelAnswer ?? ""));
+          if (Number(pre.marks) > 0) setCMarks(Number(pre.marks));
+        }
+      } catch {}
+      setQuestionId(CUSTOM);
+      return;
+    }
     const q = catalog.questions.find((x) => x.id === p.get("question"));
     const lv = catalog.levels.find((l) => l.id === (q?.levelId ?? p.get("level")));
     const sb = lv?.subjects.find((s) => s.id === (q?.subjectId ?? p.get("subject")));
@@ -174,6 +191,7 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
     setTriedSubmit(false);
     setRewriteProblem(null);
     setTriedRewrite(false);
+    setFromScan(false);
   }
 
   const rewriteCheck = (text: string) =>
@@ -194,6 +212,22 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
   useEffect(() => {
     if (triedSubmit) setProblem(answerProblem(answer));
   }, [answer, triedSubmit]);
+
+  // From Scan My Answer with a bank question: the reviewed text is in the draft; evaluate it once, straight away.
+  useEffect(() => {
+    if (!questionId || questionId === CUSTOM || first || busy || !answer.trim()) return;
+    let flag: string | null = null;
+    try {
+      flag = sessionStorage.getItem("markmate-autoeval");
+    } catch {}
+    if (flag !== questionId) return;
+    try {
+      sessionStorage.removeItem("markmate-autoeval");
+    } catch {}
+    setFromScan(true);
+    submitFirst();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [questionId, answer]);
 
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
   /** Scroll a section into view, then put the cursor in a text box without jumping the page again. */
@@ -466,6 +500,7 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
               result={first}
               answer={firstAnswer}
               title="Attempt 1 · Your results"
+              fromScan={fromScan}
               onImprove={() => focusAfterScroll(labRef, "rewrite")}
               onBackToAnswer={() => focusAfterScroll(editorRef, "answer")}
             />
@@ -510,6 +545,12 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
                   }
                 }}
                 onReviseAgain={() => focusAfterScroll(labRef, "rewrite")}
+                related={(() => {
+                  if (!question) return undefined;
+                  const pool = catalog.questions.filter((x) => x.id !== question.id && x.support !== "none");
+                  const r = pool.find((x) => x.chapterId === question.chapterId) ?? pool.find((x) => x.subjectId === question.subjectId);
+                  return r ? { title: r.title, href: practiceHref({ level: r.levelId, subject: r.subjectId, chapter: r.chapterId, topic: r.topicId ?? undefined, question: r.id }) } : undefined;
+                })()}
               />
               <details id={latestMapId} className="group scroll-mt-24">
                 <summary className="flex cursor-pointer list-none items-center gap-2 rounded text-sm font-medium text-muted hover:text-ink [&::-webkit-details-marker]:hidden">

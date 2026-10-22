@@ -16,16 +16,16 @@ export async function POST(req: Request) {
   try {
     body = TranscribeRequestSchema.parse(await req.json());
   } catch {
-    return fail("Upload 1 to 4 photos (JPG, PNG or WebP) of your answer sheet.", 400);
+    return fail("Upload 1 to 4 files: photos (JPG, PNG or WebP) or PDFs.", 400);
   }
   if (body.images.reduce((s, i) => s + i.data.length, 0) > MAX_TOTAL_BASE64) {
-    return fail("These photos are too large together. Upload fewer pages or smaller photos.", 413);
+    return fail("These files are too large together (limit about 3 MB). Upload fewer pages, smaller photos or a smaller PDF.", 413);
   }
   if (!aiConfigured()) {
     return fail("Reading handwriting needs the AI, which isn't set up on this site yet. You can type your answer instead.", 503);
   }
   try {
-    const t = await transcribe(body.images, callModel, body.question);
+    const t = await transcribe(body.images, callModel, body.question, body.mode);
     return NextResponse.json(t);
   } catch (e) {
     if (e instanceof NotAnAnswerError) return fail(e.message, 422);

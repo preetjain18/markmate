@@ -51,8 +51,8 @@ export function MobileMenu({ items }: { items: NavItem[] }) {
             </Link>
           ))}
         </nav>
-        <ButtonLink href="/practice" className="mt-3 w-full">
-          Start Practising <Icon name="arrow" />
+        <ButtonLink href="/scan" className="mt-3 w-full">
+          <Icon name="camera" /> Scan My Answer
         </ButtonLink>
       </div>
     </div>

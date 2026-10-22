@@ -21,9 +21,10 @@
    > Management prepares the financial statements on the going concern basis. The company has heavy
    > losses and the auditor should check it. The auditor then writes about it in the report.
 
-   **Handwritten option (the differentiator):** click **Answer on paper?**, upload a phone photo of a
-   handwritten version, click **Read my handwriting**, then show the "please check it" notice and fix
-   anything misread. Needs Gemini quota; rehearse it once before presenting.
+   **Handwritten option (the differentiator):** start instead from **Scan My Answer** (`/scan`): pick
+   Final → Audit → SA 570, upload a phone photo or PDF of a handwritten version, click **Read my answer**,
+   compare the scan with the text side by side, fix anything misread, then **Evaluate my answer**. It
+   opens the Lost Marks Map marked "From your scanned answer". Needs Gemini quota; rehearse it once.
 
 4. **Evaluate My Answer.** On the **Lost Marks Map** show:
    - the score and outcome counts, and the label "practice estimate · not an ICAI mark";
@@ -62,9 +63,9 @@
 | Lost Marks Map with verified evidence | Working |
 | Improvement Lab and attempt comparison | Working |
 | Progress dashboard (this browser only) | Working |
-| Gemini evaluation | Working when the key has quota (verified locally earlier; quota currently used up) |
+| Gemini evaluation | Working when the key has quota; falls back to a lighter Gemini model when the main one is busy |
 | Your own question (draft scheme from a model answer) | Working; scheme is unverified |
-| Handwritten answer upload (Gemini reads photos) | Built and tested with mocks; real reading needs Gemini quota (not yet verified live) |
+| Scan My Answer (photos or PDF, side-by-side check) | Working: verified locally with Gemini on a computer-made handwriting-style image and PDF; not yet tried on a real pen-written sheet |
 | Question of the Day and streak | Working |
 | Foundation and Intermediate papers, other Final papers | 1–2 written theory questions each (draft schemes); numerical problems not marked |
 | Verified marking schemes | Not ready: all 10 are drafts pending CA review |

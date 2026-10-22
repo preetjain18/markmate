@@ -9,7 +9,7 @@ import { compareResults, type Change, type TransitionRow } from "@/lib/compare";
 import type { Outcome } from "@/lib/insights";
 import type { AttemptResult } from "@/lib/schema";
 import { cn, fmt, type Tone } from "@/lib/ui";
-import { Alert, Badge, Button, Card, Icon, type IconName } from "../ui";
+import { Alert, Badge, Button, ButtonLink, Card, Icon, type IconName } from "../ui";
 
 const OUTCOME: Record<Outcome, { label: string; tone: Tone }> = {
   covered: { label: "Covered", tone: "success" },
@@ -38,6 +38,7 @@ export default function Comparison({
   onPractiseAnother,
   onReviewLostMarks,
   onReviseAgain,
+  related,
 }: {
   first: AttemptResult;
   second: AttemptResult;
@@ -45,6 +46,8 @@ export default function Comparison({
   onPractiseAnother: () => void;
   onReviewLostMarks: () => void;
   onReviseAgain: () => void;
+  /** Another question on the same chapter or paper, if there is one. */
+  related?: { title: string; href: string };
 }) {
   const c = useMemo(() => compareResults(first, second), [first, second]);
   const later = `Attempt ${attemptNo}`;
@@ -60,6 +63,11 @@ export default function Comparison({
       <Button variant="ghost" onClick={onReviseAgain}>
         <Icon name="edit" /> Revise {later} again
       </Button>
+      {related && (
+        <ButtonLink href={related.href} variant="ghost">
+          <Icon name="notebook" /> Practise a related question: {related.title}
+        </ButtonLink>
+      )}
     </div>
   );
 

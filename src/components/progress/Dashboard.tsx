@@ -88,8 +88,8 @@ export default function Dashboard({ catalog }: { catalog: CatalogView }) {
 
       {/* 5. What to practise next (first, because it's the most actionable) */}
       <section aria-labelledby="next-h">
-        <SectionHeading eyebrow="Recommended" title="What to Practise Next" />
-        <p className="mt-2 text-sm text-muted">Simple rules on your history: weak answers not yet rewritten, repeated gaps, then chapters you haven&apos;t tried.</p>
+        <SectionHeading eyebrow="Recommended for you" title="Your Marks Recovery Plan" />
+        <p className="mt-2 text-sm text-muted">Built from your saved attempts: answers worth rewriting first, marking points you keep missing, then chapters you haven&apos;t tried.</p>
         {recs.length ? (
           <ul className="mt-5 grid gap-3 md:grid-cols-2">
             {recs.map((r, i) => (

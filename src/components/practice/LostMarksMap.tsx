@@ -21,6 +21,14 @@ const OUTCOME: Record<Outcome, { label: string; tone: Tone; icon: IconName }> = 
 
 type Filter = "all" | "missed" | "partial" | "covered";
 
+/** Plain-language difference between the kinds of lost marks. */
+const OUTCOME_HINT: Partial<Record<Outcome, { title: string; body: string }>> = {
+  missed: { title: "Missing concept", body: "this idea isn't in your answer at all, so it needs adding." },
+  partial: { title: "Weak explanation", body: "the idea is there, but the explanation is incomplete or too vague for full marks." },
+  contradicted: { title: "Wrong statement", body: "what you wrote here is incorrect and needs correcting, not just adding to." },
+  review: { title: "Uncertain", body: "the marker couldn't back its judgement with your words, so no marks were given here yet." },
+};
+
 const marks = (n: number) => `${fmt(n)} mark${n === 1 ? "" : "s"}`;
 
 export default function LostMarksMap({
@@ -29,12 +37,15 @@ export default function LostMarksMap({
   title,
   onImprove,
   onBackToAnswer,
+  fromScan,
 }: {
   result: AttemptResult;
   answer: string;
   title: string;
   onImprove?: () => void;
   onBackToAnswer?: () => void;
+  /** The answer was read from the student's scan and checked by them. */
+  fromScan?: boolean;
 }) {
   const counts = useMemo(() => countOutcomes(result.points), [result]);
   const priorities = useMemo(() => topPriorities(result.points), [result]);
@@ -70,6 +81,11 @@ export default function LostMarksMap({
                   {result.aiUsed ? "AI-generated practice estimate" : "Rule-based practice estimate"} · not an ICAI mark
                 </Badge>
                 <Badge tone={result.verified ? "success" : "neutral"}>{result.verified ? "Verified marking scheme" : "Unverified marking scheme"}</Badge>
+                {fromScan && (
+                  <Badge tone="brand">
+                    <Icon name="camera" className="size-3.5" /> From your scanned answer
+                  </Badge>
+                )}
               </div>
             </div>
           </div>
@@ -85,6 +101,24 @@ export default function LostMarksMap({
               </li>
             ))}
           </ul>
+
+          <details className="group mt-3 text-[13px]">
+            <summary className="flex cursor-pointer list-none items-center gap-1.5 font-medium text-brand [&::-webkit-details-marker]:hidden">
+              <Icon name="chevron" className="size-3.5 transition-transform group-open:rotate-90" /> How this score was worked out
+            </summary>
+            <ul className="mt-2 space-y-1.5 pl-5 text-muted [list-style:disc]">
+              <li>
+                The question&apos;s marking scheme has {result.points.length} marking points worth {result.maxMarks} marks in total. It is a draft scheme,
+                {result.verified ? " checked by a CA" : " not yet verified by a CA"}.
+              </li>
+              <li>
+                {result.aiUsed ? "The AI" : "The rule-based marker"} judged each point. MarkMate&apos;s code then gave marks only where it could find supporting words
+                in your answer, capped each point at its marks, and added them up.
+              </li>
+              <li>Missing a concept loses the whole point; a weak explanation usually loses half. Extra length alone earns nothing.</li>
+              <li>This is a practice estimate, not an ICAI mark.</li>
+            </ul>
+          </details>
 
           {/* One segment per marking point; width follows its marks. Decorative: the counts above say the same. */}
           <div className="mt-4 flex h-2 gap-1" aria-hidden>
@@ -351,7 +385,8 @@ function PointItem({ p, index, open, onToggle }: { p: PointResult; index: number
       </button>
 
       {open && (
-        <div id={panelId} className="space-y-4 border-t border-line py-4 pl-5 pr-4 text-[14px]">
+        <div id={panelId} className="grid gap-x-6 gap-y-4 border-t border-line py-4 pl-5 pr-4 text-[14px] md:grid-cols-2">
+          <div className="space-y-4">
           <Detail label="What this point needs">
             <p className="leading-relaxed text-ink">{p.requirement}</p>
           </Detail>
@@ -372,7 +407,15 @@ function PointItem({ p, index, open, onToggle }: { p: PointResult; index: number
               <p className="rounded-control border border-dashed border-line-strong px-3.5 py-2.5 text-muted">No supporting evidence found in your answer.</p>
             )}
           </Detail>
+          </div>
 
+          <div className="space-y-4">
+          {OUTCOME_HINT[outcome] && !full && (
+            <p className="rounded-control bg-subtle px-3 py-2 text-[13px] text-ink">
+              <span className="font-semibold">{OUTCOME_HINT[outcome]!.title}: </span>
+              {OUTCOME_HINT[outcome]!.body}
+            </p>
+          )}
           {!full && p.reason && (
             <Detail label="Why marks may have been lost">
               <p className="leading-relaxed text-ink">{p.reason}</p>
@@ -390,6 +433,8 @@ function PointItem({ p, index, open, onToggle }: { p: PointResult; index: number
               </p>
             </Detail>
           )}
+          {full && <p className="text-[13px] text-success">Full marks for this point: nothing to change.</p>}
+          </div>
         </div>
       )}
     </div>

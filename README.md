@@ -8,10 +8,13 @@ Intermediate and Final (10 for Final Audit, 1–2 for every other paper). Every 
 (`"verified": false`, not ICAI text). Numerical papers have written theory questions only; numerical
 problems aren't marked yet. Students can also paste their own question and model answer for any paper.
 
-**Handwritten answers:** students can upload up to 4 photos of their answer sheet. Gemini reads the
-handwriting; the student checks and corrects the text (unreadable words appear as `[illegible]` and must
-be fixed) before it is marked. Photos are sent to Google Gemini and not stored by MarkMate. This needs the AI:
-without `GEMINI_API_KEY` (or with no quota) the upload says so and the student can type instead.
+**Scan My Answer (`/scan`):** the main way in. Step 1 picks the question: from the bank, typed in with its
+model answer, or read from a photo of the question paper. Step 2 uploads up to 4 photos or PDFs (about
+3 MB in total; drag and drop, reorder, replace, remove, upload progress). Step 3 shows the scan beside the
+text Gemini read, so the student can correct it; unreadable words appear as `[illegible]` and must be fixed
+before marking. Step 4 opens the Lost Marks Map in `/practice`. The same upload is available inside
+`/practice` via **Answer on paper?**. Files are sent to Google Gemini and not stored by MarkMate. This needs
+the AI: without `GEMINI_API_KEY` (or with no quota) the upload says so and the student can type instead.
 
 **Question of the Day and streak:** one question per day (same for everyone, within the student's chosen
 level), and a practice streak counted from the evaluations saved in the browser.
@@ -32,6 +35,7 @@ Open http://localhost:3000. Create `.env` from `.env.example` (never commit it):
 |---|---|---|
 | `GEMINI_API_KEY` | For AI marking | Google Gemini API key. Read only on the server. Without it, the local rule-based marker is used. |
 | `GEMINI_MODEL` | No | Defaults to `gemini-3.7-flash`. Must start with `gemini`. |
+| `GEMINI_FALLBACK_MODEL` | No | Used when the main model is busy. Defaults to `gemini-3.5-flash-lite`; `none` turns it off. |
 | `EXPORT_TOKEN` | No | Enables the faculty CSV export in production (see below). |
 
 No variable uses the `NEXT_PUBLIC_` prefix, so none is sent to the browser.
@@ -41,7 +45,8 @@ No variable uses the `NEXT_PUBLIC_` prefix, so none is sent to the browser.
 | Route | What it is |
 |---|---|
 | `/` | Landing page |
-| `/practice` | Level → subject → chapter → topic → question, answer editor, Lost Marks Map, Improvement Lab, comparison. Accepts `?level=&subject=&chapter=&topic=&question=` links. |
+| `/scan` | Scan My Answer: question → upload photos or PDF → check what was read → Lost Marks Map |
+| `/practice` | Level → subject → chapter → topic → question, answer editor, Lost Marks Map, Improvement Lab, comparison. Accepts `?level=&subject=&chapter=&topic=&question=` links, and `?custom=1` for your own question. |
 | `/progress` | Your Progress dashboard |
 | `/design` | Design-system reference (not linked from the site) |
 
