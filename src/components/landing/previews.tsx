@@ -7,39 +7,40 @@ import { cn, fmt, STATUS_META } from "@/lib/ui";
 import { Badge, Card, Icon, ScoreRing } from "../ui";
 
 export const SAMPLE = {
-  sa: "SA 570",
-  question: "How should the auditor respond when events cast significant doubt on the entity's ability to continue as a going concern?",
+  level: "CA Foundation",
+  paper: "Business Laws",
+  question: "What are the essential elements of a valid contract under the Indian Contract Act, 1872?",
   answer: [
-    { text: "Management has prepared the financial statements on the going concern basis. " },
-    { text: "The company has incurred heavy losses for two years and defaulted on a bank loan.", status: "correct_complete" as Status },
+    { text: "A contract is an agreement enforceable by law. " },
+    { text: "There must be a lawful offer and its acceptance between the parties.", status: "correct_complete" as Status },
     { text: " " },
-    { text: "The auditor should check whether the company can continue", status: "correct_incomplete" as Status },
-    { text: " and mention it in the report." },
+    { text: "Both parties should agree freely", status: "correct_incomplete" as Status },
+    { text: ", and then the contract will be valid." },
   ],
   points: [
     {
-      label: "Events or conditions that cast doubt",
+      label: "Offer and acceptance",
       status: "correct_complete" as Status,
       marks: 1,
       allocated: 1,
-      quote: "heavy losses for two years and defaulted on a bank loan",
+      quote: "There must be a lawful offer and its acceptance between the parties.",
     },
     {
-      label: "Evaluating management's plans",
+      label: "Free consent",
       status: "correct_incomplete" as Status,
       marks: 0.5,
       allocated: 1,
-      quote: "The auditor should check whether the company can continue",
-      reason: "Says the auditor should check, but not how: management's plans and cash flow forecasts are not evaluated.",
-      fix: "Evaluate management's plans for future action and the cash flow forecasts, and whether they are feasible.",
+      quote: "Both parties should agree freely",
+      reason: "Says the parties should agree freely, but not what makes consent not free.",
+      fix: "Add that consent must not be caused by coercion, undue influence, fraud, misrepresentation or mistake.",
     },
     {
-      label: "Reporting a material uncertainty",
+      label: "Competent parties",
       status: "not_addressed" as Status,
       marks: 0,
       allocated: 1,
-      reason: "The answer says “mention it in the report” but not what the report must contain.",
-      fix: "State that an adequately disclosed uncertainty needs a separate “Material Uncertainty Related to Going Concern” section.",
+      reason: "The answer never says who is allowed to make a contract.",
+      fix: "Add that the parties must be competent: of the age of majority, of sound mind and not disqualified by law.",
     },
   ],
 };
@@ -76,8 +77,8 @@ export function HeroPreview() {
     <Card className="overflow-hidden shadow-lift">
       <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 border-b border-line px-5 py-3">
         <div className="flex items-center gap-2">
-          <Badge tone="brand">{SAMPLE.sa}</Badge>
-          <span className="whitespace-nowrap text-[13px] text-muted">Going Concern</span>
+          <Badge tone="brand">{SAMPLE.paper}</Badge>
+          <span className="whitespace-nowrap text-[13px] text-muted">{SAMPLE.level}</span>
         </div>
         <SampleLabel />
       </div>
@@ -96,9 +97,9 @@ export function HeroPreview() {
           <ScoreRing value={got} max={max} size={68} />
           <div>
             <p className="font-display text-[15px] font-semibold text-ink">
-              {fmt(max - got)} of {max} marks lost
+              You scored {fmt(got)} out of {max}
             </p>
-            <p className="text-[13px] text-muted">3 of 5 marking points shown</p>
+            <p className="text-[13px] text-muted">1 point done well · 1 half done · 1 missed</p>
           </div>
         </div>
 
@@ -167,7 +168,7 @@ export function FeedbackTracePreview() {
       <Card className="p-5 sm:p-6">
         <div className="flex items-center justify-between gap-3">
           <p className="font-display text-[15px] font-semibold">Your answer, annotated</p>
-          <Badge tone="brand">{SAMPLE.sa}</Badge>
+          <Badge tone="brand">{SAMPLE.paper}</Badge>
         </div>
         <p className="mt-3 text-[14px] text-muted">{SAMPLE.question}</p>
         <div className="mt-4 rounded-control bg-canvas p-4 ring-1 ring-inset ring-line">
@@ -226,19 +227,19 @@ export function MapMini() {
 /** Small visual for the Improvement Lab feature card. Sample numbers only. */
 export function AttemptsMini() {
   const rows: { label: string; from: number; to: number; kind: string; tone: "success" | "neutral" }[] = [
-    { label: "Evaluating management's plans", from: 0.5, to: 1, kind: "Improved", tone: "success" },
-    { label: "Reporting a material uncertainty", from: 0, to: 1, kind: "Recovered", tone: "success" },
-    { label: "Inadequate disclosure", from: 0, to: 0, kind: "Still missing", tone: "neutral" },
+    { label: "Free consent", from: 0.5, to: 1, kind: "Improved", tone: "success" },
+    { label: "Competent parties", from: 0, to: 1, kind: "Recovered", tone: "success" },
+    { label: "Lawful object", from: 0, to: 0, kind: "Still missing", tone: "neutral" },
   ];
   return (
     <div className="rounded-control bg-surface ring-1 ring-inset ring-line">
       <div className="flex items-center gap-3 border-b border-line px-4 py-3">
-        <span className="font-display text-xl font-bold tabular-nums text-muted">2</span>
+        <span className="font-display text-xl font-bold tabular-nums text-muted">2.5</span>
         <Icon name="arrow" className="text-muted" />
-        <span className="font-display text-xl font-bold tabular-nums text-ink">4.5</span>
+        <span className="font-display text-xl font-bold tabular-nums text-ink">4</span>
         <span className="text-[13px] text-muted">/ 5</span>
         <Badge tone="success" className="ml-auto">
-          +2.5 marks
+          +1.5 marks
         </Badge>
       </div>
       <ul className="divide-y divide-line">
