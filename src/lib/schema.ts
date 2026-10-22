@@ -166,6 +166,10 @@ export type AttemptResult = {
   missingKeywords: string[];
   presentationTips: string[];
   model: string;
+  /** True when Gemini judged the points; false when the local rule-based marker did. */
+  aiUsed: boolean;
+  /** Why the AI was skipped, when it was configured but failed. */
+  aiError?: string;
   createdAt: string;
   comparison?: Comparison;
 };

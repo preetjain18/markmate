@@ -1,18 +1,13 @@
 /**
- * The only file that calls a model. Every call goes through OpenRouter and is
- * restricted to Google's own infrastructure. The key is read only from the environment.
+ * The only file that calls a model: Google Gemini through the Gemini API.
+ * The key is read only from the environment (GEMINI_API_KEY) and is never logged.
  */
-const BASE_URL = "https://openrouter.ai/api/v1";
-export const DEFAULT_MODEL = "google/gemini-3.7-flash";
+const BASE_URL = "https://generativelanguage.googleapis.com/v1beta";
+export const DEFAULT_MODEL = "gemini-3.7-flash";
 
 export class NotConfiguredError extends Error {
   constructor() {
-    super("OPENROUTER_API_KEY is not set. Add it to .env (locally) or to the project's environment variables.");
-  }
-}
-export class OutOfCreditsError extends Error {
-  constructor() {
-    super("OpenRouter says the account is out of credits (402). Add credits and try again.");
+    super("GEMINI_API_KEY is not set. Add it to .env (locally) or to the project's environment variables.");
   }
 }
 export class ModelCallError extends Error {}
@@ -21,33 +16,49 @@ export type ModelRequest = { system: string; user: string; schema: object; schem
 export type ModelResponse = { data: unknown; model: string; usage?: unknown };
 export type ModelCaller = (req: ModelRequest) => Promise<ModelResponse>;
 
+export const aiConfigured = () => !!process.env.GEMINI_API_KEY?.trim();
+
 export function getModelId(): string {
-  const id = process.env.OPENROUTER_MODEL?.trim() || DEFAULT_MODEL;
-  if (!id.startsWith("google/")) throw new ModelCallError("OPENROUTER_MODEL must be a Google model (an ID starting with google/).");
+  const id = process.env.GEMINI_MODEL?.trim() || DEFAULT_MODEL;
+  if (!id.startsWith("gemini")) throw new ModelCallError("GEMINI_MODEL must be a Gemini model id, for example gemini-3.7-flash.");
   return id;
 }
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+/** Reads google.rpc.RetryInfo.retryDelay (e.g. "83978.2s") from a 429 body; 0 if absent. */
+function retryDelaySeconds(body: unknown): number {
+  const details = (body as { error?: { details?: { retryDelay?: string }[] } })?.error?.details ?? [];
+  const d = details.find((x) => typeof x.retryDelay === "string")?.retryDelay;
+  return d ? parseFloat(d) || 0 : 0;
+}
+
+function formatDelay(s: number): string {
+  if (s >= 3600) return `${Math.round(s / 3600)} hours`;
+  if (s >= 60) return `${Math.round(s / 60)} minutes`;
+  return `${Math.round(s)} seconds`;
+}
 
 function parseJson(text: string): unknown {
   const t = text.trim().replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "");
   return JSON.parse(t);
 }
 
-export const callModel: ModelCaller = async ({ system, user, schema, schemaName }) => {
-  const key = process.env.OPENROUTER_API_KEY?.trim();
+export const callModel: ModelCaller = async ({ system, user, schema }) => {
+  const key = process.env.GEMINI_API_KEY?.trim();
   if (!key) throw new NotConfiguredError();
   const model = getModelId();
 
   const body = {
-    model,
-    temperature: 0,
-    messages: [
-      { role: "system", content: system },
-      { role: "user", content: user },
-    ],
-    response_format: { type: "json_schema", json_schema: { name: schemaName, strict: true, schema } },
-    provider: { only: ["google-vertex", "google-ai-studio"], allow_fallbacks: false },
+    systemInstruction: { parts: [{ text: system }] },
+    contents: [{ role: "user", parts: [{ text: user }] }],
+    generationConfig: {
+      temperature: 0,
+      responseMimeType: "application/json",
+      responseJsonSchema: schema,
+      // Low thinking keeps a marking call to a few seconds instead of ~30.
+      thinkingConfig: { thinkingLevel: "low" },
+    },
   };
 
   let lastStatus = 0;
@@ -55,29 +66,36 @@ export const callModel: ModelCaller = async ({ system, user, schema, schemaName 
     if (attempt > 0) await sleep(800 * 2 ** (attempt - 1));
     let res: Response;
     try {
-      res = await fetch(`${BASE_URL}/chat/completions`, {
+      res = await fetch(`${BASE_URL}/models/${model}:generateContent`, {
         method: "POST",
-        headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+        headers: { "x-goog-api-key": key, "Content-Type": "application/json" },
         body: JSON.stringify(body),
+        signal: AbortSignal.timeout(45_000),
       });
     } catch {
       lastStatus = 0;
       continue;
     }
     lastStatus = res.status;
-    if (res.status === 402) throw new OutOfCreditsError();
-    if (res.status === 429 || res.status >= 500) continue;
-    if (!res.ok) throw new ModelCallError(`The model call failed (HTTP ${res.status}).`);
+    if (res.status === 429) {
+      // A long retry delay means the quota (for example the free tier's daily limit) is used up: stop now.
+      const delay = retryDelaySeconds(await res.json().catch(() => null));
+      if (delay > 10) throw new ModelCallError(`Gemini quota is used up; it resets in about ${formatDelay(delay)}.`);
+      continue;
+    }
+    if (res.status >= 500) continue;
+    if (!res.ok) throw new ModelCallError(`The Gemini call failed (HTTP ${res.status}).`);
 
     const json = await res.json();
-    const content = json?.choices?.[0]?.message?.content;
-    if (typeof content !== "string") throw new ModelCallError("The model returned no text.");
+    const parts: { text?: string; thought?: boolean }[] = json?.candidates?.[0]?.content?.parts ?? [];
+    const text = parts.filter((p) => !p.thought && typeof p.text === "string").map((p) => p.text).join("");
+    if (!text) throw new ModelCallError("Gemini returned no text.");
     try {
-      return { data: parseJson(content), model: json.model ?? model, usage: json.usage };
+      return { data: parseJson(text), model, usage: json.usageMetadata };
     } catch {
       // Not valid JSON: hand back the raw text so the zod check fails and the single retry runs.
-      return { data: content, model: json.model ?? model, usage: json.usage };
+      return { data: text, model, usage: json.usageMetadata };
     }
   }
-  throw new ModelCallError(`The model is busy or unreachable (last status ${lastStatus || "network error"}). Try again.`);
+  throw new ModelCallError(`Gemini is busy or unreachable (last status ${lastStatus || "network error"}).`);
 };

@@ -1,8 +1,8 @@
 import { after, NextResponse } from "next/server";
 import { z } from "zod";
 import { VersionMismatchError } from "@/lib/compare";
-import { evaluate, InputError, ModelOutputError } from "@/lib/evaluate";
-import { callModel, ModelCallError, NotConfiguredError, OutOfCreditsError } from "@/lib/llm";
+import { evaluate, InputError } from "@/lib/evaluate";
+import { aiConfigured, callModel } from "@/lib/llm";
 import { logAttempt } from "@/lib/logging";
 import { getRubric } from "@/lib/rubrics";
 import { PreviousAttemptSchema, RubricSchema } from "@/lib/schema";
@@ -40,7 +40,12 @@ export async function POST(req: Request) {
   }
 
   try {
-    const result = await evaluate({ rubric, answer: body.answer, callModel, previous: body.previous });
+    const result = await evaluate({
+      rubric,
+      answer: body.answer,
+      callModel: aiConfigured() ? callModel : undefined,
+      previous: body.previous,
+    });
     after(() =>
       logAttempt({
         result,
@@ -53,9 +58,6 @@ export async function POST(req: Request) {
     return NextResponse.json(result);
   } catch (e) {
     if (e instanceof InputError || e instanceof VersionMismatchError) return fail(e.message, 400);
-    if (e instanceof NotConfiguredError) return fail(e.message, 503);
-    if (e instanceof OutOfCreditsError) return fail(e.message, 402);
-    if (e instanceof ModelOutputError || e instanceof ModelCallError) return fail(e.message, 502);
     return fail("Something went wrong while marking. Please try again.", 500);
   }
 }

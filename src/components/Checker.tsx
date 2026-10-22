@@ -80,6 +80,7 @@ export default function Checker() {
     try {
       const d = await post("/api/rubric", { question: cQuestion, modelAnswer: cModel, maxMarks: cMarks });
       setDraft(d.rubric);
+      setSelected(CUSTOM);
     } catch (e) {
       setError((e as Error).message);
     } finally {
@@ -121,7 +122,7 @@ export default function Checker() {
         Write a CA Final Audit answer. See exactly which marks you lost, rewrite, and watch the marks go up.
       </p>
       <p className="mt-2 rounded bg-amber-50 px-3 py-2 text-sm text-amber-900">
-        AI-estimated practice marks, not ICAI marks. Marking schemes are unverified drafts, not ICAI text.
+        AI-estimated practice marks, not ICAI marks. Every mark must be backed by a quote from your answer. Marking schemes are unverified drafts, not ICAI text.
       </p>
 
       <section className="mt-6 space-y-3 rounded-lg border bg-white p-4">
@@ -247,11 +248,17 @@ function Result({ title, r }: { title: string; r: AttemptResult }) {
         {r.estimatedMarks} <span className="text-lg font-normal text-slate-500">/ {r.maxMarks}</span>
       </p>
       <p className="text-xs text-slate-500">
-        AI-estimated practice marks, not ICAI marks · {r.verified ? "Verified marking scheme" : "Unverified marking scheme"} · model {r.model}
+        {r.aiUsed ? "AI-estimated" : "Rule-based"} practice marks, not ICAI marks · {r.verified ? "Verified marking scheme" : "Unverified marking scheme"} ·{" "}
+        {r.aiUsed ? `AI: ${r.model}` : r.model}
       </p>
+      {r.aiError && (
+        <p className="mt-2 rounded bg-slate-100 p-2 text-sm text-slate-700">
+          The AI was not available ({r.aiError.replace(/\.$/, "")}), so this was marked by the local rule-based marker instead.
+        </p>
+      )}
       {r.needsReview && (
         <p className="mt-2 rounded bg-purple-50 p-2 text-sm text-purple-900">
-          Up to {r.pendingReviewMarks} marks are pending review because the AI could not back them with a quote from your answer.
+          Up to {r.pendingReviewMarks} marks are pending review because they could not be backed with a quote from your answer.
         </p>
       )}
 

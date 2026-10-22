@@ -1,12 +1,14 @@
 import { randomUUID } from "node:crypto";
 import { compareAttempts } from "./compare";
 import type { ModelCaller } from "./llm";
+import { localMark, MARKER_NAME } from "./localmark";
 import { EXAMINER_SYSTEM, examinerUser } from "./prompt";
 import { missingKeywords, missingReferences } from "./references";
 import {
   MODEL_OUTPUT_JSON_SCHEMA,
   ModelOutputSchema,
   type AttemptResult,
+  type ModelOutput,
   type PreviousAttempt,
   type Rubric,
 } from "./schema";
@@ -17,24 +19,13 @@ export const MAX_ANSWER_CHARS = 8000;
 export class InputError extends Error {}
 export class ModelOutputError extends Error {
   constructor() {
-    super("The AI returned an answer we could not read, twice. Please try again.");
+    super("The AI returned an answer we could not read, twice.");
   }
 }
 
-export async function evaluate(args: {
-  rubric: Rubric;
-  answer: string;
-  callModel: ModelCaller;
-  previous?: PreviousAttempt;
-}): Promise<AttemptResult> {
-  const { rubric, callModel, previous } = args;
-  const answer = args.answer.trim();
-  if (answer.length < 20) throw new InputError("Write a little more first. The answer is too short to mark.");
-  if (answer.length > MAX_ANSWER_CHARS) throw new InputError(`The answer is too long (limit ${MAX_ANSWER_CHARS} characters).`);
-
+/** Ask the model for per-point judgements; validate with zod and retry once. */
+async function aiMark(rubric: Rubric, answer: string, callModel: ModelCaller): Promise<{ output: ModelOutput; model: string }> {
   const user = examinerUser(rubric, answer);
-  let parsed = null as ReturnType<typeof ModelOutputSchema.safeParse> | null;
-  let modelName = "";
   for (let i = 0; i < 2; i++) {
     const res = await callModel({
       system: EXAMINER_SYSTEM,
@@ -42,13 +33,42 @@ export async function evaluate(args: {
       schema: MODEL_OUTPUT_JSON_SCHEMA,
       schemaName: "marking",
     });
-    modelName = res.model;
-    parsed = ModelOutputSchema.safeParse(res.data);
-    if (parsed.success) break;
+    const parsed = ModelOutputSchema.safeParse(res.data);
+    if (parsed.success) return { output: parsed.data, model: res.model };
   }
-  if (!parsed || !parsed.success) throw new ModelOutputError();
+  throw new ModelOutputError();
+}
 
-  const points = scorePoints(rubric, answer, parsed.data);
+/**
+ * Marks an answer. With a model caller the AI proposes judgements; without one (or if the AI fails)
+ * the local rule-based marker does. Either way, code verifies quotes and decides the numbers.
+ */
+export async function evaluate(args: {
+  rubric: Rubric;
+  answer: string;
+  callModel?: ModelCaller;
+  previous?: PreviousAttempt;
+}): Promise<AttemptResult> {
+  const { rubric, callModel, previous } = args;
+  const answer = args.answer.trim();
+  if (answer.length < 20) throw new InputError("Write a little more first. The answer is too short to mark.");
+  if (answer.length > MAX_ANSWER_CHARS) throw new InputError(`The answer is too long (limit ${MAX_ANSWER_CHARS} characters).`);
+
+  let output: ModelOutput;
+  let model = MARKER_NAME;
+  let aiError: string | undefined;
+  if (callModel) {
+    try {
+      ({ output, model } = await aiMark(rubric, answer, callModel));
+    } catch (e) {
+      aiError = (e as Error).message;
+      output = localMark(rubric, answer);
+    }
+  } else {
+    output = localMark(rubric, answer);
+  }
+
+  const points = scorePoints(rubric, answer, output);
   const t = totals(rubric, points);
   const result: AttemptResult = {
     attemptId: randomUUID(),
@@ -60,8 +80,10 @@ export async function evaluate(args: {
     points,
     missingReferences: missingReferences(rubric, answer),
     missingKeywords: missingKeywords(rubric, answer),
-    presentationTips: parsed.data.presentationTips.map((s) => s.trim()).filter(Boolean).slice(0, 3),
-    model: modelName,
+    presentationTips: output.presentationTips.map((s) => s.trim()).filter(Boolean).slice(0, 3),
+    model,
+    aiUsed: model !== MARKER_NAME,
+    aiError,
     createdAt: new Date().toISOString(),
   };
   if (previous) result.comparison = compareAttempts(previous, rubric.id, rubric.version, points, t.estimatedMarks);

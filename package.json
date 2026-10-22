@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "test": "vitest run",
-    "check-model": "node --env-file=.env scripts/check-model.mjs",
     "agreement": "node scripts/agreement.mjs"
   },
   "dependencies": {
@@ -26,3 +25,4 @@
     "vitest": "^3.2.0"
   }
 }
+
