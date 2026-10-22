@@ -9,7 +9,7 @@ const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
 export const metadata: Metadata = {
   title: "MarkMate – Stop losing marks on answers you thought were right",
   description:
-    "Practise CA Final Audit with feedback that shows what you missed, why it matters, and how to write a better answer next time.",
+    "Practise CA answer-writing with feedback that shows what you missed, why it matters, and how to write a better answer next time. Evaluation starts with CA Final Audit.",
 };
 
 export const viewport: Viewport = { themeColor: "#f7f6f2" };

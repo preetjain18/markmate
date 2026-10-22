@@ -13,31 +13,57 @@ type Props = {
   busy: boolean;
   /** Validation message shown under the editor (empty answer, too short, ...). */
   problem: string | null;
-  hasResult: boolean;
+  /** Element id for the textarea (also used for focus and help/error ids). */
+  id?: string;
+  label?: string;
+  help?: string;
+  submitLabel?: string;
+  /** Short note in the footer, e.g. where the draft is kept. Only pass it when it's true. */
+  savedNote?: string;
   /** Set when this question cannot be evaluated (no rubric yet). Writing still works; evaluating is blocked. */
   unavailable?: string;
+  /** Once evaluated, an attempt is read-only. Starting over is an explicit choice. */
+  locked?: { message: string; onStartOver: () => void };
+  className?: string;
 };
 
-/** The main answer editor with word count, instructions, validation and the Evaluate button. */
+/** An answer editor with word count, instructions, validation and a submit button. Used for Attempt 1 and rewrites. */
 export const AnswerWorkspace = forwardRef<HTMLTextAreaElement, Props>(function AnswerWorkspace(
-  { value, onChange, onSubmit, maxMarks, busy, problem, hasResult, unavailable },
+  {
+    value,
+    onChange,
+    onSubmit,
+    maxMarks,
+    busy,
+    problem,
+    id = "answer",
+    label = "Your answer",
+    help = "Answer in your own words. Marks are only given for points your answer actually makes.",
+    submitLabel = "Evaluate My Answer",
+    savedNote,
+    unavailable,
+    locked,
+    className,
+  },
   ref,
 ) {
   const words = countWords(value);
   const chars = value.trim().length;
   const nearLimit = chars > MAX_ANSWER_CHARS * 0.85;
+  const readOnly = busy || !!locked;
   return (
-    <Card className={cn("overflow-hidden transition-shadow focus-within:ring-2", problem ? "focus-within:ring-error" : "focus-within:ring-brand")}>
+    <Card className={cn("overflow-hidden transition-shadow", !readOnly && "focus-within:ring-2", problem ? "focus-within:ring-error" : "focus-within:ring-brand", className)}>
       <form
         noValidate
         onSubmit={(e) => {
           e.preventDefault();
-          onSubmit();
+          if (!locked) onSubmit();
         }}
       >
         <div className="flex items-center justify-between gap-3 border-b border-line px-5 py-3">
-          <label htmlFor="answer" className="font-display text-[15px] font-semibold">
-            Your answer
+          <label htmlFor={id} className="flex items-center gap-2 font-display text-[15px] font-semibold">
+            {locked && <Icon name="shield" className="text-muted" />}
+            {label}
           </label>
           {maxMarks !== undefined && <span className="text-[13px] text-muted">Out of {maxMarks} marks</span>}
         </div>
@@ -48,23 +74,26 @@ export const AnswerWorkspace = forwardRef<HTMLTextAreaElement, Props>(function A
             </Alert>
           </div>
         )}
-        <p id="answer-help" className="px-5 pt-3 text-[13px] text-muted">
-          Answer in your own words. Marks are only given for points your answer actually makes.
+        <p id={`${id}-help`} className="px-5 pt-3 text-[13px] text-muted">
+          {locked ? locked.message : help}
         </p>
         <textarea
           ref={ref}
-          id="answer"
+          id={id}
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          readOnly={busy}
+          readOnly={readOnly}
           rows={14}
           placeholder="Write your answer here…"
-          aria-describedby={cn("answer-help", problem && "answer-error")}
+          aria-describedby={cn(`${id}-help`, problem && `${id}-error`)}
           aria-invalid={problem ? true : undefined}
-          className="block min-h-[18rem] w-full resize-y bg-surface px-5 py-3 text-[16px] leading-[1.75] text-ink outline-none placeholder:text-muted/70 read-only:text-ink/70 sm:min-h-[22rem]"
+          className={cn(
+            "block min-h-[18rem] w-full resize-y px-5 py-3 text-[16px] leading-[1.75] text-ink outline-none placeholder:text-muted/70 sm:min-h-[22rem]",
+            locked ? "bg-canvas text-ink/80" : "bg-surface read-only:text-ink/70",
+          )}
         />
         {problem && (
-          <p id="answer-error" role="alert" className="flex items-center gap-1.5 px-5 pb-2 text-sm font-medium text-error">
+          <p id={`${id}-error`} role="alert" className="flex items-center gap-1.5 px-5 pb-2 text-sm font-medium text-error">
             <Icon name="error" /> {problem}
           </p>
         )}
@@ -77,21 +106,27 @@ export const AnswerWorkspace = forwardRef<HTMLTextAreaElement, Props>(function A
                 · {chars.toLocaleString("en-IN")} / {MAX_ANSWER_CHARS.toLocaleString("en-IN")} characters
               </span>
             )}
-            <span> · Draft kept in this browser</span>
+            {savedNote && <span> · {savedNote}</span>}
           </p>
-          <Button type="submit" disabled={busy || !!unavailable} aria-busy={busy} className="w-full sm:w-auto">
-            {busy ? (
-              <>
-                <Icon name="loader" className="animate-spin" /> Evaluating…
-              </>
-            ) : unavailable ? (
-              "Evaluation not available"
-            ) : (
-              <>
-                {hasResult ? "Evaluate Again" : "Evaluate My Answer"} <Icon name="arrow" />
-              </>
-            )}
-          </Button>
+          {locked ? (
+            <Button type="button" variant="secondary" size="sm" onClick={locked.onStartOver} disabled={busy} className="w-full sm:w-auto">
+              <Icon name="refresh" /> Start over
+            </Button>
+          ) : (
+            <Button type="submit" disabled={busy || !!unavailable} aria-busy={busy} className="w-full sm:w-auto">
+              {busy ? (
+                <>
+                  <Icon name="loader" className="animate-spin" /> Evaluating…
+                </>
+              ) : unavailable ? (
+                "Evaluation not available"
+              ) : (
+                <>
+                  {submitLabel} <Icon name="arrow" />
+                </>
+              )}
+            </Button>
+          )}
         </div>
       </form>
     </Card>

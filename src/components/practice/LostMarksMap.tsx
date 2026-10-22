@@ -65,7 +65,7 @@ export default function LostMarksMap({
               </h2>
               <p className="mt-2 text-[16px] leading-relaxed text-ink">{assessment}</p>
               <div className="mt-3 flex flex-wrap gap-2">
-                <Badge tone="neutral">
+                <Badge tone="neutral" wrap>
                   <Icon name="info" className="size-3.5" />
                   {result.aiUsed ? "AI-generated practice estimate" : "Rule-based practice estimate"} · not an ICAI mark
                 </Badge>

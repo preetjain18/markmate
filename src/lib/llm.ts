@@ -26,6 +26,13 @@ export function getModelId(): string {
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
+/** At most 4 tries per call (1 + 3 retries on 429/5xx/network errors). */
+export const MAX_TRIES = 4;
+/** One Gemini request may take at most this long. */
+export const REQUEST_TIMEOUT_MS = 25_000;
+/** All tries of one call together stay within this budget (two calls fit inside the 60 s route limit). */
+export const CALL_BUDGET_MS = 28_000;
+
 /** Reads google.rpc.RetryInfo.retryDelay (e.g. "83978.2s") from a 429 body; 0 if absent. */
 function retryDelaySeconds(body: unknown): number {
   const details = (body as { error?: { details?: { retryDelay?: string }[] } })?.error?.details ?? [];
@@ -61,16 +68,21 @@ export const callModel: ModelCaller = async ({ system, user, schema }) => {
     },
   };
 
+  // Bounded retries inside a time budget, so that even with the single zod retry in evaluate()
+  // the whole request finishes (or falls back to the local marker) before the 60-second route limit.
+  const deadline = Date.now() + CALL_BUDGET_MS;
   let lastStatus = 0;
-  for (let attempt = 0; attempt < 4; attempt++) {
+  for (let attempt = 0; attempt < MAX_TRIES; attempt++) {
     if (attempt > 0) await sleep(800 * 2 ** (attempt - 1));
+    const remaining = deadline - Date.now();
+    if (remaining < 1_000) break;
     let res: Response;
     try {
       res = await fetch(`${BASE_URL}/models/${model}:generateContent`, {
         method: "POST",
         headers: { "x-goog-api-key": key, "Content-Type": "application/json" },
         body: JSON.stringify(body),
-        signal: AbortSignal.timeout(45_000),
+        signal: AbortSignal.timeout(Math.min(REQUEST_TIMEOUT_MS, remaining)),
       });
     } catch {
       lastStatus = 0;

@@ -2,13 +2,16 @@ import Link from "next/link";
 import { MobileMenu, type NavItem } from "./site-nav";
 import { ButtonLink, Icon, Logo, NavLink } from "./ui";
 
-const navItems = (active?: "home" | "practice"): NavItem[] => [
+type Page = "home" | "practice" | "progress";
+
+const navItems = (active?: Page): NavItem[] => [
   { href: "/#how-it-works", label: "How It Works" },
   { href: "/#features", label: "Features" },
   { href: "/practice", label: "Practice", active: active === "practice" },
+  { href: "/progress", label: "Progress", active: active === "progress" },
 ];
 
-export function SiteHeader({ active }: { active?: "home" | "practice" }) {
+export function SiteHeader({ active }: { active?: Page }) {
   const items = navItems(active);
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-canvas">
@@ -55,6 +58,9 @@ export function SiteFooter() {
             </Link>
             <Link href="/practice" className="text-muted transition-colors hover:text-ink">
               Practice
+            </Link>
+            <Link href="/progress" className="text-muted transition-colors hover:text-ink">
+              Progress
             </Link>
           </nav>
         </div>

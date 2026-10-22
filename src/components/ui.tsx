@@ -233,9 +233,29 @@ export function Panel({
 
 /* --------------------------------- Badges --------------------------------- */
 
-export function Badge({ tone = "neutral", dot, className, children }: { tone?: Tone; dot?: boolean; className?: string; children: React.ReactNode }) {
+/** Short status label. Stays on one line unless `wrap` is set (for longer sentences on narrow screens). */
+export function Badge({
+  tone = "neutral",
+  dot,
+  wrap,
+  className,
+  children,
+}: {
+  tone?: Tone;
+  dot?: boolean;
+  wrap?: boolean;
+  className?: string;
+  children: React.ReactNode;
+}) {
   return (
-    <span className={cn("inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-2.5 py-0.5 text-[13px] font-medium ring-1 ring-inset", TONE[tone].badge, className)}>
+    <span
+      className={cn(
+        "inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[13px] font-medium ring-1 ring-inset",
+        wrap ? "whitespace-normal" : "whitespace-nowrap",
+        TONE[tone].badge,
+        className,
+      )}
+    >
       {dot && <span className={cn("size-1.5 rounded-full", TONE[tone].dot)} />}
       {children}
     </span>

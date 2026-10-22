@@ -1,14 +1,16 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { answerProblem, countWords, MIN_ANSWER_CHARS } from "@/lib/answer";
+import { answerProblem } from "@/lib/answer";
 import type { CatalogView } from "@/lib/catalog-types";
+import { appendHistory, failedRecord, recordFromResult, type QuestionMeta } from "@/lib/history";
 import type { AttemptResult, Rubric } from "@/lib/schema";
 import { cn, fmt } from "@/lib/ui";
-import { Button, Card, ErrorMessage, Icon, LoadingState, Pill, Textarea } from "../ui";
+import { Button, Card, ErrorMessage, Icon, LoadingState, Pill } from "../ui";
 import { AnswerWorkspace } from "./AnswerWorkspace";
 import { Breadcrumbs, LevelSelector, QuestionCard, SubjectBrowser, SubjectGrid, type Crumb } from "./Browse";
 import Comparison from "./Comparison";
+import { ImprovementLab } from "./ImprovementLab";
 import LostMarksMap from "./LostMarksMap";
 
 const CUSTOM = "__custom__";
@@ -83,6 +85,14 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
   const [first, setFirst] = useState<AttemptResult | null>(null);
   const [firstAnswer, setFirstAnswer] = useState("");
   const [second, setSecond] = useState<AttemptResult | null>(null);
+  // The exact text each evaluated attempt was marked on, so evidence always lines up with what was submitted.
+  const [secondAnswer, setSecondAnswer] = useState("");
+  // Number of the latest evaluated rewrite (2, 3, ...); 0 before any rewrite is evaluated.
+  const [attemptNo, setAttemptNo] = useState(0);
+  // Custom questions: the marking scheme Attempt 1 was marked with, reused for every rewrite.
+  const [firstRubric, setFirstRubric] = useState<Rubric | null>(null);
+  const [rewriteProblem, setRewriteProblem] = useState<string | null>(null);
+  const [triedRewrite, setTriedRewrite] = useState(false);
   const [busy, setBusy] = useState<Busy>(null);
   const [failure, setFailure] = useState<{ attempt: 1 | 2; message: string } | null>(null);
   const [draftError, setDraftError] = useState("");
@@ -112,22 +122,66 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
     question?.support === "none" ? "This question has no marking scheme in MarkMate yet, so it can't be given marks. You can still write and keep your answer here." : undefined;
   const inWorkspace = isCustom || !!question;
 
-  // Remember the chosen level (read after mount so server and client render the same first).
+  // Open from a link (?level=&subject=&chapter=&topic=&question=), e.g. from the progress dashboard;
+  // otherwise restore the remembered level. Read after mount so server and client render the same first.
   useEffect(() => {
+    const p = new URLSearchParams(window.location.search);
+    const q = catalog.questions.find((x) => x.id === p.get("question"));
+    const lv = catalog.levels.find((l) => l.id === (q?.levelId ?? p.get("level")));
+    const sb = lv?.subjects.find((s) => s.id === (q?.subjectId ?? p.get("subject")));
+    const ch = sb?.chapters.find((c) => c.id === (q?.chapterId ?? p.get("chapter")));
+    const tp = ch?.topics.find((t) => t.id === (q?.topicId ?? p.get("topic")));
+    if (lv) {
+      setLevelId(lv.id);
+      store.set(LEVEL_KEY, lv.id);
+      if (sb) setSubjectId(sb.id);
+      if (ch) setChapterId(ch.id);
+      if (tp) setTopicId(tp.id);
+      if (q) setQuestionId(q.id);
+      return;
+    }
     const saved = store.get(LEVEL_KEY);
     if (saved && catalog.levels.some((l) => l.id === saved)) setLevelId(saved);
-  }, [catalog.levels]);
+  }, [catalog]);
+
+  /** Where an attempt belongs in the catalog, for the progress history. */
+  const historyMeta = (): QuestionMeta =>
+    question
+      ? { questionId: question.id, questionTitle: question.title, levelId: question.levelId, subjectId: question.subjectId, chapterId: question.chapterId, topicId: question.topicId }
+      : { questionId: null, questionTitle: cQuestion.trim().slice(0, 80) || "Your own question", levelId: null, subjectId: null, chapterId: null, topicId: null };
 
   // Each question keeps its own draft in this browser. Changing question also clears the previous question's results.
   useEffect(() => {
     setAnswer(questionId ? (store.get(draftKey(questionId)) ?? "") : "");
+    resetAttempts();
+  }, [questionId]);
+
+  function resetAttempts() {
     setFirst(null);
+    setFirstAnswer("");
+    setFirstRubric(null);
     setSecond(null);
+    setSecondAnswer("");
+    setAttemptNo(0);
     setRewrite("");
     setFailure(null);
     setProblem(null);
     setTriedSubmit(false);
-  }, [questionId]);
+    setRewriteProblem(null);
+    setTriedRewrite(false);
+  }
+
+  const rewriteCheck = (text: string) =>
+    answerProblem(text) ??
+    (text.trim() === firstAnswer.trim()
+      ? "This is the same as Attempt 1. Change your answer before evaluating it."
+      : second && text.trim() === secondAnswer.trim()
+        ? `This is the same as Attempt ${attemptNo}, which was already evaluated.`
+        : null);
+  useEffect(() => {
+    if (triedRewrite) setRewriteProblem(rewriteCheck(rewrite));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [rewrite, triedRewrite]);
   useEffect(() => {
     if (questionId) store.set(draftKey(questionId), answer);
   }, [questionId, answer]);
@@ -211,30 +265,59 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
     void mark(1);
   }
 
-  async function mark(attemptNo: 1 | 2) {
+  function submitRewrite() {
+    setTriedRewrite(true);
+    const p = rewriteCheck(rewrite);
+    setRewriteProblem(p);
+    if (p) {
+      document.getElementById("rewrite")?.focus();
+      return;
+    }
+    void mark(2);
+  }
+
+  /** Attempt 1 is locked once evaluated. Starting over is explicit, and confirmed if a rewrite would be lost. */
+  function startOver() {
+    if (inFlight.current) return;
+    const losesWork = !!second || rewrite.trim() !== firstAnswer.trim();
+    if (losesWork && !window.confirm("Start over? Your Attempt 1 results and your rewrite will be cleared. Your Attempt 1 text stays in the editor.")) return;
+    resetAttempts();
+    setTimeout(() => editorRef.current?.focus(), 50);
+  }
+
+  /** kind 1 = the original answer; kind 2 = a rewrite (numbered 2, 3, ... and always compared with Attempt 1). */
+  async function mark(kind: 1 | 2) {
     if (inFlight.current || unavailable) return; // never send twice at once, never send an unsupported question
+    if (kind === 2 && !first) return;
     inFlight.current = true;
-    setBusy(attemptNo === 1 ? "mark1" : "mark2");
+    setBusy(kind === 1 ? "mark1" : "mark2");
     setFailure(null);
-    const text = attemptNo === 1 ? answer : rewrite;
+    const text = kind === 1 ? answer : rewrite;
+    const number = kind === 1 ? 1 : attemptNo ? attemptNo + 1 : 2;
     try {
-      const body: Record<string, unknown> = { answer: text, sessionId: sessionId(), attemptNo };
-      if (isCustom) body.rubric = draft;
+      const body: Record<string, unknown> = { answer: text, sessionId: sessionId(), attemptNo: number };
+      if (isCustom) body.rubric = kind === 1 ? draft : firstRubric;
       else body.questionId = questionId;
-      if (attemptNo === 2 && first) body.previous = first;
+      if (kind === 2) body.previous = first;
       const result = await post<AttemptResult>("/api/evaluate", body);
-      if (attemptNo === 1) {
+      appendHistory(recordFromResult(result, historyMeta(), number, kind === 2 ? first!.attemptId : null));
+      if (kind === 1) {
         setFirst(result);
         setFirstAnswer(text);
-        setSecond(null);
-        setRewrite(text);
+        setFirstRubric(isCustom ? draft : null);
+        setRewrite(text); // start the rewrite from Attempt 1; never the other way round
         scrollTo(mapRef);
       } else {
         setSecond(result);
+        setSecondAnswer(text);
+        setAttemptNo(number);
+        setTriedRewrite(false);
+        setRewriteProblem(null);
         scrollTo(cmpRef);
       }
     } catch (e) {
-      setFailure({ attempt: attemptNo, message: (e as Error).message });
+      setFailure({ attempt: kind, message: (e as Error).message });
+      appendHistory(failedRecord(historyMeta(), number, kind === 2 ? first!.attemptId : null, (e as Error).message));
     } finally {
       inFlight.current = false;
       setBusy(null);
@@ -310,8 +393,9 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
       })();
 
   const step = second ? 4 : first ? (rewrite !== firstAnswer ? 3 : 2) : answer.trim() ? 1 : 0;
-  const toRecover = first?.points.filter((p) => p.aiMarks < p.allocated) ?? [];
   const evaluating = busy === "mark1" || busy === "mark2";
+  const context = crumbs.map((c) => c.label);
+  const latestMapId = "latest-map";
 
   return (
     <div className="mx-auto max-w-4xl px-4 pb-24 pt-6 sm:px-6">
@@ -356,8 +440,10 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
           maxMarks={maxMarks}
           busy={busy === "mark1"}
           problem={problem}
-          hasResult={!!first}
           unavailable={unavailable}
+          label={first ? "Attempt 1 · your submitted answer" : "Your answer"}
+          savedNote={first ? undefined : "Draft kept in this browser"}
+          locked={first ? { message: "Attempt 1 is locked so its evaluation stays exactly as marked. Improve it in the Improvement Lab below.", onStartOver: startOver } : undefined}
         />
 
         <div aria-live="polite" className="space-y-4 empty:hidden">
@@ -380,70 +466,47 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
         {/* Improvement Lab */}
         {first && busy !== "mark1" && (
           <div ref={labRef} className="scroll-mt-24">
-          <Card className="animate-fade-in overflow-hidden">
-            <div className="border-b border-line p-5 sm:p-7">
-              <p className="font-display text-sm font-semibold text-brand-600">Improvement Lab</p>
-              <h2 className="mt-1 text-2xl font-semibold tracking-tight">Rewrite and win the marks back</h2>
-              <p className="mt-1 text-sm text-muted">Your rewrite is re-marked with exactly the same marking scheme, so the comparison is fair.</p>
-            </div>
-            <div className="grid gap-0 lg:grid-cols-[1fr_1.3fr]">
-              <div className="border-b border-line p-5 lg:border-b-0 lg:border-r sm:p-7">
-                <p className="text-sm font-medium">{toRecover.length ? `${toRecover.length} point${toRecover.length > 1 ? "s" : ""} to fix` : "Nothing to fix"}</p>
-                <ul className="mt-3 space-y-3">
-                  {toRecover.map((p) => (
-                    <li key={p.pointId} className="rounded-xl bg-canvas p-3 ring-1 ring-line">
-                      <div className="flex items-start justify-between gap-2">
-                        <p className="text-sm font-medium leading-snug">{p.label}</p>
-                        <span className="shrink-0 font-mono text-xs text-error">−{fmt(p.allocated - p.aiMarks)}</span>
-                      </div>
-                      {p.toRecover && <p className="mt-1.5 text-[13px] leading-relaxed text-muted">{p.toRecover}</p>}
-                    </li>
-                  ))}
-                  {!toRecover.length && <li className="text-sm text-muted">You secured every point. Try another question.</li>}
-                </ul>
-              </div>
-              <div className="flex flex-col">
-                <div className="flex items-center justify-between px-5 pt-4 sm:px-7">
-                  <p className="text-sm font-medium">Attempt 2</p>
-                  <p className="text-xs tabular-nums text-muted">
-                    {countWords(rewrite)} words ({countWords(rewrite) - countWords(firstAnswer) >= 0 ? "+" : ""}
-                    {countWords(rewrite) - countWords(firstAnswer)})
-                  </p>
-                </div>
-                <div className="mt-3 flex flex-1 px-5 sm:px-7">
-                  <Textarea id="rewrite" aria-label="Attempt 2" value={rewrite} onChange={(e) => setRewrite(e.target.value)} readOnly={busy === "mark2"} rows={14} className="flex-1 px-4" />
-                </div>
-                <div className="flex items-center justify-between gap-3 px-5 py-4 sm:px-7">
-                  <p className="text-xs text-muted">Extra length alone earns nothing.</p>
-                  <Button
-                    onClick={() => mark(2)}
-                    disabled={!!busy || rewrite.trim().length < MIN_ANSWER_CHARS || rewrite.trim() === firstAnswer.trim()}
-                    aria-busy={busy === "mark2"}
-                  >
-                    {busy === "mark2" ? "Re-marking…" : "Re-mark my rewrite"} <Icon name="arrow" />
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </Card>
+            <ImprovementLab
+              context={context}
+              maxMarks={first.maxMarks}
+              first={first}
+              firstAnswer={firstAnswer}
+              attemptNo={attemptNo ? attemptNo + 1 : 2}
+              rewrite={rewrite}
+              onRewrite={setRewrite}
+              onSubmit={submitRewrite}
+              busy={busy === "mark2"}
+              problem={rewriteProblem}
+              failure={failure?.attempt === 2 ? failure.message : null}
+              onRetry={() => mark(2)}
+              onBackToMap={() => mapRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })}
+            />
           </div>
         )}
-
-        <div aria-live="polite" className="space-y-4 empty:hidden">
-          {busy === "mark2" && <LoadingState message="Re-marking your rewrite…" detail="Using the same marking scheme as your first attempt." />}
-          {failure?.attempt === 2 && busy !== "mark2" && <RetryError message={failure.message} onRetry={() => mark(2)} />}
-        </div>
 
         <div ref={cmpRef} className="scroll-mt-24 space-y-6">
           {first && second && busy !== "mark2" && (
             <>
-              <Comparison first={first} second={second} />
-              <details className="group">
-                <summary className="flex cursor-pointer list-none items-center gap-2 text-sm font-medium text-muted hover:text-ink">
-                  <Icon name="arrow" className="transition group-open:rotate-90" /> See the full Lost Marks Map for Attempt 2
+              <Comparison
+                first={first}
+                second={second}
+                attemptNo={attemptNo}
+                onPractiseAnother={backToList}
+                onReviewLostMarks={() => {
+                  const d = document.getElementById(latestMapId) as HTMLDetailsElement | null;
+                  if (d) {
+                    d.open = true;
+                    d.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }
+                }}
+                onReviseAgain={() => focusAfterScroll(labRef, "rewrite")}
+              />
+              <details id={latestMapId} className="group scroll-mt-24">
+                <summary className="flex cursor-pointer list-none items-center gap-2 rounded text-sm font-medium text-muted hover:text-ink [&::-webkit-details-marker]:hidden">
+                  <Icon name="chevron" className="transition-transform group-open:rotate-90" /> Full Lost Marks Map for Attempt {attemptNo}
                 </summary>
                 <div className="mt-4">
-                  <LostMarksMap result={second} answer={rewrite} title="Attempt 2 · Lost Marks Map" />
+                  <LostMarksMap result={second} answer={secondAnswer} title={`Attempt ${attemptNo} · Your results`} />
                 </div>
               </details>
             </>

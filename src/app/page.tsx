@@ -21,7 +21,7 @@ const PROBLEMS: { icon: IconName; title: string; body: string }[] = [
 ];
 
 const STEPS: { icon: IconName; title: string; body: string }[] = [
-  { icon: "notebook", title: "Practise", body: "Choose a CA Final Audit question and write your answer." },
+  { icon: "notebook", title: "Practise", body: "Choose your CA level, subject and question, and write your answer." },
   {
     icon: "scan",
     title: "Find Lost Marks",
@@ -39,13 +39,14 @@ export default function Home() {
         <section className="border-b border-line">
           <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-14 sm:px-6 md:py-20 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:py-24">
             <div className="animate-fade-in">
-              <Eyebrow>For CA Final Audit</Eyebrow>
+              <Eyebrow>For CA Foundation, Intermediate and Final students</Eyebrow>
               <h1 className="mt-4 text-hero-sm font-bold sm:text-[3.25rem] sm:leading-[1.08] lg:text-hero">
                 Stop losing marks on answers you thought were right.
               </h1>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
-                Practise CA Final Audit with feedback that shows what you missed, why it matters, and how to write a better answer next time.
+                Practise CA answer-writing with feedback that shows what you missed, why it matters, and how to write a better answer next time.
               </p>
+              <p className="mt-3 max-w-xl text-sm text-muted">Answer evaluation is available for CA Final Audit today. More subjects will follow as their marking schemes are added.</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <ButtonLink href="/practice" size="lg">
                   Start Practising <Icon name="arrow" />
