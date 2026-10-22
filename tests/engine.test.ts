@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { answerProblem, countWords, MAX_ANSWER_CHARS, MIN_ANSWER_CHARS } from "@/lib/answer";
 import { compareAttempts, VersionMismatchError } from "@/lib/compare";
 import { evaluate, InputError } from "@/lib/evaluate";
 import { quoteInAnswer } from "@/lib/evidence";
@@ -133,6 +134,28 @@ describe("AI marker with a mock model", () => {
     expect(r.aiUsed).toBe(false);
     expect(r.aiError).toMatch(/busy/);
     expect(r.estimatedMarks).toBeGreaterThan(0);
+  });
+});
+
+describe("answer validation (shared by page and server)", () => {
+  it("rejects empty, too short and too long answers with a message", () => {
+    expect(answerProblem("")).toMatch(/Write your answer/);
+    expect(answerProblem("   \n ")).toMatch(/Write your answer/);
+    expect(answerProblem("Too short.")).toMatch(/too short/);
+    expect(answerProblem("x".repeat(MAX_ANSWER_CHARS + 1))).toMatch(/too long/);
+    expect(answerProblem(strong)).toBeNull();
+  });
+
+  it("agrees with the server: anything the page accepts, evaluate accepts", async () => {
+    const edge = "a".repeat(MIN_ANSWER_CHARS);
+    expect(answerProblem(edge)).toBeNull();
+    await expect(evaluate({ rubric, answer: edge })).resolves.toBeTruthy();
+    await expect(evaluate({ rubric, answer: edge.slice(1) })).rejects.toBeInstanceOf(InputError);
+  });
+
+  it("counts words", () => {
+    expect(countWords("")).toBe(0);
+    expect(countWords("  going   concern\nbasis ")).toBe(3);
   });
 });
 

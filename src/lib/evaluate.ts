@@ -1,4 +1,5 @@
 import { randomUUID } from "node:crypto";
+import { MAX_ANSWER_CHARS, MIN_ANSWER_CHARS } from "./answer";
 import { compareAttempts } from "./compare";
 import type { ModelCaller } from "./llm";
 import { localMark, MARKER_NAME } from "./localmark";
@@ -14,7 +15,7 @@ import {
 } from "./schema";
 import { scorePoints, totals } from "./scoring";
 
-export const MAX_ANSWER_CHARS = 8000;
+export { MAX_ANSWER_CHARS };
 
 export class InputError extends Error {}
 export class ModelOutputError extends Error {
@@ -51,7 +52,7 @@ export async function evaluate(args: {
 }): Promise<AttemptResult> {
   const { rubric, callModel, previous } = args;
   const answer = args.answer.trim();
-  if (answer.length < 20) throw new InputError("Write a little more first. The answer is too short to mark.");
+  if (answer.length < MIN_ANSWER_CHARS) throw new InputError("Write a little more first. The answer is too short to mark.");
   if (answer.length > MAX_ANSWER_CHARS) throw new InputError(`The answer is too long (limit ${MAX_ANSWER_CHARS} characters).`);
 
   let output: ModelOutput;

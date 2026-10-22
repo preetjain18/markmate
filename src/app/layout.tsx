@@ -1,21 +1,22 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 
-const sans = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
-const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
+// Manrope: headings, navigation, buttons. Inter: body text and application UI.
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
 
 export const metadata: Metadata = {
-  title: "MarkMate – See exactly why you lost every mark",
+  title: "MarkMate – Stop losing marks on answers you thought were right",
   description:
-    "Practise CA Final Audit answers. MarkMate shows which marking points you missed, quotes the evidence from your answer, and proves what improved when you rewrite.",
+    "Practise CA Final Audit with feedback that shows what you missed, why it matters, and how to write a better answer next time.",
 };
 
-export const viewport: Viewport = { themeColor: "#f8f9fc" };
+export const viewport: Viewport = { themeColor: "#f7f6f2" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${sans.variable} ${mono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${manrope.variable}`}>
       <body className="min-h-screen font-sans antialiased">{children}</body>
     </html>
   );

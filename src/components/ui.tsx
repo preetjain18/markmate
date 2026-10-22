@@ -1,34 +1,110 @@
+/**
+ * MarkMate's reusable UI. Every component styles itself only with the design tokens
+ * from globals.css (bg-brand, text-muted, ring-line, rounded-card, font-display, ...).
+ */
 import Link from "next/link";
-import { cn } from "@/lib/ui";
+import {
+  ArrowDown,
+  ArrowLeft,
+  ArrowRight,
+  ArrowUp,
+  BookOpen,
+  Check,
+  ChevronRight,
+  CircleAlert,
+  CircleCheck,
+  CircleDashed,
+  Compass,
+  CornerDownRight,
+  FileQuestion,
+  GitCompareArrows,
+  Inbox,
+  Info,
+  Lightbulb,
+  ListChecks,
+  LoaderCircle,
+  Map as MapIcon,
+  Menu,
+  Minus,
+  NotebookPen,
+  PenLine,
+  Quote,
+  RefreshCw,
+  ScanSearch,
+  ShieldCheck,
+  Sparkles,
+  Target,
+  TriangleAlert,
+  X,
+  type LucideIcon,
+} from "lucide-react";
+import { cn, TONE, type Tone } from "@/lib/ui";
 
-type BtnProps = {
-  variant?: "primary" | "secondary" | "ghost";
-  size?: "md" | "lg" | "sm";
-  className?: string;
-  children: React.ReactNode;
-};
+/* ---------------------------------- Icons --------------------------------- */
 
-const btn = (variant: BtnProps["variant"] = "primary", size: BtnProps["size"] = "md") =>
+const ICONS = {
+  arrow: ArrowRight,
+  back: ArrowLeft,
+  check: Check,
+  x: X,
+  spark: Sparkles,
+  quote: Quote,
+  alert: TriangleAlert,
+  book: BookOpen,
+  up: ArrowUp,
+  down: ArrowDown,
+  minus: Minus,
+  edit: PenLine,
+  shield: ShieldCheck,
+  info: Info,
+  error: CircleAlert,
+  success: CircleCheck,
+  chevron: ChevronRight,
+  inbox: Inbox,
+  loader: LoaderCircle,
+  notebook: NotebookPen,
+  map: MapIcon,
+  refresh: RefreshCw,
+  target: Target,
+  partial: CircleDashed,
+  compass: Compass,
+  menu: Menu,
+  question: FileQuestion,
+  checklist: ListChecks,
+  compare: GitCompareArrows,
+  corner: CornerDownRight,
+  idea: Lightbulb,
+  scan: ScanSearch,
+} satisfies Record<string, LucideIcon>;
+export type IconName = keyof typeof ICONS;
+
+/** Lucide line icon. 16px by default, 1.75 stroke, inherits text colour. */
+export function Icon({ name, className }: { name: IconName; className?: string }) {
+  const C = ICONS[name];
+  return <C className={cn("size-4 shrink-0", className)} strokeWidth={1.75} aria-hidden />;
+}
+
+/* --------------------------------- Buttons -------------------------------- */
+
+type BtnVariant = "primary" | "secondary" | "ghost";
+type BtnSize = "sm" | "md" | "lg";
+type BtnProps = { variant?: BtnVariant; size?: BtnSize; className?: string; children: React.ReactNode };
+
+export const buttonClass = (variant: BtnVariant = "primary", size: BtnSize = "md") =>
   cn(
-    "inline-flex items-center justify-center gap-2 rounded-xl font-medium transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 disabled:pointer-events-none disabled:opacity-50",
-    size === "lg" && "h-12 px-6 text-[15px]",
-    size === "md" && "h-10 px-4 text-sm",
-    size === "sm" && "h-8 px-3 text-[13px]",
-    variant === "primary" &&
-      "bg-ink text-white shadow-[0_1px_0_rgb(255_255_255/0.15)_inset,0_8px_20px_-8px_rgb(11_16_32/0.6)] hover:-translate-y-px hover:bg-slate-800",
-    variant === "secondary" && "bg-white text-ink ring-1 ring-slate-200 shadow-soft hover:bg-slate-50 hover:ring-slate-300",
-    variant === "ghost" && "text-slate-600 hover:bg-slate-100 hover:text-ink",
+    "inline-flex items-center justify-center gap-2 rounded-control font-display font-semibold whitespace-nowrap",
+    "transition-colors duration-150 disabled:pointer-events-none disabled:opacity-45",
+    size === "sm" && "h-9 px-3.5 text-sm",
+    size === "md" && "h-11 px-5 text-[15px]",
+    size === "lg" && "h-12 px-6 text-base",
+    variant === "primary" && "bg-brand text-white hover:bg-brand-dark active:bg-brand-950",
+    variant === "secondary" && "bg-surface text-ink ring-1 ring-inset ring-line-strong hover:bg-canvas hover:ring-muted/40",
+    variant === "ghost" && "text-muted hover:bg-subtle hover:text-ink",
   );
 
-export function Button({
-  variant,
-  size,
-  className,
-  children,
-  ...rest
-}: BtnProps & React.ButtonHTMLAttributes<HTMLButtonElement>) {
+export function Button({ variant, size, className, children, ...rest }: BtnProps & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
-    <button className={cn(btn(variant, size), className)} {...rest}>
+    <button className={cn(buttonClass(variant, size), className)} {...rest}>
       {children}
     </button>
   );
@@ -36,74 +112,252 @@ export function Button({
 
 export function ButtonLink({ href, variant, size, className, children }: BtnProps & { href: string }) {
   return (
-    <Link href={href} className={cn(btn(variant, size), className)}>
+    <Link href={href} className={cn(buttonClass(variant, size), className)}>
       {children}
     </Link>
   );
 }
 
-export function Card({ className, children }: { className?: string; children: React.ReactNode }) {
-  return <div className={cn("rounded-2xl bg-white ring-1 ring-slate-200/80 shadow-soft", className)}>{children}</div>;
+/* ------------------------------- Form fields ------------------------------ */
+
+const controlClass =
+  "w-full rounded-control bg-surface px-3.5 text-[15px] text-ink ring-1 ring-inset ring-line-strong placeholder:text-muted/70 " +
+  "transition-shadow duration-150 hover:ring-muted/50 focus:outline-none focus:ring-2 focus:ring-brand disabled:bg-subtle";
+
+export function Input({ className, invalid, ...rest }: React.InputHTMLAttributes<HTMLInputElement> & { invalid?: boolean }) {
+  return <input className={cn(controlClass, "h-11", invalid && "ring-error focus:ring-error", className)} aria-invalid={invalid || undefined} {...rest} />;
 }
 
-export function Pill({ className, children }: { className?: string; children: React.ReactNode }) {
+export function Textarea({ className, invalid, ...rest }: React.TextareaHTMLAttributes<HTMLTextAreaElement> & { invalid?: boolean }) {
   return (
-    <span className={cn("inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset", className)}>
+    <textarea
+      className={cn(controlClass, "block resize-y py-3 leading-7", invalid && "ring-error focus:ring-error", className)}
+      aria-invalid={invalid || undefined}
+      {...rest}
+    />
+  );
+}
+
+/** Label + control + hint/error, wired up for screen readers. */
+export function Field({
+  id,
+  label,
+  hint,
+  error,
+  children,
+}: {
+  id: string;
+  label: string;
+  hint?: string;
+  error?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="space-y-1.5">
+      <label htmlFor={id} className="block text-sm font-medium text-ink">
+        {label}
+      </label>
+      {children}
+      {error ? (
+        <p id={`${id}-error`} className="flex items-center gap-1.5 text-[13px] text-error">
+          <Icon name="error" className="size-3.5" /> {error}
+        </p>
+      ) : (
+        hint && (
+          <p id={`${id}-hint`} className="text-[13px] text-muted">
+            {hint}
+          </p>
+        )
+      )}
+    </div>
+  );
+}
+
+/* ----------------------------- Cards and panels --------------------------- */
+
+export function Card({ className, children }: { className?: string; children: React.ReactNode }) {
+  return <div className={cn("rounded-card bg-surface ring-1 ring-line shadow-soft", className)}>{children}</div>;
+}
+
+/** A card with a titled header row and an optional action on the right. */
+export function Panel({
+  title,
+  description,
+  action,
+  className,
+  children,
+}: {
+  title: string;
+  description?: string;
+  action?: React.ReactNode;
+  className?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <Card className={cn("overflow-hidden", className)}>
+      <div className="flex items-start justify-between gap-4 border-b border-line px-5 py-4 sm:px-6">
+        <div>
+          <h3 className="text-card font-semibold">{title}</h3>
+          {description && <p className="mt-0.5 text-sm text-muted">{description}</p>}
+        </div>
+        {action}
+      </div>
+      <div className="p-5 sm:p-6">{children}</div>
+    </Card>
+  );
+}
+
+/* --------------------------------- Badges --------------------------------- */
+
+export function Badge({ tone = "neutral", dot, className, children }: { tone?: Tone; dot?: boolean; className?: string; children: React.ReactNode }) {
+  return (
+    <span className={cn("inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-2.5 py-0.5 text-[13px] font-medium ring-1 ring-inset", TONE[tone].badge, className)}>
+      {dot && <span className={cn("size-1.5 rounded-full", TONE[tone].dot)} />}
       {children}
     </span>
   );
 }
 
-export function Eyebrow({ children, className }: { children: React.ReactNode; className?: string }) {
-  return <p className={cn("text-[13px] font-semibold uppercase tracking-[0.14em] text-brand-600", className)}>{children}</p>;
+/** Older name kept for existing callers: a badge whose colours come from className. */
+export function Pill({ className, children }: { className?: string; children: React.ReactNode }) {
+  return <span className={cn("inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[13px] font-medium ring-1 ring-inset", className)}>{children}</span>;
 }
+
+/* ------------------------------- Navigation ------------------------------- */
+
+export function NavLink({ href, active, children }: { href: string; active?: boolean; children: React.ReactNode }) {
+  return (
+    <Link
+      href={href}
+      aria-current={active ? "page" : undefined}
+      className={cn(
+        "rounded-control px-3 py-2 font-display text-[15px] font-medium transition-colors duration-150",
+        active ? "bg-mint text-brand" : "text-muted hover:bg-subtle hover:text-ink",
+      )}
+    >
+      {children}
+    </Link>
+  );
+}
+
+/* --------------------------------- Headings ------------------------------- */
+
+/** Small label above a heading. Sentence case, brand colour, no shouting. */
+export function Eyebrow({ children, className }: { children: React.ReactNode; className?: string }) {
+  return <p className={cn("font-display text-sm font-semibold text-brand-600", className)}>{children}</p>;
+}
+
+export function SectionHeading({
+  eyebrow,
+  title,
+  description,
+  align = "left",
+  className,
+}: {
+  eyebrow?: string;
+  title: string;
+  description?: string;
+  align?: "left" | "center";
+  className?: string;
+}) {
+  return (
+    <div className={cn("max-w-2xl", align === "center" && "mx-auto text-center", className)}>
+      {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
+      <h2 className="mt-2 text-[1.75rem] font-bold leading-tight sm:text-section">{title}</h2>
+      {description && <p className="mt-3 text-[17px] leading-relaxed text-muted">{description}</p>}
+    </div>
+  );
+}
+
+/* --------------------------- Loading, empty, errors ----------------------- */
+
+export function Spinner({ className, label = "Loading" }: { className?: string; label?: string }) {
+  return (
+    <span role="status" className="inline-flex">
+      <LoaderCircle className={cn("size-4 animate-spin text-brand", className)} strokeWidth={2} aria-hidden />
+      <span className="sr-only">{label}</span>
+    </span>
+  );
+}
+
+/** Card-sized loading state with a status line and placeholder rows. */
+export function LoadingState({ message, detail, rows = 3 }: { message: string; detail?: string; rows?: number }) {
+  return (
+    <Card className="p-6">
+      <div className="flex items-start gap-3">
+        <Spinner label={message} className="mt-1" />
+        <div>
+          <p className="text-[15px] font-medium text-ink">{message}</p>
+          {detail && <p className="mt-0.5 text-sm text-muted">{detail}</p>}
+        </div>
+      </div>
+      <div className="mt-5 space-y-3">
+        {Array.from({ length: rows }, (_, k) => (
+          <div key={k} className="h-14 animate-pulse rounded-control bg-subtle" />
+        ))}
+      </div>
+    </Card>
+  );
+}
+
+export function EmptyState({ title, description, action, icon = "inbox" }: { title: string; description?: string; action?: React.ReactNode; icon?: IconName }) {
+  return (
+    <div className="flex flex-col items-center rounded-card border border-dashed border-line-strong bg-surface px-6 py-10 text-center">
+      <span className="grid size-10 place-items-center rounded-full bg-subtle text-muted">
+        <Icon name={icon} className="size-5" />
+      </span>
+      <p className="mt-3 font-display font-semibold text-ink">{title}</p>
+      {description && <p className="mt-1 max-w-sm text-sm text-muted">{description}</p>}
+      {action && <div className="mt-4">{action}</div>}
+    </div>
+  );
+}
+
+const ALERT_ICON: Record<Tone, IconName> = { brand: "info", success: "success", attention: "alert", error: "error", neutral: "info" };
+
+/** Inline message. Use tone="error" for errors, "attention" for warnings, "neutral"/"brand" for notes. */
+export function Alert({ tone = "neutral", title, children, className }: { tone?: Tone; title?: string; children: React.ReactNode; className?: string }) {
+  return (
+    <div role={tone === "error" ? "alert" : "status"} className={cn("flex gap-3 rounded-control p-3.5 text-sm ring-1 ring-inset", TONE[tone].alert, className)}>
+      <Icon name={ALERT_ICON[tone]} className="mt-0.5" />
+      <div className="min-w-0">
+        {title && <p className="font-semibold">{title}</p>}
+        <div className={cn(title && "mt-0.5", tone !== "neutral" && "text-ink/85")}>{children}</div>
+      </div>
+    </div>
+  );
+}
+
+export const ErrorMessage = ({ children, title }: { children: React.ReactNode; title?: string }) => (
+  <Alert tone="error" title={title}>
+    {children}
+  </Alert>
+);
+
+/* ---------------------------------- Brand --------------------------------- */
 
 export function Logo({ className }: { className?: string }) {
   return (
-    <span className={cn("inline-flex items-center gap-2 font-semibold tracking-tight text-ink", className)}>
-      <span className="grid size-7 place-items-center rounded-lg bg-ink text-white shadow-[0_6px_14px_-6px_rgb(11_16_32/0.7)]">
-        <svg viewBox="0 0 20 20" className="size-4" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M3.5 10.5l4 4 9-9" />
-        </svg>
+    <span className={cn("inline-flex items-center gap-2 font-display text-[17px] font-bold tracking-tight text-ink", className)}>
+      <span className="grid size-7 place-items-center rounded-[8px] bg-brand text-white">
+        <Check className="size-4" strokeWidth={2.5} aria-hidden />
       </span>
       MarkMate
     </span>
   );
 }
 
-export function Icon({ name, className }: { name: "arrow" | "check" | "x" | "spark" | "quote" | "alert" | "book" | "up" | "down" | "minus" | "edit" | "shield"; className?: string }) {
-  const paths: Record<string, React.ReactNode> = {
-    arrow: <path d="M4 10h12m-5-5 5 5-5 5" />,
-    check: <path d="M4.5 10.5l3.5 3.5 7.5-8" />,
-    x: <path d="M5.5 5.5l9 9m0-9-9 9" />,
-    spark: <path d="M10 2.5v4m0 7v4m-7.5-7.5h4m7 0h4M5 5l2.5 2.5m5 5L15 15m0-10-2.5 2.5m-5 5L5 15" />,
-    quote: <path d="M7.5 6.5H5a1 1 0 0 0-1 1V10a1 1 0 0 0 1 1h2.5v2.5L5.5 15M15.5 6.5H13a1 1 0 0 0-1 1V10a1 1 0 0 0 1 1h2.5v2.5L13.5 15" />,
-    alert: <path d="M10 6.5v4m0 3h.01M8.6 3.4 2.3 14.5A1.6 1.6 0 0 0 3.7 17h12.6a1.6 1.6 0 0 0 1.4-2.5L11.4 3.4a1.6 1.6 0 0 0-2.8 0Z" />,
-    book: <path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H16v12H5.5A1.5 1.5 0 0 0 4 16.5v-12Zm0 12A1.5 1.5 0 0 0 5.5 18H16" />,
-    up: <path d="M10 15.5v-11m-5 5 5-5 5 5" />,
-    down: <path d="M10 4.5v11m5-5-5 5-5-5" />,
-    minus: <path d="M5 10h10" />,
-    edit: <path d="M12.5 4.5l3 3L7 16H4v-3l8.5-8.5Z" />,
-    shield: <path d="M10 2.5 3.5 5v5c0 4 2.8 6.6 6.5 7.5 3.7-.9 6.5-3.5 6.5-7.5V5L10 2.5Zm-2.5 7.5 1.8 1.8 3.4-3.6" />,
-  };
-  return (
-    <svg viewBox="0 0 20 20" className={cn("size-4 shrink-0", className)} fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      {paths[name]}
-    </svg>
-  );
-}
-
-/** Circular score meter. */
+/** Circular score meter. Colour follows the score: green, amber, or red. */
 export function ScoreRing({ value, max, size = 120, className }: { value: number; max: number; size?: number; className?: string }) {
-  const stroke = 9;
+  const stroke = size < 100 ? 7 : 9;
   const r = (size - stroke) / 2;
   const c = 2 * Math.PI * r;
   const pct = max > 0 ? Math.min(1, value / max) : 0;
-  const color = pct >= 0.75 ? "#10b981" : pct >= 0.4 ? "#f59e0b" : "#f43f5e";
+  const color = pct >= 0.75 ? "var(--color-success)" : pct >= 0.4 ? "var(--color-accent)" : "var(--color-error)";
   return (
-    <div className={cn("relative grid place-items-center", className)} style={{ width: size, height: size }}>
+    <div className={cn("relative grid place-items-center", className)} style={{ width: size, height: size }} role="img" aria-label={`${value} out of ${max} marks`}>
       <svg width={size} height={size} className="-rotate-90">
-        <circle cx={size / 2} cy={size / 2} r={r} stroke="#eef0f4" strokeWidth={stroke} fill="none" />
+        <circle cx={size / 2} cy={size / 2} r={r} stroke="var(--color-subtle)" strokeWidth={stroke} fill="none" />
         <circle
           cx={size / 2}
           cy={size / 2}
@@ -114,14 +368,14 @@ export function ScoreRing({ value, max, size = 120, className }: { value: number
           strokeLinecap="round"
           strokeDasharray={c}
           strokeDashoffset={c * (1 - pct)}
-          style={{ transition: "stroke-dashoffset 900ms cubic-bezier(0.22,1,0.36,1)" }}
+          style={{ transition: "stroke-dashoffset 600ms ease-out" }}
         />
       </svg>
       <div className="absolute text-center leading-none">
-        <span className={cn("font-semibold tracking-tight tabular-nums", size < 100 ? "text-lg" : "text-3xl")}>
+        <span className={cn("font-display font-bold tabular-nums", size < 100 ? "text-lg" : "text-3xl")}>
           {Number.isInteger(value) ? value : value.toFixed(1)}
         </span>
-        <span className={cn("text-slate-400", size < 100 ? "text-[11px]" : "text-base")}> / {max}</span>
+        <span className={cn("text-muted", size < 100 ? "text-[11px]" : "text-base")}> / {max}</span>
       </div>
     </div>
   );

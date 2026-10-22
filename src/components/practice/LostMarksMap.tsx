@@ -28,36 +28,36 @@ export default function LostMarksMap({ result, answer, title }: { result: Attemp
   );
 
   return (
-    <Card className="animate-fade-up overflow-hidden">
+    <Card className="animate-fade-in overflow-hidden">
       {/* Header */}
-      <div className="border-b border-slate-100 bg-gradient-to-b from-slate-50/80 to-white p-5 sm:p-7">
+      <div className="border-b border-line bg-surface p-5 sm:p-7">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
           <ScoreRing value={result.estimatedMarks} max={result.maxMarks} size={128} />
           <div className="min-w-0 flex-1">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-brand-600">{title}</p>
+            <p className="font-display text-sm font-semibold text-brand-600">{title}</p>
             <h2 className="mt-1 text-2xl font-semibold tracking-tight">
               {lost > 0 ? (
                 <>
-                  You lost <span className="text-rose-600">{fmt(lost)}</span> of {result.maxMarks} marks
+                  You lost <span className="text-error">{fmt(lost)}</span> of {result.maxMarks} marks
                 </>
               ) : (
                 "Full marks on every point"
               )}
             </h2>
             <div className="mt-3 flex flex-wrap gap-2">
-              <Pill className={result.aiUsed ? "bg-brand-50 text-brand-700 ring-brand-600/20" : "bg-slate-100 text-slate-700 ring-slate-500/20"}>
+              <Pill className={result.aiUsed ? "bg-brand-50 text-brand-700 ring-brand-600/20" : "bg-subtle text-ink ring-line-strong"}>
                 <Icon name="spark" className="size-3" />
                 {result.aiUsed ? "AI-estimated" : "Rule-based"} practice marks, not ICAI marks
               </Pill>
-              <Pill className={result.verified ? "bg-emerald-50 text-emerald-700 ring-emerald-600/20" : "bg-amber-50 text-amber-700 ring-amber-600/20"}>
+              <Pill className={result.verified ? "bg-success-soft text-success ring-success/20" : "bg-warning-soft text-warning ring-accent/30"}>
                 {result.verified ? "Verified scheme" : "Unverified scheme"}
               </Pill>
             </div>
             <div className="mt-4 grid grid-cols-4 gap-2 text-center sm:max-w-md">
-              <Count n={counts.secured} label="Secured" dot="bg-emerald-500" />
-              <Count n={counts.partial} label="Partial" dot="bg-amber-400" />
-              <Count n={counts.missed} label="Missed" dot="bg-slate-400" />
-              <Count n={counts.review} label="Review" dot="bg-violet-500" />
+              <Count n={counts.secured} label="Secured" dot="bg-success" />
+              <Count n={counts.partial} label="Partial" dot="bg-accent" />
+              <Count n={counts.missed} label="Missed" dot="bg-muted" />
+              <Count n={counts.review} label="Review" dot="bg-accent" />
             </div>
           </div>
         </div>
@@ -65,20 +65,20 @@ export default function LostMarksMap({ result, answer, title }: { result: Attemp
         {/* Segmented bar: one segment per marking point, width = allocation. */}
         <div className="mt-6 flex h-2.5 gap-1 overflow-hidden rounded-full">
           {result.points.map((p) => (
-            <div key={p.pointId} className="relative h-full overflow-hidden rounded-full bg-slate-100" style={{ flex: p.allocated }} title={`${p.label}: ${fmt(p.aiMarks)}/${fmt(p.allocated)}`}>
+            <div key={p.pointId} className="relative h-full overflow-hidden rounded-full bg-subtle" style={{ flex: p.allocated }} title={`${p.label}: ${fmt(p.aiMarks)}/${fmt(p.allocated)}`}>
               <div className={cn("h-full rounded-full", STATUS_META[p.aiStatus].bar)} style={{ width: `${(p.aiMarks / p.allocated) * 100}%` }} />
             </div>
           ))}
         </div>
 
         {result.aiError && (
-          <p className="mt-4 flex gap-2 rounded-xl bg-slate-100 p-3 text-sm text-slate-700">
+          <p className="mt-4 flex gap-2 rounded-xl bg-subtle p-3 text-sm text-ink">
             <Icon name="alert" className="mt-0.5" />
             The AI was not available ({result.aiError.replace(/\.$/, "")}), so the local rule-based marker checked this answer.
           </p>
         )}
         {result.needsReview && (
-          <p className="mt-4 flex gap-2 rounded-xl bg-violet-50 p-3 text-sm text-violet-800">
+          <p className="mt-4 flex gap-2 rounded-xl bg-warning-soft p-3 text-sm text-warning">
             <Icon name="alert" className="mt-0.5" />
             {fmt(result.pendingReviewMarks)} marks are held for review because they could not be backed by a quote from your answer.
           </p>
@@ -86,13 +86,13 @@ export default function LostMarksMap({ result, answer, title }: { result: Attemp
       </div>
 
       {/* View switch */}
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 px-5 py-3 sm:px-7">
-        <div className="inline-flex rounded-xl bg-slate-100 p-1 text-sm">
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line px-5 py-3 sm:px-7">
+        <div className="inline-flex rounded-xl bg-subtle p-1 text-sm">
           {(["points", "answer"] as const).map((v) => (
             <button
               key={v}
               onClick={() => setView(v)}
-              className={cn("rounded-lg px-3 py-1.5 font-medium transition", view === v ? "bg-white text-ink shadow-soft" : "text-slate-500 hover:text-ink")}
+              className={cn("rounded-lg px-3 py-1.5 font-medium transition", view === v ? "bg-surface text-ink shadow-soft" : "text-muted hover:text-ink")}
             >
               {v === "points" ? (
                 <>
@@ -114,7 +114,7 @@ export default function LostMarksMap({ result, answer, title }: { result: Attemp
               <button
                 key={f}
                 onClick={() => setFilter(f)}
-                className={cn("rounded-lg px-2.5 py-1 transition", filter === f ? "bg-ink text-white" : "text-slate-500 hover:bg-slate-100")}
+                className={cn("rounded-lg px-2.5 py-1 transition", filter === f ? "bg-brand-dark text-white" : "text-muted hover:bg-subtle")}
               >
                 {f === "all" ? "All" : f === "lost" ? "Lost marks" : "Secured"}
               </button>
@@ -129,7 +129,7 @@ export default function LostMarksMap({ result, answer, title }: { result: Attemp
             {shown.map((p, i) => (
               <PointCard key={p.pointId} p={p} index={result.points.indexOf(p) + 1} delay={i * 50} />
             ))}
-            {!shown.length && <p className="py-6 text-center text-sm text-slate-500">Nothing in this view.</p>}
+            {!shown.length && <p className="py-6 text-center text-sm text-muted">Nothing in this view.</p>}
           </div>
         ) : (
           <AnnotatedAnswer result={result} answer={answer} />
@@ -139,20 +139,20 @@ export default function LostMarksMap({ result, answer, title }: { result: Attemp
           <div className="mt-6 grid gap-3 md:grid-cols-3">
             <Extra title="Missing SA references" icon="book" empty="None. Good.">
               {result.missingReferences.map((r) => (
-                <span key={r} className="rounded-md bg-rose-50 px-2 py-1 text-[13px] font-medium text-rose-700 ring-1 ring-rose-200">{r}</span>
+                <span key={r} className="rounded-md bg-error-soft px-2 py-1 text-[13px] font-medium text-error ring-1 ring-error/20">{r}</span>
               ))}
             </Extra>
             <Extra title="Missing keywords" icon="spark" empty="None. Good.">
               {result.missingKeywords.map((k) => (
-                <span key={k} className="rounded-md bg-slate-50 px-2 py-1 text-[13px] text-slate-700 ring-1 ring-slate-200">{k}</span>
+                <span key={k} className="rounded-md bg-canvas px-2 py-1 text-[13px] text-ink ring-1 ring-line">{k}</span>
               ))}
             </Extra>
             <Extra title="Presentation tips" icon="edit" empty="No tips.">
               {result.presentationTips.length > 0 && (
-                <ul className="space-y-1.5 text-[13px] text-slate-700">
+                <ul className="space-y-1.5 text-[13px] text-ink">
                   {result.presentationTips.map((t) => (
                     <li key={t} className="flex gap-1.5">
-                      <span className="mt-1.5 size-1 shrink-0 rounded-full bg-slate-400" /> {t}
+                      <span className="mt-1.5 size-1 shrink-0 rounded-full bg-muted" /> {t}
                     </li>
                   ))}
                 </ul>
@@ -167,9 +167,9 @@ export default function LostMarksMap({ result, answer, title }: { result: Attemp
 
 function Count({ n, label, dot }: { n: number; label: string; dot: string }) {
   return (
-    <div className="rounded-xl bg-white px-2 py-2 ring-1 ring-slate-200/70">
+    <div className="rounded-xl bg-surface px-2 py-2 ring-1 ring-line">
       <p className="text-lg font-semibold tabular-nums">{n}</p>
-      <p className="flex items-center justify-center gap-1 text-[11px] text-slate-500">
+      <p className="flex items-center justify-center gap-1 text-[11px] text-muted">
         <span className={cn("size-1.5 rounded-full", dot)} /> {label}
       </p>
     </div>
@@ -180,18 +180,18 @@ function PointCard({ p, index, delay }: { p: PointResult; index: number; delay: 
   const m = STATUS_META[p.aiStatus];
   const full = p.aiMarks >= p.allocated;
   return (
-    <div className="animate-fade-up relative overflow-hidden rounded-xl bg-white ring-1 ring-slate-200/80" style={{ animationDelay: `${delay}ms` }}>
+    <div className="animate-fade-in relative overflow-hidden rounded-xl bg-surface ring-1 ring-line" style={{ animationDelay: `${delay}ms` }}>
       <span className={cn("absolute inset-y-0 left-0 w-1", m.bar)} />
       <div className="p-4 pl-5">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
-            <p className="text-[13px] text-slate-400">Point {index}</p>
+            <p className="text-[13px] text-muted">Point {index}</p>
             <h3 className="font-medium leading-snug">{p.label}</h3>
           </div>
           <div className="shrink-0 text-right">
             <p className="text-lg font-semibold tabular-nums">
               {fmt(p.aiMarks)}
-              <span className="text-sm font-normal text-slate-400"> / {fmt(p.allocated)}</span>
+              <span className="text-sm font-normal text-muted"> / {fmt(p.allocated)}</span>
             </p>
           </div>
         </div>
@@ -200,27 +200,27 @@ function PointCard({ p, index, delay }: { p: PointResult; index: number; delay: 
         </Pill>
 
         {p.evidenceQuote && p.evidenceVerified ? (
-          <blockquote className="mt-3 rounded-lg bg-slate-50 p-3 text-sm text-slate-700">
-            <span className="mb-1 flex items-center gap-1 text-[11px] font-medium uppercase tracking-wider text-slate-400">
+          <blockquote className="mt-3 rounded-lg bg-canvas p-3 text-sm text-ink">
+            <span className="mb-1 flex items-center gap-1 text-[11px] font-medium text-muted">
               <Icon name="quote" className="size-3" /> From your answer · quote verified
             </span>
             <mark className={m.mark}>{p.evidenceQuote}</mark>
           </blockquote>
         ) : (
           !full && (
-            <p className="mt-3 rounded-lg border border-dashed border-slate-200 p-3 text-sm text-slate-500">
+            <p className="mt-3 rounded-lg border border-dashed border-line p-3 text-sm text-muted">
               No evidence for this point was found in your answer.
             </p>
           )
         )}
 
         {p.reason && !full && (
-          <p className="mt-3 text-sm text-slate-700">
+          <p className="mt-3 text-sm text-ink">
             <span className="font-medium text-ink">Why marks were lost: </span>
             {p.reason}
           </p>
         )}
-        {p.reviewReason && <p className="mt-2 text-sm text-violet-700">{p.reviewReason}</p>}
+        {p.reviewReason && <p className="mt-2 text-sm text-warning">{p.reviewReason}</p>}
         {p.toRecover && !full && (
           <div className="mt-3 flex gap-2 rounded-lg bg-brand-50/70 p-3 text-sm text-brand-900 ring-1 ring-brand-100">
             <Icon name="arrow" className="mt-0.5 text-brand-600" />
@@ -244,13 +244,13 @@ function AnnotatedAnswer({ result, answer }: { result: AttemptResult; answer: st
   );
   return (
     <div>
-      <div className="mb-3 flex flex-wrap gap-3 text-xs text-slate-500">
+      <div className="mb-3 flex flex-wrap gap-3 text-xs text-muted">
         <span className="flex items-center gap-1.5"><mark className="evidence">text</mark> earned full marks</span>
         <span className="flex items-center gap-1.5"><mark className="evidence evidence-partial">text</mark> partly earned</span>
         <span className="flex items-center gap-1.5"><mark className="evidence evidence-wrong">text</mark> incorrect</span>
         <span>Plain text earned nothing.</span>
       </div>
-      <div className="whitespace-pre-wrap rounded-xl bg-slate-50 p-4 text-[15px] leading-7 text-slate-800 ring-1 ring-slate-200/70">
+      <div className="whitespace-pre-wrap rounded-xl bg-canvas p-4 text-[15px] leading-7 text-ink ring-1 ring-line">
         {segs.map((s, i) =>
           s.cls ? (
             <mark key={i} className={s.cls} title={s.id}>
@@ -268,11 +268,11 @@ function AnnotatedAnswer({ result, answer }: { result: AttemptResult; answer: st
 function Extra({ title, icon, empty, children }: { title: string; icon: "book" | "spark" | "edit"; empty: string; children: React.ReactNode }) {
   const has = Array.isArray(children) ? children.length > 0 : !!children;
   return (
-    <div className="rounded-xl bg-slate-50/70 p-4 ring-1 ring-slate-200/70">
+    <div className="rounded-xl bg-canvas p-4 ring-1 ring-line">
       <p className="flex items-center gap-1.5 text-sm font-medium">
-        <Icon name={icon} className="text-slate-400" /> {title}
+        <Icon name={icon} className="text-muted" /> {title}
       </p>
-      <div className="mt-3 flex flex-wrap gap-1.5">{has ? children : <span className="text-[13px] text-slate-400">{empty}</span>}</div>
+      <div className="mt-3 flex flex-wrap gap-1.5">{has ? children : <span className="text-[13px] text-muted">{empty}</span>}</div>
     </div>
   );
 }

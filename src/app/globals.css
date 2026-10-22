@@ -1,95 +1,133 @@
 @import "tailwindcss";
 
+/*
+ * MarkMate design tokens.
+ * Every colour, font, radius and shadow used in the app comes from here, so a change
+ * in this block restyles the whole product. Tailwind turns each token into utilities:
+ * --color-brand -> bg-brand / text-brand / ring-brand, --font-display -> font-display, etc.
+ */
 @theme {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  /* Fonts (loaded in layout.tsx with next/font) */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-manrope), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
-  --color-brand-50: #eef2ff;
-  --color-brand-100: #e0e7ff;
-  --color-brand-200: #c7d2fe;
-  --color-brand-300: #a5b4fc;
-  --color-brand-400: #818cf8;
-  --color-brand-500: #6366f1;
-  --color-brand-600: #4f46e5;
-  --color-brand-700: #4338ca;
-  --color-brand-800: #3730a3;
-  --color-brand-900: #312e81;
-  --color-brand-950: #1e1b4b;
+  /* Core palette */
+  --color-brand: #173f35; /* forest green: primary buttons, key actions, selected nav, brand */
+  --color-brand-dark: #102f28; /* hover/pressed state, dark panels */
+  --color-canvas: #f7f6f2; /* warm off-white page background */
+  --color-surface: #ffffff; /* cards and panels */
+  --color-mint: #d8eee4; /* soft highlight behind brand elements */
+  --color-ink: #252b29; /* main text */
+  --color-muted: #727873; /* secondary text */
+  --color-accent: #d99b36; /* amber: incomplete answers, points needing attention */
+  --color-success: #237a52;
+  --color-warning: #a96812;
+  --color-error: #b54747; /* only for incorrect or contradictory answers */
+  --color-line: #e3e7e2; /* borders and dividers */
 
-  --color-ink: #0b1020;
-  --color-canvas: #f8f9fc;
+  /* Supporting tints, derived from the palette above */
+  --color-line-strong: #cdd3cc;
+  --color-subtle: #efeee8; /* quiet fills: tracks, tab bars, placeholders */
+  --color-success-soft: #e4f2ea;
+  --color-warning-soft: #faf0dd;
+  --color-error-soft: #f6e5e5;
 
-  --shadow-soft: 0 1px 2px rgb(16 24 40 / 0.04), 0 4px 16px -4px rgb(16 24 40 / 0.08);
-  --shadow-lift: 0 2px 4px rgb(16 24 40 / 0.04), 0 16px 40px -12px rgb(16 24 40 / 0.18);
+  /* Green scale around the brand colour, for tints and text on light backgrounds */
+  --color-brand-50: #eef6f2;
+  --color-brand-100: #d8eee4;
+  --color-brand-200: #b5dcc9;
+  --color-brand-300: #8cc3a9;
+  --color-brand-400: #5e9e82;
+  --color-brand-500: #3b7a60;
+  --color-brand-600: #23594a;
+  --color-brand-700: #173f35;
+  --color-brand-800: #133830;
+  --color-brand-900: #102f28;
+  --color-brand-950: #0a1f1a;
 
-  --animate-fade-up: fade-up 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
-  --animate-pulse-soft: pulse-soft 1.6s ease-in-out infinite;
+  /* Shape and depth: 12px cards, restrained shadows */
+  --radius-card: 12px;
+  --radius-control: 10px;
+  --shadow-soft: 0 1px 2px rgb(37 43 41 / 0.05);
+  --shadow-lift: 0 1px 2px rgb(37 43 41 / 0.05), 0 8px 24px -12px rgb(37 43 41 / 0.14);
 
-  @keyframes fade-up {
+  /* Type scale (px values from the brief) */
+  --text-hero: 3.75rem; /* 60px desktop hero */
+  --text-hero--line-height: 1.05;
+  --text-hero-sm: 2.5rem; /* 40px mobile hero */
+  --text-hero-sm--line-height: 1.1;
+  --text-section: 2.25rem; /* 36px section heading */
+  --text-section--line-height: 1.15;
+  --text-card: 1.25rem; /* 20px card heading */
+  --text-card--line-height: 1.35;
+
+  /* Motion: short and subtle */
+  --animate-fade-in: fade-in 0.3s ease-out both;
+
+  @keyframes fade-in {
     from {
       opacity: 0;
-      transform: translateY(8px);
+      transform: translateY(4px);
     }
     to {
       opacity: 1;
       transform: none;
     }
   }
-  @keyframes pulse-soft {
-    0%,
-    100% {
-      opacity: 0.45;
-    }
-    50% {
-      opacity: 1;
-    }
+}
+
+/* Element defaults live in the base layer so Tailwind utilities (text-white, etc.) can override them. */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    color: var(--color-ink);
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: var(--color-mint);
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: var(--color-canvas);
-  color: var(--color-ink);
-  font-feature-settings: "cv11", "ss01";
-}
-
-h1,
-h2,
-h3 {
-  text-wrap: balance;
-}
-
-::selection {
-  background: var(--color-brand-200);
-}
-
-/* Faint grid used behind hero sections. */
-.bg-grid {
-  background-image:
-    linear-gradient(to right, rgb(15 23 42 / 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(15 23 42 / 0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  mask-image: radial-gradient(ellipse at top, black 30%, transparent 75%);
+/* One visible keyboard-focus style everywhere (in the base layer so utilities can override it on dark panels). */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+  }
 }
 
 /* Highlight of a quote the marker found in the student's answer. */
 mark.evidence {
-  background: rgb(16 185 129 / 0.16);
+  background: var(--color-success-soft);
   color: inherit;
   border-radius: 3px;
   padding: 0 2px;
-  box-shadow: inset 0 -2px 0 rgb(16 185 129 / 0.55);
+  box-shadow: inset 0 -2px 0 rgb(35 122 82 / 0.45);
 }
 mark.evidence-partial {
-  background: rgb(245 158 11 / 0.16);
-  box-shadow: inset 0 -2px 0 rgb(245 158 11 / 0.6);
+  background: var(--color-warning-soft);
+  box-shadow: inset 0 -2px 0 rgb(217 155 54 / 0.7);
 }
 mark.evidence-wrong {
-  background: rgb(244 63 94 / 0.12);
-  box-shadow: inset 0 -2px 0 rgb(244 63 94 / 0.55);
+  background: var(--color-error-soft);
+  box-shadow: inset 0 -2px 0 rgb(181 71 71 / 0.5);
 }
 
 @media (prefers-reduced-motion: reduce) {

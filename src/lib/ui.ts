@@ -4,43 +4,32 @@ export const cn = (...c: (string | false | null | undefined)[]) => c.filter(Bool
 
 export const fmt = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
 
-export const STATUS_META: Record<Status, { label: string; pill: string; bar: string; dot: string; mark: string }> = {
-  correct_complete: {
-    label: "Secured",
-    pill: "bg-emerald-50 text-emerald-700 ring-emerald-600/20",
-    bar: "bg-emerald-500",
-    dot: "bg-emerald-500",
-    mark: "evidence",
-  },
-  correct_incomplete: {
-    label: "Partly covered",
-    pill: "bg-amber-50 text-amber-700 ring-amber-600/20",
-    bar: "bg-amber-400",
-    dot: "bg-amber-400",
-    mark: "evidence evidence-partial",
-  },
-  incorrect: {
-    label: "Incorrect",
-    pill: "bg-rose-50 text-rose-700 ring-rose-600/20",
-    bar: "bg-rose-500",
-    dot: "bg-rose-500",
-    mark: "evidence evidence-wrong",
-  },
-  not_addressed: {
-    label: "Missed",
-    pill: "bg-slate-100 text-slate-600 ring-slate-500/20",
-    bar: "bg-slate-300",
-    dot: "bg-slate-400",
-    mark: "evidence",
-  },
-  uncertain: {
-    label: "Needs review",
-    pill: "bg-violet-50 text-violet-700 ring-violet-600/20",
-    bar: "bg-violet-400",
-    dot: "bg-violet-500",
-    mark: "evidence",
-  },
+/** Visual tones shared by badges, alerts and status bars. */
+export type Tone = "brand" | "success" | "attention" | "error" | "neutral";
+
+export const TONE: Record<Tone, { badge: string; bar: string; dot: string; alert: string }> = {
+  brand: { badge: "bg-mint text-brand ring-brand/15", bar: "bg-brand", dot: "bg-brand", alert: "bg-brand-50 text-brand ring-brand/15" },
+  success: { badge: "bg-success-soft text-success ring-success/20", bar: "bg-success", dot: "bg-success", alert: "bg-success-soft text-success ring-success/20" },
+  attention: { badge: "bg-warning-soft text-warning ring-accent/30", bar: "bg-accent", dot: "bg-accent", alert: "bg-warning-soft text-warning ring-accent/30" },
+  error: { badge: "bg-error-soft text-error ring-error/20", bar: "bg-error", dot: "bg-error", alert: "bg-error-soft text-error ring-error/20" },
+  neutral: { badge: "bg-subtle text-muted ring-line-strong/60", bar: "bg-line-strong", dot: "bg-muted", alert: "bg-subtle text-ink ring-line" },
 };
+
+/**
+ * How each marking status looks. Amber = needs attention (partial or held for review);
+ * red is reserved for incorrect or contradictory answers.
+ */
+export const STATUS_META: Record<Status, { label: string; tone: Tone; pill: string; bar: string; dot: string; mark: string }> = {
+  correct_complete: { label: "Secured", tone: "success", ...pick("success"), mark: "evidence" },
+  correct_incomplete: { label: "Partly covered", tone: "attention", ...pick("attention"), mark: "evidence evidence-partial" },
+  incorrect: { label: "Incorrect", tone: "error", ...pick("error"), mark: "evidence evidence-wrong" },
+  not_addressed: { label: "Missed", tone: "neutral", ...pick("neutral"), mark: "evidence" },
+  uncertain: { label: "Needs review", tone: "attention", ...pick("attention"), mark: "evidence evidence-partial" },
+};
+
+function pick(t: Tone) {
+  return { pill: TONE[t].badge, bar: TONE[t].bar, dot: TONE[t].dot };
+}
 
 /** Splits an answer into plain and highlighted segments for each verified quote (whitespace/case-insensitive). */
 export function highlightSegments(
