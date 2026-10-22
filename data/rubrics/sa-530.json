@@ -1,0 +1,18 @@
+{
+  "id": "sa-530-audit-sampling",
+  "version": "1",
+  "sa": "SA 530",
+  "topic": "Audit Sampling",
+  "question": "Explain sampling risk and non-sampling risk, the difference between statistical and non-statistical sampling, and how the auditor evaluates the results of a sample under SA 530.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": ["sampling risk", "tolerable misstatement", "statistical sampling"],
+  "references": ["SA 530"],
+  "points": [
+    { "id": "p1", "label": "Meaning of audit sampling", "marks": 1, "description": "Applying audit procedures to less than 100% of items within a population so that all sampling units have a chance of selection, to provide a reasonable basis for conclusions about the whole population.", "keywords": ["less than 100%", "population"], "references": ["SA 530"] },
+    { "id": "p2", "label": "Sampling risk and non-sampling risk", "marks": 1, "description": "Sampling risk is the risk that the auditor's conclusion from a sample may differ from the conclusion if the whole population were tested; non-sampling risk arises from factors unrelated to sample size, such as wrong procedures or misinterpreting evidence.", "keywords": ["sampling risk", "non-sampling risk"], "references": [] },
+    { "id": "p3", "label": "Statistical vs non-statistical sampling", "marks": 1, "description": "Statistical sampling uses random selection and probability theory to evaluate results and measure sampling risk; otherwise the approach is non-statistical.", "keywords": ["random selection", "probability"], "references": [] },
+    { "id": "p4", "label": "Tolerable misstatement and sample design", "marks": 1, "description": "Determine sample size, considering tolerable misstatement, the expected misstatement and the population characteristics, so that sampling risk is reduced to an acceptably low level.", "keywords": ["tolerable misstatement", "sample size"], "references": [] },
+    { "id": "p5", "label": "Evaluating results and projecting misstatements", "marks": 1, "description": "Project misstatements found in the sample to the population, investigate the nature and cause of deviations, and evaluate whether the sample provides a reasonable basis for conclusions.", "keywords": ["project", "deviations"], "references": [] }
+  ]
+}

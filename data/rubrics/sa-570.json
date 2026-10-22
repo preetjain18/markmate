@@ -1,0 +1,18 @@
+{
+  "id": "sa-570-going-concern",
+  "version": "1",
+  "sa": "SA 570",
+  "topic": "Going Concern",
+  "question": "Explain the auditor's responsibilities under SA 570 when events or conditions cast significant doubt on the entity's ability to continue as a going concern, and how the audit report is affected.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": ["going concern", "material uncertainty", "cash flow forecasts"],
+  "references": ["SA 570", "SA 705"],
+  "points": [
+    { "id": "p1", "label": "Management's assessment and basis of accounting", "marks": 1, "description": "Financial statements are prepared on the going concern basis; management must assess the entity's ability to continue, normally for at least twelve months from the balance sheet date.", "keywords": ["going concern basis", "twelve months"], "references": ["SA 570"] },
+    { "id": "p2", "label": "Events or conditions that cast doubt", "marks": 1, "description": "Gives examples of events or conditions: financial (net current liabilities, losses, loan defaults), operating (loss of key management or market) and other (legal proceedings, non-compliance).", "keywords": ["net current liabilities", "default"], "references": [] },
+    { "id": "p3", "label": "Evaluating management's plans", "marks": 1, "description": "Auditor evaluates management's plans for future action and cash flow forecasts, whether they are feasible and the outcome likely to improve the position, and performs additional procedures.", "keywords": ["cash flow forecasts", "management's plans"], "references": [] },
+    { "id": "p4", "label": "Material uncertainty adequately disclosed", "marks": 1, "description": "If a material uncertainty exists and is adequately disclosed, give an unmodified opinion with a separate section 'Material Uncertainty Related to Going Concern'.", "keywords": ["material uncertainty", "unmodified opinion"], "references": [] },
+    { "id": "p5", "label": "Inadequate disclosure or wrong basis", "marks": 1, "description": "If disclosure is inadequate, express a qualified or adverse opinion; if management will not assess or extend its assessment, consider the effect on the audit and the opinion.", "keywords": ["qualified", "adverse"], "references": ["SA 705"] }
+  ]
+}

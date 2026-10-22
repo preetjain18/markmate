@@ -1,0 +1,18 @@
+{
+  "id": "sa-265-control-deficiencies",
+  "version": "1",
+  "sa": "SA 265",
+  "topic": "Communicating Deficiencies in Internal Control",
+  "question": "Explain how the auditor communicates deficiencies in internal control to those charged with governance and management under SA 265.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": ["significant deficiency", "those charged with governance", "in writing"],
+  "references": ["SA 265"],
+  "points": [
+    { "id": "p1", "label": "Deficiency and significant deficiency defined", "marks": 1, "description": "A deficiency exists when a control is designed, implemented or operated so that it cannot prevent, or detect and correct, misstatements on a timely basis, or a needed control is missing; a significant deficiency is one important enough to merit attention of those charged with governance.", "keywords": ["significant deficiency"], "references": ["SA 265"] },
+    { "id": "p2", "label": "Determining whether deficiencies are significant", "marks": 1, "description": "Determine whether, individually or in combination, the identified deficiencies constitute significant deficiencies, considering the likelihood and potential magnitude of misstatement.", "keywords": ["likelihood", "magnitude"], "references": [] },
+    { "id": "p3", "label": "Written communication to those charged with governance", "marks": 1, "description": "Communicate significant deficiencies in writing to those charged with governance on a timely basis.", "keywords": ["in writing", "timely"], "references": [] },
+    { "id": "p4", "label": "Communication to management", "marks": 1, "description": "Communicate to management at an appropriate level other deficiencies that merit attention, in writing or orally and record oral communication.", "keywords": ["management"], "references": [] },
+    { "id": "p5", "label": "Content of the written communication", "marks": 1, "description": "State that the audit purpose was to express an opinion on the financial statements and not on internal control, that the matters are only those identified during the audit, describe the deficiencies and explain their potential effects.", "keywords": ["potential effects"], "references": [] }
+  ]
+}

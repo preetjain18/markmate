@@ -1,0 +1,18 @@
+{
+  "id": "sa-505-external-confirmations",
+  "version": "1",
+  "sa": "SA 505",
+  "topic": "External Confirmations",
+  "question": "Explain the auditor's procedures under SA 505 when management refuses to allow the auditor to send a confirmation request, and when a confirming party does not respond.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": ["external confirmation", "positive confirmation", "non-response"],
+  "references": ["SA 505"],
+  "points": [
+    { "id": "p1", "label": "Meaning of external confirmation", "marks": 1, "description": "Audit evidence obtained as a direct written response to the auditor from a third party, in paper, electronic or other medium; the auditor controls the selection, sending and receipt.", "keywords": ["third party", "direct"], "references": ["SA 505"] },
+    { "id": "p2", "label": "Management refusal: inquire and evaluate", "marks": 1, "description": "Inquire about management's reasons and seek audit evidence on their validity and reasonableness, and evaluate the implications for the risks of material misstatement including fraud.", "keywords": ["reasons", "risk of material misstatement"], "references": ["SA 240"] },
+    { "id": "p3", "label": "Management refusal: alternative procedures and reporting", "marks": 1, "description": "If the refusal is not reasonable, or evidence cannot be obtained by alternative procedures, communicate with those charged with governance and determine the implications for the audit and the opinion.", "keywords": ["alternative audit procedures", "those charged with governance"], "references": [] },
+    { "id": "p4", "label": "Non-response", "marks": 1, "description": "For non-response, perform alternative audit procedures to obtain relevant and reliable evidence, for example subsequent receipts for accounts receivable.", "keywords": ["alternative audit procedures", "subsequent receipts"], "references": [] },
+    { "id": "p5", "label": "Reliability of responses and positive vs negative", "marks": 1, "description": "If a response raises doubt about reliability, obtain further evidence; negative confirmations provide less persuasive evidence than positive confirmations.", "keywords": ["negative confirmation", "reliability"], "references": [] }
+  ]
+}

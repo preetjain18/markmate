@@ -1,0 +1,18 @@
+{
+  "id": "sa-701-key-audit-matters",
+  "version": "1",
+  "sa": "SA 701",
+  "topic": "Key Audit Matters",
+  "question": "What are Key Audit Matters under SA 701? How does the auditor determine and communicate them, and when is a matter not communicated?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": ["key audit matters", "listed entities", "most significance"],
+  "references": ["SA 701"],
+  "points": [
+    { "id": "p1", "label": "Meaning and applicability", "marks": 1, "description": "Matters that, in the auditor's professional judgment, were of most significance in the audit of the current period financial statements; mandatory for audits of listed entities.", "keywords": ["most significance", "listed entities"], "references": ["SA 701"] },
+    { "id": "p2", "label": "Determining key audit matters", "marks": 1, "description": "Select from the matters communicated with those charged with governance those requiring significant auditor attention, considering higher risks of material misstatement, significant judgments and significant events or transactions.", "keywords": ["those charged with governance", "significant judgments"], "references": [] },
+    { "id": "p3", "label": "Communication in the auditor's report", "marks": 1, "description": "Describe each matter in a separate 'Key Audit Matters' section, explaining why it was considered most significant and how it was addressed in the audit.", "keywords": ["separate section", "how it was addressed"], "references": [] },
+    { "id": "p4", "label": "Not a substitute for opinion or disclosure", "marks": 1, "description": "Communicating key audit matters is not a substitute for a modified opinion, for a material uncertainty about going concern, or for management's disclosures.", "keywords": ["modified opinion", "going concern"], "references": ["SA 705", "SA 570"] },
+    { "id": "p5", "label": "Circumstances where a matter is not communicated", "marks": 1, "description": "A matter is not communicated if law or regulation precludes public disclosure, or in extremely rare cases where adverse consequences of disclosure would outweigh the public interest benefits.", "keywords": ["public interest", "law or regulation"], "references": [] }
+  ]
+}

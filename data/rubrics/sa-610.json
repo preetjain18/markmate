@@ -1,0 +1,18 @@
+{
+  "id": "sa-610-internal-auditors",
+  "version": "1",
+  "sa": "SA 610",
+  "topic": "Using the Work of an Internal Auditor",
+  "question": "How should an external auditor decide whether the work of the internal audit function can be used under SA 610, and what are the limits on using it?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": ["internal audit function", "objectivity", "competence"],
+  "references": ["SA 610"],
+  "points": [
+    { "id": "p1", "label": "Sole responsibility of the external auditor", "marks": 1, "description": "The external auditor has sole responsibility for the opinion expressed, which is not reduced by using the work of internal auditors.", "keywords": ["sole responsibility"], "references": ["SA 610"] },
+    { "id": "p2", "label": "Evaluating the internal audit function", "marks": 1, "description": "Evaluate the extent to which the organisational status and relevant policies support the objectivity of the internal auditors, their level of competence, and whether the function applies a systematic and disciplined approach including quality control.", "keywords": ["objectivity", "competence", "systematic and disciplined approach"], "references": [] },
+    { "id": "p3", "label": "Determining whether and to what extent to use the work", "marks": 1, "description": "Consider the nature and scope of the work performed, and its relevance to the audit strategy and plan; the higher the risk and the more judgment involved, the less the work should be relied on.", "keywords": ["nature and scope", "judgment"], "references": [] },
+    { "id": "p4", "label": "Evaluating and testing the work used", "marks": 1, "description": "Evaluate whether the work was properly planned, performed, supervised, reviewed and documented and the evidence is appropriate; re-perform some of the work to test its adequacy.", "keywords": ["re-perform", "adequacy"], "references": [] },
+    { "id": "p5", "label": "Communication and when work cannot be used", "marks": 1, "description": "If the criteria are not met, do not use the work; discuss with those charged with governance and document the conclusions on the work used and the procedures performed.", "keywords": ["document"], "references": [] }
+  ]
+}
