@@ -56,27 +56,45 @@ describe("Gemini client", () => {
     expect((await callModel(req)).data).toBe("not json at all");
   });
 
-  it("stops at once when the daily quota is used up (no retries)", async () => {
-    fetchMock.mockResolvedValueOnce(
-      new Response(JSON.stringify({ error: { details: [{ retryDelay: "80000s" }] } }), { status: 429 }),
-    );
+  it("on a used-up daily quota, tries the fallback model once, then stops (no waiting retries)", async () => {
+    fetchMock.mockImplementation(async () => new Response(JSON.stringify({ error: { details: [{ retryDelay: "80000s" }] } }), { status: 429 }));
     await expect(callModel(req)).rejects.toThrow(/quota is used up/);
-    expect(fetchMock).toHaveBeenCalledTimes(1);
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+    expect(fetchMock.mock.calls[1][0]).toContain("gemini-3.5-flash-lite");
   });
 
-  it("does not retry a client error such as a bad request", async () => {
+  it("switches to the lighter fallback model when the main model is overloaded, and says which model answered", async () => {
+    fetchMock.mockResolvedValueOnce(new Response("{}", { status: 503 })).mockResolvedValueOnce(ok('{"ok":true}'));
+    const res = await callModel(req);
+    expect(res).toMatchObject({ data: { ok: true }, model: "gemini-3.5-flash-lite" });
+    const fallbackBody = JSON.parse(fetchMock.mock.calls[1][1].body);
+    expect(fallbackBody.generationConfig.thinkingConfig).toBeUndefined(); // lite models get no thinking config
+  });
+
+  it("can switch the fallback off with GEMINI_FALLBACK_MODEL=none", async () => {
+    process.env.GEMINI_FALLBACK_MODEL = "none";
+    fetchMock.mockResolvedValueOnce(new Response("{}", { status: 400 }));
+    await expect(callModel(req)).rejects.toThrow(/HTTP 400/);
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+    delete process.env.GEMINI_FALLBACK_MODEL;
+  });
+
+  it("does not retry or switch on a client error such as a bad request", async () => {
     fetchMock.mockResolvedValueOnce(new Response("{}", { status: 400 }));
     await expect(callModel(req)).rejects.toThrow(/HTTP 400/);
     expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 
-  it("retries a server error and succeeds", async () => {
+  it("retries a server error on the fallback model and succeeds", async () => {
     vi.useFakeTimers();
-    fetchMock.mockResolvedValueOnce(new Response("{}", { status: 503 })).mockResolvedValueOnce(ok('{"ok":true}'));
+    fetchMock
+      .mockResolvedValueOnce(new Response("{}", { status: 503 })) // main model overloaded -> switch
+      .mockResolvedValueOnce(new Response("{}", { status: 503 })) // fallback overloaded -> retry
+      .mockResolvedValueOnce(ok('{"ok":true}'));
     const p = callModel(req);
     await vi.runAllTimersAsync();
     expect((await p).data).toEqual({ ok: true });
-    expect(fetchMock).toHaveBeenCalledTimes(2);
+    expect(fetchMock).toHaveBeenCalledTimes(3);
   });
 
   it("gives up after a bounded number of tries on repeated network failures", async () => {
@@ -87,7 +105,7 @@ describe("Gemini client", () => {
     const err = await p;
     expect(err).toBeInstanceOf(ModelCallError);
     expect(err.message).toMatch(/busy or unreachable/);
-    expect(fetchMock).toHaveBeenCalledTimes(4);
+    expect(fetchMock).toHaveBeenCalledTimes(5); // 1 on the main model, then 4 on the fallback
   });
 });
 
