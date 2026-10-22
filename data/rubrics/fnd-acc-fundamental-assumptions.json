@@ -1,0 +1,65 @@
+{
+  "id": "fnd-acc-fundamental-assumptions",
+  "version": "1",
+  "sa": "AS 1",
+  "topic": "Fundamental accounting assumptions",
+  "question": "Explain the fundamental accounting assumptions under AS 1 'Disclosure of Accounting Policies'. What disclosure is required if a fundamental accounting assumption is not followed?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "going concern",
+    "consistency",
+    "accrual"
+  ],
+  "references": [
+    "AS 1"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Going concern",
+      "marks": 1,
+      "description": "The enterprise is normally viewed as continuing in operation for the foreseeable future, with no intention or need to liquidate or materially curtail its operations.",
+      "keywords": [
+        "going concern"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Consistency",
+      "marks": 1,
+      "description": "Accounting policies are assumed to be applied consistently from one period to another.",
+      "keywords": [
+        "consistency"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Accrual",
+      "marks": 1,
+      "description": "Revenues and costs are recognised as they are earned or incurred, not as money is received or paid, and recorded in the periods to which they relate.",
+      "keywords": [
+        "accrual"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "No disclosure when followed",
+      "marks": 1,
+      "description": "If the fundamental accounting assumptions are followed, they are presumed and specific disclosure is not required.",
+      "keywords": [],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Disclosure when not followed",
+      "marks": 1,
+      "description": "If a fundamental accounting assumption is not followed, that fact should be disclosed.",
+      "keywords": [],
+      "references": []
+    }
+  ]
+}

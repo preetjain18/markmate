@@ -1,0 +1,70 @@
+{
+  "id": "fin-afm-forex-hedging",
+  "version": "1",
+  "sa": "AFM",
+  "topic": "Hedging foreign exchange risk",
+  "question": "Explain the techniques a company can use to hedge foreign exchange risk.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "forward contract",
+    "futures",
+    "options",
+    "money market hedge"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Forward contracts",
+      "marks": 1,
+      "description": "A forward contract fixes the exchange rate today for a transaction on a future date.",
+      "keywords": [
+        "forward contract"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Currency futures",
+      "marks": 1,
+      "description": "Standardised exchange-traded contracts to buy or sell currency at a future date, settled daily (marked to market).",
+      "keywords": [
+        "futures"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Currency options",
+      "marks": 1,
+      "description": "Give the right but not the obligation to buy or sell currency at a set rate, protecting against losses while keeping upside, for a premium.",
+      "keywords": [
+        "options",
+        "premium"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Money market hedge",
+      "marks": 1,
+      "description": "Borrowing and investing in the two currencies to create an offsetting position.",
+      "keywords": [
+        "money market hedge"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Swaps and internal techniques",
+      "marks": 1,
+      "description": "Currency swaps, and internal techniques such as leading and lagging, netting, matching and invoicing in the home currency.",
+      "keywords": [
+        "netting",
+        "leading and lagging"
+      ],
+      "references": []
+    }
+  ]
+}

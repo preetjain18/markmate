@@ -3,9 +3,18 @@
 Answer-writing practice for CA students. Pick your CA level, subject, chapter and question, write an
 answer, see the Lost Marks Map, rewrite it in the Improvement Lab, compare attempts, and track progress.
 
-**Evaluation coverage today:** 10 CA Final Audit questions, each with a draft marking scheme
-(`"verified": false`, not ICAI text). All other subjects are listed but have no questions yet.
-Students can also paste their own question and model answer for any subject.
+**Evaluation coverage today:** 39 written-answer questions across all 16 papers of CA Foundation,
+Intermediate and Final (10 for Final Audit, 1–2 for every other paper). Every marking scheme is a draft
+(`"verified": false`, not ICAI text). Numerical papers have written theory questions only; numerical
+problems aren't marked yet. Students can also paste their own question and model answer for any paper.
+
+**Handwritten answers:** students can upload up to 4 photos of their answer sheet. Gemini reads the
+handwriting; the student checks and corrects the text (unreadable words appear as `[illegible]` and must
+be fixed) before it is marked. Photos are sent to Google Gemini and not stored by MarkMate. This needs the AI:
+without `GEMINI_API_KEY` (or with no quota) the upload says so and the student can type instead.
+
+**Question of the Day and streak:** one question per day (same for everyone, within the student's chosen
+level), and a practice streak counted from the evaluations saved in the browser.
 
 ## Run it locally
 

@@ -1,0 +1,73 @@
+{
+  "id": "fnd-law-valid-contract",
+  "version": "1",
+  "sa": "Indian Contract Act, 1872",
+  "topic": "Essentials of a valid contract",
+  "question": "What are the essential elements of a valid contract under the Indian Contract Act, 1872?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "offer",
+    "acceptance",
+    "consideration",
+    "free consent"
+  ],
+  "references": [
+    "Section 10"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Offer and acceptance",
+      "marks": 1,
+      "description": "There must be a lawful offer and a lawful acceptance of it, resulting in an agreement.",
+      "keywords": [
+        "offer",
+        "acceptance"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Intention and consideration",
+      "marks": 1,
+      "description": "The parties must intend to create legal relations, and there must be lawful consideration.",
+      "keywords": [
+        "legal relations",
+        "consideration"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Capacity of parties",
+      "marks": 1,
+      "description": "The parties must be competent to contract: of the age of majority, of sound mind and not disqualified by law.",
+      "keywords": [
+        "competent"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Free consent",
+      "marks": 1,
+      "description": "Consent must be free, i.e. not caused by coercion, undue influence, fraud, misrepresentation or mistake.",
+      "keywords": [
+        "free consent",
+        "coercion"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Lawful object and other essentials",
+      "marks": 1,
+      "description": "The object must be lawful, the agreement must not be expressly declared void, and its meaning must be certain and its performance possible; any required legal formalities must be met.",
+      "keywords": [
+        "lawful object"
+      ],
+      "references": []
+    }
+  ]
+}

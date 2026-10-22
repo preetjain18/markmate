@@ -1,5 +1,7 @@
 import { AttemptsMini, FeedbackTracePreview, HeroPreview, MapMini, SampleLabel } from "@/components/landing/previews";
+import { DailyCard } from "@/components/DailyCard";
 import { SiteFooter, SiteHeader } from "@/components/site";
+import { loadCatalog } from "@/lib/catalog";
 import { ButtonLink, Card, Eyebrow, Icon, SectionHeading, type IconName } from "@/components/ui";
 
 const PROBLEMS: { icon: IconName; title: string; body: string }[] = [
@@ -21,7 +23,7 @@ const PROBLEMS: { icon: IconName; title: string; body: string }[] = [
 ];
 
 const STEPS: { icon: IconName; title: string; body: string }[] = [
-  { icon: "notebook", title: "Practise", body: "Choose your CA level, subject and question, and write your answer." },
+  { icon: "notebook", title: "Practise", body: "Choose your CA level, paper and question. Write your answer on paper and upload a photo, or type it." },
   {
     icon: "scan",
     title: "Find Lost Marks",
@@ -31,6 +33,8 @@ const STEPS: { icon: IconName; title: string; body: string }[] = [
 ];
 
 export default function Home() {
+  const catalog = loadCatalog().view;
+  const names = Object.fromEntries(catalog.levels.flatMap((l) => [[l.id, l.name], ...l.subjects.map((s) => [s.id, s.short ?? s.name])]));
   return (
     <>
       <SiteHeader active="home" />
@@ -46,7 +50,10 @@ export default function Home() {
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
                 Practise CA answer-writing with feedback that shows what you missed, why it matters, and how to write a better answer next time.
               </p>
-              <p className="mt-3 max-w-xl text-sm text-muted">Answer evaluation is available for CA Final Audit today. More subjects will follow as their marking schemes are added.</p>
+              <p className="mt-3 flex max-w-xl items-start gap-2 text-sm text-muted">
+                <Icon name="camera" className="mt-0.5 text-brand" />
+                Write on paper like the real exam, then upload a photo of your answer sheet. Or type it.
+              </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <ButtonLink href="/practice" size="lg">
                   Start Practising <Icon name="arrow" />
@@ -63,6 +70,11 @@ export default function Home() {
               <HeroPreview />
             </div>
           </div>
+        </section>
+
+        {/* Today */}
+        <section className="mx-auto max-w-6xl px-4 pt-12 sm:px-6" aria-label="Question of the day">
+          <DailyCard questions={catalog.questions} names={names} />
         </section>
 
         {/* Problem */}
@@ -131,7 +143,7 @@ export default function Home() {
             <div className="min-w-0 flex-1">
               <h3 className="font-display text-[17px] font-semibold">Practise with your own questions</h3>
               <p className="mt-1 text-[15px] text-muted">
-                Paste a question and its model answer. MarkMate drafts the marking points, and you check the marks before your answer is marked.
+                Paste a question and its model answer from any paper. MarkMate drafts the marking points, and you check the marks before your answer is marked.
               </p>
             </div>
             <ButtonLink href="/practice" variant="secondary" size="sm" className="self-start sm:self-center">

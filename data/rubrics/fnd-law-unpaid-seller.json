@@ -1,0 +1,68 @@
+{
+  "id": "fnd-law-unpaid-seller",
+  "version": "1",
+  "sa": "Sale of Goods Act, 1930",
+  "topic": "Rights of an unpaid seller",
+  "question": "Who is an unpaid seller under the Sale of Goods Act, 1930? Explain the rights of an unpaid seller against the goods.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "unpaid seller",
+    "lien",
+    "stoppage in transit",
+    "resale"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of unpaid seller",
+      "marks": 1,
+      "description": "A seller is unpaid when the whole price has not been paid or tendered, or when a bill of exchange or other negotiable instrument received as conditional payment has been dishonoured.",
+      "keywords": [
+        "unpaid seller"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Right of lien",
+      "marks": 1,
+      "description": "The seller in possession may retain the goods until paid, where goods are sold without credit, the credit period has expired, or the buyer becomes insolvent.",
+      "keywords": [
+        "lien"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Stoppage in transit",
+      "marks": 1,
+      "description": "Where the buyer becomes insolvent and the goods are in transit, the seller may resume possession and retain them until paid.",
+      "keywords": [
+        "stoppage in transit"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Right of resale",
+      "marks": 1,
+      "description": "The seller may resell where the goods are perishable, or after giving notice of intention to resell if the buyer does not pay within a reasonable time, or where the right is expressly reserved.",
+      "keywords": [
+        "resale"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Withholding delivery",
+      "marks": 1,
+      "description": "Where property in the goods has not passed to the buyer, the unpaid seller may withhold delivery, similar to lien and stoppage in transit.",
+      "keywords": [
+        "withhold delivery"
+      ],
+      "references": []
+    }
+  ]
+}

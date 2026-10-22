@@ -21,6 +21,7 @@ type Tab = "rewrite" | "focus" | "original";
 
 export function ImprovementLab({
   context,
+  questionText,
   maxMarks,
   first,
   firstAnswer,
@@ -35,6 +36,7 @@ export function ImprovementLab({
   onBackToMap,
 }: {
   context: string[];
+  questionText?: string;
   maxMarks?: number;
   first: AttemptResult;
   firstAnswer: string;
@@ -114,6 +116,7 @@ export function ImprovementLab({
             busy={busy}
             problem={problem}
             submitLabel="Evaluate Improved Answer"
+            upload={{ question: questionText }}
           />
           <div aria-live="polite" className="space-y-3 empty:hidden">
             {busy && <LoadingState message="Evaluating your improved answer…" detail="Using the same marking scheme as Attempt 1." rows={2} />}

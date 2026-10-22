@@ -1,0 +1,59 @@
+{
+  "id": "fin-afm-var",
+  "version": "1",
+  "sa": "AFM",
+  "topic": "Value at Risk",
+  "question": "What is Value at Risk (VaR)? Explain its features, uses and limitations.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "value at risk",
+    "confidence level",
+    "time horizon"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "The maximum expected loss on a portfolio over a given time horizon at a given confidence level, under normal market conditions.",
+      "keywords": [
+        "maximum",
+        "confidence level"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Features",
+      "marks": 1,
+      "description": "It depends on the time horizon, the confidence level and the distribution or volatility of returns.",
+      "keywords": [
+        "time horizon",
+        "volatility"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Uses",
+      "marks": 1,
+      "description": "Used to measure risk, set risk limits, allocate capital and report risk to management and regulators.",
+      "keywords": [
+        "risk limits"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Limitations",
+      "marks": 1,
+      "description": "It assumes normal markets, does not show the size of losses beyond the confidence level, and depends on historical data and model assumptions.",
+      "keywords": [
+        "historical"
+      ],
+      "references": []
+    }
+  ]
+}

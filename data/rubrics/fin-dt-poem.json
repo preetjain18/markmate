@@ -1,0 +1,57 @@
+{
+  "id": "fin-dt-poem",
+  "version": "1",
+  "sa": "Residence of companies",
+  "topic": "Place of effective management",
+  "question": "Explain the concept of place of effective management (POEM) for determining the residential status of a company.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "place of effective management",
+    "key management"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "When a company is resident",
+      "marks": 1,
+      "description": "A company is resident in India if it is an Indian company, or if its place of effective management in that year is in India.",
+      "keywords": [
+        "Indian company"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Meaning of POEM",
+      "marks": 1,
+      "description": "The place where key management and commercial decisions necessary for the conduct of the business as a whole are, in substance, made.",
+      "keywords": [
+        "key management",
+        "in substance"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Active business outside India",
+      "marks": 1,
+      "description": "For a company engaged in active business outside India, POEM is presumed to be outside India if the majority of its board meetings are held outside India.",
+      "keywords": [
+        "active business"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Other companies",
+      "marks": 1,
+      "description": "Otherwise, identify the persons who actually make the key decisions and where those decisions are made; substance prevails over form and one-off decisions are not decisive.",
+      "keywords": [
+        "substance"
+      ],
+      "references": []
+    }
+  ]
+}

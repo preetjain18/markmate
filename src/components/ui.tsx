@@ -9,6 +9,10 @@ import {
   ArrowRight,
   ArrowUp,
   BookOpen,
+  CalendarDays,
+  Camera,
+  Flame,
+  Upload,
   Briefcase,
   Calculator,
   ClipboardCheck,
@@ -99,6 +103,10 @@ const ICONS = {
   folder: FolderOpen,
   graduation: GraduationCap,
   filter: SlidersHorizontal,
+  upload: Upload,
+  camera: Camera,
+  flame: Flame,
+  calendar: CalendarDays,
 } satisfies Record<string, LucideIcon>;
 export type IconName = keyof typeof ICONS;
 

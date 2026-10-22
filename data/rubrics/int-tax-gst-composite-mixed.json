@@ -1,0 +1,58 @@
+{
+  "id": "int-tax-gst-composite-mixed",
+  "version": "1",
+  "sa": "GST",
+  "topic": "Composite and mixed supply",
+  "question": "Distinguish between a composite supply and a mixed supply under GST, with an example of each.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "composite supply",
+    "mixed supply",
+    "principal supply"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Composite supply",
+      "marks": 1,
+      "description": "Two or more taxable supplies that are naturally bundled and supplied together in the ordinary course of business, one of which is the principal supply.",
+      "keywords": [
+        "composite supply",
+        "naturally bundled"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Tax on composite supply",
+      "marks": 1,
+      "description": "A composite supply is taxed as a supply of the principal supply.",
+      "keywords": [
+        "principal supply"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Mixed supply",
+      "marks": 1,
+      "description": "Two or more individual supplies made together for a single price that are not naturally bundled.",
+      "keywords": [
+        "mixed supply"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Tax on mixed supply and examples",
+      "marks": 1,
+      "description": "A mixed supply is taxed at the rate of the supply that attracts the highest rate. Examples: goods with transport and insurance (composite); a gift pack of sweets, chocolates and dry fruits (mixed).",
+      "keywords": [
+        "highest rate"
+      ],
+      "references": []
+    }
+  ]
+}

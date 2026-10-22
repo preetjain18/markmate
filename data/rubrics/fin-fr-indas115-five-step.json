@@ -1,0 +1,69 @@
+{
+  "id": "fin-fr-indas115-five-step",
+  "version": "1",
+  "sa": "Ind AS 115",
+  "topic": "Five-step revenue model",
+  "question": "Explain the five-step model for revenue recognition under Ind AS 115.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "performance obligation",
+    "transaction price"
+  ],
+  "references": [
+    "Ind AS 115"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Identify the contract",
+      "marks": 1,
+      "description": "Identify the contract(s) with a customer that meet the criteria (approved, rights and payment terms identifiable, commercial substance, collection probable).",
+      "keywords": [
+        "contract"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Identify performance obligations",
+      "marks": 1,
+      "description": "Identify each distinct promise to transfer goods or services as a performance obligation.",
+      "keywords": [
+        "performance obligation"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Determine the transaction price",
+      "marks": 1,
+      "description": "Determine the consideration expected, including variable consideration and the effects of significant financing components.",
+      "keywords": [
+        "transaction price"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Allocate the transaction price",
+      "marks": 1,
+      "description": "Allocate the transaction price to each performance obligation based on relative stand-alone selling prices.",
+      "keywords": [
+        "stand-alone selling price"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Recognise revenue",
+      "marks": 1,
+      "description": "Recognise revenue when (or as) each performance obligation is satisfied, either at a point in time or over time.",
+      "keywords": [
+        "point in time",
+        "over time"
+      ],
+      "references": []
+    }
+  ]
+}

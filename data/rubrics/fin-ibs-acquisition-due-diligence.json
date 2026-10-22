@@ -1,0 +1,69 @@
+{
+  "id": "fin-ibs-acquisition-due-diligence",
+  "version": "1",
+  "sa": "Case study",
+  "topic": "Due diligence before an acquisition",
+  "question": "A listed company plans to acquire a smaller competitor. Explain the key areas of due diligence the board should review before approving the acquisition.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "due diligence",
+    "valuation",
+    "integration"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Financial due diligence",
+      "marks": 1,
+      "description": "Quality of earnings, assets and liabilities, working capital and cash flows of the target.",
+      "keywords": [
+        "financial"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Tax due diligence",
+      "marks": 1,
+      "description": "Past tax compliance, pending demands and disputes, and the tax effects of the deal structure.",
+      "keywords": [
+        "tax"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Legal and regulatory",
+      "marks": 1,
+      "description": "Contracts, litigation, licences and the approvals needed (for example competition and securities regulators).",
+      "keywords": [
+        "litigation",
+        "approvals"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Commercial and operational",
+      "marks": 1,
+      "description": "Customers, market position, operations and the realistic synergies.",
+      "keywords": [
+        "synergies"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "People, integration and price",
+      "marks": 1,
+      "description": "Key people and culture, the integration plan, and whether the valuation and price are justified.",
+      "keywords": [
+        "integration",
+        "valuation"
+      ],
+      "references": []
+    }
+  ]
+}

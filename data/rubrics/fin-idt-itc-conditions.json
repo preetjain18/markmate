@@ -1,0 +1,70 @@
+{
+  "id": "fin-idt-itc-conditions",
+  "version": "1",
+  "sa": "GST",
+  "topic": "Conditions for input tax credit",
+  "question": "State the conditions a registered person must satisfy to be entitled to input tax credit under GST.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "input tax credit",
+    "tax invoice",
+    "180 days"
+  ],
+  "references": [
+    "Section 16"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Tax invoice",
+      "marks": 1,
+      "description": "The recipient holds a tax invoice, debit note or other prescribed tax-paying document.",
+      "keywords": [
+        "tax invoice"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Details furnished by supplier",
+      "marks": 1,
+      "description": "The supplier has furnished the details of the invoice and they have been communicated to the recipient (appearing in the recipient's statement).",
+      "keywords": [
+        "furnished"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Receipt of goods or services",
+      "marks": 1,
+      "description": "The goods or services have been received (including delivery to another person on the recipient's direction).",
+      "keywords": [
+        "received"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Tax paid and return filed",
+      "marks": 1,
+      "description": "The tax charged has actually been paid to the Government by the supplier, and the recipient has furnished its return.",
+      "keywords": [
+        "paid to the Government",
+        "return"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Payment within 180 days and other rules",
+      "marks": 1,
+      "description": "The recipient must pay the supplier within 180 days of the invoice or reverse the credit with interest; for goods received in lots, credit is taken on the last lot; no credit on tax capitalised for depreciation.",
+      "keywords": [
+        "180 days"
+      ],
+      "references": []
+    }
+  ]
+}

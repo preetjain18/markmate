@@ -16,21 +16,28 @@ describe("practice catalog (real data)", () => {
     expect(ids).toEqual(loadRubrics().map((r) => r.id).sort());
   });
 
-  it("places every Audit question under CA Final Audit, with matching marks and text", () => {
+  it("gives every question its own rubric's marks and text", () => {
     for (const q of catalog.view.questions) {
       const r = catalog.rubrics.get(q.id)!;
-      expect(q.levelId).toBe("final");
-      expect(q.subjectId).toBe("final-audit");
       expect(q.maxMarks).toBe(r.maxMarks);
       expect(q.text).toBe(r.question);
     }
   });
 
-  it("reports honest subject status: Audit evaluable but unverified, others coming soon", () => {
+  it("keeps the SA questions under CA Final Audit and the new ones under their own papers", () => {
+    expect(catalog.view.questions.filter((q) => q.subjectId === "final-audit")).toHaveLength(10);
+    expect(catalog.view.questions.find((q) => q.id === "fnd-law-valid-contract")).toMatchObject({ levelId: "foundation", subjectId: "foundation-business-laws" });
+    expect(catalog.view.questions.find((q) => q.id === "int-aud-sa200-objectives")).toMatchObject({ levelId: "intermediate", subjectId: "inter-audit" });
+  });
+
+  it("has at least one evaluable question for every paper at every level, none verified", () => {
+    for (const level of catalog.view.levels)
+      for (const s of level.subjects) {
+        expect(s.stats.evaluable, s.id).toBeGreaterThan(0);
+        expect(s.stats.verified, s.id).toBe(0);
+        expect(s.status, s.id).toBe("evaluation");
+      }
     expect(subject("final-audit").stats).toEqual({ questions: 10, evaluable: 10, verified: 0 });
-    expect(subject("final-audit").status).toBe("evaluation");
-    expect(subject("final-financial-reporting").status).toBe("coming-soon");
-    expect(subject("inter-audit").status).toBe("coming-soon");
   });
 
   it("never marks a question verified without a verified rubric", () => {

@@ -1,0 +1,70 @@
+{
+  "id": "int-aud-sa200-objectives",
+  "version": "1",
+  "sa": "SA 200",
+  "topic": "Objectives and limitations of an audit",
+  "question": "Explain the overall objectives of the auditor and the inherent limitations of an audit under SA 200.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "reasonable assurance",
+    "material misstatement",
+    "inherent limitations"
+  ],
+  "references": [
+    "SA 200"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Reasonable assurance",
+      "marks": 1,
+      "description": "Obtain reasonable assurance about whether the financial statements as a whole are free from material misstatement, whether due to fraud or error.",
+      "keywords": [
+        "reasonable assurance",
+        "material misstatement"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Opinion and reporting",
+      "marks": 1,
+      "description": "Express an opinion on whether the financial statements are prepared in all material respects in accordance with the applicable financial reporting framework, and report as required.",
+      "keywords": [
+        "opinion"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Not absolute assurance",
+      "marks": 1,
+      "description": "Reasonable assurance is a high level of assurance but not absolute.",
+      "keywords": [
+        "absolute"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Inherent limitations",
+      "marks": 1,
+      "description": "Limitations arise from the nature of financial reporting (judgements and estimates), the nature of audit procedures (incomplete information, concealed fraud, no legal powers), and the need to balance timeliness and cost.",
+      "keywords": [
+        "inherent limitations"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Judgement, skepticism and inability to achieve objectives",
+      "marks": 1,
+      "description": "The auditor exercises professional judgement and skepticism; where the objectives cannot be achieved, the auditor modifies the opinion or withdraws.",
+      "keywords": [
+        "professional skepticism"
+      ],
+      "references": []
+    }
+  ]
+}

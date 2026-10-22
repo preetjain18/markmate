@@ -1,0 +1,70 @@
+{
+  "id": "fin-fr-indas37-provisions",
+  "version": "1",
+  "sa": "Ind AS 37",
+  "topic": "Provisions and contingent liabilities",
+  "question": "When should a provision be recognised under Ind AS 37? How does a provision differ from a contingent liability?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "provision",
+    "contingent liability",
+    "present obligation"
+  ],
+  "references": [
+    "Ind AS 37"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Present obligation",
+      "marks": 1,
+      "description": "There is a present obligation (legal or constructive) as a result of a past event.",
+      "keywords": [
+        "present obligation"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Probable outflow",
+      "marks": 1,
+      "description": "It is probable that an outflow of resources embodying economic benefits will be required.",
+      "keywords": [
+        "probable"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Reliable estimate",
+      "marks": 1,
+      "description": "A reliable estimate of the amount of the obligation can be made.",
+      "keywords": [
+        "reliable estimate"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Contingent liability",
+      "marks": 1,
+      "description": "A possible obligation whose existence depends on uncertain future events, or a present obligation where the outflow is not probable or cannot be measured reliably.",
+      "keywords": [
+        "contingent liability"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Different treatment",
+      "marks": 1,
+      "description": "Provisions are recognised in the balance sheet; contingent liabilities are not recognised but disclosed, unless the outflow is remote.",
+      "keywords": [
+        "disclosed",
+        "remote"
+      ],
+      "references": []
+    }
+  ]
+}

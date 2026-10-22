@@ -1,0 +1,67 @@
+{
+  "id": "fnd-eco-perfect-competition",
+  "version": "1",
+  "sa": "Business Economics",
+  "topic": "Perfect competition",
+  "question": "Explain the features of a perfectly competitive market.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "perfect competition",
+    "price taker",
+    "homogeneous"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Many buyers and sellers",
+      "marks": 1,
+      "description": "There is a large number of buyers and sellers, so an individual firm is a price taker.",
+      "keywords": [
+        "price taker"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Homogeneous product",
+      "marks": 1,
+      "description": "All firms sell an identical (homogeneous) product.",
+      "keywords": [
+        "homogeneous"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Free entry and exit",
+      "marks": 1,
+      "description": "Firms can freely enter or leave the industry.",
+      "keywords": [
+        "free entry"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Perfect knowledge",
+      "marks": 1,
+      "description": "Buyers and sellers have perfect knowledge of market conditions and prices.",
+      "keywords": [
+        "perfect knowledge"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Mobility and single price",
+      "marks": 1,
+      "description": "Factors of production are perfectly mobile and there are no transport costs, so a single uniform price prevails; the firm's demand curve is perfectly elastic.",
+      "keywords": [
+        "perfectly elastic"
+      ],
+      "references": []
+    }
+  ]
+}

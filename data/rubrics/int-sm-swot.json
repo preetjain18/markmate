@@ -1,0 +1,55 @@
+{
+  "id": "int-sm-swot",
+  "version": "1",
+  "sa": "Strategic management",
+  "topic": "SWOT analysis",
+  "question": "Explain SWOT analysis and its significance in strategic management.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "strengths",
+    "weaknesses",
+    "opportunities",
+    "threats"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "SWOT reviews internal Strengths and Weaknesses and external Opportunities and Threats.",
+      "keywords": [
+        "internal",
+        "external"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Examples of each",
+      "marks": 1,
+      "description": "Strengths and weaknesses relate to resources and capabilities; opportunities and threats come from markets, competition, technology and regulation.",
+      "keywords": [],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Matching",
+      "marks": 1,
+      "description": "It matches internal capabilities with the external environment to help formulate strategy.",
+      "keywords": [
+        "strategy"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Significance",
+      "marks": 1,
+      "description": "It gives a logical framework to build on strengths, reduce weaknesses, exploit opportunities and counter threats.",
+      "keywords": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "fnd-acc-capital-revenue",
+  "version": "1",
+  "sa": "Accounting",
+  "topic": "Capital and revenue expenditure",
+  "question": "Distinguish between capital expenditure and revenue expenditure, with an example of each.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "capital expenditure",
+    "revenue expenditure"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Capital expenditure",
+      "marks": 1,
+      "description": "Gives a benefit over more than one accounting period: acquires or improves fixed assets, or increases earning capacity.",
+      "keywords": [
+        "capital expenditure"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Revenue expenditure",
+      "marks": 1,
+      "description": "Benefit is consumed within the accounting period: maintains day-to-day operations or existing earning capacity.",
+      "keywords": [
+        "revenue expenditure"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Accounting treatment",
+      "marks": 1,
+      "description": "Capital expenditure is shown as an asset in the balance sheet (and depreciated); revenue expenditure is charged to the profit and loss account.",
+      "keywords": [
+        "balance sheet",
+        "profit and loss"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Examples",
+      "marks": 1,
+      "description": "Capital: purchase of machinery or extension of a building. Revenue: repairs, wages, rent.",
+      "keywords": [],
+      "references": []
+    }
+  ]
+}

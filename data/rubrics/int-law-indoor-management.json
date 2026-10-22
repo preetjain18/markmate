@@ -1,0 +1,69 @@
+{
+  "id": "int-law-indoor-management",
+  "version": "1",
+  "sa": "Companies Act, 2013",
+  "topic": "Doctrine of indoor management",
+  "question": "Explain the doctrine of indoor management and the exceptions to it.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "indoor management",
+    "Turquand",
+    "constructive notice"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "Outsiders dealing with a company in good faith may assume that its internal procedures have been complied with; they need not inquire into internal regularity.",
+      "keywords": [
+        "indoor management"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Origin and purpose",
+      "marks": 1,
+      "description": "Laid down in Royal British Bank v. Turquand; it protects outsiders and limits the doctrine of constructive notice.",
+      "keywords": [
+        "Turquand",
+        "constructive notice"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Exception: knowledge of irregularity",
+      "marks": 1,
+      "description": "It does not protect an outsider who actually knew of the irregularity.",
+      "keywords": [
+        "knowledge"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Exception: negligence or suspicion",
+      "marks": 1,
+      "description": "It does not apply where the outsider ignored suspicious circumstances that called for inquiry, or where the document relied on is forged.",
+      "keywords": [
+        "forgery",
+        "suspicion"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Exception: acts beyond authority",
+      "marks": 1,
+      "description": "It does not cover acts outside the company's powers or the apparent authority of the officer, or cases where the outsider had not relied on the articles.",
+      "keywords": [
+        "authority"
+      ],
+      "references": []
+    }
+  ]
+}

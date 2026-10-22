@@ -12,7 +12,8 @@ export class NotConfiguredError extends Error {
 }
 export class ModelCallError extends Error {}
 
-export type ModelRequest = { system: string; user: string; schema: object; schemaName: string };
+export type ImagePart = { mimeType: string; data: string /* base64, no data: prefix */ };
+export type ModelRequest = { system: string; user: string; schema: object; schemaName: string; images?: ImagePart[] };
 export type ModelResponse = { data: unknown; model: string; usage?: unknown };
 export type ModelCaller = (req: ModelRequest) => Promise<ModelResponse>;
 
@@ -51,14 +52,14 @@ function parseJson(text: string): unknown {
   return JSON.parse(t);
 }
 
-export const callModel: ModelCaller = async ({ system, user, schema }) => {
+export const callModel: ModelCaller = async ({ system, user, schema, images = [] }) => {
   const key = process.env.GEMINI_API_KEY?.trim();
   if (!key) throw new NotConfiguredError();
   const model = getModelId();
 
   const body = {
     systemInstruction: { parts: [{ text: system }] },
-    contents: [{ role: "user", parts: [{ text: user }] }],
+    contents: [{ role: "user", parts: [{ text: user }, ...images.map((img) => ({ inlineData: { mimeType: img.mimeType, data: img.data } }))] }],
     generationConfig: {
       temperature: 0,
       responseMimeType: "application/json",

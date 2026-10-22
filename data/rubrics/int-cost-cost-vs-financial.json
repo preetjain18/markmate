@@ -1,0 +1,58 @@
+{
+  "id": "int-cost-cost-vs-financial",
+  "version": "1",
+  "sa": "Cost accounting",
+  "topic": "Cost and financial accounting",
+  "question": "Distinguish between cost accounting and financial accounting.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "cost accounting",
+    "financial accounting"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Purpose and users",
+      "marks": 1,
+      "description": "Financial accounting reports results and financial position mainly to external users; cost accounting ascertains, controls and reduces costs for management.",
+      "keywords": [
+        "external",
+        "management"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Statutory requirement",
+      "marks": 1,
+      "description": "Financial accounting is compulsory by law; cost accounting is largely voluntary except where cost records are prescribed.",
+      "keywords": [
+        "compulsory"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Analysis",
+      "marks": 1,
+      "description": "Financial accounts show results for the business as a whole; cost accounts analyse costs by product, job, process or department.",
+      "keywords": [
+        "product"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Nature of figures and reporting",
+      "marks": 1,
+      "description": "Financial accounting uses historical figures reported periodically; cost accounting also uses estimates and standards and reports more frequently.",
+      "keywords": [
+        "historical",
+        "standards"
+      ],
+      "references": []
+    }
+  ]
+}

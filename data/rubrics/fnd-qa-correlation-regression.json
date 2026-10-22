@@ -1,0 +1,57 @@
+{
+  "id": "fnd-qa-correlation-regression",
+  "version": "1",
+  "sa": "Statistics",
+  "topic": "Correlation and regression",
+  "question": "Distinguish between correlation and regression.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "correlation",
+    "regression",
+    "coefficient"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Correlation measures association",
+      "marks": 1,
+      "description": "Correlation measures the degree and direction of the relationship between two variables; the coefficient lies between -1 and +1.",
+      "keywords": [
+        "correlation"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Regression estimates values",
+      "marks": 1,
+      "description": "Regression establishes a functional relationship to estimate the value of a dependent variable from an independent variable.",
+      "keywords": [
+        "regression",
+        "dependent"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Symmetry",
+      "marks": 1,
+      "description": "The correlation coefficient is symmetric (rxy = ryx) with no dependent/independent distinction; regression coefficients are not symmetric (byx and bxy differ).",
+      "keywords": [],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Effect of origin and scale",
+      "marks": 1,
+      "description": "The correlation coefficient is independent of change of origin and scale; regression coefficients are independent of change of origin but not of scale.",
+      "keywords": [
+        "origin",
+        "scale"
+      ],
+      "references": []
+    }
+  ]
+}

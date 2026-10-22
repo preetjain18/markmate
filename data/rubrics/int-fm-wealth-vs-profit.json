@@ -1,0 +1,59 @@
+{
+  "id": "int-fm-wealth-vs-profit",
+  "version": "1",
+  "sa": "Financial management",
+  "topic": "Profit and wealth maximisation",
+  "question": "Distinguish between profit maximisation and wealth maximisation as objectives of financial management. Which is preferred, and why?",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "profit maximisation",
+    "wealth maximisation",
+    "time value"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Profit maximisation",
+      "marks": 1,
+      "description": "Aims to maximise earnings, usually in the short run.",
+      "keywords": [
+        "profit maximisation"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Limitations of profit maximisation",
+      "marks": 1,
+      "description": "It ignores the time value of money and risk, and 'profit' is vague (different measures).",
+      "keywords": [
+        "time value",
+        "risk"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Wealth maximisation",
+      "marks": 1,
+      "description": "Aims to maximise the net present value of the business, reflected in the market value of shares, taking account of timing and risk.",
+      "keywords": [
+        "wealth maximisation",
+        "net present value"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Why wealth maximisation is preferred",
+      "marks": 1,
+      "description": "It is long-term, based on cash flows, considers risk and timing, and serves shareholders' interests.",
+      "keywords": [
+        "shareholders"
+      ],
+      "references": []
+    }
+  ]
+}

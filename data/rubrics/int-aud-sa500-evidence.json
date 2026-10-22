@@ -1,0 +1,61 @@
+{
+  "id": "int-aud-sa500-evidence",
+  "version": "1",
+  "sa": "SA 500",
+  "topic": "Sufficient appropriate audit evidence",
+  "question": "What is meant by sufficient appropriate audit evidence under SA 500? Explain the factors that affect its reliability.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "sufficient",
+    "appropriate",
+    "reliability"
+  ],
+  "references": [
+    "SA 500"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Sufficiency",
+      "marks": 1,
+      "description": "Sufficiency is the measure of the quantity of evidence; it depends on the assessed risk of material misstatement and the quality of the evidence.",
+      "keywords": [
+        "sufficiency",
+        "quantity"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Appropriateness",
+      "marks": 1,
+      "description": "Appropriateness is the measure of the quality of evidence: its relevance and reliability.",
+      "keywords": [
+        "appropriateness",
+        "relevance"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Source of evidence",
+      "marks": 1,
+      "description": "Evidence from independent sources outside the entity is more reliable; internally generated evidence is more reliable when related controls are effective.",
+      "keywords": [
+        "independent"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Form of evidence",
+      "marks": 1,
+      "description": "Evidence obtained directly by the auditor is more reliable than indirect evidence; documentary evidence is more reliable than oral; originals are more reliable than copies.",
+      "keywords": [
+        "documentary"
+      ],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "int-cost-abc-analysis",
+  "version": "1",
+  "sa": "Material cost",
+  "topic": "ABC analysis",
+  "question": "Explain ABC analysis as a technique of inventory control and its advantages.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "ABC analysis",
+    "selective control"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "Inventory items are classified into A, B and C categories according to their annual consumption value.",
+      "keywords": [
+        "consumption value"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "The three categories",
+      "marks": 1,
+      "description": "A items are few in number but high in value and get strict control; C items are many but low in value and get simple control; B items fall in between.",
+      "keywords": [
+        "A items"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Selective control",
+      "marks": 1,
+      "description": "Control effort is matched to the value of items, so attention goes where most money is tied up.",
+      "keywords": [
+        "selective control"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Advantages",
+      "marks": 1,
+      "description": "Reduces investment in inventory, saves time and effort in control, and gives closer control over costly items.",
+      "keywords": [],
+      "references": []
+    }
+  ]
+}

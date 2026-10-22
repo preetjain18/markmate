@@ -1,0 +1,58 @@
+{
+  "id": "int-acc-as9-revenue",
+  "version": "1",
+  "sa": "AS 9",
+  "topic": "Revenue from sale of goods",
+  "question": "When is revenue from the sale of goods recognised under AS 9 'Revenue Recognition'? When should recognition be postponed?",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "risks and rewards",
+    "uncertainty"
+  ],
+  "references": [
+    "AS 9"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Transfer of risks and rewards",
+      "marks": 1,
+      "description": "The seller has transferred the property in the goods to the buyer for a consideration, i.e. the significant risks and rewards of ownership.",
+      "keywords": [
+        "risks and rewards"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "No significant uncertainty",
+      "marks": 1,
+      "description": "No significant uncertainty exists about the measurement or collectability of the consideration.",
+      "keywords": [
+        "uncertainty"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "No effective control retained",
+      "marks": 1,
+      "description": "The seller retains no effective control over the goods to the degree usually associated with ownership.",
+      "keywords": [
+        "effective control"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Postponement",
+      "marks": 1,
+      "description": "Where uncertainty exists at the time of sale, recognition is postponed until it is resolved; if uncertainty arises later, a separate provision is made rather than adjusting revenue.",
+      "keywords": [
+        "postponed"
+      ],
+      "references": []
+    }
+  ]
+}

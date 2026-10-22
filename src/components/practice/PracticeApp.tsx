@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { answerProblem } from "@/lib/answer";
 import type { CatalogView } from "@/lib/catalog-types";
 import { appendHistory, failedRecord, recordFromResult, type QuestionMeta } from "@/lib/history";
 import type { AttemptResult, Rubric } from "@/lib/schema";
 import { cn, fmt } from "@/lib/ui";
 import { Button, Card, ErrorMessage, Icon, LoadingState, Pill } from "../ui";
+import { DailyCard } from "../DailyCard";
 import { AnswerWorkspace } from "./AnswerWorkspace";
 import { Breadcrumbs, LevelSelector, QuestionCard, SubjectBrowser, SubjectGrid, type Crumb } from "./Browse";
 import Comparison from "./Comparison";
@@ -110,6 +111,10 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
   const labRef = useRef<HTMLDivElement>(null);
   const cmpRef = useRef<HTMLDivElement>(null);
 
+  const names = useMemo(
+    () => Object.fromEntries(catalog.levels.flatMap((l) => [[l.id, l.name], ...l.subjects.map((s) => [s.id, s.short ?? s.name])])),
+    [catalog],
+  );
   const level = catalog.levels.find((l) => l.id === levelId) ?? null;
   const subject = level?.subjects.find((s) => s.id === subjectId) ?? null;
   const isCustom = questionId === CUSTOM;
@@ -329,6 +334,9 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
   if (!inWorkspace) {
     return (
       <div className="mx-auto max-w-6xl space-y-8 px-4 pb-24 pt-6 sm:px-6">
+        <section aria-label="Question of the day">
+          <DailyCard questions={catalog.questions} names={names} compact />
+        </section>
         <section aria-labelledby="level-heading">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
@@ -441,6 +449,7 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
           busy={busy === "mark1"}
           problem={problem}
           unavailable={unavailable}
+          upload={{ question: question?.text ?? (cQuestion.trim() || undefined) }}
           label={first ? "Attempt 1 · your submitted answer" : "Your answer"}
           savedNote={first ? undefined : "Draft kept in this browser"}
           locked={first ? { message: "Attempt 1 is locked so its evaluation stays exactly as marked. Improve it in the Improvement Lab below.", onStartOver: startOver } : undefined}
@@ -468,6 +477,7 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
           <div ref={labRef} className="scroll-mt-24">
             <ImprovementLab
               context={context}
+              questionText={question?.text ?? (cQuestion.trim() || undefined)}
               maxMarks={first.maxMarks}
               first={first}
               firstAnswer={firstAnswer}

@@ -24,9 +24,9 @@ const out = (): ModelOutput => ({
 });
 
 describe("rubrics", () => {
-  it("loads 10 unverified rubrics whose marks add up", () => {
+  it("loads the unverified rubrics (10 CA Final Audit + 29 other papers) whose marks add up", () => {
     const all = loadRubrics();
-    expect(all).toHaveLength(10);
+    expect(all).toHaveLength(39);
     expect(all.every((r) => r.verified === false)).toBe(true);
   });
 });

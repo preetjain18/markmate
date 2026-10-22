@@ -5,33 +5,194 @@
       "id": "foundation",
       "name": "CA Foundation",
       "subjects": [
-        { "id": "foundation-accounting", "name": "Accounting", "paper": "Paper 1", "category": "accounting", "chapters": [] },
-        { "id": "foundation-business-laws", "name": "Business Laws", "paper": "Paper 2", "category": "law", "chapters": [] },
+        {
+          "id": "foundation-accounting",
+          "name": "Accounting",
+          "paper": "Paper 1",
+          "category": "accounting",
+          "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapters": [
+            {
+              "id": "fnd-acc-framework",
+              "name": "Theoretical framework",
+              "topics": [
+                { "id": "fnd-acc-as1", "name": "AS 1 · Fundamental accounting assumptions", "questions": ["fnd-acc-fundamental-assumptions"] },
+                { "id": "fnd-acc-cap-rev", "name": "Capital and revenue expenditure", "questions": ["fnd-acc-capital-revenue"] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "foundation-business-laws",
+          "name": "Business Laws",
+          "paper": "Paper 2",
+          "category": "law",
+          "chapterNote": "Chapters are MarkMate's grouping, not the ICAI study material's order.",
+          "chapters": [
+            {
+              "id": "fnd-law-contract",
+              "name": "Indian Contract Act, 1872",
+              "topics": [{ "id": "fnd-law-valid-contract-t", "name": "Essentials of a valid contract", "questions": ["fnd-law-valid-contract"] }]
+            },
+            {
+              "id": "fnd-law-sale-of-goods",
+              "name": "Sale of Goods Act, 1930",
+              "topics": [{ "id": "fnd-law-unpaid-seller-t", "name": "Rights of an unpaid seller", "questions": ["fnd-law-unpaid-seller"] }]
+            }
+          ]
+        },
         {
           "id": "foundation-quantitative-aptitude",
           "name": "Quantitative Aptitude",
           "paper": "Paper 3",
           "category": "maths",
-          "chapters": []
+          "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapters": [
+            {
+              "id": "fnd-qa-statistics",
+              "name": "Statistics",
+              "topics": [
+                { "id": "fnd-qa-central-t", "name": "Measures of central tendency", "questions": ["fnd-qa-central-tendency"] },
+                { "id": "fnd-qa-corr-reg-t", "name": "Correlation and regression", "questions": ["fnd-qa-correlation-regression"] }
+              ]
+            }
+          ]
         },
-        { "id": "foundation-business-economics", "name": "Business Economics", "paper": "Paper 4", "category": "economics", "chapters": [] }
+        {
+          "id": "foundation-business-economics",
+          "name": "Business Economics",
+          "paper": "Paper 4",
+          "category": "economics",
+          "chapterNote": "Chapters are MarkMate's grouping, not the ICAI study material's order.",
+          "chapters": [
+            {
+              "id": "fnd-eco-demand",
+              "name": "Theory of demand and consumer behaviour",
+              "topics": [{ "id": "fnd-eco-dmu-t", "name": "Law of diminishing marginal utility", "questions": ["fnd-eco-diminishing-mu"] }]
+            },
+            {
+              "id": "fnd-eco-markets",
+              "name": "Price determination in different markets",
+              "topics": [{ "id": "fnd-eco-perfect-t", "name": "Perfect competition", "questions": ["fnd-eco-perfect-competition"] }]
+            }
+          ]
+        }
       ]
     },
     {
       "id": "intermediate",
       "name": "CA Intermediate",
       "subjects": [
-        { "id": "inter-advanced-accounting", "name": "Advanced Accounting", "paper": "Paper 1", "category": "accounting", "chapters": [] },
-        { "id": "inter-corporate-laws", "name": "Corporate and Other Laws", "paper": "Paper 2", "category": "law", "chapters": [] },
-        { "id": "inter-taxation", "name": "Taxation", "short": "Income Tax and GST", "paper": "Paper 3", "category": "tax", "chapters": [] },
-        { "id": "inter-cost-management", "name": "Cost and Management Accounting", "paper": "Paper 4", "category": "cost", "chapters": [] },
-        { "id": "inter-audit", "name": "Auditing and Ethics", "paper": "Paper 5", "category": "audit", "chapters": [] },
+        {
+          "id": "inter-advanced-accounting",
+          "name": "Advanced Accounting",
+          "paper": "Paper 1",
+          "category": "accounting",
+          "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapters": [
+            {
+              "id": "int-acc-standards",
+              "name": "Accounting Standards",
+              "topics": [
+                { "id": "int-acc-as2", "name": "AS 2 · Valuation of inventories", "questions": ["int-acc-as2-inventory"] },
+                { "id": "int-acc-as9", "name": "AS 9 · Revenue recognition", "questions": ["int-acc-as9-revenue"] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "inter-corporate-laws",
+          "name": "Corporate and Other Laws",
+          "paper": "Paper 2",
+          "category": "law",
+          "chapterNote": "Chapters are MarkMate's grouping, not the ICAI study material's order.",
+          "chapters": [
+            {
+              "id": "int-law-companies",
+              "name": "Companies Act, 2013",
+              "topics": [
+                { "id": "int-law-indoor-t", "name": "Doctrine of indoor management", "questions": ["int-law-indoor-management"] },
+                { "id": "int-law-kinds-t", "name": "Private and public companies", "questions": ["int-law-private-public"] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "inter-taxation",
+          "name": "Taxation",
+          "short": "Income Tax and GST",
+          "paper": "Paper 3",
+          "category": "tax",
+          "chapterNote": "Written theory questions only: computations aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapters": [
+            {
+              "id": "int-tax-income-tax",
+              "name": "Income-tax",
+              "topics": [{ "id": "int-tax-residence-t", "name": "Residential status of an individual", "questions": ["int-tax-residential-status"] }]
+            },
+            {
+              "id": "int-tax-gst",
+              "name": "Goods and Services Tax",
+              "topics": [{ "id": "int-tax-supply-t", "name": "Composite and mixed supply", "questions": ["int-tax-gst-composite-mixed"] }]
+            }
+          ]
+        },
+        {
+          "id": "inter-cost-management",
+          "name": "Cost and Management Accounting",
+          "paper": "Paper 4",
+          "category": "cost",
+          "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapters": [
+            {
+              "id": "int-cost-intro",
+              "name": "Introduction to cost and management accounting",
+              "topics": [{ "id": "int-cost-vs-fin-t", "name": "Cost and financial accounting", "questions": ["int-cost-cost-vs-financial"] }]
+            },
+            {
+              "id": "int-cost-material",
+              "name": "Material cost",
+              "topics": [{ "id": "int-cost-abc-t", "name": "ABC analysis", "questions": ["int-cost-abc-analysis"] }]
+            }
+          ]
+        },
+        {
+          "id": "inter-audit",
+          "name": "Auditing and Ethics",
+          "paper": "Paper 5",
+          "category": "audit",
+          "chapterNote": "Chapters are MarkMate's grouping, not the ICAI study material's order.",
+          "chapters": [
+            {
+              "id": "int-aud-nature",
+              "name": "Nature, objective and scope of audit",
+              "topics": [{ "id": "int-aud-sa200", "name": "SA 200 · Objectives and limitations", "questions": ["int-aud-sa200-objectives"] }]
+            },
+            {
+              "id": "int-aud-evidence",
+              "name": "Audit evidence",
+              "topics": [{ "id": "int-aud-sa500", "name": "SA 500 · Sufficient appropriate evidence", "questions": ["int-aud-sa500-evidence"] }]
+            }
+          ]
+        },
         {
           "id": "inter-fm-sm",
           "name": "Financial Management and Strategic Management",
           "paper": "Paper 6",
           "category": "finance",
-          "chapters": []
+          "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapters": [
+            {
+              "id": "int-fm-scope",
+              "name": "Scope and objectives of financial management",
+              "topics": [{ "id": "int-fm-objectives-t", "name": "Profit and wealth maximisation", "questions": ["int-fm-wealth-vs-profit"] }]
+            },
+            {
+              "id": "int-sm-analysis",
+              "name": "Strategic analysis",
+              "topics": [{ "id": "int-sm-swot-t", "name": "SWOT analysis", "questions": ["int-sm-swot"] }]
+            }
+          ]
         }
       ]
     },
@@ -39,8 +200,44 @@
       "id": "final",
       "name": "CA Final",
       "subjects": [
-        { "id": "final-financial-reporting", "name": "Financial Reporting", "paper": "Paper 1", "category": "accounting", "chapters": [] },
-        { "id": "final-afm", "name": "Advanced Financial Management", "paper": "Paper 2", "category": "finance", "chapters": [] },
+        {
+          "id": "final-financial-reporting",
+          "name": "Financial Reporting",
+          "paper": "Paper 1",
+          "category": "accounting",
+          "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapters": [
+            {
+              "id": "fin-fr-revenue",
+              "name": "Revenue",
+              "topics": [{ "id": "fin-fr-115", "name": "Ind AS 115 · Five-step model", "questions": ["fin-fr-indas115-five-step"] }]
+            },
+            {
+              "id": "fin-fr-liabilities",
+              "name": "Provisions and contingencies",
+              "topics": [{ "id": "fin-fr-37", "name": "Ind AS 37 · Provisions and contingent liabilities", "questions": ["fin-fr-indas37-provisions"] }]
+            }
+          ]
+        },
+        {
+          "id": "final-afm",
+          "name": "Advanced Financial Management",
+          "paper": "Paper 2",
+          "category": "finance",
+          "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapters": [
+            {
+              "id": "fin-afm-forex",
+              "name": "Foreign exchange exposure and risk management",
+              "topics": [{ "id": "fin-afm-hedging-t", "name": "Hedging foreign exchange risk", "questions": ["fin-afm-forex-hedging"] }]
+            },
+            {
+              "id": "fin-afm-risk",
+              "name": "Risk management",
+              "topics": [{ "id": "fin-afm-var-t", "name": "Value at Risk", "questions": ["fin-afm-var"] }]
+            }
+          ]
+        },
         {
           "id": "final-audit",
           "name": "Advanced Auditing, Assurance and Professional Ethics",
@@ -97,9 +294,58 @@
             }
           ]
         },
-        { "id": "final-direct-tax", "name": "Direct Tax Laws and International Taxation", "paper": "Paper 4", "category": "tax", "chapters": [] },
-        { "id": "final-indirect-tax", "name": "Indirect Tax Laws", "paper": "Paper 5", "category": "tax", "chapters": [] },
-        { "id": "final-ibs", "name": "Integrated Business Solutions", "paper": "Paper 6", "category": "strategy", "chapters": [] }
+        {
+          "id": "final-direct-tax",
+          "name": "Direct Tax Laws and International Taxation",
+          "paper": "Paper 4",
+          "category": "tax",
+          "chapterNote": "Written theory questions only: computations aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapters": [
+            {
+              "id": "fin-dt-transfer-pricing",
+              "name": "Transfer pricing",
+              "topics": [{ "id": "fin-dt-alp-t", "name": "Arm's length price methods", "questions": ["fin-dt-transfer-pricing-methods"] }]
+            },
+            {
+              "id": "fin-dt-residence",
+              "name": "Residence of companies",
+              "topics": [{ "id": "fin-dt-poem-t", "name": "Place of effective management", "questions": ["fin-dt-poem"] }]
+            }
+          ]
+        },
+        {
+          "id": "final-indirect-tax",
+          "name": "Indirect Tax Laws",
+          "paper": "Paper 5",
+          "category": "tax",
+          "chapterNote": "Written theory questions only: computations aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapters": [
+            {
+              "id": "fin-idt-gst-itc",
+              "name": "GST: input tax credit",
+              "topics": [{ "id": "fin-idt-itc-t", "name": "Conditions for input tax credit", "questions": ["fin-idt-itc-conditions"] }]
+            },
+            {
+              "id": "fin-idt-customs",
+              "name": "Customs",
+              "topics": [{ "id": "fin-idt-duties-t", "name": "Types of customs duties", "questions": ["fin-idt-customs-duties"] }]
+            }
+          ]
+        },
+        {
+          "id": "final-ibs",
+          "name": "Integrated Business Solutions",
+          "paper": "Paper 6",
+          "category": "strategy",
+          "chapterNote": "IBS is case-based; this is a short written practice question, not a full case study.",
+          "chapters": [
+            {
+              "id": "fin-ibs-cases",
+              "name": "Case study practice",
+              "topics": [{ "id": "fin-ibs-dd-t", "name": "Due diligence before an acquisition", "questions": ["fin-ibs-acquisition-due-diligence"] }]
+            }
+          ]
+        }
       ]
     }
   ]

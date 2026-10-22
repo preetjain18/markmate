@@ -1,9 +1,10 @@
 "use client";
 
-import { forwardRef } from "react";
+import { forwardRef, useState } from "react";
 import { countWords, MAX_ANSWER_CHARS } from "@/lib/answer";
 import { cn } from "@/lib/ui";
 import { Alert, Button, Card, Icon } from "../ui";
+import { HandwritingUpload } from "./HandwritingUpload";
 
 type Props = {
   value: string;
@@ -24,6 +25,10 @@ type Props = {
   unavailable?: string;
   /** Once evaluated, an attempt is read-only. Starting over is an explicit choice. */
   locked?: { message: string; onStartOver: () => void };
+  /** Offer "upload your handwritten answer"; the question text helps the reader. */
+  upload?: { question?: string };
+  /** Called when the editor text came from photos (true) or the student cleared it (false). */
+  onFromPhotos?: (fromPhotos: boolean) => void;
   className?: string;
 };
 
@@ -43,10 +48,14 @@ export const AnswerWorkspace = forwardRef<HTMLTextAreaElement, Props>(function A
     savedNote,
     unavailable,
     locked,
+    upload,
+    onFromPhotos,
     className,
   },
   ref,
 ) {
+  const [showUpload, setShowUpload] = useState(false);
+  const [readInfo, setReadInfo] = useState<{ pages: number; illegible: number } | null>(null);
   const words = countWords(value);
   const chars = value.trim().length;
   const nearLimit = chars > MAX_ANSWER_CHARS * 0.85;
@@ -65,8 +74,45 @@ export const AnswerWorkspace = forwardRef<HTMLTextAreaElement, Props>(function A
             {locked && <Icon name="shield" className="text-muted" />}
             {label}
           </label>
-          {maxMarks !== undefined && <span className="text-[13px] text-muted">Out of {maxMarks} marks</span>}
+          <div className="flex items-center gap-3">
+            {upload && !locked && !unavailable && (
+              <button
+                type="button"
+                onClick={() => setShowUpload((s) => !s)}
+                aria-expanded={showUpload}
+                disabled={busy}
+                className="inline-flex items-center gap-1.5 rounded-control px-2 py-1 text-[13px] font-medium text-brand transition-colors hover:bg-mint disabled:opacity-50"
+              >
+                <Icon name="camera" /> {showUpload ? "Type instead" : "Answer on paper?"}
+              </button>
+            )}
+            {maxMarks !== undefined && <span className="text-[13px] text-muted">Out of {maxMarks} marks</span>}
+          </div>
         </div>
+        {upload && showUpload && !locked && (
+          <div className="px-5 pt-4">
+            <HandwritingUpload
+              question={upload.question}
+              hasText={value.trim().length > 0}
+              disabled={busy}
+              onText={(text, info) => {
+                onChange(text);
+                setReadInfo(info);
+                setShowUpload(false);
+                onFromPhotos?.(true);
+              }}
+            />
+          </div>
+        )}
+        {readInfo && !locked && value.trim() && (
+          <div className="px-5 pt-4">
+            <Alert tone="attention" title={`Read from ${readInfo.pages} photo${readInfo.pages === 1 ? "" : "s"}: please check it`}>
+              Compare the text below with your sheet and fix anything that was misread before evaluating. Marks and quotes will be based on this text.
+              {readInfo.illegible > 0 &&
+                ` ${readInfo.illegible} word${readInfo.illegible === 1 ? "" : "s"} couldn't be read and ${readInfo.illegible === 1 ? "is" : "are"} marked [illegible].`}
+            </Alert>
+          </div>
+        )}
         {unavailable && (
           <div className="px-5 pt-4">
             <Alert tone="attention" title="Evaluation isn't available for this question yet">
@@ -81,7 +127,13 @@ export const AnswerWorkspace = forwardRef<HTMLTextAreaElement, Props>(function A
           ref={ref}
           id={id}
           value={value}
-          onChange={(e) => onChange(e.target.value)}
+          onChange={(e) => {
+            onChange(e.target.value);
+            if (!e.target.value.trim() && readInfo) {
+              setReadInfo(null);
+              onFromPhotos?.(false);
+            }
+          }}
           readOnly={readOnly}
           rows={14}
           placeholder="Write your answer here…"

@@ -1,0 +1,76 @@
+{
+  "id": "fin-dt-transfer-pricing-methods",
+  "version": "1",
+  "sa": "International taxation",
+  "topic": "Arm's length price methods",
+  "question": "Explain the methods for determining the arm's length price of international transactions under the transfer pricing provisions.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "arm's length price",
+    "most appropriate method"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Comparable Uncontrolled Price method",
+      "marks": 1,
+      "description": "Compares the price charged in the controlled transaction with the price in a comparable uncontrolled transaction.",
+      "keywords": [
+        "comparable uncontrolled price"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Resale Price Method",
+      "marks": 1,
+      "description": "Starts from the price at which goods bought from an associated enterprise are resold to an unrelated party, less a normal gross margin.",
+      "keywords": [
+        "resale price"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Cost Plus Method",
+      "marks": 1,
+      "description": "Adds a normal gross profit mark-up to the direct and indirect costs of production of goods or services provided to an associated enterprise.",
+      "keywords": [
+        "cost plus"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Profit Split Method",
+      "marks": 1,
+      "description": "Splits the combined profit from closely connected transactions between the enterprises based on their relative contributions.",
+      "keywords": [
+        "profit split"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Transactional Net Margin Method",
+      "marks": 1,
+      "description": "Compares the net profit margin relative to an appropriate base (costs, sales, assets) with that of comparable uncontrolled transactions.",
+      "keywords": [
+        "transactional net margin"
+      ],
+      "references": []
+    },
+    {
+      "id": "p6",
+      "label": "Other method and selection",
+      "marks": 1,
+      "description": "Any other method prescribed by the Board may be used; the most appropriate method is chosen for the transaction.",
+      "keywords": [
+        "most appropriate method"
+      ],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "int-acc-as2-inventory",
+  "version": "1",
+  "sa": "AS 2",
+  "topic": "Valuation of inventories",
+  "question": "Explain how inventories are measured under AS 2 'Valuation of Inventories'. Which costs are included in, and excluded from, the cost of inventories?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "net realisable value",
+    "cost of purchase",
+    "cost of conversion"
+  ],
+  "references": [
+    "AS 2"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Measurement basis",
+      "marks": 1,
+      "description": "Inventories are measured at the lower of cost and net realisable value.",
+      "keywords": [
+        "lower of cost",
+        "net realisable value"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Cost of purchase",
+      "marks": 1,
+      "description": "Purchase price, duties and taxes (other than those recoverable), freight inwards and handling, less trade discounts and rebates.",
+      "keywords": [
+        "cost of purchase"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Cost of conversion",
+      "marks": 1,
+      "description": "Direct costs plus a systematic allocation of fixed and variable production overheads; fixed overheads are allocated on the basis of normal capacity.",
+      "keywords": [
+        "cost of conversion",
+        "normal capacity"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Costs excluded",
+      "marks": 1,
+      "description": "Abnormal wastage, storage costs (unless necessary in production), administrative overheads that do not bring inventory to its present location and condition, and selling costs are excluded.",
+      "keywords": [
+        "abnormal"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Net realisable value",
+      "marks": 1,
+      "description": "Estimated selling price in the ordinary course of business less estimated costs of completion and costs to make the sale; write-downs are usually made item by item.",
+      "keywords": [
+        "selling price"
+      ],
+      "references": []
+    }
+  ]
+}

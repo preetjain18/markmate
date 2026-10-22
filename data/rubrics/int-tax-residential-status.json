@@ -1,0 +1,68 @@
+{
+  "id": "int-tax-residential-status",
+  "version": "1",
+  "sa": "Income-tax",
+  "topic": "Residential status of an individual",
+  "question": "Explain how the residential status of an individual is determined under Indian income-tax law.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "resident",
+    "182 days",
+    "not ordinarily resident"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "182-day condition",
+      "marks": 1,
+      "description": "An individual is resident if in India for 182 days or more in the relevant previous (tax) year.",
+      "keywords": [
+        "182 days"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "60 and 365-day condition",
+      "marks": 1,
+      "description": "Or, in India for 60 days or more in that year and 365 days or more in the four preceding years.",
+      "keywords": [
+        "60 days",
+        "365 days"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Modified condition for certain citizens",
+      "marks": 1,
+      "description": "For Indian citizens leaving India for employment or as crew, and for Indian citizens or persons of Indian origin visiting India, the 60 days is replaced by 182 days (120 days for visitors whose Indian income exceeds Rs 15 lakh).",
+      "keywords": [
+        "citizen"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Non-resident",
+      "marks": 1,
+      "description": "An individual who satisfies neither condition is a non-resident.",
+      "keywords": [
+        "non-resident"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Not ordinarily resident",
+      "marks": 1,
+      "description": "A resident is 'not ordinarily resident' if non-resident in 9 of the 10 preceding years, or in India for 729 days or less in the 7 preceding years; certain deemed residents are also not ordinarily resident.",
+      "keywords": [
+        "not ordinarily resident"
+      ],
+      "references": []
+    }
+  ]
+}

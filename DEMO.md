@@ -12,13 +12,18 @@
 
 ## The path (about 5 minutes)
 
-1. **Landing** (`/`): the problem in one line; point at the sample Lost Marks Map, labelled as an example.
+1. **Landing** (`/`): the problem in one line; point at the sample Lost Marks Map (labelled as an example),
+   the "write on paper, upload a photo" line, and today's **Question of the Day** with the streak.
 2. **Start Practising** → choose **CA Final** → show the subject grid (Audit has questions; other papers
    honestly say "Coming soon") → **Advanced Auditing** → chapter **Audit evidence** → topic **SA 570**.
 3. **SA 570 · Going Concern** (5 marks; the richest scheme). Paste a deliberately incomplete answer:
 
    > Management prepares the financial statements on the going concern basis. The company has heavy
    > losses and the auditor should check it. The auditor then writes about it in the report.
+
+   **Handwritten option (the differentiator):** click **Answer on paper?**, upload a phone photo of a
+   handwritten version, click **Read my handwriting**, then show the "please check it" notice and fix
+   anything misread. Needs Gemini quota; rehearse it once before presenting.
 
 4. **Evaluate My Answer.** On the **Lost Marks Map** show:
    - the score and outcome counts, and the label "practice estimate · not an ICAI mark";
@@ -59,6 +64,8 @@
 | Progress dashboard (this browser only) | Working |
 | Gemini evaluation | Working when the key has quota (verified locally earlier; quota currently used up) |
 | Your own question (draft scheme from a model answer) | Working; scheme is unverified |
-| Subjects other than CA Final Audit | No questions yet ("Coming soon") |
+| Handwritten answer upload (Gemini reads photos) | Built and tested with mocks; real reading needs Gemini quota (not yet verified live) |
+| Question of the Day and streak | Working |
+| Foundation and Intermediate papers, other Final papers | 1–2 written theory questions each (draft schemes); numerical problems not marked |
 | Verified marking schemes | Not ready: all 10 are drafts pending CA review |
 | Accounts, cross-device progress | Not built |

@@ -1,0 +1,61 @@
+{
+  "id": "fnd-eco-diminishing-mu",
+  "version": "1",
+  "sa": "Business Economics",
+  "topic": "Law of diminishing marginal utility",
+  "question": "State the law of diminishing marginal utility and explain its assumptions and exceptions.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "marginal utility",
+    "total utility"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Statement of the law",
+      "marks": 1,
+      "description": "As a consumer consumes more units of a commodity, the marginal utility from each successive unit diminishes.",
+      "keywords": [
+        "marginal utility",
+        "diminishes"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Total and marginal utility",
+      "marks": 1,
+      "description": "Total utility increases at a diminishing rate, is maximum when marginal utility is zero, and falls when marginal utility becomes negative.",
+      "keywords": [
+        "total utility"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Assumptions about units",
+      "marks": 1,
+      "description": "Units are homogeneous and of reasonable size, and consumption is continuous without a long time gap.",
+      "keywords": [],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Assumptions about the consumer",
+      "marks": 1,
+      "description": "The consumer is rational and their tastes, income and preferences remain unchanged.",
+      "keywords": [],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Exceptions",
+      "marks": 1,
+      "description": "Exceptions or limitations include hobbies and collections, rare goods, money, and addictive goods.",
+      "keywords": [],
+      "references": []
+    }
+  ]
+}

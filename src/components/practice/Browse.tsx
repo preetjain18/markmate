@@ -168,7 +168,7 @@ export function SubjectBrowser({
         <EmptyState
           icon="folder"
           title={`No chapters or questions for ${subject.short ?? subject.name} yet`}
-          description="Evaluation support starts with CA Final Audit. You can still practise this subject by pasting your own question and its model answer."
+          description="Questions for this paper haven't been added yet. You can still practise it by pasting your own question and its model answer."
           action={
             <div className="flex flex-wrap justify-center gap-2">
               <Button size="sm" onClick={onCustom}>

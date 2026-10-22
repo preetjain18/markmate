@@ -1,0 +1,68 @@
+{
+  "id": "fin-idt-customs-duties",
+  "version": "1",
+  "sa": "Customs",
+  "topic": "Types of customs duties",
+  "question": "Explain the different types of customs duties that may be levied on imported goods.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "basic customs duty",
+    "anti-dumping",
+    "safeguard"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Basic customs duty",
+      "marks": 1,
+      "description": "The basic duty levied on imported goods at the rates in the customs tariff.",
+      "keywords": [
+        "basic customs duty"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Integrated tax and compensation cess",
+      "marks": 1,
+      "description": "Integrated tax (IGST) and, where applicable, GST compensation cess are levied on imports.",
+      "keywords": [
+        "integrated tax"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Social welfare surcharge",
+      "marks": 1,
+      "description": "A surcharge levied as a percentage of the duties of customs.",
+      "keywords": [
+        "social welfare surcharge"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Anti-dumping and countervailing duty",
+      "marks": 1,
+      "description": "Anti-dumping duty on goods imported below normal value, and countervailing duty on subsidised imports.",
+      "keywords": [
+        "anti-dumping",
+        "countervailing"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Safeguard duty",
+      "marks": 1,
+      "description": "Levied when increased imports cause or threaten serious injury to the domestic industry.",
+      "keywords": [
+        "safeguard"
+      ],
+      "references": []
+    }
+  ]
+}

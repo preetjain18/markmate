@@ -1,0 +1,66 @@
+{
+  "id": "int-law-private-public",
+  "version": "1",
+  "sa": "Companies Act, 2013",
+  "topic": "Private and public companies",
+  "question": "Distinguish between a private company and a public company under the Companies Act, 2013.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "private company",
+    "public company"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Minimum members",
+      "marks": 1,
+      "description": "A private company needs at least 2 members (one in a One Person Company); a public company needs at least 7.",
+      "keywords": [
+        "members"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Maximum members",
+      "marks": 1,
+      "description": "A private company is limited to 200 members (excluding present and former employee-members); a public company has no maximum.",
+      "keywords": [
+        "200"
+      ],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Transfer of shares",
+      "marks": 1,
+      "description": "A private company restricts the right to transfer its shares; a public company's shares are freely transferable.",
+      "keywords": [
+        "transfer"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Invitation to the public",
+      "marks": 1,
+      "description": "A private company cannot invite the public to subscribe for its securities; a public company can.",
+      "keywords": [
+        "invitation"
+      ],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Minimum directors",
+      "marks": 1,
+      "description": "A private company needs at least 2 directors; a public company needs at least 3.",
+      "keywords": [
+        "directors"
+      ],
+      "references": []
+    }
+  ]
+}

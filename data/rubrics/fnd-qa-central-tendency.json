@@ -1,0 +1,71 @@
+{
+  "id": "fnd-qa-central-tendency",
+  "version": "1",
+  "sa": "Statistics",
+  "topic": "Measures of central tendency",
+  "question": "Explain the arithmetic mean, median and mode as measures of central tendency. State one merit and one limitation of each.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "arithmetic mean",
+    "median",
+    "mode"
+  ],
+  "references": [],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Arithmetic mean",
+      "marks": 1,
+      "description": "The sum of all observations divided by the number of observations.",
+      "keywords": [
+        "arithmetic mean"
+      ],
+      "references": []
+    },
+    {
+      "id": "p2",
+      "label": "Mean: merit and limitation",
+      "marks": 1,
+      "description": "Merit: rigidly defined and based on all observations. Limitation: unduly affected by extreme values.",
+      "keywords": [],
+      "references": []
+    },
+    {
+      "id": "p3",
+      "label": "Median",
+      "marks": 1,
+      "description": "The middle value when observations are arranged in ascending or descending order.",
+      "keywords": [
+        "median"
+      ],
+      "references": []
+    },
+    {
+      "id": "p4",
+      "label": "Median: merit and limitation",
+      "marks": 1,
+      "description": "Merit: not affected by extreme values and usable with open-end classes. Limitation: not based on all observations and not suited to further algebraic treatment.",
+      "keywords": [],
+      "references": []
+    },
+    {
+      "id": "p5",
+      "label": "Mode",
+      "marks": 1,
+      "description": "The value that occurs most frequently in a set of observations.",
+      "keywords": [
+        "mode"
+      ],
+      "references": []
+    },
+    {
+      "id": "p6",
+      "label": "Mode: merit and limitation",
+      "marks": 1,
+      "description": "Merit: easy to understand and not affected by extreme values. Limitation: may be ill-defined, or there may be more than one mode.",
+      "keywords": [],
+      "references": []
+    }
+  ]
+}

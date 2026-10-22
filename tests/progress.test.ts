@@ -49,7 +49,8 @@ describe("progress with no attempts", () => {
   it("recommends a first question with a working practice link", () => {
     const r = recommend([], catalog);
     expect(r[0].kind).toBe("first");
-    expect(practiceHref(r[0].link)).toMatch(/^\/practice\?level=final&subject=final-audit&chapter=.+&question=.+/);
+    expect(practiceHref(r[0].link)).toMatch(/^\/practice\?level=\w+&subject=[\w-]+&chapter=.+&question=.+/);
+    expect(q(r[0].link.question!).support).not.toBe("none");
   });
 });
 
@@ -91,7 +92,9 @@ describe("subjects and chapters", () => {
     expect(practised.map((p) => p.subject.id)).toEqual(["final-audit"]);
     expect(practised[0].averagePct).toBe(60);
     expect(practised[0].tag).toBeNull(); // one subject: no strongest/weakest
-    expect(notPractised).toEqual([]); // no other subject has evaluable questions yet
+    // every other paper has questions now: listed as not practised, with no score at all
+    expect(notPractised).toHaveLength(15);
+    expect(notPractised.map((n) => n.subject.id)).not.toContain("final-audit");
   });
 
   it("names strongest and weakest only when two subjects each have enough evaluated questions", () => {
