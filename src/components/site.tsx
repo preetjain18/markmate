@@ -2,12 +2,13 @@ import Link from "next/link";
 import { MobileMenu, type NavItem } from "./site-nav";
 import { ButtonLink, Icon, Logo, NavLink } from "./ui";
 
-type Page = "home" | "practice" | "progress" | "scan";
+type Page = "home" | "practice" | "progress" | "scan" | "attempts";
 
 const navItems = (active?: Page): NavItem[] => [
   { href: "/#how-it-works", label: "How It Works" },
   { href: "/scan", label: "Scan", active: active === "scan" },
   { href: "/practice", label: "Practice", active: active === "practice" },
+  { href: "/attempts", label: "Attempts", active: active === "attempts" },
   { href: "/progress", label: "Progress", active: active === "progress" },
 ];
 

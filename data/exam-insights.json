@@ -1,0 +1,1602 @@
+{
+  "asOf": "2026-10-23",
+  "passRates": [
+    {
+      "level": "intermediate",
+      "attempt": "September 2026",
+      "group": "group1",
+      "passPercent": 23.14,
+      "appeared": 100301,
+      "passed": 23210,
+      "sourceUrl": "https://www.icai.org/post/prc-ca-result-intermediate-sep2026",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Intermediate Examination held in September 2026 Declared (22-10-2026)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "September 2026",
+      "group": "group2",
+      "passPercent": 18.92,
+      "appeared": 68400,
+      "passed": 12938,
+      "sourceUrl": "https://www.icai.org/post/prc-ca-result-intermediate-sep2026",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Intermediate Examination held in September 2026 Declared (22-10-2026)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "September 2026",
+      "group": "both",
+      "passPercent": 13.21,
+      "appeared": 38339,
+      "passed": 5066,
+      "sourceUrl": "https://www.icai.org/post/prc-ca-result-intermediate-sep2026",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Intermediate Examination held in September 2026 Declared (22-10-2026)"
+    },
+    {
+      "level": "foundation",
+      "attempt": "May 2026",
+      "group": "overall",
+      "passPercent": 20.09,
+      "appeared": 90217,
+      "passed": 18124,
+      "sourceUrl": "https://www.icai.org/post/prc-ca-result-may2026-foundation",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Foundation Examination held in May 2026 Declared (03-07-2026)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "May 2026",
+      "group": "group1",
+      "passPercent": 10.25,
+      "appeared": 91237,
+      "passed": 9350,
+      "sourceUrl": "https://www.icai.org/post/prc-ca-result-may2026-intermediate",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Intermediate Examination held in May 2026 Declared (24-06-2026)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "May 2026",
+      "group": "group2",
+      "passPercent": 16.11,
+      "appeared": 64381,
+      "passed": 10372,
+      "sourceUrl": "https://www.icai.org/post/prc-ca-result-may2026-intermediate",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Intermediate Examination held in May 2026 Declared (24-06-2026)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "May 2026",
+      "group": "both",
+      "passPercent": 8.47,
+      "appeared": 33304,
+      "passed": 2820,
+      "sourceUrl": "https://www.icai.org/post/prc-ca-result-may2026-intermediate",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Intermediate Examination held in May 2026 Declared (24-06-2026)"
+    },
+    {
+      "level": "final",
+      "attempt": "May 2026",
+      "group": "group1",
+      "passPercent": 12,
+      "appeared": 54606,
+      "passed": 6555,
+      "sourceUrl": "https://www.icai.org/post/prc-caresult-may2026",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final Examination held in May 2026 Declared (18-06-2026)"
+    },
+    {
+      "level": "final",
+      "attempt": "May 2026",
+      "group": "group2",
+      "passPercent": 20.49,
+      "appeared": 42573,
+      "passed": 8725,
+      "sourceUrl": "https://www.icai.org/post/prc-caresult-may2026",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final Examination held in May 2026 Declared (18-06-2026)"
+    },
+    {
+      "level": "final",
+      "attempt": "May 2026",
+      "group": "both",
+      "passPercent": 14.07,
+      "appeared": 23776,
+      "passed": 3345,
+      "sourceUrl": "https://www.icai.org/post/prc-caresult-may2026",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final Examination held in May 2026 Declared (18-06-2026)"
+    },
+    {
+      "level": "foundation",
+      "attempt": "January 2026",
+      "group": "overall",
+      "passPercent": 19.23,
+      "appeared": 109694,
+      "passed": 21099,
+      "sourceUrl": "https://www.icai.org/post/prc-result-int-fnd-jan2026",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Intermediate & Foundation Examinations held in January 2026 Declared (08-03-2026)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "January 2026",
+      "group": "group1",
+      "passPercent": 13.96,
+      "appeared": 105526,
+      "passed": 14733,
+      "sourceUrl": "https://www.icai.org/post/prc-result-int-fnd-jan2026",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Intermediate & Foundation Examinations held in January 2026 Declared (08-03-2026)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "January 2026",
+      "group": "group2",
+      "passPercent": 15.54,
+      "appeared": 69477,
+      "passed": 10798,
+      "sourceUrl": "https://www.icai.org/post/prc-result-int-fnd-jan2026",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Intermediate & Foundation Examinations held in January 2026 Declared (08-03-2026)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "January 2026",
+      "group": "both",
+      "passPercent": 9.39,
+      "appeared": 41798,
+      "passed": 3924,
+      "sourceUrl": "https://www.icai.org/post/prc-result-int-fnd-jan2026",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Intermediate & Foundation Examinations held in January 2026 Declared (08-03-2026)"
+    },
+    {
+      "level": "final",
+      "attempt": "January 2026",
+      "group": "group1",
+      "passPercent": 21.03,
+      "appeared": 53652,
+      "passed": 11282,
+      "sourceUrl": "https://www.icai.org/post/prc-result-final-jan2026",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final Examination held in January 2026 Declared (01-03-2026)"
+    },
+    {
+      "level": "final",
+      "attempt": "January 2026",
+      "group": "group2",
+      "passPercent": 9.76,
+      "appeared": 38169,
+      "passed": 3726,
+      "sourceUrl": "https://www.icai.org/post/prc-result-final-jan2026",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final Examination held in January 2026 Declared (01-03-2026)"
+    },
+    {
+      "level": "final",
+      "attempt": "January 2026",
+      "group": "both",
+      "passPercent": 10.97,
+      "appeared": 22293,
+      "passed": 2446,
+      "sourceUrl": "https://www.icai.org/post/prc-result-final-jan2026",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final Examination held in January 2026 Declared (01-03-2026)"
+    },
+    {
+      "level": "foundation",
+      "attempt": "September 2025",
+      "group": "overall",
+      "passPercent": 14.78,
+      "appeared": 98827,
+      "passed": 14609,
+      "sourceUrl": "https://icai.org/post/icai-sep-ca-exam-result-declared-03110205",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final, Intermediate and Foundation Examinations held in September 2025 Declared (03-11-2025)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "September 2025",
+      "group": "group1",
+      "passPercent": 9.43,
+      "appeared": 93074,
+      "passed": 8780,
+      "sourceUrl": "https://icai.org/post/icai-sep-ca-exam-result-declared-03110205",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final, Intermediate and Foundation Examinations held in September 2025 Declared (03-11-2025)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "September 2025",
+      "group": "group2",
+      "passPercent": 27.14,
+      "appeared": 69768,
+      "passed": 18938,
+      "sourceUrl": "https://icai.org/post/icai-sep-ca-exam-result-declared-03110205",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final, Intermediate and Foundation Examinations held in September 2025 Declared (03-11-2025)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "September 2025",
+      "group": "both",
+      "passPercent": 10.06,
+      "appeared": 36398,
+      "passed": 3663,
+      "sourceUrl": "https://icai.org/post/icai-sep-ca-exam-result-declared-03110205",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final, Intermediate and Foundation Examinations held in September 2025 Declared (03-11-2025)"
+    },
+    {
+      "level": "final",
+      "attempt": "September 2025",
+      "group": "group1",
+      "passPercent": 24.66,
+      "appeared": 51955,
+      "passed": 12811,
+      "sourceUrl": "https://icai.org/post/icai-sep-ca-exam-result-declared-03110205",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final, Intermediate and Foundation Examinations held in September 2025 Declared (03-11-2025)"
+    },
+    {
+      "level": "final",
+      "attempt": "September 2025",
+      "group": "group2",
+      "passPercent": 25.26,
+      "appeared": 32273,
+      "passed": 8151,
+      "sourceUrl": "https://icai.org/post/icai-sep-ca-exam-result-declared-03110205",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final, Intermediate and Foundation Examinations held in September 2025 Declared (03-11-2025)"
+    },
+    {
+      "level": "final",
+      "attempt": "September 2025",
+      "group": "both",
+      "passPercent": 16.23,
+      "appeared": 16800,
+      "passed": 2727,
+      "sourceUrl": "https://icai.org/post/icai-sep-ca-exam-result-declared-03110205",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final, Intermediate and Foundation Examinations held in September 2025 Declared (03-11-2025)"
+    },
+    {
+      "level": "foundation",
+      "attempt": "May 2025",
+      "group": "overall",
+      "passPercent": 15.09,
+      "appeared": 82662,
+      "passed": 12474,
+      "sourceUrl": "https://resource.cdn.icai.org/86867prc060725.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final, Intermediate and Foundation Examinations held in May 2025 Declared (press release, 06-07-2025)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "May 2025",
+      "group": "group1",
+      "passPercent": 14.67,
+      "appeared": 97034,
+      "passed": 14232,
+      "sourceUrl": "https://resource.cdn.icai.org/86867prc060725.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final, Intermediate and Foundation Examinations held in May 2025 Declared (press release, 06-07-2025)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "May 2025",
+      "group": "group2",
+      "passPercent": 21.51,
+      "appeared": 72069,
+      "passed": 15502,
+      "sourceUrl": "https://resource.cdn.icai.org/86867prc060725.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final, Intermediate and Foundation Examinations held in May 2025 Declared (press release, 06-07-2025)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "May 2025",
+      "group": "both",
+      "passPercent": 13.22,
+      "appeared": 38029,
+      "passed": 5028,
+      "sourceUrl": "https://resource.cdn.icai.org/86867prc060725.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final, Intermediate and Foundation Examinations held in May 2025 Declared (press release, 06-07-2025)"
+    },
+    {
+      "level": "final",
+      "attempt": "May 2025",
+      "group": "group1",
+      "passPercent": 22.38,
+      "appeared": 66943,
+      "passed": 14979,
+      "sourceUrl": "https://resource.cdn.icai.org/86867prc060725.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final, Intermediate and Foundation Examinations held in May 2025 Declared (press release, 06-07-2025)"
+    },
+    {
+      "level": "final",
+      "attempt": "May 2025",
+      "group": "group2",
+      "passPercent": 26.43,
+      "appeared": 46173,
+      "passed": 12204,
+      "sourceUrl": "https://resource.cdn.icai.org/86867prc060725.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final, Intermediate and Foundation Examinations held in May 2025 Declared (press release, 06-07-2025)"
+    },
+    {
+      "level": "final",
+      "attempt": "May 2025",
+      "group": "both",
+      "passPercent": 18.75,
+      "appeared": 29286,
+      "passed": 5490,
+      "sourceUrl": "https://resource.cdn.icai.org/86867prc060725.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Final, Intermediate and Foundation Examinations held in May 2025 Declared (press release, 06-07-2025)"
+    },
+    {
+      "level": "foundation",
+      "attempt": "January 2025",
+      "group": "overall",
+      "passPercent": 21.52,
+      "appeared": 110887,
+      "passed": 23861,
+      "sourceUrl": "https://resource.cdn.icai.org/84739prc68247.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Intermediate & Foundation Examination held in January, 2025 Declared (press release, 04-03-2025)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "January 2025",
+      "group": "group1",
+      "passPercent": 14.17,
+      "appeared": 108187,
+      "passed": 15332,
+      "sourceUrl": "https://resource.cdn.icai.org/84739prc68247.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Intermediate & Foundation Examination held in January, 2025 Declared (press release, 04-03-2025)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "January 2025",
+      "group": "group2",
+      "passPercent": 22.16,
+      "appeared": 80368,
+      "passed": 17813,
+      "sourceUrl": "https://resource.cdn.icai.org/84739prc68247.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Intermediate & Foundation Examination held in January, 2025 Declared (press release, 04-03-2025)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "January 2025",
+      "group": "both",
+      "passPercent": 14.05,
+      "appeared": 48261,
+      "passed": 6781,
+      "sourceUrl": "https://resource.cdn.icai.org/84739prc68247.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Intermediate & Foundation Examination held in January, 2025 Declared (press release, 04-03-2025)"
+    },
+    {
+      "level": "final",
+      "attempt": "November 2024",
+      "group": "group1",
+      "passPercent": 16.8,
+      "appeared": 66987,
+      "passed": 11253,
+      "sourceUrl": "https://resource.cdn.icai.org/83642prc67474.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI Press Release: Results of CA Final Examinations held in November 2024 (27-12-2024)"
+    },
+    {
+      "level": "final",
+      "attempt": "November 2024",
+      "group": "group2",
+      "passPercent": 21.36,
+      "appeared": 49459,
+      "passed": 10566,
+      "sourceUrl": "https://resource.cdn.icai.org/83642prc67474.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI Press Release: Results of CA Final Examinations held in November 2024 (27-12-2024)"
+    },
+    {
+      "level": "final",
+      "attempt": "November 2024",
+      "group": "both",
+      "passPercent": 13.44,
+      "appeared": 30763,
+      "passed": 4134,
+      "sourceUrl": "https://resource.cdn.icai.org/83642prc67474.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI Press Release: Results of CA Final Examinations held in November 2024 (27-12-2024)"
+    },
+    {
+      "level": "foundation",
+      "attempt": "September 2024",
+      "group": "overall",
+      "passPercent": 19.67,
+      "appeared": 70437,
+      "passed": 13858,
+      "sourceUrl": "https://resource.cdn.icai.org/82642prc66746.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI Press Release: Results of CA Intermediate & Foundation Examinations held in September 2024 (30-10-2024)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "September 2024",
+      "group": "group1",
+      "passPercent": 15.17,
+      "appeared": 69227,
+      "passed": 10505,
+      "sourceUrl": "https://resource.cdn.icai.org/82642prc66746.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI Press Release: Results of CA Intermediate & Foundation Examinations held in September 2024 (30-10-2024)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "September 2024",
+      "group": "group2",
+      "passPercent": 15.99,
+      "appeared": 50760,
+      "passed": 8117,
+      "sourceUrl": "https://resource.cdn.icai.org/82642prc66746.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI Press Release: Results of CA Intermediate & Foundation Examinations held in September 2024 (30-10-2024)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "September 2024",
+      "group": "both",
+      "passPercent": 5.66,
+      "appeared": 23482,
+      "passed": 1330,
+      "sourceUrl": "https://resource.cdn.icai.org/82642prc66746.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI Press Release: Results of CA Intermediate & Foundation Examinations held in September 2024 (30-10-2024)"
+    },
+    {
+      "level": "foundation",
+      "attempt": "June 2024",
+      "group": "overall",
+      "passPercent": 14.96,
+      "appeared": 91900,
+      "passed": 13749,
+      "sourceUrl": "https://resource.cdn.icai.org/81280prc65517.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of CA Foundation Examination held in June, 2024 Declared (30-07-2024)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "May 2024",
+      "group": "group1",
+      "passPercent": 27.15,
+      "appeared": 117764,
+      "passed": 31978,
+      "sourceUrl": "https://www.icai.org/post/prc-result-final-intermediate-may2024",
+      "sourceType": "icai",
+      "sourceTitle": "Results of CA Final & Intermediate Examination held in May, 2024 Declared (11-07-2024)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "May 2024",
+      "group": "group2",
+      "passPercent": 18.28,
+      "appeared": 71145,
+      "passed": 13008,
+      "sourceUrl": "https://www.icai.org/post/prc-result-final-intermediate-may2024",
+      "sourceType": "icai",
+      "sourceTitle": "Results of CA Final & Intermediate Examination held in May, 2024 Declared (11-07-2024)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "May 2024",
+      "group": "both",
+      "passPercent": 18.42,
+      "appeared": 59956,
+      "passed": 11041,
+      "sourceUrl": "https://www.icai.org/post/prc-result-final-intermediate-may2024",
+      "sourceType": "icai",
+      "sourceTitle": "Results of CA Final & Intermediate Examination held in May, 2024 Declared (11-07-2024)"
+    },
+    {
+      "level": "final",
+      "attempt": "May 2024",
+      "group": "group1",
+      "passPercent": 27.35,
+      "appeared": 74887,
+      "passed": 20479,
+      "sourceUrl": "https://www.icai.org/post/prc-result-final-intermediate-may2024",
+      "sourceType": "icai",
+      "sourceTitle": "Results of CA Final & Intermediate Examination held in May, 2024 Declared (11-07-2024)"
+    },
+    {
+      "level": "final",
+      "attempt": "May 2024",
+      "group": "group2",
+      "passPercent": 36.35,
+      "appeared": 58891,
+      "passed": 21408,
+      "sourceUrl": "https://www.icai.org/post/prc-result-final-intermediate-may2024",
+      "sourceType": "icai",
+      "sourceTitle": "Results of CA Final & Intermediate Examination held in May, 2024 Declared (11-07-2024)"
+    },
+    {
+      "level": "final",
+      "attempt": "May 2024",
+      "group": "both",
+      "passPercent": 19.88,
+      "appeared": 35819,
+      "passed": 7122,
+      "sourceUrl": "https://www.icai.org/post/prc-result-final-intermediate-may2024",
+      "sourceType": "icai",
+      "sourceTitle": "Results of CA Final & Intermediate Examination held in May, 2024 Declared (11-07-2024)"
+    },
+    {
+      "level": "foundation",
+      "attempt": "December 2023",
+      "group": "overall",
+      "passPercent": 29.99,
+      "appeared": 137153,
+      "passed": 41132,
+      "sourceUrl": "https://resource.cdn.icai.org/78847prc080224a.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI Press Release: CA Foundation Examination held in December, 2023 (08-02-2024)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "November 2023",
+      "group": "group1",
+      "passPercent": 16.78,
+      "appeared": 117304,
+      "passed": 19686,
+      "sourceUrl": "https://resource.cdn.icai.org/78429prc62785-d.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Intermediate Examination held in November - 2023 (Annexure-D to press release of 09-01-2024)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "November 2023",
+      "group": "group2",
+      "passPercent": 19.18,
+      "appeared": 93638,
+      "passed": 17957,
+      "sourceUrl": "https://resource.cdn.icai.org/78429prc62785-d.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Intermediate Examination held in November - 2023 (Annexure-D to press release of 09-01-2024)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "November 2023",
+      "group": "both",
+      "passPercent": 9.73,
+      "appeared": 53459,
+      "passed": 5204,
+      "sourceUrl": "https://resource.cdn.icai.org/78429prc62785-d.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Intermediate Examination held in November - 2023 (Annexure-D to press release of 09-01-2024)"
+    },
+    {
+      "level": "final",
+      "attempt": "November 2023",
+      "group": "group1",
+      "passPercent": 9.46,
+      "appeared": 65294,
+      "passed": 6176,
+      "sourceUrl": "https://resource.cdn.icai.org/78427prc62785-b.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Final Examination held in November - 2023 (Annexure-B to press release of 09-01-2024)"
+    },
+    {
+      "level": "final",
+      "attempt": "November 2023",
+      "group": "group2",
+      "passPercent": 21.6,
+      "appeared": 62679,
+      "passed": 13540,
+      "sourceUrl": "https://resource.cdn.icai.org/78427prc62785-b.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Final Examination held in November - 2023 (Annexure-B to press release of 09-01-2024)"
+    },
+    {
+      "level": "final",
+      "attempt": "November 2023",
+      "group": "both",
+      "passPercent": 9.42,
+      "appeared": 32907,
+      "passed": 3099,
+      "sourceUrl": "https://resource.cdn.icai.org/78427prc62785-b.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Final Examination held in November - 2023 (Annexure-B to press release of 09-01-2024)"
+    },
+    {
+      "level": "foundation",
+      "attempt": "June 2023",
+      "group": "overall",
+      "passPercent": 24.98,
+      "appeared": 103517,
+      "passed": 25860,
+      "sourceUrl": "https://resource.cdn.icai.org/75443prc61004.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI Press Release: CA Foundation Examination held in June, 2023 (08-08-2023)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "May 2023",
+      "group": "group1",
+      "passPercent": 18.95,
+      "appeared": 100781,
+      "passed": 19103,
+      "sourceUrl": "https://resource.cdn.icai.org/75032prc60566-d.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Intermediate Examination held in May - 2023 (Annexure-D to press release of 05-07-2023)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "May 2023",
+      "group": "group2",
+      "passPercent": 23.44,
+      "appeared": 81956,
+      "passed": 19208,
+      "sourceUrl": "https://resource.cdn.icai.org/75032prc60566-d.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Intermediate Examination held in May - 2023 (Annexure-D to press release of 05-07-2023)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "May 2023",
+      "group": "both",
+      "passPercent": 10.24,
+      "appeared": 39195,
+      "passed": 4014,
+      "sourceUrl": "https://resource.cdn.icai.org/75032prc60566-d.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Intermediate Examination held in May - 2023 (Annexure-D to press release of 05-07-2023)"
+    },
+    {
+      "level": "final",
+      "attempt": "May 2023",
+      "group": "group1",
+      "passPercent": 11.91,
+      "appeared": 57067,
+      "passed": 6795,
+      "sourceUrl": "https://resource.cdn.icai.org/75030prc60566-b.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Final Examination held in May - 2023 (Annexure-B to press release of 05-07-2023)"
+    },
+    {
+      "level": "final",
+      "attempt": "May 2023",
+      "group": "group2",
+      "passPercent": 31.43,
+      "appeared": 61844,
+      "passed": 19438,
+      "sourceUrl": "https://resource.cdn.icai.org/75030prc60566-b.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Final Examination held in May - 2023 (Annexure-B to press release of 05-07-2023)"
+    },
+    {
+      "level": "final",
+      "attempt": "May 2023",
+      "group": "both",
+      "passPercent": 8.33,
+      "appeared": 25841,
+      "passed": 2152,
+      "sourceUrl": "https://resource.cdn.icai.org/75030prc60566-b.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Final Examination held in May - 2023 (Annexure-B to press release of 05-07-2023)"
+    },
+    {
+      "level": "foundation",
+      "attempt": "December 2022",
+      "group": "overall",
+      "passPercent": 29.25,
+      "appeared": 126015,
+      "passed": 36864,
+      "sourceUrl": "https://resource.cdn.icai.org/72908prc030223.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI Press Release: CA Foundation Examination held in December, 2022 (03-02-2023)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "November 2022",
+      "group": "group1",
+      "passPercent": 21.19,
+      "appeared": 100265,
+      "passed": 21244,
+      "sourceUrl": "https://resource.cdn.icai.org/72636prc58542-d.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Intermediate Examination held in November - 2022 (Annexure-D to press release of 10-01-2023)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "November 2022",
+      "group": "group2",
+      "passPercent": 24.44,
+      "appeared": 79292,
+      "passed": 19380,
+      "sourceUrl": "https://resource.cdn.icai.org/72636prc58542-d.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Intermediate Examination held in November - 2022 (Annexure-D to press release of 10-01-2023)"
+    },
+    {
+      "level": "intermediate",
+      "attempt": "November 2022",
+      "group": "both",
+      "passPercent": 12.72,
+      "appeared": 37428,
+      "passed": 4759,
+      "sourceUrl": "https://resource.cdn.icai.org/72636prc58542-d.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Intermediate Examination held in November - 2022 (Annexure-D to press release of 10-01-2023)"
+    },
+    {
+      "level": "final",
+      "attempt": "November 2022",
+      "group": "group1",
+      "passPercent": 21.39,
+      "appeared": 65291,
+      "passed": 13969,
+      "sourceUrl": "https://resource.cdn.icai.org/72634prc58542-b.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Final Examination held in November - 2022 (Annexure-B to press release of 10-01-2023)"
+    },
+    {
+      "level": "final",
+      "attempt": "November 2022",
+      "group": "group2",
+      "passPercent": 18.61,
+      "appeared": 64775,
+      "passed": 12053,
+      "sourceUrl": "https://resource.cdn.icai.org/72634prc58542-b.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Final Examination held in November - 2022 (Annexure-B to press release of 10-01-2023)"
+    },
+    {
+      "level": "final",
+      "attempt": "November 2022",
+      "group": "both",
+      "passPercent": 11.09,
+      "appeared": 29242,
+      "passed": 3243,
+      "sourceUrl": "https://resource.cdn.icai.org/72634prc58542-b.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "Result of Chartered Accountants Final Examination held in November - 2022 (Annexure-B to press release of 10-01-2023)"
+    }
+  ],
+  "weightage": [
+    {
+      "level": "foundation",
+      "paper": "Accounting",
+      "subjectId": "foundation-accounting",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76829bos61899-foundation.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Foundation Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I: Theoretical Framework",
+          "min": 5,
+          "max": 10,
+          "text": "5%-10%"
+        },
+        {
+          "name": "Section II: Accounting Process; Bank Reconciliation Statement; Inventories; Depreciation and Amortisation; Bills of exchange and Promissory notes",
+          "min": 30,
+          "max": 35,
+          "text": "30%-35%"
+        },
+        {
+          "name": "Section III: Preparation of Final accounts of Sole Proprietors; Financial Statements of Not-for-Profit Organizations; Accounts from Incomplete Records",
+          "min": 20,
+          "max": 25,
+          "text": "20%-25%"
+        },
+        {
+          "name": "Section IV: Partnership and LLP Accounts",
+          "min": 15,
+          "max": 20,
+          "text": "15%-20%"
+        },
+        {
+          "name": "Section V: Company Accounts",
+          "min": 15,
+          "max": 25,
+          "text": "15%-25%"
+        }
+      ]
+    },
+    {
+      "level": "foundation",
+      "paper": "Business Laws",
+      "subjectId": "foundation-business-laws",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76829bos61899-foundation.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Foundation Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I: Indian Regulatory Framework",
+          "min": 0,
+          "max": 5,
+          "text": "0%-5%"
+        },
+        {
+          "name": "Section II: The Indian Contract Act, 1872",
+          "min": 20,
+          "max": 30,
+          "text": "20%-30%"
+        },
+        {
+          "name": "Section III: The Sale of Goods Act, 1930",
+          "min": 15,
+          "max": 20,
+          "text": "15%-20%"
+        },
+        {
+          "name": "Section IV: The Indian Partnership Act, 1932",
+          "min": 15,
+          "max": 20,
+          "text": "15%-20%"
+        },
+        {
+          "name": "Section V: The Limited Liability Partnership Act, 2008",
+          "min": 5,
+          "max": 10,
+          "text": "5%-10%"
+        },
+        {
+          "name": "Section VI: The Companies Act, 2013",
+          "min": 15,
+          "max": 20,
+          "text": "15%-20%"
+        },
+        {
+          "name": "Section VII: The Negotiable Instruments Act, 1881",
+          "min": 10,
+          "max": 15,
+          "text": "10%-15%"
+        }
+      ]
+    },
+    {
+      "level": "foundation",
+      "paper": "Quantitative Aptitude",
+      "subjectId": "foundation-quantitative-aptitude",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76829bos61899-foundation.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Foundation Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I: Ratio and proportion, Indices and Logarithms; Equations; Linear Inequalities",
+          "min": 20,
+          "max": 30,
+          "text": "20%-30%",
+          "part": "Part A: Business Mathematics (40 Marks)"
+        },
+        {
+          "name": "Section II: Mathematics of Finance",
+          "min": 30,
+          "max": 40,
+          "text": "30%-40%",
+          "part": "Part A: Business Mathematics (40 Marks)"
+        },
+        {
+          "name": "Section III: Permutations and Combinations; Sequence and Series; Sets, Relations, and Functions, Basics of Limits and Continuity functions; Basic applications of Differential and Integral calculus in Business and Economics",
+          "min": 30,
+          "max": 50,
+          "text": "30%-50%",
+          "part": "Part A: Business Mathematics (40 Marks)"
+        },
+        {
+          "name": "Section IV: Number series coding and Decoding and odd man out",
+          "min": 20,
+          "max": 30,
+          "text": "20%-30%",
+          "part": "Part B: Logical Reasoning (20 Marks)"
+        },
+        {
+          "name": "Section IV: Direction Tests",
+          "min": 20,
+          "max": 30,
+          "text": "20%-30%",
+          "part": "Part B: Logical Reasoning (20 Marks)"
+        },
+        {
+          "name": "Section IV: Seating Arrangements",
+          "min": 20,
+          "max": 30,
+          "text": "20%-30%",
+          "part": "Part B: Logical Reasoning (20 Marks)"
+        },
+        {
+          "name": "Section IV: Blood Relations",
+          "min": 20,
+          "max": 30,
+          "text": "20%-30%",
+          "part": "Part B: Logical Reasoning (20 Marks)"
+        },
+        {
+          "name": "Section V: Statistical Representation of Data and Sampling; Measures of Central tendency and Dispersion",
+          "min": 45,
+          "max": 50,
+          "text": "45%-50%",
+          "part": "Part C: Statistics (40 Marks)"
+        },
+        {
+          "name": "Section VI: Probability; Theoretical Distributions",
+          "min": 25,
+          "max": 30,
+          "text": "25%-30%",
+          "part": "Part C: Statistics (40 Marks)"
+        },
+        {
+          "name": "Section VII: Correlation and Regression",
+          "min": 10,
+          "max": 15,
+          "text": "10%-15%",
+          "part": "Part C: Statistics (40 Marks)"
+        },
+        {
+          "name": "Section VIII: Index Numbers",
+          "min": 10,
+          "max": 15,
+          "text": "10%-15%",
+          "part": "Part C: Statistics (40 Marks)"
+        }
+      ]
+    },
+    {
+      "level": "foundation",
+      "paper": "Business Economics",
+      "subjectId": "foundation-business-economics",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76829bos61899-foundation.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Foundation Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I: Introduction to Business Economics",
+          "min": 5,
+          "max": 5,
+          "text": "5%"
+        },
+        {
+          "name": "Section II: Theory of Demand and Supply",
+          "min": 10,
+          "max": 10,
+          "text": "10%"
+        },
+        {
+          "name": "Section III: Theory of Production and Cost",
+          "min": 10,
+          "max": 10,
+          "text": "10%"
+        },
+        {
+          "name": "Section IV: Price Determination in Different Markets",
+          "min": 15,
+          "max": 15,
+          "text": "15%"
+        },
+        {
+          "name": "Section V: Determination of National Income",
+          "min": 15,
+          "max": 15,
+          "text": "15%"
+        },
+        {
+          "name": "Section VI: Business Cycles",
+          "min": 5,
+          "max": 5,
+          "text": "5%"
+        },
+        {
+          "name": "Section VII: Public Finance",
+          "min": 10,
+          "max": 10,
+          "text": "10%"
+        },
+        {
+          "name": "Section VIII: Money Market",
+          "min": 10,
+          "max": 10,
+          "text": "10%"
+        },
+        {
+          "name": "Section IX: International Trade",
+          "min": 10,
+          "max": 10,
+          "text": "10%"
+        },
+        {
+          "name": "Section X: Indian Economy",
+          "min": 10,
+          "max": 10,
+          "text": "10%"
+        }
+      ]
+    },
+    {
+      "level": "intermediate",
+      "paper": "Advanced Accounting",
+      "subjectId": "inter-advanced-accounting",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76830bos61899-inter.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Intermediate Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I: Process of formulation of Accounting Standards; Framework for Preparation and Presentation of Financial Statements; Applicability and Application of Accounting Standards (AS 1 to AS 29)",
+          "min": 55,
+          "max": 65,
+          "text": "55%-65%"
+        },
+        {
+          "name": "Section II: Company Accounts",
+          "min": 30,
+          "max": 35,
+          "text": "30%-35%"
+        },
+        {
+          "name": "Section III: Accounting for Branches including foreign branches",
+          "min": 5,
+          "max": 10,
+          "text": "5%-10%"
+        }
+      ]
+    },
+    {
+      "level": "intermediate",
+      "paper": "Corporate and Other Laws",
+      "subjectId": "inter-corporate-laws",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76830bos61899-inter.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Intermediate Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I: Preliminary; Incorporation of Company and Matters Incidental thereto; Prospectus and Allotment of Securities; Share Capital and Debentures",
+          "min": 20,
+          "max": 30,
+          "text": "20%-30%",
+          "part": "Part I: Company Law and Limited Liability Partnership Law (70 Marks)"
+        },
+        {
+          "name": "Section II: Acceptance of Deposits by Companies; Registration of Charges; Management and Administration",
+          "min": 20,
+          "max": 30,
+          "text": "20%-30%",
+          "part": "Part I: Company Law and Limited Liability Partnership Law (70 Marks)"
+        },
+        {
+          "name": "Section III: Declaration and Payment of Dividend; Accounts of Companies; Audit and Auditors; Companies Incorporated Outside India",
+          "min": 30,
+          "max": 35,
+          "text": "30%-35%",
+          "part": "Part I: Company Law and Limited Liability Partnership Law (70 Marks)"
+        },
+        {
+          "name": "Section IV: The Limited Liability Partnership Act, 2008 including important Rules",
+          "min": 15,
+          "max": 20,
+          "text": "15%-20%",
+          "part": "Part I: Company Law and Limited Liability Partnership Law (70 Marks)"
+        },
+        {
+          "name": "Section I: The General Clauses Act, 1897",
+          "min": 35,
+          "max": 40,
+          "text": "35%-40%",
+          "part": "Part II: Other Laws (30 Marks)"
+        },
+        {
+          "name": "Section II: Interpretation of statutes",
+          "min": 25,
+          "max": 30,
+          "text": "25%-30%",
+          "part": "Part II: Other Laws (30 Marks)"
+        },
+        {
+          "name": "Section III: The Foreign Exchange Management Act, 1999",
+          "min": 30,
+          "max": 40,
+          "text": "30%-40%",
+          "part": "Part II: Other Laws (30 Marks)"
+        }
+      ]
+    },
+    {
+      "level": "intermediate",
+      "paper": "Taxation (Income-tax and GST)",
+      "subjectId": "inter-taxation",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76830bos61899-inter.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Intermediate Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I: Basic Concepts; Residential status and scope of total income",
+          "min": 10,
+          "max": 20,
+          "text": "10%-20%",
+          "part": "Section A: Income-tax Law (50 Marks)"
+        },
+        {
+          "name": "Section II: Heads of income and the provisions governing computation of income under different heads",
+          "min": 25,
+          "max": 30,
+          "text": "25%-30%",
+          "part": "Section A: Income-tax Law (50 Marks)"
+        },
+        {
+          "name": "Section III: Provisions relating to clubbing of income, set-off or carry forward and set-off of losses, deductions from gross total income",
+          "min": 15,
+          "max": 20,
+          "text": "15%-20%",
+          "part": "Section A: Income-tax Law (50 Marks)"
+        },
+        {
+          "name": "Section IV: Advance Tax, Tax deduction at source and tax collection at source; Provisions for filing return of income and self-assessment",
+          "min": 15,
+          "max": 20,
+          "text": "15%-20%",
+          "part": "Section A: Income-tax Law (50 Marks)"
+        },
+        {
+          "name": "Section V: Computation of total income and income-tax payable by an individual under the alternative tax regimes",
+          "min": 20,
+          "max": 25,
+          "text": "20%-25%",
+          "part": "Section A: Income-tax Law (50 Marks)"
+        },
+        {
+          "name": "Section I: GST Laws: An introduction including Constitutional aspects",
+          "min": 0,
+          "max": 5,
+          "text": "0-5%",
+          "part": "Section B: Goods and Services Tax (50 Marks)"
+        },
+        {
+          "name": "Section II: Levy and collection of CGST and IGST; Basic concepts of classification, place of supply, time of supply, value of supply, input tax credit; Computation of GST liability",
+          "min": 50,
+          "max": 80,
+          "text": "50%-80%",
+          "part": "Section B: Goods and Services Tax (50 Marks)"
+        },
+        {
+          "name": "Section III: Registration; Tax invoice, Credit and Debit Notes, Electronic way bill; Accounts and Records; Payment of tax; Returns",
+          "min": 20,
+          "max": 45,
+          "text": "20%-45%",
+          "part": "Section B: Goods and Services Tax (50 Marks)"
+        }
+      ]
+    },
+    {
+      "level": "intermediate",
+      "paper": "Cost and Management Accounting",
+      "subjectId": "inter-cost-management",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76830bos61899-inter.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Intermediate Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I: Overview of Cost and Management Accounting (including Elements of Cost and preparation of Cost Sheets)",
+          "min": 10,
+          "max": 15,
+          "text": "10%-15%"
+        },
+        {
+          "name": "Section II: Ascertainment of Cost and Cost Accounting System (Material Cost, Employee Cost, Direct Expenses, Overheads, Concepts of Activity Based Costing, Integration of cost and financial data)",
+          "min": 35,
+          "max": 40,
+          "text": "35%-40%"
+        },
+        {
+          "name": "Section III: Methods of Costing",
+          "min": 20,
+          "max": 25,
+          "text": "20%-25%"
+        },
+        {
+          "name": "Section IV: Cost Control and Analysis (Standard Costing, Marginal Costing, Budget and Budgetary Control)",
+          "min": 25,
+          "max": 30,
+          "text": "25%-30%"
+        }
+      ]
+    },
+    {
+      "level": "intermediate",
+      "paper": "Auditing and Ethics",
+      "subjectId": "inter-audit",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76830bos61899-inter.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Intermediate Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I: Nature, Objective and Scope of Audit",
+          "min": 4,
+          "max": 6,
+          "text": "4%-6%"
+        },
+        {
+          "name": "Section II: Audit Strategy, Audit Planning and Audit Program",
+          "min": 8,
+          "max": 12,
+          "text": "8%-12%"
+        },
+        {
+          "name": "Section III: Risk Assessment and Internal Control",
+          "min": 8,
+          "max": 12,
+          "text": "8%-12%"
+        },
+        {
+          "name": "Section IV: Audit Evidence; Audit Documentation",
+          "min": 12,
+          "max": 18,
+          "text": "12% - 18%"
+        },
+        {
+          "name": "Section V: Audit of Items of Financial Statements",
+          "min": 12,
+          "max": 20,
+          "text": "12%-20%"
+        },
+        {
+          "name": "Section VI: Completion and Review",
+          "min": 8,
+          "max": 12,
+          "text": "8%-12%"
+        },
+        {
+          "name": "Section VII: Audit Report",
+          "min": 8,
+          "max": 12,
+          "text": "8%-12%"
+        },
+        {
+          "name": "Section VIII: Special Features of Audit of Different Type of Entities; Audit of Banks",
+          "min": 12,
+          "max": 18,
+          "text": "12%-18%"
+        },
+        {
+          "name": "Section IX: Ethics and Terms of Audit Engagements",
+          "min": 8,
+          "max": 10,
+          "text": "8%-10%"
+        }
+      ]
+    },
+    {
+      "level": "intermediate",
+      "paper": "Financial Management and Strategic Management",
+      "subjectId": "inter-fm-sm",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76830bos61899-inter.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Intermediate Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I: Financial Management and Financial Analysis",
+          "min": 10,
+          "max": 15,
+          "text": "10%-15%",
+          "part": "Section A: Financial Management (50 Marks)"
+        },
+        {
+          "name": "Section II: Financing Decisions and Cost of Capital",
+          "min": 45,
+          "max": 50,
+          "text": "45%-50%",
+          "part": "Section A: Financial Management (50 Marks)"
+        },
+        {
+          "name": "Section III: Capital Investment and Dividend Decisions",
+          "min": 20,
+          "max": 25,
+          "text": "20%-25%",
+          "part": "Section A: Financial Management (50 Marks)"
+        },
+        {
+          "name": "Section IV: Management of Working Capital",
+          "min": 15,
+          "max": 20,
+          "text": "15%-20%",
+          "part": "Section A: Financial Management (50 Marks)"
+        },
+        {
+          "name": "Section I: Introduction to Strategic Management",
+          "min": 15,
+          "max": 25,
+          "text": "15%-25%",
+          "part": "Paper 6B: Strategic Management (50 Marks)"
+        },
+        {
+          "name": "Section II: Strategic Analysis: External Environment",
+          "min": 15,
+          "max": 25,
+          "text": "15%-25%",
+          "part": "Paper 6B: Strategic Management (50 Marks)"
+        },
+        {
+          "name": "Section III: Strategic Analysis: Internal Environment",
+          "min": 15,
+          "max": 25,
+          "text": "15%-25%",
+          "part": "Paper 6B: Strategic Management (50 Marks)"
+        },
+        {
+          "name": "Section IV: Strategic Choices",
+          "min": 15,
+          "max": 25,
+          "text": "15%-25%",
+          "part": "Paper 6B: Strategic Management (50 Marks)"
+        },
+        {
+          "name": "Section V: Strategy Implementation and Evaluation",
+          "min": 15,
+          "max": 25,
+          "text": "15%-25%",
+          "part": "Paper 6B: Strategic Management (50 Marks)"
+        }
+      ]
+    },
+    {
+      "level": "final",
+      "paper": "Financial Reporting",
+      "subjectId": "final-financial-reporting",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76831bos61899-final.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Final Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I: Introduction to General Purpose Financial Statements as per Ind AS; Conceptual Framework for Financial Reporting under Ind AS; Ind AS on Presentation of Items in the Financial Statements (Ind AS 1, 34, 7); Ind AS on Measurement based on Accounting Policies (Ind AS 8, 10, 113)",
+          "min": 10,
+          "max": 15,
+          "text": "10%-15%"
+        },
+        {
+          "name": "Section II: Ind AS on Income Statement (Ind AS 115 Revenue from Contracts with Customers)",
+          "min": 5,
+          "max": 10,
+          "text": "5%-10%"
+        },
+        {
+          "name": "Section III: Ind AS on Assets and Liabilities of the Financial Statements (Ind AS 2, 16, 116, 23, 36, 38, 40, 105, 19, 37)",
+          "min": 15,
+          "max": 25,
+          "text": "15%-25%"
+        },
+        {
+          "name": "Section IV: Ind AS on Items impacting the Financial Statements (Ind AS 12, 21); Ind AS on Disclosures (Ind AS 24, 33, 108); Other Ind AS (Ind AS 20, 102, 41)",
+          "min": 15,
+          "max": 20,
+          "text": "15%-20%"
+        },
+        {
+          "name": "Section V: Ind AS on Financial Instruments (Ind AS 32, 109, 107)",
+          "min": 10,
+          "max": 15,
+          "text": "10%-15%"
+        },
+        {
+          "name": "Section VI: Ind AS on Group Accounting (Ind AS 103, 110, 111, 27, 28, 112)",
+          "min": 10,
+          "max": 20,
+          "text": "10%-20%"
+        },
+        {
+          "name": "Section VII: First time adoption of Ind AS (Ind AS 101); Analysis of financial statements (as per Ind AS)",
+          "min": 5,
+          "max": 10,
+          "text": "5%-10%"
+        },
+        {
+          "name": "Section VIII: Ethics with Accounting Concepts; Technology and Accounting",
+          "min": 5,
+          "max": 10,
+          "text": "5%-10%"
+        }
+      ]
+    },
+    {
+      "level": "final",
+      "paper": "Advanced Financial Management",
+      "subjectId": "final-afm",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76831bos61899-final.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Final Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I: Financial Policy and Corporate Strategy; Risk Management; Advanced Capital Budgeting Decisions",
+          "min": 8,
+          "max": 15,
+          "text": "8% - 15%"
+        },
+        {
+          "name": "Section II: Security Analysis; Security Valuation; Portfolio Management",
+          "min": 20,
+          "max": 30,
+          "text": "20% - 30%"
+        },
+        {
+          "name": "Section III (numeral not printed in source): Securitization; Mutual Funds; Derivatives Analysis and Valuation",
+          "min": 20,
+          "max": 30,
+          "text": "20% - 30%"
+        },
+        {
+          "name": "Section IV: Foreign Exchange Exposure and Risk Management; International Financial Management; Interest Rate Risk Management",
+          "min": 20,
+          "max": 25,
+          "text": "20% - 25%"
+        },
+        {
+          "name": "Section V: Business Valuation; Mergers, Acquisitions and Corporate Restructuring",
+          "min": 10,
+          "max": 15,
+          "text": "10% - 15%"
+        },
+        {
+          "name": "Section VI: Startup Finance",
+          "min": 2,
+          "max": 5,
+          "text": "2% - 5%"
+        }
+      ]
+    },
+    {
+      "level": "final",
+      "paper": "Advanced Auditing, Assurance and Professional Ethics",
+      "subjectId": "final-audit",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76831bos61899-final.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Final Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I: Quality Control; General Auditing Principles and Auditors Responsibilities; Audit Planning, Strategy, and Execution; Materiality, Risk Assessment and Internal Control; Audit Evidence; Completion and Review; Reporting; Specialised Areas; Related Services; Review of Financial Information; Prospective Financial Information and Other Assurance Services",
+          "min": 45,
+          "max": 55,
+          "text": "45%-55%"
+        },
+        {
+          "name": "Section II: Digital Auditing and Assurance",
+          "min": 3,
+          "max": 6,
+          "text": "3% -6%"
+        },
+        {
+          "name": "Section III: Group Audits; Special Features of Audit of Banks & Non-Banking Financial Companies; Overview of Audit of Public Sector Undertakings; Internal Audit; Due Diligence, Investigation and Forensic Accounting",
+          "min": 17,
+          "max": 24,
+          "text": "17%-24%"
+        },
+        {
+          "name": "Section IV: Emerging Areas: Sustainable Development Goals (SDG) & Environment, Social and Governance (ESG) Assurance etc.",
+          "min": 3,
+          "max": 6,
+          "text": "3% -6%"
+        },
+        {
+          "name": "Section V: Professional Ethics and Liabilities of Auditors",
+          "min": 17,
+          "max": 24,
+          "text": "17%-24%"
+        }
+      ]
+    },
+    {
+      "level": "final",
+      "paper": "Direct Tax Laws and International Taxation",
+      "subjectId": "final-direct-tax",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76831bos61899-final.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Final Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I(i): Comprehensive computation of income-tax liabilities of companies and other entities under the alternative tax regimes to optimise tax liability",
+          "min": 20,
+          "max": 23,
+          "text": "40%-45% [20%-23% for item (i) and 20%-22% weightage for (ii), (iii) and (iv) together]"
+        },
+        {
+          "name": "Section I(ii)-(iv): Special Provisions relating to charitable and religious institutions, political parties, electoral trusts, business trusts, securitisation trusts, investment funds and other funds/trusts; Anti-avoidance provisions under the Act; Provisions to address tax challenges on digitalisation",
+          "min": 20,
+          "max": 22,
+          "text": "40%-45% [20%-23% for item (i) and 20%-22% weightage for (ii), (iii) and (iv) together]"
+        },
+        {
+          "name": "Section II: Tax Administration and Appellate Mechanism",
+          "min": 20,
+          "max": 30,
+          "text": "20%-30%"
+        },
+        {
+          "name": "Section III: International Taxation",
+          "min": 30,
+          "max": 35,
+          "text": "30%-35%"
+        }
+      ]
+    },
+    {
+      "level": "final",
+      "paper": "Indirect Tax Laws",
+      "subjectId": "final-indirect-tax",
+      "unit": "percent",
+      "sourceUrl": "https://resource.cdn.icai.org/76831bos61899-final.pdf",
+      "sourceType": "icai",
+      "sourceTitle": "ICAI BoS - Section-wise Weightage, Syllabus, Final Course (issued 26 Oct 2023)",
+      "items": [
+        {
+          "name": "Section I: Case studies based on levy and collection of CGST and IGST, supply, charge of tax including reverse charge, classification, exemption, place of supply, time of supply, value of supply, input tax credit, computation of GST liability",
+          "min": 45,
+          "max": 65,
+          "text": "45%-65%",
+          "part": "Part I: Goods and Services Tax (80 Marks)"
+        },
+        {
+          "name": "Section II: Procedures under GST (registration, tax invoice, credit and debit notes, e-way bill, accounts and records, returns, payment of tax); Refunds; Job work; Liability to pay in certain cases",
+          "min": 10,
+          "max": 30,
+          "text": "10%-30%",
+          "part": "Part I: Goods and Services Tax (80 Marks)"
+        },
+        {
+          "name": "Section III: Administration of GST; Assessment and Audit; Inspection, Search, Seizure and Arrest; Other provisions",
+          "min": 0,
+          "max": 5,
+          "text": "0-5%",
+          "part": "Part I: Goods and Services Tax (80 Marks)"
+        },
+        {
+          "name": "Section IV: Demand and Recovery; Offences and Penalties; Advance Ruling; Appeals and Revision; Ethics under GST",
+          "min": 15,
+          "max": 30,
+          "text": "15%-30%",
+          "part": "Part I: Goods and Services Tax (80 Marks)"
+        },
+        {
+          "name": "Section I: Levy of customs duties; Types of customs duties; Classification and valuation of imported and export goods",
+          "min": 40,
+          "max": 65,
+          "text": "40%-65%",
+          "part": "Part II: Customs and FTP (20 Marks)"
+        },
+        {
+          "name": "Section II: Import and Export Procedures; Warehousing; Refund; Basic concepts relating to export promotion schemes provided under FTP",
+          "min": 20,
+          "max": 45,
+          "text": "20% - 45%",
+          "part": "Part II: Customs and FTP (20 Marks)"
+        },
+        {
+          "name": "Section III: Introduction to FTP; Basic concepts relating to import and export; Introduction to customs law including Constitutional aspects",
+          "min": 10,
+          "max": 20,
+          "text": "10%-20%",
+          "part": "Part II: Customs and FTP (20 Marks)"
+        }
+      ]
+    }
+  ]
+}
