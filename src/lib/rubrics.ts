@@ -25,25 +25,31 @@ const squash = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
  * SA references that really appear in the pasted model answer; the user edits marks until they add up.
  */
 export function rubricFromDraft(question: string, modelAnswer: string, maxMarks: number, draft: RubricDraft): Rubric {
-  const text = normalise(modelAnswer);
-  const squashed = squash(modelAnswer);
+  // With no model answer, the scheme was drafted from the question: keywords and references must at least
+  // appear in that point's own description (or the question), so nothing floats free of what is shown.
+  const fromQuestion = !modelAnswer.trim();
   return {
     id: `custom-${Date.now().toString(36)}`,
     version: "custom-1",
-    sa: "Custom",
+    sa: fromQuestion ? "Drafted from the question" : "Custom",
     topic: "Custom question",
     question,
     maxMarks,
     verified: false,
     custom: true,
-    points: draft.points.map((p, i) => ({
-      id: `p${i + 1}`,
-      label: p.label,
-      marks: Math.max(0.5, roundHalf(p.marks)),
-      description: p.description,
-      keywords: p.keywords.filter((k) => k.trim() && text.includes(normalise(k))),
-      references: p.references.filter((r) => r.trim() && squashed.includes(squash(r))),
-    })),
+    points: draft.points.map((p, i) => {
+      const source = fromQuestion ? `${question}\n${p.description}` : modelAnswer;
+      const text = normalise(source);
+      const squashed = squash(source);
+      return {
+        id: `p${i + 1}`,
+        label: p.label,
+        marks: Math.max(0.5, roundHalf(p.marks)),
+        description: p.description,
+        keywords: p.keywords.filter((k) => k.trim() && text.includes(normalise(k))),
+        references: p.references.filter((r) => r.trim() && squashed.includes(squash(r))),
+      };
+    }),
     keywords: [],
     references: [],
     sources: [],

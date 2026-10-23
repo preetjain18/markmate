@@ -143,7 +143,7 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
           setCQuestion(String(pre.question ?? ""));
           setCModel(String(pre.modelAnswer ?? ""));
           if (Number(pre.marks) > 0) setCMarks(Number(pre.marks));
-          if (pre.question && pre.modelAnswer) setAutoDraft(true);
+          if (pre.question) setAutoDraft(true);
         }
       } catch {}
       setQuestionId(CUSTOM);
@@ -283,11 +283,11 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
   // Arriving from Scan My Answer with a question and solution: draft the marking points straight away.
   const [autoDraft, setAutoDraft] = useState(false);
   useEffect(() => {
-    if (!autoDraft || !cQuestion || !cModel) return;
+    if (!autoDraft || !cQuestion) return;
     setAutoDraft(false);
     void makeDraft();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [autoDraft, cQuestion, cModel]);
+  }, [autoDraft, cQuestion]);
 
   async function makeDraft() {
     setBusy("draft");
@@ -587,7 +587,7 @@ function CustomEntry({ onOpen }: { onOpen: () => void }) {
       <div className="min-w-0 flex-1">
         <h3 className="font-display text-[16px] font-semibold">Practise with your own question</h3>
         <p className="mt-0.5 text-sm text-muted">
-          For any subject: paste a question and its model answer. MarkMate drafts unverified marking points from the model answer, and you check them first.
+          For any subject: paste a question (and its model answer, if you have one). MarkMate drafts marking points, and you can check them first.
         </p>
       </div>
       <Button variant="secondary" size="sm" onClick={onOpen} className="self-start sm:self-center">
@@ -653,15 +653,17 @@ function CustomBuilder(props: {
   return (
     <Card className="p-6 sm:p-7">
       <p className="font-display text-sm font-semibold text-brand-600">Your own question</p>
-      <h2 className="mt-1 text-xl font-semibold tracking-tight">Paste a question and its model answer</h2>
-      <p className="mt-1 text-sm text-muted">MarkMate drafts marking points from the model answer. You check the marks before your answer is marked.</p>
+      <h2 className="mt-1 text-xl font-semibold tracking-tight">Your question</h2>
+      <p className="mt-1 text-sm text-muted">
+        MarkMate&apos;s AI drafts marking points from the question, or from the model answer if you add one. You can check the marks before your answer is marked.
+      </p>
       <div className="mt-5 space-y-3">
         <textarea aria-label="Question" className={field} rows={3} placeholder="The question" value={props.q} onChange={(e) => props.setQ(e.target.value)} />
         <textarea
-          aria-label="Model answer"
+          aria-label="Model answer (optional)"
           className={field}
-          rows={7}
-          placeholder="The model answer, for example from the ICAI Suggested Answer"
+          rows={5}
+          placeholder="Optional: a model answer, if you have one"
           value={props.model}
           onChange={(e) => props.setModel(e.target.value)}
         />
@@ -678,7 +680,7 @@ function CustomBuilder(props: {
               onChange={(e) => props.setMarks(Number(e.target.value))}
             />
           </label>
-          <Button variant="secondary" onClick={props.onDraft} disabled={props.busy || props.q.trim().length < 10 || props.model.trim().length < 30}>
+          <Button variant="secondary" onClick={props.onDraft} disabled={props.busy || props.q.trim().length < 10 || (props.model.trim() !== "" && props.model.trim().length < 30)}>
             <Icon name="spark" /> {props.busy ? "Drafting…" : draft ? "Draft again" : "Draft marking points"}
           </Button>
         </div>

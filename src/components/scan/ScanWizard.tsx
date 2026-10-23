@@ -41,9 +41,6 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
   const [paperFiles, setPaperFiles] = useState<ScanFile[]>([]);
   const [paperBusy, setPaperBusy] = useState(false);
   const [paperError, setPaperError] = useState("");
-  const [solFiles, setSolFiles] = useState<ScanFile[]>([]);
-  const [solBusy, setSolBusy] = useState(false);
-  const [solError, setSolError] = useState("");
   const [marksFromPaper, setMarksFromPaper] = useState(false);
 
   // Answer scan
@@ -65,34 +62,31 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
     if (picked && source !== "bank") detailsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }, [source, picked]);
 
-  const customOk = qText.trim().length >= 10 && modelAnswer.trim().length >= 30 && marks >= 1 && marks <= 20;
+  // The model answer is optional: without one, the AI drafts the marking points from the question.
+  const modelOk = modelAnswer.trim() === "" || modelAnswer.trim().length >= 30;
+  const customOk = qText.trim().length >= 10 && modelOk && marks >= 1 && marks <= 20;
   const questionOk = source === "bank" ? !!question : customOk;
   const questionText = source === "bank" ? question?.text : qText.trim();
   const problem = text ? answerProblem(text) : null;
 
-  /** Reads the question paper or the solution as soon as files are added. */
-  async function readPaper(list: ScanFile[], mode: "question" | "solution") {
+  /** Reads the question paper as soon as files are added, and takes the marks from it when printed. */
+  async function readPaper(list: ScanFile[]) {
     if (!list.length) return;
-    const [setBusy, setError] = mode === "question" ? [setPaperBusy, setPaperError] : [setSolBusy, setSolError];
-    setBusy(true);
-    setError("");
+    setPaperBusy(true);
+    setPaperError("");
     try {
-      const t = await readScan(list, { mode, question: mode === "solution" ? qText.trim() || undefined : undefined });
-      if (mode === "question") {
-        setQText(t.text);
-        const m = t.text.match(/(\d+(?:\.5)?)\s*marks?\b/i);
-        const n = m ? Number(m[1]) : NaN;
-        if (n >= 1 && n <= 20) {
-          setMarks(n);
-          setMarksFromPaper(true);
-        }
-      } else {
-        setModelAnswer(t.text);
+      const t = await readScan(list, { mode: "question" });
+      setQText(t.text);
+      const m = t.text.match(/(\d+(?:\.5)?)\s*marks?\b/i);
+      const n = m ? Number(m[1]) : NaN;
+      if (n >= 1 && n <= 20) {
+        setMarks(n);
+        setMarksFromPaper(true);
       }
     } catch (e) {
-      setError((e as Error).message);
+      setPaperError((e as Error).message);
     } finally {
-      setBusy(false);
+      setPaperBusy(false);
     }
   }
 
@@ -145,8 +139,8 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
           </div>
           <div role="radiogroup" aria-label="Where the question comes from" className="grid gap-3 sm:grid-cols-3">
             <SourceCard on={source === "bank"} onClick={() => pick("bank")} icon="book" title="From the question bank" body="Questions for every Foundation, Inter and Final paper, each with a marking scheme ready." />
-            <SourceCard on={source === "typed"} onClick={() => pick("typed")} icon="edit" title="Type the question" body="Paste any question with its model answer, e.g. an ICAI suggested answer you have." />
-            <SourceCard on={source === "paper"} onClick={() => pick("paper")} icon="camera" title="Photo of the question paper" body="Upload photos of the question and its solution; we read both and set up the marking." />
+            <SourceCard on={source === "typed"} onClick={() => pick("typed")} icon="edit" title="Type the question" body="Paste any question; add its model answer if you have one." />
+            <SourceCard on={source === "paper"} onClick={() => pick("paper")} icon="camera" title="Photo of the question paper" body="Upload a photo of the question; we read it and set up the marking points for you." />
           </div>
 
           {source === "bank" && (
@@ -182,12 +176,12 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
                 onFiles={(next) => {
                   const added = next.length > paperFiles.length;
                   setPaperFiles(next);
-                  if (added) void readPaper(next, "question");
+                  if (added) void readPaper(next);
                 }}
                 busy={paperBusy}
                 busyText="Reading the question…"
                 error={paperError}
-                onRetry={() => void readPaper(paperFiles, "question")}
+                onRetry={() => void readPaper(paperFiles)}
                 textId="qt"
                 textLabel="Question"
                 textHint="Read from your photo. Check it and fix anything misread. If the page has several questions, keep only the one you answered."
@@ -195,35 +189,13 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
                 onText={setQText}
                 rows={4}
               />
-              <PhotoStep
-                n={2}
-                title="Upload the solution"
-                body="A photo or PDF of the model or suggested answer. MarkMate turns it into marking points."
-                label="solution"
-                files={solFiles}
-                onFiles={(next) => {
-                  const added = next.length > solFiles.length;
-                  setSolFiles(next);
-                  if (added) void readPaper(next, "solution");
-                }}
-                busy={solBusy}
-                busyText="Reading the solution…"
-                error={solError}
-                onRetry={() => void readPaper(solFiles, "solution")}
-                textId="ma"
-                textLabel="Solution"
-                textHint="Read from your photo. Check it and fix anything misread."
-                text={modelAnswer}
-                onText={setModelAnswer}
-                rows={8}
-              />
               <Card className="space-y-2 p-5">
                 <h3 className="flex items-center gap-2 font-display text-[17px] font-semibold">
-                  <span className="grid size-6 place-items-center rounded-full bg-brand text-[13px] text-white">3</span> Total marks
+                  <span className="grid size-6 place-items-center rounded-full bg-brand text-[13px] text-white">2</span> Total marks
                 </h3>
                 <Input id="mk" aria-label="Total marks" type="number" min={1} max={20} step={0.5} value={marks} onChange={(e) => { setMarks(Number(e.target.value)); setMarksFromPaper(false); }} className="w-28" />
                 <p className="text-[13px] text-muted">
-                  {marksFromPaper ? "Taken from the question paper. Change it if it's wrong." : "How many marks the question carries."} You&apos;ll check the marking points drafted from the solution before your answer is marked.
+                  {marksFromPaper ? "Taken from the question paper. Change it if it's wrong." : "How many marks the question carries."} MarkMate&apos;s AI drafts the marking points from the question; you can check them before your answer is marked.
                 </p>
               </Card>
             </div>
@@ -235,8 +207,8 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
               <Field id="qt" label="Question">
                 <Textarea id="qt" rows={4} value={qText} onChange={(e) => setQText(e.target.value)} placeholder="The exam question" />
               </Field>
-              <Field id="ma" label="Model answer" hint="Needed to build the marking points. Paste a suggested answer you have access to.">
-                <Textarea id="ma" rows={6} value={modelAnswer} onChange={(e) => setModelAnswer(e.target.value)} placeholder="The model or suggested answer" />
+              <Field id="ma" label="Model answer (optional)" hint="If you have a suggested answer, paste it and the marking points follow it. Leave it empty and the AI drafts them from the question.">
+                <Textarea id="ma" rows={6} value={modelAnswer} onChange={(e) => setModelAnswer(e.target.value)} placeholder="Optional: the model or suggested answer" />
               </Field>
               <Field id="mk" label="Total marks">
                 <Input id="mk" type="number" min={1} max={20} step={0.5} value={marks} onChange={(e) => setMarks(Number(e.target.value))} className="w-28" />
