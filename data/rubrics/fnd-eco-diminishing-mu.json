@@ -11,6 +11,9 @@
     "total utility"
   ],
   "references": [],
+  "sources": [
+    "Law of diminishing marginal utility (standard microeconomic theory, cardinal utility approach)"
+  ],
   "points": [
     {
       "id": "p1",
@@ -21,7 +24,8 @@
         "marginal utility",
         "diminishes"
       ],
-      "references": []
+      "references": [],
+      "basis": "Law of diminishing marginal utility: statement"
     },
     {
       "id": "p2",
@@ -31,7 +35,8 @@
       "keywords": [
         "total utility"
       ],
-      "references": []
+      "references": [],
+      "basis": "Relation between total utility and marginal utility"
     },
     {
       "id": "p3",
@@ -39,7 +44,8 @@
       "marks": 1,
       "description": "Units are homogeneous and of reasonable size, and consumption is continuous without a long time gap.",
       "keywords": [],
-      "references": []
+      "references": [],
+      "basis": "Law of diminishing marginal utility: assumptions about the commodity and consumption"
     },
     {
       "id": "p4",
@@ -47,7 +53,8 @@
       "marks": 1,
       "description": "The consumer is rational and their tastes, income and preferences remain unchanged.",
       "keywords": [],
-      "references": []
+      "references": [],
+      "basis": "Law of diminishing marginal utility: assumptions about the consumer"
     },
     {
       "id": "p5",
@@ -55,7 +62,8 @@
       "marks": 1,
       "description": "Exceptions or limitations include hobbies and collections, rare goods, money, and addictive goods.",
       "keywords": [],
-      "references": []
+      "references": [],
+      "basis": "Law of diminishing marginal utility: exceptions and limitations"
     }
   ]
 }

@@ -1,0 +1,83 @@
+{
+  "id": "fnd-law-bill-to-act",
+  "version": "1",
+  "sa": "Constitution of India",
+  "topic": "How a Bill becomes an Act",
+  "question": "Explain the stages through which an ordinary Bill passes in Parliament before it becomes an Act.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "ordinary bill",
+    "reading",
+    "assent",
+    "joint sitting"
+  ],
+  "references": [
+    "Article 107",
+    "Article 111"
+  ],
+  "sources": [
+    "Constitution of India, Article 107 (introduction and passing of Bills), Article 108 (joint sitting) and Article 111 (assent to Bills)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Introduction (first reading)",
+      "marks": 1,
+      "description": "An ordinary Bill may be introduced in either House of Parliament by a minister or a private member; the motion for leave to introduce is passed and the Bill is published.",
+      "keywords": [
+        "introduction",
+        "first reading"
+      ],
+      "references": [],
+      "basis": "Constitution of India, Article 107"
+    },
+    {
+      "id": "p2",
+      "label": "Second reading and committee stage",
+      "marks": 1,
+      "description": "The House discusses the general principles of the Bill and may send it to a select or joint committee; the Bill is then considered clause by clause and amendments are moved and voted on.",
+      "keywords": [
+        "second reading",
+        "committee"
+      ],
+      "references": [],
+      "basis": "Constitution of India, Article 107 and the rules of procedure of each House"
+    },
+    {
+      "id": "p3",
+      "label": "Third reading",
+      "marks": 1,
+      "description": "The House debates the Bill as a whole and votes to accept or reject it; only formal changes are allowed at this stage.",
+      "keywords": [
+        "third reading"
+      ],
+      "references": [],
+      "basis": "Rules of procedure of each House of Parliament"
+    },
+    {
+      "id": "p4",
+      "label": "Bill in the other House",
+      "marks": 1,
+      "description": "The passed Bill goes to the other House, which goes through the same stages; if the Houses disagree, the President may call a joint sitting to settle the deadlock.",
+      "keywords": [
+        "other House",
+        "joint sitting"
+      ],
+      "references": [],
+      "basis": "Constitution of India, Articles 107 and 108"
+    },
+    {
+      "id": "p5",
+      "label": "President's assent",
+      "marks": 1,
+      "description": "After both Houses pass it, the Bill goes to the President, who may give assent, withhold assent, or return it once for reconsideration; once assent is given the Bill becomes an Act.",
+      "keywords": [
+        "assent",
+        "President"
+      ],
+      "references": [],
+      "basis": "Constitution of India, Article 111"
+    }
+  ]
+}

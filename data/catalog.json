@@ -10,14 +10,124 @@
           "name": "Accounting",
           "paper": "Paper 1",
           "category": "accounting",
-          "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters follow the ICAI syllabus.",
           "chapters": [
             {
               "id": "fnd-acc-framework",
               "name": "Theoretical framework",
               "topics": [
-                { "id": "fnd-acc-as1", "name": "AS 1 · Fundamental accounting assumptions", "questions": ["fnd-acc-fundamental-assumptions"] },
-                { "id": "fnd-acc-cap-rev", "name": "Capital and revenue expenditure", "questions": ["fnd-acc-capital-revenue"] }
+                {
+                  "id": "fnd-acc-as1",
+                  "name": "AS 1 · Fundamental accounting assumptions",
+                  "questions": [
+                    "fnd-acc-fundamental-assumptions"
+                  ]
+                },
+                {
+                  "id": "fnd-acc-policy-t",
+                  "name": "AS 1 · Selection of accounting policies",
+                  "questions": [
+                    "fnd-acc-policy-selection"
+                  ]
+                },
+                {
+                  "id": "fnd-acc-cap-rev",
+                  "name": "Capital and revenue expenditure",
+                  "questions": [
+                    "fnd-acc-capital-revenue"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-acc-process",
+              "name": "Accounting process",
+              "topics": [
+                {
+                  "id": "fnd-acc-errors-t",
+                  "name": "Classification of errors and suspense account",
+                  "questions": [
+                    "fnd-acc-errors"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-acc-inventories",
+              "name": "Inventories",
+              "topics": [
+                {
+                  "id": "fnd-acc-inventory-t",
+                  "name": "AS 2 · Valuation of inventories",
+                  "questions": [
+                    "fnd-acc-inventory-valuation"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-acc-depreciation",
+              "name": "Depreciation and amortisation",
+              "topics": [
+                {
+                  "id": "fnd-acc-dep-methods-t",
+                  "name": "Straight line and written down value methods",
+                  "questions": [
+                    "fnd-acc-depreciation-methods"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-acc-bills",
+              "name": "Bills of exchange and promissory notes",
+              "topics": [
+                {
+                  "id": "fnd-acc-bill-note-t",
+                  "name": "Bill of exchange and promissory note",
+                  "questions": [
+                    "fnd-acc-bill-promissory"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-acc-npo",
+              "name": "Financial statements of not-for-profit organisations",
+              "topics": [
+                {
+                  "id": "fnd-acc-npo-t",
+                  "name": "Receipts and payments vs income and expenditure account",
+                  "questions": [
+                    "fnd-acc-npo-accounts"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-acc-partnership",
+              "name": "Partnership and LLP accounts",
+              "topics": [
+                {
+                  "id": "fnd-acc-goodwill-t",
+                  "name": "Goodwill in partnership",
+                  "questions": [
+                    "fnd-acc-goodwill"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-acc-company",
+              "name": "Company accounts",
+              "topics": [
+                {
+                  "id": "fnd-acc-shares-deb-t",
+                  "name": "Shares and debentures",
+                  "questions": [
+                    "fnd-acc-shares-debentures"
+                  ]
+                }
               ]
             }
           ]
@@ -27,17 +137,119 @@
           "name": "Business Laws",
           "paper": "Paper 2",
           "category": "law",
-          "chapterNote": "Chapters are MarkMate's grouping, not the ICAI study material's order.",
+          "chapterNote": "Chapters follow the ICAI syllabus order.",
           "chapters": [
+            {
+              "id": "fnd-law-regulatory",
+              "name": "Indian regulatory framework",
+              "topics": [
+                {
+                  "id": "fnd-law-bill-to-act-t",
+                  "name": "How a Bill becomes an Act",
+                  "questions": [
+                    "fnd-law-bill-to-act"
+                  ]
+                }
+              ]
+            },
             {
               "id": "fnd-law-contract",
               "name": "Indian Contract Act, 1872",
-              "topics": [{ "id": "fnd-law-valid-contract-t", "name": "Essentials of a valid contract", "questions": ["fnd-law-valid-contract"] }]
+              "topics": [
+                {
+                  "id": "fnd-law-valid-contract-t",
+                  "name": "Essentials of a valid contract",
+                  "questions": [
+                    "fnd-law-valid-contract"
+                  ]
+                },
+                {
+                  "id": "fnd-law-free-consent-t",
+                  "name": "Free consent",
+                  "questions": [
+                    "fnd-law-free-consent"
+                  ]
+                },
+                {
+                  "id": "fnd-law-quasi-t",
+                  "name": "Quasi-contracts",
+                  "questions": [
+                    "fnd-law-quasi-contracts"
+                  ]
+                }
+              ]
             },
             {
               "id": "fnd-law-sale-of-goods",
               "name": "Sale of Goods Act, 1930",
-              "topics": [{ "id": "fnd-law-unpaid-seller-t", "name": "Rights of an unpaid seller", "questions": ["fnd-law-unpaid-seller"] }]
+              "topics": [
+                {
+                  "id": "fnd-law-cond-warr-t",
+                  "name": "Condition and warranty",
+                  "questions": [
+                    "fnd-law-condition-warranty"
+                  ]
+                },
+                {
+                  "id": "fnd-law-unpaid-seller-t",
+                  "name": "Rights of an unpaid seller",
+                  "questions": [
+                    "fnd-law-unpaid-seller"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-law-partnership",
+              "name": "Indian Partnership Act, 1932",
+              "topics": [
+                {
+                  "id": "fnd-law-partnership-t",
+                  "name": "Essentials of a partnership",
+                  "questions": [
+                    "fnd-law-partnership-essentials"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-law-llp",
+              "name": "Limited Liability Partnership Act, 2008",
+              "topics": [
+                {
+                  "id": "fnd-law-llp-t",
+                  "name": "Features of an LLP",
+                  "questions": [
+                    "fnd-law-llp-features"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-law-companies",
+              "name": "Companies Act, 2013",
+              "topics": [
+                {
+                  "id": "fnd-law-veil-t",
+                  "name": "Lifting the corporate veil",
+                  "questions": [
+                    "fnd-law-corporate-veil"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-law-ni",
+              "name": "Negotiable Instruments Act, 1881",
+              "topics": [
+                {
+                  "id": "fnd-law-hdc-t",
+                  "name": "Holder in due course",
+                  "questions": [
+                    "fnd-law-holder-due-course"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -46,14 +258,124 @@
           "name": "Quantitative Aptitude",
           "paper": "Paper 3",
           "category": "maths",
-          "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters follow the ICAI syllabus.",
           "chapters": [
             {
-              "id": "fnd-qa-statistics",
-              "name": "Statistics",
+              "id": "fnd-qa-tvm",
+              "name": "Time value of money",
               "topics": [
-                { "id": "fnd-qa-central-t", "name": "Measures of central tendency", "questions": ["fnd-qa-central-tendency"] },
-                { "id": "fnd-qa-corr-reg-t", "name": "Correlation and regression", "questions": ["fnd-qa-correlation-regression"] }
+                {
+                  "id": "fnd-qa-tvm-t",
+                  "name": "Time value of money",
+                  "questions": [
+                    "fnd-qa-time-value"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-qa-pnc",
+              "name": "Permutations and combinations",
+              "topics": [
+                {
+                  "id": "fnd-qa-pnc-t",
+                  "name": "Permutations and combinations",
+                  "questions": [
+                    "fnd-qa-permutation-combination"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-qa-data",
+              "name": "Statistical description of data",
+              "topics": [
+                {
+                  "id": "fnd-qa-data-t",
+                  "name": "Primary and secondary data",
+                  "questions": [
+                    "fnd-qa-data-collection"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-qa-statistics",
+              "name": "Measures of central tendency and dispersion",
+              "topics": [
+                {
+                  "id": "fnd-qa-central-t",
+                  "name": "Measures of central tendency",
+                  "questions": [
+                    "fnd-qa-central-tendency"
+                  ]
+                },
+                {
+                  "id": "fnd-qa-dispersion-t",
+                  "name": "Measures of dispersion",
+                  "questions": [
+                    "fnd-qa-dispersion"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-qa-probability",
+              "name": "Probability",
+              "topics": [
+                {
+                  "id": "fnd-qa-prob-def-t",
+                  "name": "Definitions of probability",
+                  "questions": [
+                    "fnd-qa-probability-definitions"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-qa-distributions",
+              "name": "Theoretical distributions",
+              "topics": [
+                {
+                  "id": "fnd-qa-normal-t",
+                  "name": "Normal distribution",
+                  "questions": [
+                    "fnd-qa-normal-distribution"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-qa-correlation",
+              "name": "Correlation and regression",
+              "topics": [
+                {
+                  "id": "fnd-qa-corr-reg-t",
+                  "name": "Correlation and regression",
+                  "questions": [
+                    "fnd-qa-correlation-regression"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-qa-index",
+              "name": "Index numbers",
+              "topics": [
+                {
+                  "id": "fnd-qa-index-constr-t",
+                  "name": "Problems in constructing index numbers",
+                  "questions": [
+                    "fnd-qa-index-construction"
+                  ]
+                },
+                {
+                  "id": "fnd-qa-index-tests-t",
+                  "name": "Tests of adequacy of index numbers",
+                  "questions": [
+                    "fnd-qa-index-tests"
+                  ]
+                }
               ]
             }
           ]
@@ -63,17 +385,125 @@
           "name": "Business Economics",
           "paper": "Paper 4",
           "category": "economics",
-          "chapterNote": "Chapters are MarkMate's grouping, not the ICAI study material's order.",
+          "chapterNote": "Chapters follow the ICAI syllabus order.",
           "chapters": [
+            {
+              "id": "fnd-eco-nature",
+              "name": "Nature and scope of business economics",
+              "topics": [
+                {
+                  "id": "fnd-eco-nature-t",
+                  "name": "Nature of business economics",
+                  "questions": [
+                    "fnd-eco-nature-scope"
+                  ]
+                }
+              ]
+            },
             {
               "id": "fnd-eco-demand",
               "name": "Theory of demand and consumer behaviour",
-              "topics": [{ "id": "fnd-eco-dmu-t", "name": "Law of diminishing marginal utility", "questions": ["fnd-eco-diminishing-mu"] }]
+              "topics": [
+                {
+                  "id": "fnd-eco-dmu-t",
+                  "name": "Law of diminishing marginal utility",
+                  "questions": [
+                    "fnd-eco-diminishing-mu"
+                  ]
+                },
+                {
+                  "id": "fnd-eco-elasticity-t",
+                  "name": "Determinants of price elasticity of demand",
+                  "questions": [
+                    "fnd-eco-elasticity-determinants"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-eco-production",
+              "name": "Theory of production and cost",
+              "topics": [
+                {
+                  "id": "fnd-eco-lvp-t",
+                  "name": "Law of variable proportions",
+                  "questions": [
+                    "fnd-eco-variable-proportions"
+                  ]
+                }
+              ]
             },
             {
               "id": "fnd-eco-markets",
               "name": "Price determination in different markets",
-              "topics": [{ "id": "fnd-eco-perfect-t", "name": "Perfect competition", "questions": ["fnd-eco-perfect-competition"] }]
+              "topics": [
+                {
+                  "id": "fnd-eco-perfect-t",
+                  "name": "Perfect competition",
+                  "questions": [
+                    "fnd-eco-perfect-competition"
+                  ]
+                },
+                {
+                  "id": "fnd-eco-monopolistic-t",
+                  "name": "Monopolistic competition",
+                  "questions": [
+                    "fnd-eco-monopolistic-competition"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-eco-cycles",
+              "name": "Business cycles",
+              "topics": [
+                {
+                  "id": "fnd-eco-cycle-t",
+                  "name": "Phases of a business cycle",
+                  "questions": [
+                    "fnd-eco-business-cycle-phases"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-eco-national-income",
+              "name": "Determination of national income",
+              "topics": [
+                {
+                  "id": "fnd-eco-ni-methods-t",
+                  "name": "Methods of measuring national income",
+                  "questions": [
+                    "fnd-eco-national-income-methods"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-eco-public-finance",
+              "name": "Public finance",
+              "topics": [
+                {
+                  "id": "fnd-eco-market-failure-t",
+                  "name": "Market failure",
+                  "questions": [
+                    "fnd-eco-market-failure"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fnd-eco-money",
+              "name": "Money market",
+              "topics": [
+                {
+                  "id": "fnd-eco-monetary-t",
+                  "name": "Instruments of monetary policy",
+                  "questions": [
+                    "fnd-eco-monetary-policy-tools"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -88,14 +518,124 @@
           "name": "Advanced Accounting",
           "paper": "Paper 1",
           "category": "accounting",
-          "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters follow the ICAI syllabus.",
           "chapters": [
             {
-              "id": "int-acc-standards",
-              "name": "Accounting Standards",
+              "id": "int-acc-framework",
+              "name": "Framework for Preparation and Presentation of Financial Statements",
               "topics": [
-                { "id": "int-acc-as2", "name": "AS 2 · Valuation of inventories", "questions": ["int-acc-as2-inventory"] },
-                { "id": "int-acc-as9", "name": "AS 9 · Revenue recognition", "questions": ["int-acc-as9-revenue"] }
+                {
+                  "id": "int-acc-framework-t",
+                  "name": "Qualitative characteristics of financial statements",
+                  "questions": [
+                    "int-acc-framework-qualitative"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-acc-presentation",
+              "name": "Presentation and Disclosure Based Accounting Standards",
+              "topics": [
+                {
+                  "id": "int-acc-as1-t",
+                  "name": "AS 1 · Disclosure of accounting policies",
+                  "questions": [
+                    "int-acc-as1-policies"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-acc-standards",
+              "name": "Assets Based Accounting Standards",
+              "topics": [
+                {
+                  "id": "int-acc-as2",
+                  "name": "AS 2 · Valuation of inventories",
+                  "questions": [
+                    "int-acc-as2-inventory"
+                  ]
+                },
+                {
+                  "id": "int-acc-as10-t",
+                  "name": "AS 10 · Recognition of property, plant and equipment",
+                  "questions": [
+                    "int-acc-as10-ppe"
+                  ]
+                },
+                {
+                  "id": "int-acc-as16-t",
+                  "name": "AS 16 · Capitalisation of borrowing costs",
+                  "questions": [
+                    "int-acc-as16-borrowing"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-acc-liabilities",
+              "name": "Liabilities Based Accounting Standards",
+              "topics": [
+                {
+                  "id": "int-acc-as29-t",
+                  "name": "AS 29 · Provision and contingent liability",
+                  "questions": [
+                    "int-acc-as29-provisions"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-acc-items",
+              "name": "Accounting Standards Based on Items Impacting Financial Statements",
+              "topics": [
+                {
+                  "id": "int-acc-as4-t",
+                  "name": "AS 4 · Events after the balance sheet date",
+                  "questions": [
+                    "int-acc-as4-events"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-acc-revenue",
+              "name": "Revenue Based Accounting Standards",
+              "topics": [
+                {
+                  "id": "int-acc-as9",
+                  "name": "AS 9 · Revenue recognition",
+                  "questions": [
+                    "int-acc-as9-revenue"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-acc-buyback",
+              "name": "Buy-back of Securities",
+              "topics": [
+                {
+                  "id": "int-acc-buyback-t",
+                  "name": "Conditions for buy-back of shares",
+                  "questions": [
+                    "int-acc-buyback-conditions"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-acc-amalgamation",
+              "name": "Amalgamation of Companies",
+              "topics": [
+                {
+                  "id": "int-acc-as14-t",
+                  "name": "AS 14 · Amalgamation in the nature of merger",
+                  "questions": [
+                    "int-acc-as14-merger"
+                  ]
+                }
               ]
             }
           ]
@@ -105,14 +645,124 @@
           "name": "Corporate and Other Laws",
           "paper": "Paper 2",
           "category": "law",
-          "chapterNote": "Chapters are MarkMate's grouping, not the ICAI study material's order.",
+          "chapterNote": "Chapters follow the ICAI syllabus: Companies Act, 2013 first, then Other Laws.",
           "chapters": [
             {
               "id": "int-law-companies",
-              "name": "Companies Act, 2013",
+              "name": "Preliminary",
               "topics": [
-                { "id": "int-law-indoor-t", "name": "Doctrine of indoor management", "questions": ["int-law-indoor-management"] },
-                { "id": "int-law-kinds-t", "name": "Private and public companies", "questions": ["int-law-private-public"] }
+                {
+                  "id": "int-law-kinds-t",
+                  "name": "Private and public companies",
+                  "questions": [
+                    "int-law-private-public"
+                  ]
+                },
+                {
+                  "id": "int-law-veil-t",
+                  "name": "Lifting the corporate veil",
+                  "questions": [
+                    "int-law-corporate-veil"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-law-incorporation",
+              "name": "Incorporation of Company and Matters Incidental Thereto",
+              "topics": [
+                {
+                  "id": "int-law-indoor-t",
+                  "name": "Doctrine of indoor management",
+                  "questions": [
+                    "int-law-indoor-management"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-law-prospectus",
+              "name": "Prospectus and Allotment of Securities",
+              "topics": [
+                {
+                  "id": "int-law-prospectus-t",
+                  "name": "Shelf and red herring prospectus",
+                  "questions": [
+                    "int-law-shelf-red-herring"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-law-share-capital",
+              "name": "Share Capital and Debentures",
+              "topics": [
+                {
+                  "id": "int-law-discount-t",
+                  "name": "Issue of shares at a discount",
+                  "questions": [
+                    "int-law-shares-discount"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-law-management",
+              "name": "Management and Administration",
+              "topics": [
+                {
+                  "id": "int-law-agm-t",
+                  "name": "Annual general meeting",
+                  "questions": [
+                    "int-law-agm"
+                  ]
+                },
+                {
+                  "id": "int-law-resolutions-t",
+                  "name": "Ordinary and special resolutions",
+                  "questions": [
+                    "int-law-resolutions"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-law-dividend",
+              "name": "Declaration and Payment of Dividend",
+              "topics": [
+                {
+                  "id": "int-law-unpaid-dividend-t",
+                  "name": "Unpaid dividend account",
+                  "questions": [
+                    "int-law-unpaid-dividend"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-law-interpretation",
+              "name": "Interpretation of Statutes",
+              "topics": [
+                {
+                  "id": "int-law-interpretation-t",
+                  "name": "Literal, mischief and harmonious rules",
+                  "questions": [
+                    "int-law-interpretation-rules"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-law-fema",
+              "name": "Foreign Exchange Management Act, 1999",
+              "topics": [
+                {
+                  "id": "int-law-fema-t",
+                  "name": "Capital and current account transactions",
+                  "questions": [
+                    "int-law-fema-capital-current"
+                  ]
+                }
               ]
             }
           ]
@@ -123,17 +773,125 @@
           "short": "Income Tax and GST",
           "paper": "Paper 3",
           "category": "tax",
-          "chapterNote": "Written theory questions only: computations aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapterNote": "Written theory questions only. Income-tax section numbers follow the Income-tax Act, 1961; the Income-tax Act, 2025 applies from 1 April 2026 with new numbering, so check which Act your exam attempt follows.",
           "chapters": [
             {
+              "id": "int-tax-basic",
+              "name": "Basic Concepts of Income-tax",
+              "topics": [
+                {
+                  "id": "int-tax-previous-year-t",
+                  "name": "Previous year and its exceptions",
+                  "questions": [
+                    "int-tax-previous-year"
+                  ]
+                }
+              ]
+            },
+            {
               "id": "int-tax-income-tax",
-              "name": "Income-tax",
-              "topics": [{ "id": "int-tax-residence-t", "name": "Residential status of an individual", "questions": ["int-tax-residential-status"] }]
+              "name": "Residence and Scope of Total Income",
+              "topics": [
+                {
+                  "id": "int-tax-residence-t",
+                  "name": "Residential status of an individual",
+                  "questions": [
+                    "int-tax-residential-status"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-tax-heads",
+              "name": "Heads of Income",
+              "topics": [
+                {
+                  "id": "int-tax-house-property-t",
+                  "name": "Charge of income from house property",
+                  "questions": [
+                    "int-tax-house-property-charge"
+                  ]
+                },
+                {
+                  "id": "int-tax-capital-asset-t",
+                  "name": "Meaning of capital asset",
+                  "questions": [
+                    "int-tax-capital-asset"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-tax-losses",
+              "name": "Aggregation of Income, Set-off and Carry Forward of Losses",
+              "topics": [
+                {
+                  "id": "int-tax-business-loss-t",
+                  "name": "Set-off and carry forward of business losses",
+                  "questions": [
+                    "int-tax-business-loss"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-tax-returns",
+              "name": "Provisions for Filing Return of Income",
+              "topics": [
+                {
+                  "id": "int-tax-belated-revised-t",
+                  "name": "Belated and revised returns",
+                  "questions": [
+                    "int-tax-belated-revised"
+                  ]
+                }
+              ]
             },
             {
               "id": "int-tax-gst",
-              "name": "Goods and Services Tax",
-              "topics": [{ "id": "int-tax-supply-t", "name": "Composite and mixed supply", "questions": ["int-tax-gst-composite-mixed"] }]
+              "name": "Supply under GST",
+              "topics": [
+                {
+                  "id": "int-tax-meaning-supply-t",
+                  "name": "Meaning and scope of supply",
+                  "questions": [
+                    "int-tax-gst-meaning-supply"
+                  ]
+                },
+                {
+                  "id": "int-tax-supply-t",
+                  "name": "Composite and mixed supply",
+                  "questions": [
+                    "int-tax-gst-composite-mixed"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-tax-gst-charge",
+              "name": "Charge of GST",
+              "topics": [
+                {
+                  "id": "int-tax-reverse-charge-t",
+                  "name": "Reverse charge mechanism",
+                  "questions": [
+                    "int-tax-gst-reverse-charge"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-tax-gst-itc",
+              "name": "Input Tax Credit",
+              "topics": [
+                {
+                  "id": "int-tax-itc-t",
+                  "name": "Conditions for input tax credit",
+                  "questions": [
+                    "int-tax-gst-itc-conditions"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -147,12 +905,113 @@
             {
               "id": "int-cost-intro",
               "name": "Introduction to cost and management accounting",
-              "topics": [{ "id": "int-cost-vs-fin-t", "name": "Cost and financial accounting", "questions": ["int-cost-cost-vs-financial"] }]
+              "topics": [
+                {
+                  "id": "int-cost-vs-fin-t",
+                  "name": "Cost and financial accounting",
+                  "questions": [
+                    "int-cost-cost-vs-financial"
+                  ]
+                },
+                {
+                  "id": "int-cost-centre-unit-t",
+                  "name": "Cost centre and cost unit",
+                  "questions": [
+                    "int-cost-cost-centre-unit"
+                  ]
+                }
+              ]
             },
             {
               "id": "int-cost-material",
               "name": "Material cost",
-              "topics": [{ "id": "int-cost-abc-t", "name": "ABC analysis", "questions": ["int-cost-abc-analysis"] }]
+              "topics": [
+                {
+                  "id": "int-cost-abc-t",
+                  "name": "ABC analysis",
+                  "questions": [
+                    "int-cost-abc-analysis"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-cost-employee",
+              "name": "Employee cost and direct expenses",
+              "topics": [
+                {
+                  "id": "int-cost-labour-turnover-t",
+                  "name": "Causes of labour turnover",
+                  "questions": [
+                    "int-cost-labour-turnover"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-cost-overheads",
+              "name": "Overheads: absorption costing method",
+              "topics": [
+                {
+                  "id": "int-cost-under-over-t",
+                  "name": "Under and over absorption of overheads",
+                  "questions": [
+                    "int-cost-under-over-absorption"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-cost-abc-method",
+              "name": "Activity based costing",
+              "topics": [
+                {
+                  "id": "int-cost-activity-based-t",
+                  "name": "Activity based costing",
+                  "questions": [
+                    "int-cost-activity-based-costing"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-cost-standard",
+              "name": "Standard costing",
+              "topics": [
+                {
+                  "id": "int-cost-standard-costing-t",
+                  "name": "Standard costing: advantages and limitations",
+                  "questions": [
+                    "int-cost-standard-costing"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-cost-marginal",
+              "name": "Marginal costing",
+              "topics": [
+                {
+                  "id": "int-cost-marginal-absorption-t",
+                  "name": "Marginal and absorption costing",
+                  "questions": [
+                    "int-cost-marginal-vs-absorption"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-cost-budgets",
+              "name": "Budgets and budgetary control",
+              "topics": [
+                {
+                  "id": "int-cost-fixed-flexible-t",
+                  "name": "Fixed and flexible budgets",
+                  "questions": [
+                    "int-cost-fixed-vs-flexible-budget"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -166,12 +1025,120 @@
             {
               "id": "int-aud-nature",
               "name": "Nature, objective and scope of audit",
-              "topics": [{ "id": "int-aud-sa200", "name": "SA 200 · Objectives and limitations", "questions": ["int-aud-sa200-objectives"] }]
+              "topics": [
+                {
+                  "id": "int-aud-sa200",
+                  "name": "SA 200 · Objectives and limitations",
+                  "questions": [
+                    "int-aud-sa200-objectives"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-aud-planning",
+              "name": "Audit strategy, audit planning and audit programme",
+              "topics": [
+                {
+                  "id": "int-aud-sa300-t",
+                  "name": "SA 300 · Benefits of audit planning",
+                  "questions": [
+                    "int-aud-sa300-planning"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-aud-risk-ic",
+              "name": "Risk assessment and internal control",
+              "topics": [
+                {
+                  "id": "int-aud-audit-risk-t",
+                  "name": "Components of audit risk",
+                  "questions": [
+                    "int-aud-audit-risk"
+                  ]
+                },
+                {
+                  "id": "int-aud-ic-components-t",
+                  "name": "SA 315 · Components of internal control",
+                  "questions": [
+                    "int-aud-internal-control-components"
+                  ]
+                }
+              ]
             },
             {
               "id": "int-aud-evidence",
               "name": "Audit evidence",
-              "topics": [{ "id": "int-aud-sa500", "name": "SA 500 · Sufficient appropriate evidence", "questions": ["int-aud-sa500-evidence"] }]
+              "topics": [
+                {
+                  "id": "int-aud-sa500",
+                  "name": "SA 500 · Sufficient appropriate evidence",
+                  "questions": [
+                    "int-aud-sa500-evidence"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-aud-completion",
+              "name": "Completion and review",
+              "topics": [
+                {
+                  "id": "int-aud-sa580-t",
+                  "name": "SA 580 · Written representations",
+                  "questions": [
+                    "int-aud-sa580-written-reps"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-aud-report",
+              "name": "Audit report",
+              "topics": [
+                {
+                  "id": "int-aud-sa705-t",
+                  "name": "SA 705 · Types of modified opinion",
+                  "questions": [
+                    "int-aud-sa705-modified-opinion"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-aud-company",
+              "name": "Company audit: appointment and eligibility of auditors",
+              "topics": [
+                {
+                  "id": "int-aud-sec141-t",
+                  "name": "Section 141 · Disqualifications of an auditor",
+                  "questions": [
+                    "int-aud-sec141-disqualifications"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-aud-ethics",
+              "name": "Ethics and terms of audit engagements",
+              "topics": [
+                {
+                  "id": "int-aud-ethics-principles-t",
+                  "name": "Fundamental principles of ethics",
+                  "questions": [
+                    "int-aud-ethics-principles"
+                  ]
+                },
+                {
+                  "id": "int-aud-sa210-t",
+                  "name": "SA 210 · Preconditions for an audit",
+                  "questions": [
+                    "int-aud-sa210-preconditions"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -185,12 +1152,120 @@
             {
               "id": "int-fm-scope",
               "name": "Scope and objectives of financial management",
-              "topics": [{ "id": "int-fm-objectives-t", "name": "Profit and wealth maximisation", "questions": ["int-fm-wealth-vs-profit"] }]
+              "topics": [
+                {
+                  "id": "int-fm-objectives-t",
+                  "name": "Profit and wealth maximisation",
+                  "questions": [
+                    "int-fm-wealth-vs-profit"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-fm-cost-capital",
+              "name": "Cost of capital",
+              "topics": [
+                {
+                  "id": "int-fm-cost-capital-t",
+                  "name": "Significance of cost of capital",
+                  "questions": [
+                    "int-fm-cost-of-capital"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-fm-financing",
+              "name": "Financing decisions: capital structure and leverages",
+              "topics": [
+                {
+                  "id": "int-fm-cap-structure-t",
+                  "name": "Factors in capital structure",
+                  "questions": [
+                    "int-fm-capital-structure-factors"
+                  ]
+                },
+                {
+                  "id": "int-fm-leverage-t",
+                  "name": "Operating and financial leverage",
+                  "questions": [
+                    "int-fm-operating-financial-leverage"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-fm-investment",
+              "name": "Investment decisions",
+              "topics": [
+                {
+                  "id": "int-fm-npv-t",
+                  "name": "Net present value method",
+                  "questions": [
+                    "int-fm-npv-method"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-fm-working-capital",
+              "name": "Management of working capital",
+              "topics": [
+                {
+                  "id": "int-fm-wc-factors-t",
+                  "name": "Factors determining working capital",
+                  "questions": [
+                    "int-fm-working-capital-factors"
+                  ]
+                }
+              ]
             },
             {
               "id": "int-sm-analysis",
-              "name": "Strategic analysis",
-              "topics": [{ "id": "int-sm-swot-t", "name": "SWOT analysis", "questions": ["int-sm-swot"] }]
+              "name": "Strategic analysis: external and internal environment",
+              "topics": [
+                {
+                  "id": "int-sm-five-forces-t",
+                  "name": "Porter's five forces",
+                  "questions": [
+                    "int-sm-porter-five-forces"
+                  ]
+                },
+                {
+                  "id": "int-sm-swot-t",
+                  "name": "SWOT analysis",
+                  "questions": [
+                    "int-sm-swot"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-sm-choices",
+              "name": "Strategic choices",
+              "topics": [
+                {
+                  "id": "int-sm-bcg-t",
+                  "name": "BCG growth-share matrix",
+                  "questions": [
+                    "int-sm-bcg-matrix"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "int-sm-implementation",
+              "name": "Strategy implementation and evaluation",
+              "topics": [
+                {
+                  "id": "int-sm-strategic-control-t",
+                  "name": "Types of strategic control",
+                  "questions": [
+                    "int-sm-strategic-control"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -208,14 +1283,122 @@
           "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters are MarkMate's grouping.",
           "chapters": [
             {
+              "id": "fin-fr-framework",
+              "name": "Conceptual Framework for Financial Reporting under Ind AS",
+              "topics": [
+                {
+                  "id": "fin-fr-framework-qualitative-t",
+                  "name": "Qualitative characteristics of financial information",
+                  "questions": [
+                    "fin-fr-framework-qualitative"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-fr-policies",
+              "name": "Accounting policies, estimates and errors (Ind AS 8)",
+              "topics": [
+                {
+                  "id": "fin-fr-indas8-t",
+                  "name": "Ind AS 8 · Policies, estimates and errors",
+                  "questions": [
+                    "fin-fr-indas8-policy-estimate-error"
+                  ]
+                }
+              ]
+            },
+            {
               "id": "fin-fr-revenue",
-              "name": "Revenue",
-              "topics": [{ "id": "fin-fr-115", "name": "Ind AS 115 · Five-step model", "questions": ["fin-fr-indas115-five-step"] }]
+              "name": "Revenue from contracts with customers (Ind AS 115)",
+              "topics": [
+                {
+                  "id": "fin-fr-115",
+                  "name": "Ind AS 115 · Five-step model",
+                  "questions": [
+                    "fin-fr-indas115-five-step"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-fr-assets",
+              "name": "Ind AS on assets of the financial statements",
+              "topics": [
+                {
+                  "id": "fin-fr-indas36-t",
+                  "name": "Ind AS 36 · Impairment of assets",
+                  "questions": [
+                    "fin-fr-indas36-impairment"
+                  ]
+                },
+                {
+                  "id": "fin-fr-indas116-t",
+                  "name": "Ind AS 116 · Lessee accounting",
+                  "questions": [
+                    "fin-fr-indas116-lessee"
+                  ]
+                }
+              ]
             },
             {
               "id": "fin-fr-liabilities",
-              "name": "Provisions and contingencies",
-              "topics": [{ "id": "fin-fr-37", "name": "Ind AS 37 · Provisions and contingent liabilities", "questions": ["fin-fr-indas37-provisions"] }]
+              "name": "Ind AS on liabilities: provisions and income taxes",
+              "topics": [
+                {
+                  "id": "fin-fr-37",
+                  "name": "Ind AS 37 · Provisions and contingent liabilities",
+                  "questions": [
+                    "fin-fr-indas37-provisions"
+                  ]
+                },
+                {
+                  "id": "fin-fr-indas12-t",
+                  "name": "Ind AS 12 · Deferred tax",
+                  "questions": [
+                    "fin-fr-indas12-deferred-tax"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-fr-instruments",
+              "name": "Financial instruments",
+              "topics": [
+                {
+                  "id": "fin-fr-indas109-t",
+                  "name": "Ind AS 109 · Classifying financial assets",
+                  "questions": [
+                    "fin-fr-indas109-classification"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-fr-group",
+              "name": "Business combinations and consolidated financial statements",
+              "topics": [
+                {
+                  "id": "fin-fr-indas110-t",
+                  "name": "Ind AS 110 · Control",
+                  "questions": [
+                    "fin-fr-indas110-control"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-fr-ir",
+              "name": "Integrated reporting",
+              "topics": [
+                {
+                  "id": "fin-fr-ir-t",
+                  "name": "Integrated reporting and the six capitals",
+                  "questions": [
+                    "fin-fr-integrated-reporting"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -227,14 +1410,115 @@
           "chapterNote": "Written theory questions only: numerical problems aren't evaluated yet. Chapters are MarkMate's grouping.",
           "chapters": [
             {
-              "id": "fin-afm-forex",
-              "name": "Foreign exchange exposure and risk management",
-              "topics": [{ "id": "fin-afm-hedging-t", "name": "Hedging foreign exchange risk", "questions": ["fin-afm-forex-hedging"] }]
+              "id": "fin-afm-policy",
+              "name": "Financial policy and corporate strategy",
+              "topics": [
+                {
+                  "id": "fin-afm-policy-t",
+                  "name": "Financial policy and corporate strategy",
+                  "questions": [
+                    "fin-afm-financial-policy-strategy"
+                  ]
+                }
+              ]
             },
             {
               "id": "fin-afm-risk",
               "name": "Risk management",
-              "topics": [{ "id": "fin-afm-var-t", "name": "Value at Risk", "questions": ["fin-afm-var"] }]
+              "topics": [
+                {
+                  "id": "fin-afm-var-t",
+                  "name": "Value at Risk",
+                  "questions": [
+                    "fin-afm-var"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-afm-security",
+              "name": "Security analysis and valuation",
+              "topics": [
+                {
+                  "id": "fin-afm-emh-t",
+                  "name": "Efficient market hypothesis",
+                  "questions": [
+                    "fin-afm-efficient-market"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-afm-portfolio",
+              "name": "Portfolio management",
+              "topics": [
+                {
+                  "id": "fin-afm-capm-t",
+                  "name": "Capital Asset Pricing Model",
+                  "questions": [
+                    "fin-afm-capm"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-afm-derivatives",
+              "name": "Derivatives analysis and valuation",
+              "topics": [
+                {
+                  "id": "fin-afm-option-t",
+                  "name": "Factors affecting option prices",
+                  "questions": [
+                    "fin-afm-option-premium-factors"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-afm-forex",
+              "name": "Foreign exchange exposure and risk management",
+              "topics": [
+                {
+                  "id": "fin-afm-exposure-t",
+                  "name": "Types of foreign exchange exposure",
+                  "questions": [
+                    "fin-afm-forex-exposure-types"
+                  ]
+                },
+                {
+                  "id": "fin-afm-hedging-t",
+                  "name": "Hedging foreign exchange risk",
+                  "questions": [
+                    "fin-afm-forex-hedging"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-afm-interest",
+              "name": "Interest rate risk management",
+              "topics": [
+                {
+                  "id": "fin-afm-ird-t",
+                  "name": "Hedging interest rate risk",
+                  "questions": [
+                    "fin-afm-interest-rate-derivatives"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-afm-mna",
+              "name": "Mergers, acquisitions and corporate restructuring",
+              "topics": [
+                {
+                  "id": "fin-afm-mna-t",
+                  "name": "Reasons for mergers and acquisitions",
+                  "questions": [
+                    "fin-afm-mergers-rationale"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -244,53 +1528,187 @@
           "short": "Audit",
           "paper": "Paper 3",
           "category": "audit",
-          "chapterNote": "Chapters here are MarkMate's grouping by Standards on Auditing series, not the ICAI study material's chapter order.",
+          "chapterNote": "Chapters group the Standards on Auditing by series, followed by company audit (CARO 2020) and professional ethics. This is MarkMate's grouping, not the ICAI study material's chapter order.",
           "chapters": [
             {
               "id": "sa-200-series",
               "name": "General principles and responsibilities",
               "note": "SA 200–299",
               "topics": [
-                { "id": "sa-230", "name": "SA 230 · Audit Documentation", "questions": ["sa-230-audit-documentation"] },
-                { "id": "sa-240", "name": "SA 240 · Fraud", "questions": ["sa-240-fraud"] },
-                { "id": "sa-265", "name": "SA 265 · Communicating Deficiencies in Internal Control", "questions": ["sa-265-control-deficiencies"] }
+                {
+                  "id": "sa-230",
+                  "name": "SA 230 · Audit Documentation",
+                  "questions": [
+                    "sa-230-audit-documentation"
+                  ]
+                },
+                {
+                  "id": "sa-240",
+                  "name": "SA 240 · Fraud",
+                  "questions": [
+                    "sa-240-fraud"
+                  ]
+                },
+                {
+                  "id": "sa-265",
+                  "name": "SA 265 · Communicating Deficiencies in Internal Control",
+                  "questions": [
+                    "sa-265-control-deficiencies"
+                  ]
+                }
               ]
             },
             {
               "id": "sa-300-series",
               "name": "Risk assessment and response to assessed risks",
               "note": "SA 300–499",
-              "topics": []
+              "topics": [
+                {
+                  "id": "fin-aud-sa315-t",
+                  "name": "SA 315 · Risk assessment procedures",
+                  "questions": [
+                    "fin-aud-sa315-risk-assessment"
+                  ]
+                },
+                {
+                  "id": "fin-aud-sa320-t",
+                  "name": "SA 320 · Materiality",
+                  "questions": [
+                    "fin-aud-sa320-materiality"
+                  ]
+                }
+              ]
             },
             {
               "id": "sa-500-series",
               "name": "Audit evidence",
               "note": "SA 500–599",
               "topics": [
-                { "id": "sa-505", "name": "SA 505 · External Confirmations", "questions": ["sa-505-external-confirmations"] },
-                { "id": "sa-530", "name": "SA 530 · Audit Sampling", "questions": ["sa-530-audit-sampling"] },
-                { "id": "sa-560", "name": "SA 560 · Subsequent Events", "questions": ["sa-560-subsequent-events"] },
-                { "id": "sa-570", "name": "SA 570 · Going Concern", "questions": ["sa-570-going-concern"] },
-                { "id": "sa-580", "name": "SA 580 · Written Representations", "questions": ["sa-580-written-representations"] }
+                {
+                  "id": "sa-505",
+                  "name": "SA 505 · External Confirmations",
+                  "questions": [
+                    "sa-505-external-confirmations"
+                  ]
+                },
+                {
+                  "id": "sa-530",
+                  "name": "SA 530 · Audit Sampling",
+                  "questions": [
+                    "sa-530-audit-sampling"
+                  ]
+                },
+                {
+                  "id": "sa-560",
+                  "name": "SA 560 · Subsequent Events",
+                  "questions": [
+                    "sa-560-subsequent-events"
+                  ]
+                },
+                {
+                  "id": "sa-570",
+                  "name": "SA 570 · Going Concern",
+                  "questions": [
+                    "sa-570-going-concern"
+                  ]
+                },
+                {
+                  "id": "sa-580",
+                  "name": "SA 580 · Written Representations",
+                  "questions": [
+                    "sa-580-written-representations"
+                  ]
+                }
               ]
             },
             {
               "id": "sa-600-series",
               "name": "Using the work of others",
               "note": "SA 600–699",
-              "topics": [{ "id": "sa-610", "name": "SA 610 · Using the Work of Internal Auditors", "questions": ["sa-610-internal-auditors"] }]
+              "topics": [
+                {
+                  "id": "sa-610",
+                  "name": "SA 610 · Using the Work of Internal Auditors",
+                  "questions": [
+                    "sa-610-internal-auditors"
+                  ]
+                },
+                {
+                  "id": "fin-aud-sa620-t",
+                  "name": "SA 620 · Using the Work of an Auditor's Expert",
+                  "questions": [
+                    "fin-aud-sa620-auditors-expert"
+                  ]
+                }
+              ]
             },
             {
               "id": "sa-700-series",
               "name": "Audit conclusions and reporting",
               "note": "SA 700–799",
-              "topics": [{ "id": "sa-701", "name": "SA 701 · Key Audit Matters", "questions": ["sa-701-key-audit-matters"] }]
+              "topics": [
+                {
+                  "id": "sa-701",
+                  "name": "SA 701 · Key Audit Matters",
+                  "questions": [
+                    "sa-701-key-audit-matters"
+                  ]
+                },
+                {
+                  "id": "fin-aud-sa705-t",
+                  "name": "SA 705 · Modified Opinions",
+                  "questions": [
+                    "fin-aud-sa705-modified-opinion"
+                  ]
+                },
+                {
+                  "id": "fin-aud-sa706-t",
+                  "name": "SA 706 · Emphasis of Matter and Other Matter",
+                  "questions": [
+                    "fin-aud-sa706-eom-other-matter"
+                  ]
+                }
+              ]
             },
             {
               "id": "sa-800-series",
               "name": "Specialised areas",
               "note": "SA 800–899",
-              "topics": []
+              "topics": [
+                {
+                  "id": "fin-aud-sa800-t",
+                  "name": "SA 800 · Special Purpose Frameworks",
+                  "questions": [
+                    "fin-aud-sa800-special-purpose"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-aud-company-audit",
+              "name": "Company audit (CARO 2020)",
+              "topics": [
+                {
+                  "id": "fin-aud-caro-ppe-t",
+                  "name": "CARO 2020 · Property, plant and equipment",
+                  "questions": [
+                    "fin-aud-caro-ppe"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-aud-ethics",
+              "name": "Professional ethics and liabilities",
+              "topics": [
+                {
+                  "id": "fin-aud-ethics-prev-auditor-t",
+                  "name": "Communication with the previous auditor",
+                  "questions": [
+                    "fin-aud-ethics-previous-auditor"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -299,17 +1717,125 @@
           "name": "Direct Tax Laws and International Taxation",
           "paper": "Paper 4",
           "category": "tax",
-          "chapterNote": "Written theory questions only: computations aren't evaluated yet. Chapters are MarkMate's grouping.",
+          "chapterNote": "Written theory questions only. Income-tax section numbers follow the Income-tax Act, 1961; the Income-tax Act, 2025 applies from 1 April 2026 with new numbering, so check which Act your exam attempt follows.",
           "chapters": [
+            {
+              "id": "fin-dt-residence",
+              "name": "Residence and scope of total income",
+              "topics": [
+                {
+                  "id": "fin-dt-poem-t",
+                  "name": "Place of effective management",
+                  "questions": [
+                    "fin-dt-poem"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-dt-restructuring",
+              "name": "Business restructuring",
+              "topics": [
+                {
+                  "id": "fin-dt-amalgamation-t",
+                  "name": "Amalgamation: meaning and tax reliefs",
+                  "questions": [
+                    "fin-dt-amalgamation"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-dt-assessment",
+              "name": "Assessment procedures",
+              "topics": [
+                {
+                  "id": "fin-dt-best-judgment-t",
+                  "name": "Best judgment assessment",
+                  "questions": [
+                    "fin-dt-best-judgment-assessment"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-dt-appeals",
+              "name": "Appeals and revision",
+              "topics": [
+                {
+                  "id": "fin-dt-revision-263-t",
+                  "name": "Revision under section 263",
+                  "questions": [
+                    "fin-dt-revision-263"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-dt-penalties",
+              "name": "Penalties",
+              "topics": [
+                {
+                  "id": "fin-dt-penalty-270a-t",
+                  "name": "Under-reporting and misreporting of income",
+                  "questions": [
+                    "fin-dt-penalty-270a"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-dt-tax-treaties",
+              "name": "Double taxation relief and tax treaties",
+              "topics": [
+                {
+                  "id": "fin-dt-dtaa-relief-t",
+                  "name": "Relief under sections 90 and 91",
+                  "questions": [
+                    "fin-dt-dtaa-relief"
+                  ]
+                },
+                {
+                  "id": "fin-dt-pe-t",
+                  "name": "Permanent establishment",
+                  "questions": [
+                    "fin-dt-permanent-establishment"
+                  ]
+                }
+              ]
+            },
             {
               "id": "fin-dt-transfer-pricing",
               "name": "Transfer pricing",
-              "topics": [{ "id": "fin-dt-alp-t", "name": "Arm's length price methods", "questions": ["fin-dt-transfer-pricing-methods"] }]
+              "topics": [
+                {
+                  "id": "fin-dt-alp-t",
+                  "name": "Arm's length price methods",
+                  "questions": [
+                    "fin-dt-transfer-pricing-methods"
+                  ]
+                },
+                {
+                  "id": "fin-dt-apa-t",
+                  "name": "Advance pricing agreements",
+                  "questions": [
+                    "fin-dt-advance-pricing-agreement"
+                  ]
+                }
+              ]
             },
             {
-              "id": "fin-dt-residence",
-              "name": "Residence of companies",
-              "topics": [{ "id": "fin-dt-poem-t", "name": "Place of effective management", "questions": ["fin-dt-poem"] }]
+              "id": "fin-dt-anti-avoidance",
+              "name": "Anti-avoidance: GAAR",
+              "topics": [
+                {
+                  "id": "fin-dt-gaar-t",
+                  "name": "Impermissible avoidance arrangements",
+                  "questions": [
+                    "fin-dt-gaar"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -321,14 +1847,116 @@
           "chapterNote": "Written theory questions only: computations aren't evaluated yet. Chapters are MarkMate's grouping.",
           "chapters": [
             {
+              "id": "fin-idt-gst-supply",
+              "name": "GST: supply and levy",
+              "topics": [
+                {
+                  "id": "fin-idt-composite-mixed-t",
+                  "name": "Composite and mixed supply",
+                  "questions": [
+                    "fin-idt-composite-mixed-supply"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-idt-gst-pos",
+              "name": "GST: place of supply",
+              "topics": [
+                {
+                  "id": "fin-idt-pos-goods-t",
+                  "name": "Place of supply of goods",
+                  "questions": [
+                    "fin-idt-place-of-supply-goods"
+                  ]
+                }
+              ]
+            },
+            {
               "id": "fin-idt-gst-itc",
               "name": "GST: input tax credit",
-              "topics": [{ "id": "fin-idt-itc-t", "name": "Conditions for input tax credit", "questions": ["fin-idt-itc-conditions"] }]
+              "topics": [
+                {
+                  "id": "fin-idt-itc-t",
+                  "name": "Conditions for input tax credit",
+                  "questions": [
+                    "fin-idt-itc-conditions"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-idt-gst-registration",
+              "name": "GST: registration",
+              "topics": [
+                {
+                  "id": "fin-idt-compulsory-reg-t",
+                  "name": "Compulsory registration",
+                  "questions": [
+                    "fin-idt-compulsory-registration"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-idt-gst-procedures",
+              "name": "GST: e-way bill and refunds",
+              "topics": [
+                {
+                  "id": "fin-idt-eway-t",
+                  "name": "E-way bill",
+                  "questions": [
+                    "fin-idt-e-way-bill"
+                  ]
+                },
+                {
+                  "id": "fin-idt-zero-rated-t",
+                  "name": "Zero-rated supplies and refund",
+                  "questions": [
+                    "fin-idt-zero-rated-refund"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-idt-gst-assessment-appeals",
+              "name": "GST: assessment and appeals",
+              "topics": [
+                {
+                  "id": "fin-idt-assessment-t",
+                  "name": "Types of assessment",
+                  "questions": [
+                    "fin-idt-types-of-assessment"
+                  ]
+                },
+                {
+                  "id": "fin-idt-appeal-t",
+                  "name": "Appeal to the Appellate Authority",
+                  "questions": [
+                    "fin-idt-appeal-appellate-authority"
+                  ]
+                }
+              ]
             },
             {
               "id": "fin-idt-customs",
               "name": "Customs",
-              "topics": [{ "id": "fin-idt-duties-t", "name": "Types of customs duties", "questions": ["fin-idt-customs-duties"] }]
+              "topics": [
+                {
+                  "id": "fin-idt-duties-t",
+                  "name": "Types of customs duties",
+                  "questions": [
+                    "fin-idt-customs-duties"
+                  ]
+                },
+                {
+                  "id": "fin-idt-valuation-t",
+                  "name": "Valuation of imported goods",
+                  "questions": [
+                    "fin-idt-customs-valuation"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -337,12 +1965,79 @@
           "name": "Integrated Business Solutions",
           "paper": "Paper 6",
           "category": "strategy",
-          "chapterNote": "IBS is case-based; this is a short written practice question, not a full case study.",
+          "chapterNote": "IBS is case-based; each item is a short invented scenario with a written question, not a full case study.",
           "chapters": [
             {
               "id": "fin-ibs-cases",
-              "name": "Case study practice",
-              "topics": [{ "id": "fin-ibs-dd-t", "name": "Due diligence before an acquisition", "questions": ["fin-ibs-acquisition-due-diligence"] }]
+              "name": "Due diligence",
+              "topics": [
+                {
+                  "id": "fin-ibs-dd-t",
+                  "name": "Due diligence before an acquisition",
+                  "questions": [
+                    "fin-ibs-acquisition-due-diligence"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-ibs-valuation",
+              "name": "Valuation considerations",
+              "topics": [
+                {
+                  "id": "fin-ibs-valuation-t",
+                  "name": "Choosing a valuation approach",
+                  "questions": [
+                    "fin-ibs-valuation-approach"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-ibs-strategy",
+              "name": "Strategy and risk",
+              "topics": [
+                {
+                  "id": "fin-ibs-expansion-t",
+                  "name": "Strategy and risk in overseas expansion",
+                  "questions": [
+                    "fin-ibs-overseas-expansion-risk"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-ibs-ethics",
+              "name": "Ethics and governance",
+              "topics": [
+                {
+                  "id": "fin-ibs-ethics-t",
+                  "name": "Pressure to recognise revenue early",
+                  "questions": [
+                    "fin-ibs-ethics-revenue-pressure"
+                  ]
+                },
+                {
+                  "id": "fin-ibs-rpt-t",
+                  "name": "Related party transaction approval",
+                  "questions": [
+                    "fin-ibs-related-party-governance"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fin-ibs-reporting",
+              "name": "Reporting and compliance",
+              "topics": [
+                {
+                  "id": "fin-ibs-gc-t",
+                  "name": "Reporting when going concern is in doubt",
+                  "questions": [
+                    "fin-ibs-going-concern-reporting"
+                  ]
+                }
+              ]
             }
           ]
         }

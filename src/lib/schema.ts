@@ -24,6 +24,8 @@ export const RubricPointSchema = z.object({
   description: z.string().min(1),
   keywords: z.array(z.string()).default([]),
   references: z.array(z.string()).default([]),
+  /** The provision or principle this point rests on, e.g. "Indian Contract Act, 1872, Section 10". */
+  basis: z.string().optional(),
 });
 
 export const RubricSchema = z
@@ -39,6 +41,8 @@ export const RubricSchema = z
     points: z.array(RubricPointSchema).min(1),
     keywords: z.array(z.string()).default([]),
     references: z.array(z.string()).default([]),
+    /** The laws, standards or principles the marking scheme is based on. */
+    sources: z.array(z.string()).default([]),
   })
   .refine(
     (r) => Math.abs(r.points.reduce((s, p) => s + p.marks, 0) - r.maxMarks) < 1e-9,
@@ -131,6 +135,8 @@ export type PointResult = {
   label: string;
   /** What a complete answer to this point covers, copied from the rubric (reference text, not the student's words). */
   requirement: string;
+  /** The provision or principle the point rests on, from the rubric, when it names one. */
+  basis?: string;
   allocated: number;
   aiStatus: Status;
   aiMarks: number;
@@ -160,6 +166,8 @@ export type AttemptResult = {
   rubricVersion: string;
   verified: boolean;
   maxMarks: number;
+  /** The laws or standards the marking scheme is based on. */
+  sources?: string[];
   estimatedMarks: number;
   pendingReviewMarks: number;
   needsReview: boolean;

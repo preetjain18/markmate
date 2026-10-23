@@ -1,0 +1,86 @@
+{
+  "id": "fin-afm-capm",
+  "version": "1",
+  "sa": "AFM",
+  "topic": "Capital Asset Pricing Model",
+  "question": "Explain the Capital Asset Pricing Model (CAPM), its assumptions and its limitations.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "CAPM",
+    "beta",
+    "systematic risk",
+    "risk-free rate",
+    "market risk premium",
+    "security market line"
+  ],
+  "references": [],
+  "sources": [
+    "Sharpe, W. F. (1964), 'Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk', Journal of Finance"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning and relationship",
+      "marks": 1,
+      "description": "CAPM states that expected return equals the risk-free rate plus beta times the market risk premium; only systematic risk, measured by beta, is rewarded, and the relationship is shown by the security market line.",
+      "keywords": [
+        "risk-free rate",
+        "beta",
+        "market risk premium",
+        "security market line"
+      ],
+      "references": [],
+      "basis": "Sharpe (1964): equilibrium relationship between expected return and systematic risk"
+    },
+    {
+      "id": "p2",
+      "label": "Assumptions about investors",
+      "marks": 1,
+      "description": "Investors are rational and risk-averse, choose portfolios on expected return and variance, have the same expectations and a single holding period.",
+      "keywords": [
+        "risk-averse",
+        "homogeneous expectations"
+      ],
+      "references": [],
+      "basis": "Sharpe (1964): assumptions about investor behaviour"
+    },
+    {
+      "id": "p3",
+      "label": "Assumptions about markets",
+      "marks": 1,
+      "description": "Markets are perfect: no taxes or transaction costs, information is freely available, assets are divisible, and investors can borrow and lend without limit at the risk-free rate.",
+      "keywords": [
+        "no taxes",
+        "borrow and lend",
+        "risk-free rate"
+      ],
+      "references": [],
+      "basis": "Sharpe (1964): assumptions about capital markets"
+    },
+    {
+      "id": "p4",
+      "label": "Estimation problems",
+      "marks": 1,
+      "description": "Beta is estimated from past data and may not be stable; the true market portfolio cannot be observed and the choice of risk-free rate and market premium affects results.",
+      "keywords": [
+        "beta instability",
+        "market portfolio"
+      ],
+      "references": [],
+      "basis": "Roll (1977) critique and general CAPM estimation limits"
+    },
+    {
+      "id": "p5",
+      "label": "Other limitations",
+      "marks": 1,
+      "description": "The assumptions are unrealistic, it is a single-factor, single-period model, and empirical tests show that factors other than beta (such as size and value) also explain returns.",
+      "keywords": [
+        "unrealistic assumptions",
+        "single factor"
+      ],
+      "references": [],
+      "basis": "Empirical tests of CAPM, for example Fama and French (1992)"
+    }
+  ]
+}

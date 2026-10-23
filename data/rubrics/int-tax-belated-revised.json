@@ -1,0 +1,86 @@
+{
+  "id": "int-tax-belated-revised",
+  "version": "1",
+  "sa": "Income-tax",
+  "topic": "Belated and revised returns",
+  "question": "Explain the provisions for filing a belated return and a revised return of income under the Income-tax Act, 1961.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "belated return",
+    "revised return",
+    "omission or wrong statement",
+    "three months prior to the end"
+  ],
+  "references": [
+    "Section 139(4)",
+    "Section 139(5)"
+  ],
+  "sources": [
+    "Income-tax Act, 1961 - section 139(4) belated return",
+    "Income-tax Act, 1961 - section 139(5) revised return",
+    "Income-tax Act, 1961 - sections 80 and 234F"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Belated return: meaning",
+      "marks": 1,
+      "description": "A person who has not filed a return within the time allowed under section 139(1) may file a belated return.",
+      "keywords": [
+        "belated return"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 139(4)"
+    },
+    {
+      "id": "p2",
+      "label": "Time limit",
+      "marks": 1,
+      "description": "Both a belated and a revised return can be filed up to three months before the end of the relevant assessment year or before completion of assessment, whichever is earlier.",
+      "keywords": [
+        "three months",
+        "completion of assessment"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, sections 139(4) and 139(5)"
+    },
+    {
+      "id": "p3",
+      "label": "Consequences of filing late",
+      "marks": 1,
+      "description": "A late filer pays a fee for delay and interest on tax due, and cannot carry forward most losses (such as business and capital losses).",
+      "keywords": [
+        "fee",
+        "interest",
+        "carry forward"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, sections 234F, 234A and 80"
+    },
+    {
+      "id": "p4",
+      "label": "Revised return: meaning",
+      "marks": 1,
+      "description": "If a person finds an omission or wrong statement in an original or belated return, he may file a revised return.",
+      "keywords": [
+        "omission",
+        "wrong statement",
+        "revised return"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 139(5)"
+    },
+    {
+      "id": "p5",
+      "label": "Effect of revision",
+      "marks": 1,
+      "description": "A belated return can itself be revised; the revised return replaces the original, and it can be revised more than once within the time limit.",
+      "keywords": [
+        "replaces"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 139(5)"
+    }
+  ]
+}

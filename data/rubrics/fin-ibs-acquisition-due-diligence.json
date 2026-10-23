@@ -12,6 +12,10 @@
     "integration"
   ],
   "references": [],
+  "sources": [
+    "Generally accepted practice on acquisition due diligence (financial, tax, legal, commercial, people)",
+    "Competition Act, 2002 and SEBI (Substantial Acquisition of Shares and Takeovers) Regulations, 2011 (approvals relevant to acquisitions)"
+  ],
   "points": [
     {
       "id": "p1",
@@ -21,7 +25,8 @@
       "keywords": [
         "financial"
       ],
-      "references": []
+      "references": [],
+      "basis": "Due diligence practice: financial due diligence and quality of earnings"
     },
     {
       "id": "p2",
@@ -31,7 +36,8 @@
       "keywords": [
         "tax"
       ],
-      "references": []
+      "references": [],
+      "basis": "Due diligence practice: tax due diligence"
     },
     {
       "id": "p3",
@@ -42,7 +48,8 @@
         "litigation",
         "approvals"
       ],
-      "references": []
+      "references": [],
+      "basis": "Due diligence practice: legal and regulatory review, including competition and securities approvals"
     },
     {
       "id": "p4",
@@ -52,7 +59,8 @@
       "keywords": [
         "synergies"
       ],
-      "references": []
+      "references": [],
+      "basis": "Due diligence practice: commercial and operational review and synergies"
     },
     {
       "id": "p5",
@@ -63,7 +71,8 @@
         "integration",
         "valuation"
       ],
-      "references": []
+      "references": [],
+      "basis": "Due diligence practice: people, integration and price justification"
     }
   ]
 }

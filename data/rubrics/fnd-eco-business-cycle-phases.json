@@ -1,0 +1,81 @@
+{
+  "id": "fnd-eco-business-cycle-phases",
+  "version": "1",
+  "sa": "Business Economics",
+  "topic": "Phases of a business cycle",
+  "question": "What is a business cycle? Explain the different phases of a business cycle.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "business cycle",
+    "expansion",
+    "peak",
+    "contraction",
+    "trough"
+  ],
+  "references": [],
+  "sources": [
+    "Business cycles (standard macroeconomic theory)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "A business cycle is the recurring rise and fall of overall economic activity (output, income, employment) over time; cycles are recurrent but not regular in length or intensity.",
+      "keywords": [
+        "fluctuations",
+        "recurring"
+      ],
+      "references": [],
+      "basis": "Business cycles: meaning and characteristics"
+    },
+    {
+      "id": "p2",
+      "label": "Expansion",
+      "marks": 1,
+      "description": "Output, employment, income, demand, investment and prices rise; business confidence and credit grow.",
+      "keywords": [
+        "expansion"
+      ],
+      "references": [],
+      "basis": "Business cycles: expansion phase"
+    },
+    {
+      "id": "p3",
+      "label": "Peak",
+      "marks": 1,
+      "description": "The highest point of activity; resources are fully used, costs and prices are high and growth begins to slow, marking the upper turning point.",
+      "keywords": [
+        "peak",
+        "boom"
+      ],
+      "references": [],
+      "basis": "Business cycles: peak phase"
+    },
+    {
+      "id": "p4",
+      "label": "Contraction",
+      "marks": 1,
+      "description": "Activity declines: demand, output, employment, investment and profits fall; when severe it is called a recession or depression.",
+      "keywords": [
+        "contraction",
+        "recession"
+      ],
+      "references": [],
+      "basis": "Business cycles: contraction phase"
+    },
+    {
+      "id": "p5",
+      "label": "Trough and recovery",
+      "marks": 1,
+      "description": "The trough is the lowest point, with high unemployment and low demand; recovery follows as demand, investment and employment slowly pick up, leading to a new expansion.",
+      "keywords": [
+        "trough",
+        "recovery"
+      ],
+      "references": [],
+      "basis": "Business cycles: trough and recovery"
+    }
+  ]
+}

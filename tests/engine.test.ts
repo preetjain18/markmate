@@ -24,9 +24,10 @@ const out = (): ModelOutput => ({
 });
 
 describe("rubrics", () => {
-  it("loads the unverified rubrics (10 CA Final Audit + 29 other papers) whose marks add up", () => {
+  it("loads the unverified rubrics, with unique ids, whose marks add up", () => {
     const all = loadRubrics();
-    expect(all).toHaveLength(39);
+    expect(all.length).toBeGreaterThanOrEqual(150);
+    expect(new Set(all.map((r) => r.id)).size).toBe(all.length);
     expect(all.every((r) => r.verified === false)).toBe(true);
   });
 });
@@ -62,6 +63,11 @@ describe("scoring", () => {
     const r = scorePoints(rubric, strong, o);
     expect(r).toHaveLength(rubric.points.length);
     expect(r[0].aiMarks).toBe(1);
+  });
+
+  it("carries each point's basis from the marking scheme into the result", () => {
+    const r = scorePoints(rubric, strong, out());
+    rubric.points.forEach((p, i) => expect(r[i].basis).toBe(p.basis));
   });
 });
 

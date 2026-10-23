@@ -13,6 +13,9 @@
   "references": [
     "AS 9"
   ],
+  "sources": [
+    "AS 9 Revenue Recognition - sale of goods and effect of uncertainties"
+  ],
   "points": [
     {
       "id": "p1",
@@ -22,7 +25,8 @@
       "keywords": [
         "risks and rewards"
       ],
-      "references": []
+      "references": [],
+      "basis": "AS 9, sale of goods: transfer of significant risks and rewards of ownership"
     },
     {
       "id": "p2",
@@ -32,7 +36,8 @@
       "keywords": [
         "uncertainty"
       ],
-      "references": []
+      "references": [],
+      "basis": "AS 9, reasonable certainty about measurement and ultimate collection"
     },
     {
       "id": "p3",
@@ -42,7 +47,8 @@
       "keywords": [
         "effective control"
       ],
-      "references": []
+      "references": [],
+      "basis": "AS 9, sale of goods: seller retains no effective control"
     },
     {
       "id": "p4",
@@ -52,7 +58,8 @@
       "keywords": [
         "postponed"
       ],
-      "references": []
+      "references": [],
+      "basis": "AS 9, effect of uncertainties on revenue recognition"
     }
   ]
 }

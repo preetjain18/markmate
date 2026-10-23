@@ -13,6 +13,9 @@
     "threats"
   ],
   "references": [],
+  "sources": [
+    "SWOT analysis framework"
+  ],
   "points": [
     {
       "id": "p1",
@@ -23,7 +26,8 @@
         "internal",
         "external"
       ],
-      "references": []
+      "references": [],
+      "basis": "SWOT analysis: meaning"
     },
     {
       "id": "p2",
@@ -31,7 +35,8 @@
       "marks": 1,
       "description": "Strengths and weaknesses relate to resources and capabilities; opportunities and threats come from markets, competition, technology and regulation.",
       "keywords": [],
-      "references": []
+      "references": [],
+      "basis": "SWOT analysis: internal and external factors"
     },
     {
       "id": "p3",
@@ -41,7 +46,8 @@
       "keywords": [
         "strategy"
       ],
-      "references": []
+      "references": [],
+      "basis": "SWOT analysis: matching internal capabilities to the environment"
     },
     {
       "id": "p4",
@@ -49,7 +55,8 @@
       "marks": 1,
       "description": "It gives a logical framework to build on strengths, reduce weaknesses, exploit opportunities and counter threats.",
       "keywords": [],
-      "references": []
+      "references": [],
+      "basis": "SWOT analysis: significance in strategy formulation"
     }
   ]
 }

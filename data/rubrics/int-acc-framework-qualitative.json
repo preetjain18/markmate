@@ -1,0 +1,72 @@
+{
+  "id": "int-acc-framework-qualitative",
+  "version": "1",
+  "sa": "Framework",
+  "topic": "Qualitative characteristics of financial statements",
+  "question": "Explain the qualitative characteristics of financial statements described in the Framework for the Preparation and Presentation of Financial Statements issued by ICAI.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "understandability",
+    "relevance",
+    "reliability",
+    "comparability"
+  ],
+  "references": [
+    "Framework"
+  ],
+  "sources": [
+    "ICAI Framework for the Preparation and Presentation of Financial Statements - qualitative characteristics"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Understandability",
+      "marks": 1,
+      "description": "Information should be readily understood by users who have reasonable knowledge of business and accounting and are willing to study it with care; complex but relevant matters are not left out just because they are hard to understand.",
+      "keywords": [
+        "understandability"
+      ],
+      "references": [],
+      "basis": "Framework, qualitative characteristics: understandability"
+    },
+    {
+      "id": "p2",
+      "label": "Relevance and materiality",
+      "marks": 1,
+      "description": "Information is relevant when it helps users evaluate past, present or future events or confirm earlier evaluations; relevance is affected by its nature and by materiality, i.e. whether leaving it out or misstating it could influence users' decisions.",
+      "keywords": [
+        "relevance",
+        "materiality"
+      ],
+      "references": [],
+      "basis": "Framework, qualitative characteristics: relevance and materiality"
+    },
+    {
+      "id": "p3",
+      "label": "Reliability",
+      "marks": 1,
+      "description": "Information is reliable when free from material error and bias and represents faithfully what it claims to; this covers faithful representation, substance over form, neutrality, prudence and completeness.",
+      "keywords": [
+        "reliability",
+        "faithful representation",
+        "substance over form",
+        "prudence"
+      ],
+      "references": [],
+      "basis": "Framework, qualitative characteristics: reliability"
+    },
+    {
+      "id": "p4",
+      "label": "Comparability",
+      "marks": 1,
+      "description": "Users must be able to compare an enterprise's statements over time and with other enterprises, so similar items are measured and shown consistently and accounting policies and changes in them are disclosed.",
+      "keywords": [
+        "comparability",
+        "consistency"
+      ],
+      "references": [],
+      "basis": "Framework, qualitative characteristics: comparability"
+    }
+  ]
+}

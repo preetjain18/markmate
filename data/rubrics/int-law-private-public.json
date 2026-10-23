@@ -11,6 +11,12 @@
     "public company"
   ],
   "references": [],
+  "sources": [
+    "Companies Act, 2013 - section 2(68) private company",
+    "Companies Act, 2013 - section 2(71) public company",
+    "Companies Act, 2013 - section 3(1) formation of company",
+    "Companies Act, 2013 - section 149(1) composition of the Board"
+  ],
   "points": [
     {
       "id": "p1",
@@ -20,7 +26,8 @@
       "keywords": [
         "members"
       ],
-      "references": []
+      "references": [],
+      "basis": "Companies Act, 2013, section 3(1)"
     },
     {
       "id": "p2",
@@ -30,7 +37,8 @@
       "keywords": [
         "200"
       ],
-      "references": []
+      "references": [],
+      "basis": "Companies Act, 2013, section 2(68)"
     },
     {
       "id": "p3",
@@ -40,7 +48,8 @@
       "keywords": [
         "transfer"
       ],
-      "references": []
+      "references": [],
+      "basis": "Companies Act, 2013, sections 2(68) and 2(71)"
     },
     {
       "id": "p4",
@@ -50,7 +59,8 @@
       "keywords": [
         "invitation"
       ],
-      "references": []
+      "references": [],
+      "basis": "Companies Act, 2013, section 2(68)"
     },
     {
       "id": "p5",
@@ -60,7 +70,8 @@
       "keywords": [
         "directors"
       ],
-      "references": []
+      "references": [],
+      "basis": "Companies Act, 2013, section 149(1)"
     }
   ]
 }

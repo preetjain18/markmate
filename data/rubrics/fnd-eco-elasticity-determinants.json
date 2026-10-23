@@ -1,0 +1,81 @@
+{
+  "id": "fnd-eco-elasticity-determinants",
+  "version": "1",
+  "sa": "Business Economics",
+  "topic": "Determinants of price elasticity of demand",
+  "question": "What is price elasticity of demand? Explain the factors that determine the price elasticity of demand for a commodity.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "price elasticity of demand",
+    "substitutes",
+    "necessities",
+    "proportion of income"
+  ],
+  "references": [],
+  "sources": [
+    "Price elasticity of demand (standard microeconomic theory)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "Price elasticity of demand is the degree of responsiveness of quantity demanded to a change in the price of a commodity, measured as percentage change in quantity demanded divided by percentage change in price.",
+      "keywords": [
+        "responsiveness",
+        "percentage change"
+      ],
+      "references": [],
+      "basis": "Price elasticity of demand: definition"
+    },
+    {
+      "id": "p2",
+      "label": "Substitutes",
+      "marks": 1,
+      "description": "The more and closer the substitutes available, the more elastic the demand.",
+      "keywords": [
+        "substitutes"
+      ],
+      "references": [],
+      "basis": "Determinants of elasticity: availability of substitutes"
+    },
+    {
+      "id": "p3",
+      "label": "Nature of the commodity and share of income",
+      "marks": 1,
+      "description": "Necessities tend to have inelastic demand and luxuries elastic demand; goods on which a small share of income is spent (such as salt or matches) have inelastic demand.",
+      "keywords": [
+        "necessities",
+        "luxuries",
+        "proportion of income"
+      ],
+      "references": [],
+      "basis": "Determinants of elasticity: nature of commodity and proportion of income spent"
+    },
+    {
+      "id": "p4",
+      "label": "Number of uses and postponement",
+      "marks": 1,
+      "description": "A commodity with many uses has more elastic demand; demand is inelastic where consumption cannot be postponed.",
+      "keywords": [
+        "number of uses",
+        "postponement"
+      ],
+      "references": [],
+      "basis": "Determinants of elasticity: number of uses and urgency"
+    },
+    {
+      "id": "p5",
+      "label": "Time period and habits",
+      "marks": 1,
+      "description": "Demand is more elastic in the long run, as consumers find substitutes over time; goods consumed out of habit or addiction have inelastic demand.",
+      "keywords": [
+        "time period",
+        "habits"
+      ],
+      "references": [],
+      "basis": "Determinants of elasticity: time and habits"
+    }
+  ]
+}

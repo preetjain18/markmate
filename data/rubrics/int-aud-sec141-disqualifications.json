@@ -1,0 +1,104 @@
+{
+  "id": "int-aud-sec141-disqualifications",
+  "version": "1",
+  "sa": "Companies Act, 2013",
+  "topic": "Disqualifications of a company auditor",
+  "question": "State the persons who are not eligible for appointment as auditor of a company under the Companies Act, 2013.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "disqualification",
+    "section 141",
+    "body corporate",
+    "security",
+    "indebted",
+    "relative"
+  ],
+  "references": [
+    "Section 141 of the Companies Act, 2013"
+  ],
+  "sources": [
+    "Companies Act, 2013, section 141 (eligibility, qualifications and disqualifications of auditors)",
+    "Companies (Audit and Auditors) Rules, 2014"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Body corporate, officer or employee",
+      "marks": 1,
+      "description": "A body corporate other than an LLP, an officer or employee of the company, and a partner or employee of an officer or employee of the company cannot be appointed.",
+      "keywords": [
+        "body corporate",
+        "officer",
+        "employee"
+      ],
+      "references": [
+        "Section 141(3)"
+      ],
+      "basis": "Companies Act, 2013, section 141(3)"
+    },
+    {
+      "id": "p2",
+      "label": "Holding securities or interest",
+      "marks": 1,
+      "description": "A person who, or whose relative or partner, holds any security of or interest in the company, its subsidiary, holding or associate company (a relative may hold securities up to the limit prescribed in the Rules).",
+      "keywords": [
+        "security",
+        "interest"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 141(3); Companies (Audit and Auditors) Rules, 2014"
+    },
+    {
+      "id": "p3",
+      "label": "Indebtedness or guarantee",
+      "marks": 1,
+      "description": "A person who, or whose relative or partner, is indebted to, or has given a guarantee or security for the debts of, the company or its group companies beyond the prescribed amount.",
+      "keywords": [
+        "indebted",
+        "guarantee"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 141(3); Companies (Audit and Auditors) Rules, 2014"
+    },
+    {
+      "id": "p4",
+      "label": "Business relationship and relatives in management",
+      "marks": 1,
+      "description": "A person who has a business relationship with the company or its group companies, or whose relative is a director or key managerial personnel of the company.",
+      "keywords": [
+        "business relationship",
+        "key managerial personnel"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 141(3)"
+    },
+    {
+      "id": "p5",
+      "label": "Employment, audit limit and fraud conviction",
+      "marks": 1,
+      "description": "A person in full-time employment elsewhere, a person who would exceed the limit of 20 company audits, and a person convicted of an offence involving fraud within the last 10 years.",
+      "keywords": [
+        "full-time employment",
+        "20 companies",
+        "fraud"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 141(3)"
+    },
+    {
+      "id": "p6",
+      "label": "Restricted services and later disqualification",
+      "marks": 1,
+      "description": "A person who provides the services barred by section 144 to the company or its group companies is also disqualified; an auditor who becomes disqualified after appointment vacates office.",
+      "keywords": [
+        "section 144",
+        "vacate"
+      ],
+      "references": [
+        "Section 141(4)"
+      ],
+      "basis": "Companies Act, 2013, section 141(3) and section 141(4)"
+    }
+  ]
+}

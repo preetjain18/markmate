@@ -1,0 +1,92 @@
+{
+  "id": "fin-dt-permanent-establishment",
+  "version": "1",
+  "sa": "Tax treaties: Article 5",
+  "topic": "Permanent establishment",
+  "question": "Explain the concept of permanent establishment (PE) under tax treaties and its significance for taxing the business profits of a non-resident enterprise.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "permanent establishment",
+    "fixed place of business",
+    "preparatory or auxiliary",
+    "dependent agent"
+  ],
+  "references": [
+    "Article 5",
+    "Article 7"
+  ],
+  "sources": [
+    "OECD Model Tax Convention on Income and on Capital, Articles 5 and 7",
+    "UN Model Double Taxation Convention, Articles 5 and 7",
+    "Income-tax Act, 1961, section 92F(iiia)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Significance of PE",
+      "marks": 1,
+      "description": "Under the business profits article, profits of an enterprise are taxable only in its country of residence unless it carries on business in the other country through a PE there; the other country may then tax only the profits attributable to that PE.",
+      "keywords": [
+        "business profits",
+        "attributable to the PE"
+      ],
+      "references": [
+        "Article 7"
+      ],
+      "basis": "Model Tax Conventions, Article 7 (business profits)"
+    },
+    {
+      "id": "p2",
+      "label": "Fixed place PE",
+      "marks": 1,
+      "description": "A fixed place of business through which the business is wholly or partly carried on, such as a place of management, branch, office, factory, workshop, or a mine or other place of extracting natural resources; the Income-tax Act also defines PE in these terms for transfer pricing and treaty purposes.",
+      "keywords": [
+        "fixed place of business",
+        "branch",
+        "office"
+      ],
+      "references": [
+        "Section 92F(iiia)"
+      ],
+      "basis": "Model Tax Conventions, Article 5(1) and (2); Income-tax Act, 1961, section 92F(iiia)"
+    },
+    {
+      "id": "p3",
+      "label": "Construction and service PE",
+      "marks": 1,
+      "description": "A building site or construction, installation or assembly project is a PE only if it lasts longer than the period set in the treaty; many Indian treaties also treat services furnished through employees in the other country beyond a set number of days as a PE.",
+      "keywords": [
+        "construction PE",
+        "service PE",
+        "time threshold"
+      ],
+      "references": [],
+      "basis": "Model Tax Conventions, Article 5(3) (UN Model includes service PE)"
+    },
+    {
+      "id": "p4",
+      "label": "Preparatory or auxiliary activities",
+      "marks": 1,
+      "description": "Activities such as storage, display, purchasing goods or collecting information do not create a PE where they are only preparatory or auxiliary; anti-fragmentation rules stop splitting activities to fit this exception.",
+      "keywords": [
+        "preparatory or auxiliary",
+        "anti-fragmentation"
+      ],
+      "references": [],
+      "basis": "Model Tax Conventions, Article 5(4) and (4.1)"
+    },
+    {
+      "id": "p5",
+      "label": "Agency PE",
+      "marks": 1,
+      "description": "A dependent agent who habitually concludes contracts, or plays the principal role leading to contracts, on behalf of the enterprise creates a PE; an independent agent acting in the ordinary course of its own business does not.",
+      "keywords": [
+        "dependent agent",
+        "independent agent"
+      ],
+      "references": [],
+      "basis": "Model Tax Conventions, Article 5(5) and (6)"
+    }
+  ]
+}

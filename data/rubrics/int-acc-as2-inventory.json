@@ -14,6 +14,9 @@
   "references": [
     "AS 2"
   ],
+  "sources": [
+    "AS 2 Valuation of Inventories"
+  ],
   "points": [
     {
       "id": "p1",
@@ -24,7 +27,8 @@
         "lower of cost",
         "net realisable value"
       ],
-      "references": []
+      "references": [],
+      "basis": "AS 2, measurement of inventories at lower of cost and net realisable value"
     },
     {
       "id": "p2",
@@ -34,7 +38,8 @@
       "keywords": [
         "cost of purchase"
       ],
-      "references": []
+      "references": [],
+      "basis": "AS 2, costs of purchase"
     },
     {
       "id": "p3",
@@ -45,7 +50,8 @@
         "cost of conversion",
         "normal capacity"
       ],
-      "references": []
+      "references": [],
+      "basis": "AS 2, costs of conversion and allocation of fixed overheads on normal capacity"
     },
     {
       "id": "p4",
@@ -55,7 +61,8 @@
       "keywords": [
         "abnormal"
       ],
-      "references": []
+      "references": [],
+      "basis": "AS 2, costs excluded from the cost of inventories"
     },
     {
       "id": "p5",
@@ -65,7 +72,8 @@
       "keywords": [
         "selling price"
       ],
-      "references": []
+      "references": [],
+      "basis": "AS 2, definition of net realisable value and item-by-item write-down"
     }
   ]
 }

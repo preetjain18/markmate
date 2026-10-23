@@ -1,0 +1,87 @@
+{
+  "id": "fin-ibs-overseas-expansion-risk",
+  "version": "1",
+  "sa": "Case study: strategy and risk",
+  "topic": "Strategy and risk in overseas expansion",
+  "question": "Tanvir Textiles Ltd, a fictional mid-sized garment exporter from Tiruppur, earns most of its revenue from one European buyer. To cut costs and get closer to customers, the board is considering setting up a factory in another Asian country with lower wages. As a strategy consultant, discuss the strategic and risk factors the board should evaluate before deciding.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "concentration risk",
+    "country risk",
+    "currency risk",
+    "entry mode",
+    "supply chain"
+  ],
+  "references": [],
+  "sources": [
+    "Generally accepted strategic management frameworks (PESTLE, SWOT, Porter's five forces)",
+    "Generally accepted enterprise risk management principles (for example the COSO ERM Framework, 2017)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Strategic fit and customer concentration",
+      "marks": 1.5,
+      "description": "Whether the move fits the long-term strategy, and the high dependence on one buyer, which the expansion should reduce rather than increase.",
+      "keywords": [
+        "strategic fit",
+        "concentration risk"
+      ],
+      "references": [],
+      "basis": "Strategic management: strategic fit and customer dependence"
+    },
+    {
+      "id": "p2",
+      "label": "Country and political risk",
+      "marks": 1,
+      "description": "Political stability, labour laws, taxation, trade agreements, rules on repatriating profits and ease of doing business in the host country.",
+      "keywords": [
+        "country risk",
+        "political risk",
+        "repatriation"
+      ],
+      "references": [],
+      "basis": "Strategic management: PESTLE analysis of the host country"
+    },
+    {
+      "id": "p3",
+      "label": "Cost and financial evaluation",
+      "marks": 1.5,
+      "description": "Whether lower wages survive after productivity, logistics, set-up costs and duties; project appraisal of cash flows and funding, and currency risk on investment and earnings.",
+      "keywords": [
+        "cost advantage",
+        "currency risk",
+        "project appraisal"
+      ],
+      "references": [],
+      "basis": "Corporate finance: international capital budgeting and exchange risk"
+    },
+    {
+      "id": "p4",
+      "label": "Entry mode and operations",
+      "marks": 1,
+      "description": "Choice between own factory, joint venture or contract manufacturing; supply chain, quality control, management capacity and buyer compliance standards.",
+      "keywords": [
+        "entry mode",
+        "joint venture",
+        "quality control"
+      ],
+      "references": [],
+      "basis": "Strategic management: market entry modes"
+    },
+    {
+      "id": "p5",
+      "label": "Risk response and governance",
+      "marks": 1,
+      "description": "A risk register with mitigation (hedging, insurance, phased investment, diversifying buyers) and board monitoring of the project against agreed milestones.",
+      "keywords": [
+        "mitigation",
+        "hedging",
+        "phased"
+      ],
+      "references": [],
+      "basis": "COSO ERM Framework: risk response and monitoring"
+    }
+  ]
+}

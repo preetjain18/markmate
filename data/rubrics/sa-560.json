@@ -6,13 +6,80 @@
   "question": "Explain the auditor's responsibilities under SA 560 for events occurring between the date of the financial statements and the date of the auditor's report, and for facts discovered after the report is issued.",
   "maxMarks": 5,
   "verified": false,
-  "keywords": ["subsequent events", "date of the auditor's report", "adjusting"],
-  "references": ["SA 560"],
+  "keywords": [
+    "subsequent events",
+    "date of the auditor's report",
+    "adjusting"
+  ],
+  "references": [
+    "SA 560"
+  ],
+  "sources": [
+    "SA 560 Subsequent Events",
+    "SA 580 Written Representations"
+  ],
   "points": [
-    { "id": "p1", "label": "Types of subsequent events", "marks": 1, "description": "Events between the date of the financial statements and the date of the auditor's report, and facts discovered after the date of the report; adjusting events and non-adjusting events.", "keywords": ["adjusting", "non-adjusting"], "references": ["SA 560"] },
-    { "id": "p2", "label": "Procedures up to the date of the report", "marks": 1, "description": "Perform procedures to obtain sufficient appropriate evidence that all events up to the date of the auditor's report requiring adjustment or disclosure have been identified: review management procedures, minutes, latest interim statements, and inquire.", "keywords": ["minutes", "inquire"], "references": [] },
-    { "id": "p3", "label": "Written representations on subsequent events", "marks": 1, "description": "Request written representations that all events after the date of the financial statements requiring adjustment or disclosure have been adjusted or disclosed.", "keywords": ["written representations"], "references": ["SA 580"] },
-    { "id": "p4", "label": "Facts discovered after the date of the report but before issue", "marks": 1, "description": "Discuss the matter with management and those charged with governance; if the financial statements are amended, extend procedures and give a new report dated no earlier than the approval of the amended statements.", "keywords": ["amended", "new auditor's report"], "references": [] },
-    { "id": "p5", "label": "Facts discovered after the financial statements are issued", "marks": 1, "description": "Consider whether the financial statements need amendment, discuss with management, and if management does not act, take action to prevent reliance on the auditor's report.", "keywords": ["prevent reliance"], "references": [] }
+    {
+      "id": "p1",
+      "label": "Types of subsequent events",
+      "marks": 1,
+      "description": "Events between the date of the financial statements and the date of the auditor's report, and facts discovered after the date of the report; adjusting events and non-adjusting events.",
+      "keywords": [
+        "adjusting",
+        "non-adjusting"
+      ],
+      "references": [
+        "SA 560"
+      ],
+      "basis": "SA 560, definitions of subsequent events and the events covered by the standard"
+    },
+    {
+      "id": "p2",
+      "label": "Procedures up to the date of the report",
+      "marks": 1,
+      "description": "Perform procedures to obtain sufficient appropriate evidence that all events up to the date of the auditor's report requiring adjustment or disclosure have been identified: review management procedures, minutes, latest interim statements, and inquire.",
+      "keywords": [
+        "minutes",
+        "inquire"
+      ],
+      "references": [],
+      "basis": "SA 560, events occurring between the date of the financial statements and the date of the auditor's report"
+    },
+    {
+      "id": "p3",
+      "label": "Written representations on subsequent events",
+      "marks": 1,
+      "description": "Request written representations that all events after the date of the financial statements requiring adjustment or disclosure have been adjusted or disclosed.",
+      "keywords": [
+        "written representations"
+      ],
+      "references": [
+        "SA 580"
+      ],
+      "basis": "SA 560 read with SA 580, written representations on subsequent events"
+    },
+    {
+      "id": "p4",
+      "label": "Facts discovered after the date of the report but before issue",
+      "marks": 1,
+      "description": "Discuss the matter with management and those charged with governance; if the financial statements are amended, extend procedures and give a new report dated no earlier than the approval of the amended statements.",
+      "keywords": [
+        "amended",
+        "new auditor's report"
+      ],
+      "references": [],
+      "basis": "SA 560, facts which become known to the auditor after the date of the auditor's report but before the financial statements are issued"
+    },
+    {
+      "id": "p5",
+      "label": "Facts discovered after the financial statements are issued",
+      "marks": 1,
+      "description": "Consider whether the financial statements need amendment, discuss with management, and if management does not act, take action to prevent reliance on the auditor's report.",
+      "keywords": [
+        "prevent reliance"
+      ],
+      "references": [],
+      "basis": "SA 560, facts which become known to the auditor after the financial statements have been issued"
+    }
   ]
 }

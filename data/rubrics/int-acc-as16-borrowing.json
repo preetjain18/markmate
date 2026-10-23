@@ -1,0 +1,95 @@
+{
+  "id": "int-acc-as16-borrowing",
+  "version": "1",
+  "sa": "AS 16",
+  "topic": "Capitalisation of borrowing costs",
+  "question": "Explain when borrowing costs may be capitalised under AS 16 'Borrowing Costs'. When should capitalisation commence, be suspended and cease?",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "qualifying asset",
+    "capitalisation",
+    "commencement",
+    "suspension",
+    "cessation"
+  ],
+  "references": [
+    "AS 16"
+  ],
+  "sources": [
+    "AS 16 Borrowing Costs - definitions, recognition, commencement, suspension and cessation of capitalisation"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Qualifying asset",
+      "marks": 1,
+      "description": "An asset that necessarily takes a substantial period of time to get ready for its intended use or sale; ordinarily twelve months is treated as substantial unless a shorter period is justified.",
+      "keywords": [
+        "qualifying asset",
+        "substantial period"
+      ],
+      "references": [],
+      "basis": "AS 16, definition of qualifying asset and its explanation"
+    },
+    {
+      "id": "p2",
+      "label": "What is capitalised",
+      "marks": 1,
+      "description": "Borrowing costs directly attributable to the acquisition, construction or production of a qualifying asset are capitalised as part of its cost; other borrowing costs are expensed in the period incurred.",
+      "keywords": [
+        "directly attributable",
+        "expense"
+      ],
+      "references": [],
+      "basis": "AS 16, recognition"
+    },
+    {
+      "id": "p3",
+      "label": "Specific and general borrowings",
+      "marks": 1,
+      "description": "For funds borrowed specifically, the amount is the actual cost less income from temporary investment of those funds; for general borrowings, a capitalisation rate (weighted average cost) is applied to the expenditure on the asset.",
+      "keywords": [
+        "specific borrowings",
+        "capitalisation rate"
+      ],
+      "references": [],
+      "basis": "AS 16, borrowing costs eligible for capitalisation"
+    },
+    {
+      "id": "p4",
+      "label": "Commencement",
+      "marks": 1,
+      "description": "Capitalisation starts when expenditure on the asset is being incurred, borrowing costs are being incurred, and activities needed to prepare the asset are in progress.",
+      "keywords": [
+        "commencement"
+      ],
+      "references": [],
+      "basis": "AS 16, commencement of capitalisation"
+    },
+    {
+      "id": "p5",
+      "label": "Suspension",
+      "marks": 1,
+      "description": "Capitalisation is suspended during extended periods in which active development is interrupted (not for temporary delays that are a necessary part of the process).",
+      "keywords": [
+        "suspension",
+        "interrupted"
+      ],
+      "references": [],
+      "basis": "AS 16, suspension of capitalisation"
+    },
+    {
+      "id": "p6",
+      "label": "Cessation",
+      "marks": 1,
+      "description": "Capitalisation stops when substantially all activities needed to prepare the asset for its intended use or sale are complete; for an asset completed in parts, for each part usable on its own when that part is complete.",
+      "keywords": [
+        "cessation",
+        "substantially all"
+      ],
+      "references": [],
+      "basis": "AS 16, cessation of capitalisation"
+    }
+  ]
+}

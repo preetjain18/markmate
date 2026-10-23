@@ -1,0 +1,66 @@
+{
+  "id": "int-fm-cost-of-capital",
+  "version": "1",
+  "sa": "Financial management",
+  "topic": "Significance of cost of capital",
+  "question": "Explain the meaning of cost of capital and its significance in financial decision-making.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "cost of capital",
+    "minimum required return",
+    "hurdle rate",
+    "capital budgeting"
+  ],
+  "references": [],
+  "sources": [
+    "Cost of capital: concept and significance in financial decisions"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "Cost of capital is the minimum rate of return a firm must earn on its investments to satisfy its providers of funds and keep the value of its shares unchanged.",
+      "keywords": [
+        "minimum rate of return"
+      ],
+      "references": [],
+      "basis": "Cost of capital: meaning"
+    },
+    {
+      "id": "p2",
+      "label": "Capital budgeting decisions",
+      "marks": 1,
+      "description": "It is the discount rate or cut-off (hurdle) rate used to accept or reject projects.",
+      "keywords": [
+        "hurdle rate",
+        "discount rate"
+      ],
+      "references": [],
+      "basis": "Cost of capital: use in investment evaluation"
+    },
+    {
+      "id": "p3",
+      "label": "Capital structure decisions",
+      "marks": 1,
+      "description": "It helps choose the mix of debt and equity that gives the lowest overall cost and highest value.",
+      "keywords": [
+        "capital structure"
+      ],
+      "references": [],
+      "basis": "Cost of capital: use in financing decisions"
+    },
+    {
+      "id": "p4",
+      "label": "Other decisions and performance evaluation",
+      "marks": 1,
+      "description": "It is used in decisions on leasing, dividends and working capital, and to judge whether management's returns exceed the cost of funds.",
+      "keywords": [
+        "performance evaluation"
+      ],
+      "references": [],
+      "basis": "Cost of capital: other uses"
+    }
+  ]
+}

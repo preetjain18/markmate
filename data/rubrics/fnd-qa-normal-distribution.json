@@ -1,0 +1,83 @@
+{
+  "id": "fnd-qa-normal-distribution",
+  "version": "1",
+  "sa": "Statistics",
+  "topic": "Normal distribution",
+  "question": "State the important properties of the normal distribution.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "normal distribution",
+    "bell-shaped",
+    "symmetrical",
+    "points of inflexion"
+  ],
+  "references": [],
+  "sources": [
+    "Normal distribution (standard theory of probability distributions)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Shape and symmetry",
+      "marks": 1,
+      "description": "The normal curve is bell-shaped and symmetrical about the mean, so mean, median and mode are equal and skewness is zero.",
+      "keywords": [
+        "bell-shaped",
+        "symmetrical"
+      ],
+      "references": [],
+      "basis": "Normal distribution: shape and symmetry"
+    },
+    {
+      "id": "p2",
+      "label": "Parameters and area",
+      "marks": 1,
+      "description": "It is a continuous distribution fully described by two parameters, the mean (μ) and the standard deviation (σ); the total area under the curve is 1.",
+      "keywords": [
+        "mean",
+        "standard deviation",
+        "total area"
+      ],
+      "references": [],
+      "basis": "Normal distribution: parameters and total probability"
+    },
+    {
+      "id": "p3",
+      "label": "Tails and inflexion",
+      "marks": 1,
+      "description": "The curve never touches the horizontal axis (it is asymptotic to it), and its points of inflexion are at μ − σ and μ + σ.",
+      "keywords": [
+        "asymptotic",
+        "points of inflexion"
+      ],
+      "references": [],
+      "basis": "Normal distribution: asymptotic tails and points of inflexion"
+    },
+    {
+      "id": "p4",
+      "label": "Area within limits",
+      "marks": 1,
+      "description": "About 68.27% of the area lies within μ ± σ, about 95.45% within μ ± 2σ and about 99.73% within μ ± 3σ.",
+      "keywords": [
+        "68.27",
+        "95.45",
+        "99.73"
+      ],
+      "references": [],
+      "basis": "Normal distribution: area property"
+    },
+    {
+      "id": "p5",
+      "label": "Other measures",
+      "marks": 1,
+      "description": "Quartile deviation is about 0.6745σ (roughly two-thirds of σ) and mean deviation about 0.7979σ (roughly four-fifths of σ); the quartiles are equidistant from the median.",
+      "keywords": [
+        "quartile deviation",
+        "mean deviation"
+      ],
+      "references": [],
+      "basis": "Normal distribution: relation of quartile deviation and mean deviation to σ"
+    }
+  ]
+}

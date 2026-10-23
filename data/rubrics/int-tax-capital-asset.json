@@ -1,0 +1,82 @@
+{
+  "id": "int-tax-capital-asset",
+  "version": "1",
+  "sa": "Income-tax",
+  "topic": "Meaning of capital asset",
+  "question": "Explain the meaning of 'capital asset' under the Income-tax Act, 1961. Which assets are excluded from it?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "capital asset",
+    "stock-in-trade",
+    "personal effects",
+    "rural agricultural land"
+  ],
+  "references": [
+    "Section 2(14)"
+  ],
+  "sources": [
+    "Income-tax Act, 1961 - section 2(14) capital asset"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "General meaning",
+      "marks": 1,
+      "description": "Property of any kind held by the assessee, whether or not connected with business or profession.",
+      "keywords": [
+        "property of any kind"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 2(14)"
+    },
+    {
+      "id": "p2",
+      "label": "Specific inclusions",
+      "marks": 1,
+      "description": "Securities held by a Foreign Institutional Investor that invested under SEBI regulations, and certain unit linked insurance policies that do not qualify for exemption, are also capital assets.",
+      "keywords": [
+        "Foreign Institutional Investor",
+        "unit linked insurance policy"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 2(14), inclusions"
+    },
+    {
+      "id": "p3",
+      "label": "Stock-in-trade excluded",
+      "marks": 1,
+      "description": "Stock-in-trade, consumable stores and raw materials held for business or profession are not capital assets.",
+      "keywords": [
+        "stock-in-trade"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 2(14), exclusion of stock-in-trade"
+    },
+    {
+      "id": "p4",
+      "label": "Personal effects excluded",
+      "marks": 1,
+      "description": "Movable property held for personal use by the assessee or a dependent family member is excluded, but jewellery, archaeological collections, drawings, paintings, sculptures and other works of art remain capital assets.",
+      "keywords": [
+        "personal effects",
+        "jewellery"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 2(14), exclusion of personal effects"
+    },
+    {
+      "id": "p5",
+      "label": "Rural agricultural land and gold bonds excluded",
+      "marks": 1,
+      "description": "Agricultural land in India in a rural area (as defined by population and distance from municipal limits), and specified gold bonds and deposit certificates under the Gold Monetisation Scheme, are excluded.",
+      "keywords": [
+        "rural",
+        "agricultural land",
+        "gold"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 2(14), exclusions for rural agricultural land and specified gold bonds and deposit certificates"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "fnd-acc-policy-selection",
+  "version": "1",
+  "sa": "AS 1",
+  "topic": "Selection of accounting policies",
+  "question": "What are accounting policies? Explain the major considerations that govern the selection and application of accounting policies under AS 1, and state the disclosure needed when an accounting policy is changed.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "accounting policies",
+    "prudence",
+    "substance over form",
+    "materiality"
+  ],
+  "references": [
+    "AS 1"
+  ],
+  "sources": [
+    "AS 1, Disclosure of Accounting Policies (issued by ICAI)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of accounting policies",
+      "marks": 1,
+      "description": "Accounting policies are the specific accounting principles and the methods of applying them that an enterprise adopts in preparing and presenting its financial statements; different policies may be acceptable for the same item (for example, methods of valuing inventory).",
+      "keywords": [
+        "accounting principles",
+        "methods"
+      ],
+      "references": [],
+      "basis": "AS 1, meaning of accounting policies"
+    },
+    {
+      "id": "p2",
+      "label": "Aim: true and fair view",
+      "marks": 1,
+      "description": "The main aim in choosing policies is that the financial statements show a true and fair view of the state of affairs and the profit or loss.",
+      "keywords": [
+        "true and fair"
+      ],
+      "references": [],
+      "basis": "AS 1, primary consideration in the selection of accounting policies"
+    },
+    {
+      "id": "p3",
+      "label": "Prudence",
+      "marks": 1,
+      "description": "Profits are not anticipated and are recognised only when realised, while provision is made for all known liabilities and losses based on the best estimate available, even if the amount cannot be fixed exactly.",
+      "keywords": [
+        "prudence"
+      ],
+      "references": [],
+      "basis": "AS 1, major considerations: prudence"
+    },
+    {
+      "id": "p4",
+      "label": "Substance over form and materiality",
+      "marks": 1,
+      "description": "Transactions are accounted for by their substance and financial reality, not merely their legal form; and financial statements disclose all items that are material enough to affect the decisions of users.",
+      "keywords": [
+        "substance over form",
+        "materiality"
+      ],
+      "references": [],
+      "basis": "AS 1, major considerations: substance over form and materiality"
+    },
+    {
+      "id": "p5",
+      "label": "Disclosure of change",
+      "marks": 1,
+      "description": "Significant accounting policies are disclosed in one place as part of the financial statements; a change in policy that has a material effect is disclosed along with the amount of its effect where it can be found, and if it cannot be found wholly or partly, that fact is stated.",
+      "keywords": [
+        "change in accounting policy",
+        "disclosure"
+      ],
+      "references": [],
+      "basis": "AS 1, disclosure of accounting policies and of changes in them"
+    }
+  ]
+}

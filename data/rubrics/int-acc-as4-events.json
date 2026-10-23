@@ -1,0 +1,82 @@
+{
+  "id": "int-acc-as4-events",
+  "version": "1",
+  "sa": "AS 4",
+  "topic": "Events after the balance sheet date",
+  "question": "Explain the accounting treatment of events occurring after the balance sheet date under AS 4 'Contingencies and Events Occurring after the Balance Sheet Date'.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "adjusting events",
+    "non-adjusting events",
+    "going concern",
+    "approving authority"
+  ],
+  "references": [
+    "AS 4"
+  ],
+  "sources": [
+    "AS 4 Contingencies and Events Occurring after the Balance Sheet Date (as revised)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "Significant events, favourable or unfavourable, that occur between the balance sheet date and the date on which the financial statements are approved by the Board of Directors (or other approving authority).",
+      "keywords": [
+        "approved",
+        "balance sheet date"
+      ],
+      "references": [],
+      "basis": "AS 4, definition of events occurring after the balance sheet date"
+    },
+    {
+      "id": "p2",
+      "label": "Adjusting events",
+      "marks": 1,
+      "description": "Events that give more evidence about conditions existing at the balance sheet date require the assets and liabilities to be adjusted, e.g. insolvency of a debtor that existed at the year end.",
+      "keywords": [
+        "adjusting",
+        "conditions existing"
+      ],
+      "references": [],
+      "basis": "AS 4, events requiring adjustment"
+    },
+    {
+      "id": "p3",
+      "label": "Non-adjusting events",
+      "marks": 1,
+      "description": "Events that relate to conditions arising after the balance sheet date are not adjusted, but if material they are disclosed in the report of the approving authority with their nature and an estimate of the financial effect (or a statement that it cannot be estimated).",
+      "keywords": [
+        "non-adjusting",
+        "disclosure"
+      ],
+      "references": [],
+      "basis": "AS 4, events not requiring adjustment and their disclosure"
+    },
+    {
+      "id": "p4",
+      "label": "Going concern",
+      "marks": 1,
+      "description": "Assets and liabilities are adjusted for events after the balance sheet date that show the going concern assumption is no longer appropriate for the whole or part of the enterprise.",
+      "keywords": [
+        "going concern"
+      ],
+      "references": [],
+      "basis": "AS 4, events affecting the going concern assumption"
+    },
+    {
+      "id": "p5",
+      "label": "Proposed dividend",
+      "marks": 1,
+      "description": "Dividends proposed or declared after the balance sheet date are not recognised as a liability at the balance sheet date; they are disclosed in the notes.",
+      "keywords": [
+        "dividend",
+        "not recognised"
+      ],
+      "references": [],
+      "basis": "AS 4 (as revised), treatment of dividends proposed after the balance sheet date"
+    }
+  ]
+}

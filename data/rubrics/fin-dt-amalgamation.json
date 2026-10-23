@@ -1,0 +1,83 @@
+{
+  "id": "fin-dt-amalgamation",
+  "version": "1",
+  "sa": "Business restructuring",
+  "topic": "Amalgamation: meaning and tax reliefs",
+  "question": "Explain the meaning of 'amalgamation' under the Income-tax Act, 1961 and the tax reliefs available to the amalgamating company, its shareholders and the amalgamated company.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "amalgamation",
+    "three-fourths in value",
+    "not a transfer",
+    "carry forward of losses"
+  ],
+  "references": [
+    "Section 2(1B)",
+    "Section 47",
+    "Section 72A"
+  ],
+  "sources": [
+    "Income-tax Act, 1961, sections 2(1B), 2(42A), 47(vi), 47(vii), 49(2) and 72A",
+    "Income-tax Rules, 1962, rule 9C"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of amalgamation",
+      "marks": 1.5,
+      "description": "The merger of one or more companies with another company, or of two or more companies to form a new company, where all the property and all the liabilities of the amalgamating company become those of the amalgamated company, and shareholders holding at least three-fourths in value of its shares (other than shares already held by the amalgamated company or its subsidiary or nominee) become shareholders of the amalgamated company.",
+      "keywords": [
+        "property and liabilities",
+        "three-fourths in value"
+      ],
+      "references": [
+        "Section 2(1B)"
+      ],
+      "basis": "Income-tax Act, 1961, section 2(1B)"
+    },
+    {
+      "id": "p2",
+      "label": "No capital gains for the amalgamating company",
+      "marks": 1,
+      "description": "Transfer of a capital asset by the amalgamating company to the amalgamated company in the scheme is not treated as a transfer, provided the amalgamated company is an Indian company.",
+      "keywords": [
+        "not a transfer",
+        "Indian company"
+      ],
+      "references": [
+        "Section 47(vi)"
+      ],
+      "basis": "Income-tax Act, 1961, section 47(vi)"
+    },
+    {
+      "id": "p3",
+      "label": "Relief for shareholders",
+      "marks": 1,
+      "description": "Transfer by a shareholder of shares in the amalgamating company in exchange for shares in the amalgamated Indian company is not a transfer; the cost and holding period of the old shares carry over to the new shares.",
+      "keywords": [
+        "shareholders",
+        "cost and period of holding"
+      ],
+      "references": [
+        "Section 47(vii)"
+      ],
+      "basis": "Income-tax Act, 1961, section 47(vii), section 49(2) and section 2(42A)"
+    },
+    {
+      "id": "p4",
+      "label": "Carry forward of losses and depreciation",
+      "marks": 1.5,
+      "description": "In specified cases (for example a company owning an industrial undertaking, a ship or a hotel, or a banking company), the accumulated loss and unabsorbed depreciation of the amalgamating company are treated as those of the amalgamated company for the year of amalgamation, subject to conditions such as continuity of business and holding at least three-fourths of the book value of fixed assets for the prescribed periods.",
+      "keywords": [
+        "accumulated loss",
+        "unabsorbed depreciation",
+        "continuity of business"
+      ],
+      "references": [
+        "Section 72A"
+      ],
+      "basis": "Income-tax Act, 1961, section 72A read with rule 9C"
+    }
+  ]
+}

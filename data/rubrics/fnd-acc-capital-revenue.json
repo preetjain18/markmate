@@ -11,6 +11,10 @@
     "revenue expenditure"
   ],
   "references": [],
+  "sources": [
+    "Standard accounting principles: distinction between capital and revenue expenditure",
+    "AS 10, Property, Plant and Equipment (issued by ICAI) - recognition of cost"
+  ],
   "points": [
     {
       "id": "p1",
@@ -20,7 +24,8 @@
       "keywords": [
         "capital expenditure"
       ],
-      "references": []
+      "references": [],
+      "basis": "AS 10, recognition of an item of property, plant and equipment; accounting principle of capital expenditure"
     },
     {
       "id": "p2",
@@ -30,7 +35,8 @@
       "keywords": [
         "revenue expenditure"
       ],
-      "references": []
+      "references": [],
+      "basis": "Accounting principle of revenue expenditure; matching concept"
     },
     {
       "id": "p3",
@@ -41,7 +47,8 @@
         "balance sheet",
         "profit and loss"
       ],
-      "references": []
+      "references": [],
+      "basis": "AS 10 (day-to-day servicing costs are recognised in profit or loss; asset carried at cost less depreciation); matching concept"
     },
     {
       "id": "p4",
@@ -49,7 +56,8 @@
       "marks": 1,
       "description": "Capital: purchase of machinery or extension of a building. Revenue: repairs, wages, rent.",
       "keywords": [],
-      "references": []
+      "references": [],
+      "basis": "Accounting principle: examples of capital and revenue expenditure"
     }
   ]
 }

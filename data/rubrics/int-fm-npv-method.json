@@ -1,0 +1,78 @@
+{
+  "id": "int-fm-npv-method",
+  "version": "1",
+  "sa": "Financial management",
+  "topic": "Net present value method",
+  "question": "Explain the Net Present Value (NPV) method of evaluating investment proposals, with its merits and limitations.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "net present value",
+    "time value of money",
+    "cost of capital",
+    "decision rule"
+  ],
+  "references": [],
+  "sources": [
+    "Capital budgeting: discounted cash flow techniques (net present value method)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "NPV is the present value of expected cash inflows minus the present value of cash outflows, discounted at the firm's cost of capital.",
+      "keywords": [
+        "present value",
+        "discount"
+      ],
+      "references": [],
+      "basis": "Capital budgeting: NPV method"
+    },
+    {
+      "id": "p2",
+      "label": "Decision rule",
+      "marks": 1,
+      "description": "Accept a project if NPV is positive and reject it if negative; among mutually exclusive projects, prefer the one with the higher NPV.",
+      "keywords": [
+        "positive NPV"
+      ],
+      "references": [],
+      "basis": "Capital budgeting: NPV decision rule"
+    },
+    {
+      "id": "p3",
+      "label": "Merits: time value and all cash flows",
+      "marks": 1,
+      "description": "It considers the time value of money and all cash flows over the whole life of the project.",
+      "keywords": [
+        "time value of money"
+      ],
+      "references": [],
+      "basis": "Capital budgeting: merits of NPV"
+    },
+    {
+      "id": "p4",
+      "label": "Merits: link to wealth",
+      "marks": 1,
+      "description": "It is consistent with maximising shareholders' wealth, and NPVs of projects can be added together.",
+      "keywords": [
+        "wealth maximisation"
+      ],
+      "references": [],
+      "basis": "Capital budgeting: merits of NPV"
+    },
+    {
+      "id": "p5",
+      "label": "Limitations",
+      "marks": 1,
+      "description": "It needs an estimate of the cost of capital and of future cash flows, and it may not rank well projects of very different size or life.",
+      "keywords": [
+        "cost of capital estimate",
+        "different life"
+      ],
+      "references": [],
+      "basis": "Capital budgeting: limitations of NPV"
+    }
+  ]
+}

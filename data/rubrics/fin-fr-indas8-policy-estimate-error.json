@@ -1,0 +1,86 @@
+{
+  "id": "fin-fr-indas8-policy-estimate-error",
+  "version": "1",
+  "sa": "Ind AS 8",
+  "topic": "Changes in accounting policies, estimates and errors",
+  "question": "Distinguish between a change in accounting policy, a change in accounting estimate and a prior period error under Ind AS 8, and explain how each is accounted for.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "accounting policy",
+    "accounting estimate",
+    "prior period error",
+    "retrospective",
+    "prospective"
+  ],
+  "references": [
+    "Ind AS 8"
+  ],
+  "sources": [
+    "Ind AS 8 Accounting Policies, Changes in Accounting Estimates and Errors (as amended by the Companies (Indian Accounting Standards) Amendment Rules, 2023)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "When a policy may change",
+      "marks": 1,
+      "description": "An entity changes an accounting policy only if an Ind AS requires it or if the change gives reliable and more relevant information.",
+      "keywords": [
+        "required by an Ind AS",
+        "more relevant"
+      ],
+      "references": [],
+      "basis": "Ind AS 8, conditions for changing an accounting policy"
+    },
+    {
+      "id": "p2",
+      "label": "Accounting for a policy change",
+      "marks": 1,
+      "description": "A voluntary change is applied retrospectively by adjusting opening equity of the earliest period presented and restating comparatives, unless impracticable; a change from a new Ind AS follows its transitional provisions.",
+      "keywords": [
+        "retrospective",
+        "impracticable",
+        "transitional provisions"
+      ],
+      "references": [],
+      "basis": "Ind AS 8, applying changes in accounting policies"
+    },
+    {
+      "id": "p3",
+      "label": "Change in accounting estimate",
+      "marks": 1,
+      "description": "Accounting estimates are monetary amounts subject to measurement uncertainty (for example useful lives or expected credit losses); a change is applied prospectively in the current period and future periods if both are affected. If it is unclear whether a change is in policy or estimate, it is treated as a change in estimate.",
+      "keywords": [
+        "accounting estimate",
+        "measurement uncertainty",
+        "prospective"
+      ],
+      "references": [],
+      "basis": "Ind AS 8, definition of accounting estimates and accounting for changes in estimates"
+    },
+    {
+      "id": "p4",
+      "label": "Prior period errors",
+      "marks": 1,
+      "description": "Omissions or misstatements in past financial statements from failing to use, or misusing, reliable information that was available, such as mistakes, oversight of facts or fraud.",
+      "keywords": [
+        "prior period error",
+        "misstatement"
+      ],
+      "references": [],
+      "basis": "Ind AS 8, definition of prior period errors"
+    },
+    {
+      "id": "p5",
+      "label": "Correcting errors and disclosure",
+      "marks": 1,
+      "description": "Material errors are corrected retrospectively in the first financial statements approved after discovery, by restating comparatives (or opening balances of the earliest period presented), unless impracticable; the nature and effect of each change or correction is disclosed.",
+      "keywords": [
+        "restating",
+        "disclosure"
+      ],
+      "references": [],
+      "basis": "Ind AS 8, correction of prior period errors and disclosures"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "fin-fr-indas116-lessee",
+  "version": "1",
+  "sa": "Ind AS 116",
+  "topic": "Leases: lessee accounting",
+  "question": "Explain how a lessee recognises and measures a lease under Ind AS 116, including the recognition exemptions available.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "right-of-use asset",
+    "lease liability",
+    "incremental borrowing rate",
+    "short-term lease",
+    "low-value asset"
+  ],
+  "references": [
+    "Ind AS 116"
+  ],
+  "sources": [
+    "Ind AS 116 Leases - recognition, measurement and recognition exemptions for lessees"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Single on-balance-sheet model",
+      "marks": 1,
+      "description": "At the commencement date the lessee recognises a right-of-use asset and a lease liability for all leases, with no operating/finance split for lessees.",
+      "keywords": [
+        "right-of-use asset",
+        "lease liability",
+        "commencement date"
+      ],
+      "references": [],
+      "basis": "Ind AS 116, lessee recognition"
+    },
+    {
+      "id": "p2",
+      "label": "Initial measurement of lease liability",
+      "marks": 1,
+      "description": "The present value of lease payments not yet paid, discounted at the interest rate implicit in the lease if readily determinable, otherwise the lessee's incremental borrowing rate.",
+      "keywords": [
+        "present value",
+        "interest rate implicit",
+        "incremental borrowing rate"
+      ],
+      "references": [],
+      "basis": "Ind AS 116, initial measurement of the lease liability"
+    },
+    {
+      "id": "p3",
+      "label": "Initial measurement of right-of-use asset",
+      "marks": 1,
+      "description": "Cost: the initial lease liability plus payments made at or before commencement less incentives received, plus initial direct costs and the estimated cost of dismantling or restoring the asset.",
+      "keywords": [
+        "initial direct costs",
+        "restoration"
+      ],
+      "references": [],
+      "basis": "Ind AS 116, initial measurement of the right-of-use asset"
+    },
+    {
+      "id": "p4",
+      "label": "Subsequent measurement",
+      "marks": 1,
+      "description": "The asset is usually depreciated and tested for impairment; the liability is increased by interest and reduced by payments, and is remeasured when lease payments or the lease term are reassessed or the lease is modified.",
+      "keywords": [
+        "depreciation",
+        "interest",
+        "remeasurement"
+      ],
+      "references": [],
+      "basis": "Ind AS 116, subsequent measurement by a lessee"
+    },
+    {
+      "id": "p5",
+      "label": "Recognition exemptions",
+      "marks": 1,
+      "description": "A lessee may choose not to apply these rules to short-term leases (12 months or less with no purchase option) and leases of low-value assets, and instead expense the payments on a straight-line or other systematic basis.",
+      "keywords": [
+        "short-term lease",
+        "low-value asset",
+        "straight-line"
+      ],
+      "references": [],
+      "basis": "Ind AS 116, recognition exemptions"
+    }
+  ]
+}

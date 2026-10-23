@@ -1,0 +1,87 @@
+{
+  "id": "int-tax-gst-reverse-charge",
+  "version": "1",
+  "sa": "GST",
+  "topic": "Reverse charge mechanism",
+  "question": "Explain the reverse charge mechanism under GST. When is the recipient liable to pay tax on reverse charge basis?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "reverse charge",
+    "recipient",
+    "unregistered",
+    "notified",
+    "electronic cash ledger"
+  ],
+  "references": [
+    "Section 9(3)",
+    "Section 9(4)"
+  ],
+  "sources": [
+    "CGST Act, 2017 - section 9(3) and 9(4) reverse charge",
+    "CGST Act, 2017 - section 24 compulsory registration",
+    "CGST Act, 2017 - section 2(98) reverse charge and section 2(82) output tax",
+    "CGST Act, 2017 - section 31(3) tax invoice by recipient"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "Under reverse charge, the recipient of the supply, not the supplier, is liable to pay the tax.",
+      "keywords": [
+        "recipient",
+        "reverse charge"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 2(98)"
+    },
+    {
+      "id": "p2",
+      "label": "Notified goods or services",
+      "marks": 1,
+      "description": "The Government, on the GST Council's recommendation, notifies categories of goods or services on which the recipient pays tax, e.g. services of a goods transport agency or legal services by an advocate to a business entity.",
+      "keywords": [
+        "notified",
+        "categories"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 9(3)"
+    },
+    {
+      "id": "p3",
+      "label": "Supplies from unregistered persons",
+      "marks": 1,
+      "description": "The Government may notify a class of registered persons who must pay tax on reverse charge on specified goods or services received from unregistered suppliers.",
+      "keywords": [
+        "unregistered supplier"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 9(4)"
+    },
+    {
+      "id": "p4",
+      "label": "Registration and invoice",
+      "marks": 1,
+      "description": "A person liable to pay tax under reverse charge must register regardless of turnover, and a recipient buying from an unregistered supplier issues the invoice himself.",
+      "keywords": [
+        "compulsory registration",
+        "self-invoice"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, sections 24 and 31(3)(f)"
+    },
+    {
+      "id": "p5",
+      "label": "Payment and credit",
+      "marks": 1,
+      "description": "Reverse charge tax must be paid in cash through the electronic cash ledger, not from input tax credit, because it is not 'output tax'; the recipient may then claim credit of that tax if otherwise eligible.",
+      "keywords": [
+        "cash",
+        "input tax credit"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, sections 2(82), 49 and 16"
+    }
+  ]
+}

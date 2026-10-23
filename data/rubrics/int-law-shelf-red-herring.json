@@ -1,0 +1,82 @@
+{
+  "id": "int-law-shelf-red-herring",
+  "version": "1",
+  "sa": "Companies Act, 2013",
+  "topic": "Shelf prospectus and red herring prospectus",
+  "question": "Explain the meaning of 'shelf prospectus' and 'red herring prospectus' under the Companies Act, 2013, and state the main provisions that apply to each.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "shelf prospectus",
+    "red herring prospectus",
+    "information memorandum"
+  ],
+  "references": [
+    "Section 31",
+    "Section 32"
+  ],
+  "sources": [
+    "Companies Act, 2013 - section 31 shelf prospectus",
+    "Companies Act, 2013 - section 32 red herring prospectus"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Shelf prospectus: meaning",
+      "marks": 1,
+      "description": "A prospectus under which securities are offered in one or more issues over a stated period without a fresh prospectus for each issue.",
+      "keywords": [
+        "shelf prospectus"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, Explanation to section 31"
+    },
+    {
+      "id": "p2",
+      "label": "Who may file and validity",
+      "marks": 1,
+      "description": "Classes of companies allowed by SEBI regulations may file it at the first offer; it is valid for up to one year from the opening of the first offer.",
+      "keywords": [
+        "one year",
+        "SEBI"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 31(1)"
+    },
+    {
+      "id": "p3",
+      "label": "Information memorandum",
+      "marks": 1,
+      "description": "Before each later offer, the company files an information memorandum giving material facts such as new charges and changes in its financial position since the earlier offer.",
+      "keywords": [
+        "information memorandum"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 31(2)"
+    },
+    {
+      "id": "p4",
+      "label": "Red herring prospectus: meaning",
+      "marks": 1,
+      "description": "A prospectus that does not contain complete details of the quantity or price of the securities offered.",
+      "keywords": [
+        "red herring",
+        "price"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, Explanation to section 32"
+    },
+    {
+      "id": "p5",
+      "label": "Filing and final prospectus",
+      "marks": 1,
+      "description": "It is filed with the Registrar at least three days before the issue opens and carries the same obligations as a prospectus; any changes from it are highlighted in the final prospectus, which states the total capital raised and the closing price and is filed with the Registrar and SEBI.",
+      "keywords": [
+        "three days",
+        "Registrar"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 32(1) to (4)"
+    }
+  ]
+}

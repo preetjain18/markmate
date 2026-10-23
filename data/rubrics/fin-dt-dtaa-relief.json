@@ -1,0 +1,96 @@
+{
+  "id": "fin-dt-dtaa-relief",
+  "version": "1",
+  "sa": "Sections 90 and 91",
+  "topic": "Relief from double taxation",
+  "question": "Explain the relief from double taxation available under sections 90 and 91 of the Income-tax Act, 1961, including what a non-resident must furnish to claim treaty benefits.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "double taxation avoidance agreement",
+    "more beneficial",
+    "tax residency certificate",
+    "unilateral relief"
+  ],
+  "references": [
+    "Section 90",
+    "Section 91"
+  ],
+  "sources": [
+    "Income-tax Act, 1961, sections 90 and 91",
+    "Income-tax Rules, 1962, rule 128 and Form 10F"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Bilateral relief through agreements",
+      "marks": 1,
+      "description": "The Central Government may enter into agreements with other countries or specified territories to grant relief from double taxation, avoid double taxation, exchange information and recover tax; such agreements must not create opportunities for non-taxation or reduced taxation through evasion or avoidance, including treaty shopping.",
+      "keywords": [
+        "agreement",
+        "exchange of information",
+        "treaty shopping"
+      ],
+      "references": [
+        "Section 90(1)"
+      ],
+      "basis": "Income-tax Act, 1961, section 90(1)"
+    },
+    {
+      "id": "p2",
+      "label": "Treaty or Act, whichever is more beneficial",
+      "marks": 1,
+      "description": "Where an agreement applies, the provisions of the Act apply only to the extent they are more beneficial to the assessee; however, the General Anti-Avoidance Rule applies even if it is not beneficial to the assessee.",
+      "keywords": [
+        "more beneficial",
+        "GAAR"
+      ],
+      "references": [
+        "Section 90(2)"
+      ],
+      "basis": "Income-tax Act, 1961, section 90(2) and (2A)"
+    },
+    {
+      "id": "p3",
+      "label": "Tax residency certificate and other information",
+      "marks": 1,
+      "description": "A non-resident can claim treaty relief only on obtaining a tax residency certificate from the government of its country of residence, and must also furnish the other prescribed information (Form 10F); the certificate is necessary but not by itself sufficient.",
+      "keywords": [
+        "tax residency certificate",
+        "Form 10F"
+      ],
+      "references": [
+        "Section 90(4)"
+      ],
+      "basis": "Income-tax Act, 1961, section 90(4) and (5)"
+    },
+    {
+      "id": "p4",
+      "label": "Unilateral relief",
+      "marks": 1,
+      "description": "Where there is no agreement, a resident who has paid tax in another country on income that accrued and was taxed there gets a deduction from Indian tax of the doubly taxed income at the lower of the Indian rate and the foreign rate.",
+      "keywords": [
+        "no agreement",
+        "lower of the two rates"
+      ],
+      "references": [
+        "Section 91"
+      ],
+      "basis": "Income-tax Act, 1961, section 91"
+    },
+    {
+      "id": "p5",
+      "label": "Claiming foreign tax credit",
+      "marks": 1,
+      "description": "A resident claims credit for foreign tax under an agreement or section 91 in the manner set out in the Income-tax Rules, and furnishes the prescribed statement of foreign income and tax (Form 67).",
+      "keywords": [
+        "foreign tax credit",
+        "Form 67"
+      ],
+      "references": [
+        "Rule 128"
+      ],
+      "basis": "Income-tax Rules, 1962, rule 128"
+    }
+  ]
+}

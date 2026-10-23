@@ -1,0 +1,99 @@
+{
+  "id": "fin-fr-indas109-classification",
+  "version": "1",
+  "sa": "Ind AS 109",
+  "topic": "Classification of financial assets",
+  "question": "Explain how financial assets are classified and measured under Ind AS 109.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "business model",
+    "contractual cash flows",
+    "amortised cost",
+    "FVOCI",
+    "FVTPL"
+  ],
+  "references": [
+    "Ind AS 109"
+  ],
+  "sources": [
+    "Ind AS 109 Financial Instruments - classification of financial assets and reclassification"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Two tests",
+      "marks": 1,
+      "description": "Classification depends on the entity's business model for managing the assets and on whether the contractual cash flows are solely payments of principal and interest on the principal outstanding.",
+      "keywords": [
+        "business model",
+        "solely payments of principal and interest"
+      ],
+      "references": [],
+      "basis": "Ind AS 109, classification of financial assets"
+    },
+    {
+      "id": "p2",
+      "label": "Amortised cost",
+      "marks": 1,
+      "description": "A debt asset held in a business model whose objective is to collect contractual cash flows, and which passes the cash flow test, is measured at amortised cost using the effective interest method.",
+      "keywords": [
+        "amortised cost",
+        "hold to collect",
+        "effective interest"
+      ],
+      "references": [],
+      "basis": "Ind AS 109, conditions for amortised cost"
+    },
+    {
+      "id": "p3",
+      "label": "FVOCI for debt",
+      "marks": 1,
+      "description": "A debt asset held to both collect cash flows and sell, and which passes the cash flow test, is measured at fair value through OCI; interest and impairment go to profit or loss and the cumulative OCI gain or loss is reclassified to profit or loss on derecognition.",
+      "keywords": [
+        "fair value through other comprehensive income",
+        "collect and sell",
+        "reclassified"
+      ],
+      "references": [],
+      "basis": "Ind AS 109, conditions for fair value through other comprehensive income"
+    },
+    {
+      "id": "p4",
+      "label": "FVTPL",
+      "marks": 1,
+      "description": "All other financial assets, including those held for trading and those failing the cash flow test, are measured at fair value through profit or loss.",
+      "keywords": [
+        "fair value through profit or loss",
+        "held for trading"
+      ],
+      "references": [],
+      "basis": "Ind AS 109, residual category of fair value through profit or loss"
+    },
+    {
+      "id": "p5",
+      "label": "Options available",
+      "marks": 1,
+      "description": "At initial recognition an entity may irrevocably elect FVOCI for equity investments not held for trading (gains never recycled, dividends in profit or loss), and may designate an asset at FVTPL if this removes or significantly reduces an accounting mismatch.",
+      "keywords": [
+        "irrevocable election",
+        "equity instruments",
+        "accounting mismatch"
+      ],
+      "references": [],
+      "basis": "Ind AS 109, equity FVOCI election and fair value option"
+    },
+    {
+      "id": "p6",
+      "label": "Reclassification",
+      "marks": 1,
+      "description": "Financial assets are reclassified only when the entity changes its business model for managing them, and the change is applied prospectively from the reclassification date.",
+      "keywords": [
+        "reclassification",
+        "change in business model"
+      ],
+      "references": [],
+      "basis": "Ind AS 109, reclassification of financial assets"
+    }
+  ]
+}

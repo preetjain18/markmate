@@ -1,0 +1,81 @@
+{
+  "id": "fnd-law-corporate-veil",
+  "version": "1",
+  "sa": "Companies Act, 2013",
+  "topic": "Lifting the corporate veil",
+  "question": "Explain the principle of separate legal entity of a company and the circumstances in which the corporate veil may be lifted.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "separate legal entity",
+    "corporate veil",
+    "fraud"
+  ],
+  "references": [],
+  "sources": [
+    "Companies Act, 2013 (incorporation and separate legal entity of a company)",
+    "Salomon v A Salomon & Co Ltd (House of Lords, 1897) - separate legal entity",
+    "Doctrine of lifting the corporate veil as developed by courts and under the Companies Act, 2013"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Separate legal entity",
+      "marks": 1,
+      "description": "On incorporation a company becomes a legal person distinct from its members; it owns its property and is liable for its own debts, as settled in Salomon v Salomon & Co.",
+      "keywords": [
+        "separate legal entity",
+        "Salomon"
+      ],
+      "references": [],
+      "basis": "Salomon v A Salomon & Co Ltd (1897); effect of incorporation under the Companies Act, 2013"
+    },
+    {
+      "id": "p2",
+      "label": "Meaning of lifting the veil",
+      "marks": 1,
+      "description": "Lifting the corporate veil means ignoring the separate personality of the company and looking at the persons behind it, holding them liable for its acts.",
+      "keywords": [
+        "lifting the corporate veil"
+      ],
+      "references": [],
+      "basis": "Doctrine of lifting the corporate veil (judicial principle)"
+    },
+    {
+      "id": "p3",
+      "label": "Fraud and improper conduct",
+      "marks": 1,
+      "description": "Where the company form is used to commit fraud, evade an existing legal obligation or carry on improper conduct, courts may disregard it.",
+      "keywords": [
+        "fraud",
+        "improper conduct"
+      ],
+      "references": [],
+      "basis": "Judicial grounds for lifting the corporate veil: fraud or improper conduct"
+    },
+    {
+      "id": "p4",
+      "label": "Tax evasion and enemy character",
+      "marks": 1,
+      "description": "Courts may lift the veil to prevent evasion of tax or protect revenue, and to find out whether a company has enemy character from the nationality of those in control.",
+      "keywords": [
+        "tax evasion",
+        "enemy character"
+      ],
+      "references": [],
+      "basis": "Judicial grounds for lifting the corporate veil: protection of revenue; determination of enemy character"
+    },
+    {
+      "id": "p5",
+      "label": "Statutory instances",
+      "marks": 1,
+      "description": "The Companies Act itself makes directors or officers personally liable in some cases, for example for fraudulent conduct of business or for misstatements in a prospectus.",
+      "keywords": [
+        "statutory",
+        "personal liability"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, provisions imposing personal liability on officers for fraud and misstatement"
+    }
+  ]
+}

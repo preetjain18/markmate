@@ -1,0 +1,83 @@
+{
+  "id": "fin-afm-efficient-market",
+  "version": "1",
+  "sa": "AFM",
+  "topic": "Efficient market hypothesis",
+  "question": "Explain the Efficient Market Hypothesis and its three forms. What does it imply for investors?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "efficient market",
+    "weak form",
+    "semi-strong form",
+    "strong form",
+    "random walk"
+  ],
+  "references": [],
+  "sources": [
+    "Fama, E. F. (1970), 'Efficient Capital Markets: A Review of Theory and Empirical Work', Journal of Finance"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "In an efficient market, security prices quickly and fully reflect available information, so no investor can consistently earn above-normal returns after adjusting for risk.",
+      "keywords": [
+        "fully reflect",
+        "above-normal returns"
+      ],
+      "references": [],
+      "basis": "Fama (1970): definition of an efficient market"
+    },
+    {
+      "id": "p2",
+      "label": "Weak form",
+      "marks": 1,
+      "description": "Prices reflect all past price and volume information, so price changes follow a random walk and technical analysis cannot give consistent excess returns.",
+      "keywords": [
+        "weak form",
+        "past prices",
+        "technical analysis"
+      ],
+      "references": [],
+      "basis": "Fama (1970): weak-form tests"
+    },
+    {
+      "id": "p3",
+      "label": "Semi-strong form",
+      "marks": 1,
+      "description": "Prices reflect all publicly available information, such as results, announcements and economic news, so fundamental analysis of public data cannot give consistent excess returns.",
+      "keywords": [
+        "semi-strong form",
+        "public information"
+      ],
+      "references": [],
+      "basis": "Fama (1970): semi-strong-form tests"
+    },
+    {
+      "id": "p4",
+      "label": "Strong form",
+      "marks": 1,
+      "description": "Prices reflect all information, public and private, so even insiders cannot earn excess returns; this form is generally not supported, which is why insider trading is prohibited.",
+      "keywords": [
+        "strong form",
+        "insider"
+      ],
+      "references": [],
+      "basis": "Fama (1970): strong-form tests"
+    },
+    {
+      "id": "p5",
+      "label": "Implications and limits",
+      "marks": 1,
+      "description": "Investors in efficient markets may prefer diversified, passive strategies; evidence of anomalies and behavioural biases means markets are not perfectly efficient.",
+      "keywords": [
+        "passive",
+        "anomalies"
+      ],
+      "references": [],
+      "basis": "Financial economics literature on market anomalies and behavioural finance"
+    }
+  ]
+}

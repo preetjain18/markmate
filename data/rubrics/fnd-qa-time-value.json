@@ -1,0 +1,81 @@
+{
+  "id": "fnd-qa-time-value",
+  "version": "1",
+  "sa": "Business Mathematics",
+  "topic": "Time value of money",
+  "question": "Explain the concept of time value of money. Distinguish between compounding and discounting, and explain the meaning of an annuity and a perpetuity.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "time value of money",
+    "compounding",
+    "discounting",
+    "annuity",
+    "perpetuity"
+  ],
+  "references": [],
+  "sources": [
+    "Time value of money (standard principle of financial mathematics)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Concept",
+      "marks": 1,
+      "description": "A rupee received today is worth more than a rupee received in the future, because money today can be invested to earn interest.",
+      "keywords": [
+        "time value of money"
+      ],
+      "references": [],
+      "basis": "Time value of money: present money can earn a return"
+    },
+    {
+      "id": "p2",
+      "label": "Reasons",
+      "marks": 1,
+      "description": "Reasons include the opportunity to earn interest, inflation reducing purchasing power, the risk or uncertainty of future receipts, and the general preference for present consumption.",
+      "keywords": [
+        "inflation",
+        "risk",
+        "opportunity"
+      ],
+      "references": [],
+      "basis": "Time value of money: reasons for preferring present money"
+    },
+    {
+      "id": "p3",
+      "label": "Compounding and discounting",
+      "marks": 1,
+      "description": "Compounding finds the future value of a present amount by adding interest on interest; discounting is the reverse and finds the present value of a future amount.",
+      "keywords": [
+        "future value",
+        "present value"
+      ],
+      "references": [],
+      "basis": "Compound interest: future value and present value"
+    },
+    {
+      "id": "p4",
+      "label": "Annuity",
+      "marks": 1,
+      "description": "An annuity is a series of equal payments or receipts at equal intervals for a fixed period; in an ordinary annuity (annuity regular) payments are at the end of each period, in an annuity due at the beginning.",
+      "keywords": [
+        "annuity",
+        "annuity due"
+      ],
+      "references": [],
+      "basis": "Annuities: annuity regular and annuity due"
+    },
+    {
+      "id": "p5",
+      "label": "Perpetuity",
+      "marks": 1,
+      "description": "A perpetuity is an annuity that continues for ever; its present value is the periodic payment divided by the rate of interest per period.",
+      "keywords": [
+        "perpetuity"
+      ],
+      "references": [],
+      "basis": "Perpetuity: present value equals payment divided by rate per period"
+    }
+  ]
+}

@@ -77,6 +77,7 @@ export async function evaluate(args: {
     rubricVersion: rubric.version,
     verified: rubric.verified,
     maxMarks: rubric.maxMarks,
+    ...(rubric.sources.length ? { sources: rubric.sources } : {}),
     ...t,
     points,
     missingReferences: missingReferences(rubric, answer),

@@ -15,6 +15,8 @@ export type QuestionView = {
   text: string;
   maxMarks: number | null;
   support: EvalSupport;
+  /** The law or standard the marking scheme is based on, e.g. "SA 570" or "Indian Contract Act, 1872". */
+  source?: string;
   levelId: string;
   subjectId: string;
   chapterId: string;
@@ -47,13 +49,13 @@ export function subjectStatus(s: SubjectStats): SubjectStatus {
 
 export const STATUS_TEXT: Record<SubjectStatus, { label: string; detail: string }> = {
   verified: { label: "Verified rubrics", detail: "Some questions have rubrics checked by a CA." },
-  evaluation: { label: "Evaluation available", detail: "Questions can be evaluated against draft rubrics that are not yet verified by a CA." },
+  evaluation: { label: "Ready to mark", detail: "Every question here has a marking scheme, so your answer is marked point by point." },
   practice: { label: "Practice only", detail: "Questions are available, but evaluation isn't supported for them yet." },
   "coming-soon": { label: "Coming soon", detail: "No questions have been added for this subject yet." },
 };
 
 export const SUPPORT_TEXT: Record<EvalSupport, string> = {
   verified: "Verified rubric",
-  unverified: "Unverified rubric",
+  unverified: "Marking scheme ready",
   none: "Evaluation not available",
 };

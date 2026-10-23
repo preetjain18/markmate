@@ -1,0 +1,71 @@
+{
+  "id": "int-law-shares-discount",
+  "version": "1",
+  "sa": "Companies Act, 2013",
+  "topic": "Issue of shares at a discount",
+  "question": "Explain the restrictions on issue of shares at a discount under the Companies Act, 2013, and the exceptions to them.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "discount",
+    "sweat equity",
+    "void",
+    "debt conversion"
+  ],
+  "references": [
+    "Section 53"
+  ],
+  "sources": [
+    "Companies Act, 2013 - section 53 prohibition on issue of shares at discount",
+    "Companies Act, 2013 - section 54 sweat equity shares"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "General prohibition",
+      "marks": 1,
+      "description": "A company cannot issue shares at a discount, i.e. for less than their nominal value.",
+      "keywords": [
+        "discount"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 53(1)"
+    },
+    {
+      "id": "p2",
+      "label": "Exception: sweat equity",
+      "marks": 1,
+      "description": "Sweat equity shares issued under section 54 to directors or employees may be issued at a discount.",
+      "keywords": [
+        "sweat equity"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, sections 53(1) and 54"
+    },
+    {
+      "id": "p3",
+      "label": "Exception: conversion of debt",
+      "marks": 1,
+      "description": "Shares may be issued at a discount to creditors when their debt is converted into shares under a statutory resolution plan or a debt restructuring scheme following RBI guidelines.",
+      "keywords": [
+        "creditors",
+        "conversion of debt"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 53, exception for conversion of debt under RBI-guided schemes"
+    },
+    {
+      "id": "p4",
+      "label": "Consequences",
+      "marks": 1,
+      "description": "Shares issued at a discount in breach of the section are void; the company and every officer in default are liable to a penalty, and the company must refund the money received with interest.",
+      "keywords": [
+        "void",
+        "penalty",
+        "refund"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 53, consequences of contravention"
+    }
+  ]
+}

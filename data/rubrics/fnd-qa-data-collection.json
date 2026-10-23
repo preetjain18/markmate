@@ -1,0 +1,82 @@
+{
+  "id": "fnd-qa-data-collection",
+  "version": "1",
+  "sa": "Statistics",
+  "topic": "Primary and secondary data",
+  "question": "Distinguish between primary data and secondary data. Explain the methods of collecting primary data and the precautions needed before using secondary data.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "primary data",
+    "secondary data",
+    "interview",
+    "questionnaire"
+  ],
+  "references": [],
+  "sources": [
+    "Statistical description of data: collection of data (standard statistical principles)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Primary vs secondary data",
+      "marks": 1,
+      "description": "Primary data are collected for the first time by the investigator for a specific purpose; secondary data have already been collected by someone else and are used for another purpose.",
+      "keywords": [
+        "primary data",
+        "secondary data"
+      ],
+      "references": [],
+      "basis": "Statistics: meaning of primary and secondary data"
+    },
+    {
+      "id": "p2",
+      "label": "Interview methods",
+      "marks": 1,
+      "description": "Direct personal interview, where the investigator meets the respondents personally, and indirect oral interview, where information is collected from third persons who know about the matter.",
+      "keywords": [
+        "direct personal interview",
+        "indirect oral interview"
+      ],
+      "references": [],
+      "basis": "Statistics: methods of collecting primary data"
+    },
+    {
+      "id": "p3",
+      "label": "Questionnaire and other methods",
+      "marks": 1,
+      "description": "Mailed questionnaire filled in by respondents, schedules filled in by trained enumerators, and observation.",
+      "keywords": [
+        "questionnaire",
+        "enumerators",
+        "observation"
+      ],
+      "references": [],
+      "basis": "Statistics: methods of collecting primary data"
+    },
+    {
+      "id": "p4",
+      "label": "Sources of secondary data",
+      "marks": 1,
+      "description": "Published sources such as government reports, publications of international bodies, journals and research papers, and unpublished records of firms and institutions.",
+      "keywords": [
+        "published sources"
+      ],
+      "references": [],
+      "basis": "Statistics: sources of secondary data"
+    },
+    {
+      "id": "p5",
+      "label": "Precautions with secondary data",
+      "marks": 1,
+      "description": "Before use, secondary data should be checked for reliability (who collected it and how), suitability (same definitions and purpose) and adequacy (coverage and period).",
+      "keywords": [
+        "reliability",
+        "suitability",
+        "adequacy"
+      ],
+      "references": [],
+      "basis": "Statistics: scrutiny of secondary data"
+    }
+  ]
+}

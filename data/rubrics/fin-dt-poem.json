@@ -11,6 +11,10 @@
     "key management"
   ],
   "references": [],
+  "sources": [
+    "Income-tax Act, 1961, section 6(3) and its Explanation",
+    "CBDT guiding principles for determination of place of effective management (2017 circular)"
+  ],
   "points": [
     {
       "id": "p1",
@@ -20,7 +24,8 @@
       "keywords": [
         "Indian company"
       ],
-      "references": []
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 6(3)"
     },
     {
       "id": "p2",
@@ -31,7 +36,8 @@
         "key management",
         "in substance"
       ],
-      "references": []
+      "references": [],
+      "basis": "Income-tax Act, 1961, Explanation to section 6(3) (meaning of place of effective management)"
     },
     {
       "id": "p3",
@@ -41,7 +47,8 @@
       "keywords": [
         "active business"
       ],
-      "references": []
+      "references": [],
+      "basis": "CBDT guiding principles on POEM: companies engaged in active business outside India"
     },
     {
       "id": "p4",
@@ -51,7 +58,8 @@
       "keywords": [
         "substance"
       ],
-      "references": []
+      "references": [],
+      "basis": "CBDT guiding principles on POEM: companies other than those engaged in active business outside India"
     }
   ]
 }

@@ -1,0 +1,78 @@
+{
+  "id": "fnd-eco-monopolistic-competition",
+  "version": "1",
+  "sa": "Business Economics",
+  "topic": "Monopolistic competition",
+  "question": "Explain the features of monopolistic competition.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "monopolistic competition",
+    "product differentiation",
+    "selling costs"
+  ],
+  "references": [],
+  "sources": [
+    "Monopolistic competition (standard microeconomic theory of market structures)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Large number of sellers",
+      "marks": 1,
+      "description": "There are many sellers, each with a small share of the market, acting fairly independently.",
+      "keywords": [
+        "many sellers"
+      ],
+      "references": [],
+      "basis": "Monopolistic competition: number of sellers"
+    },
+    {
+      "id": "p2",
+      "label": "Product differentiation",
+      "marks": 1,
+      "description": "Products are close but not perfect substitutes, differing in brand, design, quality, packaging or service; this gives each firm some control over its price.",
+      "keywords": [
+        "product differentiation"
+      ],
+      "references": [],
+      "basis": "Monopolistic competition: differentiated products"
+    },
+    {
+      "id": "p3",
+      "label": "Downward sloping demand curve",
+      "marks": 1,
+      "description": "Each firm faces a downward sloping, fairly elastic demand curve, so it must lower price to sell more.",
+      "keywords": [
+        "downward sloping",
+        "elastic"
+      ],
+      "references": [],
+      "basis": "Monopolistic competition: demand curve of the firm"
+    },
+    {
+      "id": "p4",
+      "label": "Selling costs",
+      "marks": 1,
+      "description": "Firms spend on advertising and sales promotion to attract buyers and shift their demand curves.",
+      "keywords": [
+        "selling costs",
+        "advertising"
+      ],
+      "references": [],
+      "basis": "Monopolistic competition: selling costs"
+    },
+    {
+      "id": "p5",
+      "label": "Free entry and exit",
+      "marks": 1,
+      "description": "Firms can enter and leave freely, so in the long run firms earn only normal profits.",
+      "keywords": [
+        "free entry",
+        "normal profits"
+      ],
+      "references": [],
+      "basis": "Monopolistic competition: entry, exit and long-run equilibrium"
+    }
+  ]
+}

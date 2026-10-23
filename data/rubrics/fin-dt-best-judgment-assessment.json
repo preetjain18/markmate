@@ -1,0 +1,91 @@
+{
+  "id": "fin-dt-best-judgment-assessment",
+  "version": "1",
+  "sa": "Section 144",
+  "topic": "Best judgment assessment",
+  "question": "Explain the circumstances in which the Assessing Officer may make a best judgment assessment under section 144 of the Income-tax Act, 1961, and the safeguards available to the assessee.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "best judgment",
+    "failure to file return",
+    "show cause",
+    "opportunity of being heard"
+  ],
+  "references": [
+    "Section 144"
+  ],
+  "sources": [
+    "Income-tax Act, 1961, sections 139, 142, 143, 144, 144B and 246A"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Failure to file a return",
+      "marks": 1,
+      "description": "The assessee has not furnished the return required under section 139(1) and has not filed a belated or revised return.",
+      "keywords": [
+        "failure to file return"
+      ],
+      "references": [
+        "Section 139"
+      ],
+      "basis": "Income-tax Act, 1961, section 144(1)(a)"
+    },
+    {
+      "id": "p2",
+      "label": "Failure to comply with notices or directions",
+      "marks": 1,
+      "description": "The assessee fails to comply with all the terms of a notice under section 142(1) or a direction for special audit under section 142(2A), or, having filed a return, fails to comply with a notice under section 143(2).",
+      "keywords": [
+        "section 142(1)",
+        "special audit",
+        "section 143(2)"
+      ],
+      "references": [
+        "Section 142(1)",
+        "Section 143(2)"
+      ],
+      "basis": "Income-tax Act, 1961, section 144(1)(b) and (c)"
+    },
+    {
+      "id": "p3",
+      "label": "Nature of the assessment",
+      "marks": 1,
+      "description": "The Assessing Officer takes into account all relevant material gathered and assesses total income or loss to the best of his judgment; the estimate must be honest and based on material, not arbitrary or punitive.",
+      "keywords": [
+        "relevant material",
+        "not arbitrary"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 144(1) and the settled principle that a best judgment must be fair and based on material"
+    },
+    {
+      "id": "p4",
+      "label": "Opportunity of being heard",
+      "marks": 1,
+      "description": "Before completing the assessment, the officer must serve a show cause notice asking why the assessment should not be made to the best of his judgment, except where a notice under section 142(1) was already issued before making the assessment.",
+      "keywords": [
+        "show cause notice",
+        "opportunity of being heard"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, provisos to section 144(1)"
+    },
+    {
+      "id": "p5",
+      "label": "Faceless procedure and appeal",
+      "marks": 1,
+      "description": "In cases covered by the faceless assessment scheme, the assessment is made in a faceless manner; an assessee aggrieved by the order can appeal to the Commissioner (Appeals).",
+      "keywords": [
+        "faceless assessment",
+        "Commissioner (Appeals)"
+      ],
+      "references": [
+        "Section 144B",
+        "Section 246A"
+      ],
+      "basis": "Income-tax Act, 1961, section 144B and section 246A"
+    }
+  ]
+}

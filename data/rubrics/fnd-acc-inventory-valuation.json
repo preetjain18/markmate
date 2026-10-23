@@ -1,0 +1,83 @@
+{
+  "id": "fnd-acc-inventory-valuation",
+  "version": "1",
+  "sa": "AS 2",
+  "topic": "Valuation of inventories",
+  "question": "Explain how inventories are measured under AS 2 'Valuation of Inventories'. What is included in the cost of inventories, which costs are excluded, and which cost formulas may be used?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "net realisable value",
+    "cost of purchase",
+    "cost of conversion",
+    "FIFO",
+    "weighted average"
+  ],
+  "references": [
+    "AS 2"
+  ],
+  "sources": [
+    "AS 2, Valuation of Inventories (issued by ICAI)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Measurement rule",
+      "marks": 1,
+      "description": "Inventories are valued at the lower of cost and net realisable value.",
+      "keywords": [
+        "lower of cost and net realisable value"
+      ],
+      "references": [],
+      "basis": "AS 2, measurement of inventories"
+    },
+    {
+      "id": "p2",
+      "label": "Net realisable value",
+      "marks": 1,
+      "description": "Net realisable value is the estimated selling price in the ordinary course of business less the estimated costs of completion and the estimated costs needed to make the sale.",
+      "keywords": [
+        "net realisable value"
+      ],
+      "references": [],
+      "basis": "AS 2, definition of net realisable value"
+    },
+    {
+      "id": "p3",
+      "label": "Cost of inventories",
+      "marks": 1,
+      "description": "Cost includes all costs of purchase (price, duties and taxes not recoverable, freight inward, less trade discounts and rebates), costs of conversion (direct labour and a systematic allocation of fixed and variable production overheads) and other costs incurred to bring the inventories to their present location and condition.",
+      "keywords": [
+        "cost of purchase",
+        "cost of conversion"
+      ],
+      "references": [],
+      "basis": "AS 2, cost of inventories: costs of purchase, costs of conversion and other costs"
+    },
+    {
+      "id": "p4",
+      "label": "Costs excluded",
+      "marks": 1,
+      "description": "Excluded and charged as expenses: abnormal amounts of wasted materials, labour or other production costs; storage costs unless needed in the production process; administrative overheads that do not help bring inventories to their present location and condition; and selling and distribution costs.",
+      "keywords": [
+        "abnormal wastage",
+        "selling costs"
+      ],
+      "references": [],
+      "basis": "AS 2, costs excluded from the cost of inventories"
+    },
+    {
+      "id": "p5",
+      "label": "Cost formulas",
+      "marks": 1,
+      "description": "Items not ordinarily interchangeable, or made for specific projects, use specific identification of their costs; other items use the FIFO or weighted average cost formula. Standard cost or the retail method may be used for convenience if the results are close to actual cost.",
+      "keywords": [
+        "specific identification",
+        "FIFO",
+        "weighted average"
+      ],
+      "references": [],
+      "basis": "AS 2, cost formulas and techniques for measuring cost"
+    }
+  ]
+}

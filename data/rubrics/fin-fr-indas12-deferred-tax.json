@@ -1,0 +1,87 @@
+{
+  "id": "fin-fr-indas12-deferred-tax",
+  "version": "1",
+  "sa": "Ind AS 12",
+  "topic": "Deferred tax recognition",
+  "question": "Explain the approach of Ind AS 12 to deferred tax, and the conditions for recognising deferred tax liabilities and deferred tax assets.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "temporary difference",
+    "tax base",
+    "deferred tax asset",
+    "deferred tax liability",
+    "probable taxable profit"
+  ],
+  "references": [
+    "Ind AS 12"
+  ],
+  "sources": [
+    "Ind AS 12 Income Taxes (including the amendment on deferred tax related to assets and liabilities arising from a single transaction, notified by the Companies (Indian Accounting Standards) Amendment Rules, 2023)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Balance sheet approach",
+      "marks": 1,
+      "description": "Deferred tax arises on temporary differences, which are differences between the carrying amount of an asset or liability and its tax base.",
+      "keywords": [
+        "temporary difference",
+        "tax base",
+        "carrying amount"
+      ],
+      "references": [],
+      "basis": "Ind AS 12, definitions of tax base and temporary differences"
+    },
+    {
+      "id": "p2",
+      "label": "Deferred tax liabilities",
+      "marks": 1,
+      "description": "A liability is recognised for all taxable temporary differences, except those from the initial recognition of goodwill and from the initial recognition of an asset or liability in a transaction that is not a business combination, affects neither accounting nor taxable profit, and does not create equal taxable and deductible differences.",
+      "keywords": [
+        "taxable temporary differences",
+        "initial recognition exception"
+      ],
+      "references": [],
+      "basis": "Ind AS 12, recognition of deferred tax liabilities"
+    },
+    {
+      "id": "p3",
+      "label": "Deferred tax assets",
+      "marks": 1,
+      "description": "An asset is recognised for deductible temporary differences, unused tax losses and unused tax credits only to the extent it is probable that future taxable profit will be available against which they can be used.",
+      "keywords": [
+        "deductible temporary differences",
+        "unused tax losses",
+        "probable"
+      ],
+      "references": [],
+      "basis": "Ind AS 12, recognition of deferred tax assets"
+    },
+    {
+      "id": "p4",
+      "label": "Losses and review",
+      "marks": 1,
+      "description": "Where there is a history of recent losses, convincing other evidence is needed; the carrying amount of deferred tax assets is reviewed at each reporting date and reduced or increased as recovery becomes less or more probable.",
+      "keywords": [
+        "convincing evidence",
+        "reviewed"
+      ],
+      "references": [],
+      "basis": "Ind AS 12, unused tax losses and review of deferred tax assets"
+    },
+    {
+      "id": "p5",
+      "label": "Measurement and presentation",
+      "marks": 1,
+      "description": "Measured at tax rates enacted or substantively enacted by the reporting date that are expected to apply on settlement, without discounting; tax follows the item, so it goes to OCI or equity if the item does.",
+      "keywords": [
+        "substantively enacted",
+        "not discounted",
+        "OCI"
+      ],
+      "references": [],
+      "basis": "Ind AS 12, measurement and recognition of current and deferred tax"
+    }
+  ]
+}

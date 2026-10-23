@@ -1,0 +1,89 @@
+{
+  "id": "fin-idt-appeal-appellate-authority",
+  "version": "1",
+  "sa": "CGST Act, 2017 – section 107",
+  "topic": "Appeal to the Appellate Authority",
+  "question": "Explain the provisions relating to filing and disposal of an appeal before the Appellate Authority under section 107 of the CGST Act, 2017.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "appeal",
+    "three months",
+    "pre-deposit",
+    "stay of recovery",
+    "no remand"
+  ],
+  "references": [
+    "Section 107",
+    "Section 112"
+  ],
+  "sources": [
+    "CGST Act, 2017, sections 107 and 112"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Who may appeal and time limit",
+      "marks": 1,
+      "description": "Any person aggrieved by an order of an adjudicating authority may appeal within three months of the order being communicated; the department may appeal after review by the Commissioner within six months; the Appellate Authority may allow one further month for sufficient cause.",
+      "keywords": [
+        "three months",
+        "six months",
+        "one month condonation"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 107(1), (2) and (4)"
+    },
+    {
+      "id": "p2",
+      "label": "Pre-deposit",
+      "marks": 1,
+      "description": "An appeal can be filed only after paying in full the tax, interest, fine, fee and penalty admitted by the appellant, plus a sum equal to 10% of the remaining tax in dispute, subject to the maximum amount set in the section.",
+      "keywords": [
+        "admitted amount",
+        "10% of tax in dispute"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 107(6)"
+    },
+    {
+      "id": "p3",
+      "label": "Stay of recovery",
+      "marks": 1,
+      "description": "Once the pre-deposit is paid, recovery of the balance amount is deemed to be stayed until the appeal is disposed of.",
+      "keywords": [
+        "stay of recovery"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 107(7)"
+    },
+    {
+      "id": "p4",
+      "label": "Hearing and powers",
+      "marks": 1,
+      "description": "The appellant is given an opportunity of being heard, with no more than three adjournments; the Authority may make further inquiry and confirm, modify or annul the order, but cannot send the case back to the adjudicating authority. Before enhancing a penalty or fine, reducing a refund or credit, or confirming tax not demanded, it must issue a show cause notice.",
+      "keywords": [
+        "opportunity of being heard",
+        "no remand",
+        "show cause before enhancement"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 107(8) to (11)"
+    },
+    {
+      "id": "p5",
+      "label": "Order and further appeal",
+      "marks": 1,
+      "description": "The order is in writing and states the points for decision, the decision and the reasons; where possible the appeal is decided within one year of filing. A person aggrieved may appeal further to the Appellate Tribunal.",
+      "keywords": [
+        "reasoned order",
+        "one year",
+        "Appellate Tribunal"
+      ],
+      "references": [
+        "Section 112"
+      ],
+      "basis": "CGST Act, 2017, section 107(12) and (13), and section 112"
+    }
+  ]
+}

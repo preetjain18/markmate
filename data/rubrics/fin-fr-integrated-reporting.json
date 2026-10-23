@@ -1,0 +1,91 @@
+{
+  "id": "fin-fr-integrated-reporting",
+  "version": "1",
+  "sa": "Integrated reporting",
+  "topic": "Integrated reporting and the six capitals",
+  "question": "What is integrated reporting? Explain the capitals, guiding principles and content elements of an integrated report, and its position in India.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "integrated report",
+    "value creation",
+    "six capitals",
+    "guiding principles",
+    "content elements"
+  ],
+  "references": [],
+  "sources": [
+    "International <IR> Framework (January 2021), now maintained by the IFRS Foundation",
+    "SEBI circular of February 2017 on integrated reporting by listed entities (voluntary, top 500 listed companies)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "A concise communication about how an organisation's strategy, governance, performance and prospects lead to the creation, preservation or erosion of value over the short, medium and long term.",
+      "keywords": [
+        "value creation",
+        "concise",
+        "long term"
+      ],
+      "references": [],
+      "basis": "International <IR> Framework: definition of an integrated report"
+    },
+    {
+      "id": "p2",
+      "label": "Six capitals",
+      "marks": 1,
+      "description": "Financial, manufactured, intellectual, human, social and relationship, and natural capital, which the organisation uses and affects.",
+      "keywords": [
+        "financial",
+        "manufactured",
+        "intellectual",
+        "human",
+        "social and relationship",
+        "natural"
+      ],
+      "references": [],
+      "basis": "International <IR> Framework: the capitals"
+    },
+    {
+      "id": "p3",
+      "label": "Guiding principles",
+      "marks": 1,
+      "description": "Strategic focus and future orientation, connectivity of information, stakeholder relationships, materiality, conciseness, reliability and completeness, and consistency and comparability.",
+      "keywords": [
+        "connectivity",
+        "materiality",
+        "stakeholder relationships"
+      ],
+      "references": [],
+      "basis": "International <IR> Framework: guiding principles"
+    },
+    {
+      "id": "p4",
+      "label": "Content elements",
+      "marks": 1,
+      "description": "Organisational overview and external environment, governance, business model, risks and opportunities, strategy and resource allocation, performance, outlook, and basis of preparation and presentation.",
+      "keywords": [
+        "business model",
+        "risks and opportunities",
+        "outlook"
+      ],
+      "references": [],
+      "basis": "International <IR> Framework: content elements"
+    },
+    {
+      "id": "p5",
+      "label": "Benefits and Indian position",
+      "marks": 1,
+      "description": "It links financial and non-financial information and shows long-term thinking; in India it is voluntary, with SEBI advising the top 500 listed companies to adopt it, alongside the separate BRSR requirement for sustainability reporting.",
+      "keywords": [
+        "voluntary",
+        "SEBI",
+        "BRSR"
+      ],
+      "references": [],
+      "basis": "SEBI circular (February 2017) on integrated reporting; SEBI BRSR requirements under the Listing Regulations"
+    }
+  ]
+}

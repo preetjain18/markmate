@@ -1,0 +1,82 @@
+{
+  "id": "fnd-eco-monetary-policy-tools",
+  "version": "1",
+  "sa": "Business Economics",
+  "topic": "Instruments of monetary policy",
+  "question": "Explain the instruments of monetary policy used by the Reserve Bank of India.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "monetary policy",
+    "repo rate",
+    "cash reserve ratio",
+    "open market operations"
+  ],
+  "references": [],
+  "sources": [
+    "Reserve Bank of India Act, 1934 and Banking Regulation Act, 1949 (powers of the RBI)",
+    "Monetary policy framework of the Reserve Bank of India (standard macroeconomic theory)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Quantitative and qualitative tools",
+      "marks": 1,
+      "description": "Quantitative (general) tools affect the overall volume and cost of credit; qualitative (selective) tools affect the direction and use of credit.",
+      "keywords": [
+        "quantitative",
+        "qualitative"
+      ],
+      "references": [],
+      "basis": "Monetary policy: classification of instruments"
+    },
+    {
+      "id": "p2",
+      "label": "Policy rates under the liquidity adjustment facility",
+      "marks": 1,
+      "description": "Repo rate (the rate at which RBI lends to banks against government securities), the standing deposit facility and reverse repo for absorbing liquidity, and the marginal standing facility for overnight borrowing by banks; the bank rate is the RBI's standard rate for rediscounting bills and lending to banks, currently kept aligned with the marginal standing facility rate.",
+      "keywords": [
+        "repo rate",
+        "liquidity adjustment facility",
+        "marginal standing facility"
+      ],
+      "references": [],
+      "basis": "RBI monetary policy framework: liquidity adjustment facility and policy rates"
+    },
+    {
+      "id": "p3",
+      "label": "Reserve ratios",
+      "marks": 1,
+      "description": "Cash reserve ratio is the share of deposits banks must keep as cash with the RBI; statutory liquidity ratio is the share they must keep in liquid assets such as cash, gold and approved securities. Raising them reduces banks' lending capacity.",
+      "keywords": [
+        "cash reserve ratio",
+        "statutory liquidity ratio"
+      ],
+      "references": [],
+      "basis": "Reserve Bank of India Act, 1934 (CRR) and Banking Regulation Act, 1949 (SLR)"
+    },
+    {
+      "id": "p4",
+      "label": "Open market operations",
+      "marks": 1,
+      "description": "Purchase and sale of government securities by the RBI in the market; buying injects liquidity and selling absorbs it.",
+      "keywords": [
+        "open market operations"
+      ],
+      "references": [],
+      "basis": "RBI monetary policy framework: open market operations"
+    },
+    {
+      "id": "p5",
+      "label": "Qualitative tools",
+      "marks": 1,
+      "description": "Margin requirements on secured loans, selective credit controls, moral suasion and direct action against banks are used to guide credit to or away from particular sectors.",
+      "keywords": [
+        "margin requirements",
+        "moral suasion"
+      ],
+      "references": [],
+      "basis": "Monetary policy: selective credit controls"
+    }
+  ]
+}

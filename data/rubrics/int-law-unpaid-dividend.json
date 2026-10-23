@@ -1,0 +1,86 @@
+{
+  "id": "int-law-unpaid-dividend",
+  "version": "1",
+  "sa": "Companies Act, 2013",
+  "topic": "Unpaid dividend account",
+  "question": "Explain the provisions of the Companies Act, 2013 regarding dividend that has been declared but not paid or claimed.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "Unpaid Dividend Account",
+    "Investor Education and Protection Fund",
+    "seven years",
+    "thirty days"
+  ],
+  "references": [
+    "Section 124",
+    "Section 125"
+  ],
+  "sources": [
+    "Companies Act, 2013 - section 124 unpaid dividend account",
+    "Companies Act, 2013 - section 125 Investor Education and Protection Fund",
+    "Companies Act, 2013 - section 127 failure to distribute dividends"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Time to pay",
+      "marks": 1,
+      "description": "A declared dividend must be paid, or the warrant posted, within thirty days of the date of declaration.",
+      "keywords": [
+        "thirty days"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 127"
+    },
+    {
+      "id": "p2",
+      "label": "Transfer to Unpaid Dividend Account",
+      "marks": 1,
+      "description": "Any amount not paid or claimed within those thirty days must be moved within the next seven days to a special 'Unpaid Dividend Account' opened in a scheduled bank.",
+      "keywords": [
+        "Unpaid Dividend Account",
+        "seven days",
+        "scheduled bank"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 124(1)"
+    },
+    {
+      "id": "p3",
+      "label": "Statement on website",
+      "marks": 1,
+      "description": "The company must prepare a statement of the names, addresses and unpaid amounts of the shareholders concerned and place it on its website and any other website the Government specifies.",
+      "keywords": [
+        "website",
+        "statement"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 124(2)"
+    },
+    {
+      "id": "p4",
+      "label": "Transfer to IEPF",
+      "marks": 1,
+      "description": "Money lying in the Unpaid Dividend Account for seven years from the date of transfer is moved to the Investor Education and Protection Fund.",
+      "keywords": [
+        "Investor Education and Protection Fund",
+        "seven years"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, sections 124(5) and 125"
+    },
+    {
+      "id": "p5",
+      "label": "Transfer of shares and claims",
+      "marks": 1,
+      "description": "Shares on which dividend has been unpaid or unclaimed for seven consecutive years are also transferred to the Fund; the shareholder can still claim the shares and amounts back from the Fund.",
+      "keywords": [
+        "seven consecutive years",
+        "claim"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 124(6)"
+    }
+  ]
+}

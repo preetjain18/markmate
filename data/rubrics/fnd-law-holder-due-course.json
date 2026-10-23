@@ -1,0 +1,82 @@
+{
+  "id": "fnd-law-holder-due-course",
+  "version": "1",
+  "sa": "Negotiable Instruments Act, 1881",
+  "topic": "Holder in due course",
+  "question": "Who is a holder in due course under the Negotiable Instruments Act, 1881? Explain the privileges available to a holder in due course.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "holder in due course",
+    "consideration",
+    "good faith",
+    "privileges"
+  ],
+  "references": [
+    "Section 9"
+  ],
+  "sources": [
+    "Negotiable Instruments Act, 1881, Section 9 (holder in due course) and provisions on the privileges of a holder in due course"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Definition",
+      "marks": 1,
+      "description": "A holder in due course is a person who, for consideration, became the possessor (if payable to bearer) or the payee or indorsee (if payable to order) of a negotiable instrument before the amount became payable.",
+      "keywords": [
+        "consideration",
+        "before maturity"
+      ],
+      "references": [],
+      "basis": "Negotiable Instruments Act, 1881, Section 9"
+    },
+    {
+      "id": "p2",
+      "label": "Good faith",
+      "marks": 1,
+      "description": "He must have taken the instrument without having sufficient cause to believe that any defect existed in the title of the person from whom he got it.",
+      "keywords": [
+        "good faith",
+        "defect in title"
+      ],
+      "references": [],
+      "basis": "Negotiable Instruments Act, 1881, Section 9"
+    },
+    {
+      "id": "p3",
+      "label": "Better title free from defects",
+      "marks": 1,
+      "description": "A holder in due course gets a good title free from defects in the title of prior parties, and every prior party remains liable to him until the instrument is duly satisfied.",
+      "keywords": [
+        "free from defects",
+        "prior parties"
+      ],
+      "references": [],
+      "basis": "Negotiable Instruments Act, 1881, privileges of a holder in due course"
+    },
+    {
+      "id": "p4",
+      "label": "Title passes to later holders",
+      "marks": 1,
+      "description": "A person who takes from a holder in due course gets the same rights as that holder in due course, even if not one himself, provided he was not party to any fraud affecting the instrument.",
+      "keywords": [
+        "derives title"
+      ],
+      "references": [],
+      "basis": "Negotiable Instruments Act, 1881, rights of a holder deriving title from a holder in due course"
+    },
+    {
+      "id": "p5",
+      "label": "Estoppel and presumption",
+      "marks": 1,
+      "description": "Parties such as the maker, drawer and acceptor cannot deny the original validity of the instrument against a holder in due course, and every holder is presumed to be a holder in due course until the contrary is proved.",
+      "keywords": [
+        "estoppel",
+        "presumption"
+      ],
+      "references": [],
+      "basis": "Negotiable Instruments Act, 1881, estoppel against denying original validity and presumptions as to negotiable instruments"
+    }
+  ]
+}

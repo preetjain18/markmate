@@ -1,0 +1,79 @@
+{
+  "id": "int-fm-capital-structure-factors",
+  "version": "1",
+  "sa": "Financial management",
+  "topic": "Factors in capital structure",
+  "question": "Discuss the factors that a company should consider while planning its capital structure.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "capital structure",
+    "financial risk",
+    "control",
+    "flexibility",
+    "trading on equity"
+  ],
+  "references": [],
+  "sources": [
+    "Capital structure planning: factors determining the debt-equity mix"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Risk",
+      "marks": 1,
+      "description": "More debt means fixed interest and repayment, which raises financial risk; a firm with unstable earnings should use less debt.",
+      "keywords": [
+        "financial risk"
+      ],
+      "references": [],
+      "basis": "Capital structure planning: risk"
+    },
+    {
+      "id": "p2",
+      "label": "Cost of capital and trading on equity",
+      "marks": 1,
+      "description": "Debt is usually cheaper and interest is tax-deductible, so using it can raise earnings per share if returns exceed the cost of debt.",
+      "keywords": [
+        "trading on equity",
+        "EPS"
+      ],
+      "references": [],
+      "basis": "Capital structure planning: cost and EBIT-EPS analysis"
+    },
+    {
+      "id": "p3",
+      "label": "Control",
+      "marks": 1,
+      "description": "Issuing new equity may dilute the control of existing shareholders; debt does not carry voting rights.",
+      "keywords": [
+        "control"
+      ],
+      "references": [],
+      "basis": "Capital structure planning: control"
+    },
+    {
+      "id": "p4",
+      "label": "Flexibility",
+      "marks": 1,
+      "description": "The structure should allow the firm to raise more funds or reduce funds when needed.",
+      "keywords": [
+        "flexibility"
+      ],
+      "references": [],
+      "basis": "Capital structure planning: flexibility"
+    },
+    {
+      "id": "p5",
+      "label": "Other factors",
+      "marks": 1,
+      "description": "Nature and stability of the business, cash flow ability to service debt, market conditions, and legal or lender restrictions.",
+      "keywords": [
+        "cash flow",
+        "market conditions"
+      ],
+      "references": [],
+      "basis": "Capital structure planning: other factors"
+    }
+  ]
+}

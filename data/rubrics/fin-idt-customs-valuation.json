@@ -1,0 +1,91 @@
+{
+  "id": "fin-idt-customs-valuation",
+  "version": "1",
+  "sa": "Customs Act, 1962 – section 14",
+  "topic": "Valuation of imported goods",
+  "question": "Explain the concept of transaction value under section 14 of the Customs Act, 1962 and the methods used when the declared transaction value cannot be accepted.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "transaction value",
+    "price actually paid or payable",
+    "related persons",
+    "identical goods",
+    "residual method"
+  ],
+  "references": [
+    "Section 14"
+  ],
+  "sources": [
+    "Customs Act, 1962, section 14",
+    "Customs Valuation (Determination of Value of Imported Goods) Rules, 2007"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Transaction value",
+      "marks": 1,
+      "description": "The value of imported goods is their transaction value: the price actually paid or payable for the goods when sold for export to India for delivery at the time and place of importation, where buyer and seller are not related and price is the sole consideration.",
+      "keywords": [
+        "price actually paid or payable",
+        "sole consideration"
+      ],
+      "references": [
+        "Section 14"
+      ],
+      "basis": "Customs Act, 1962, section 14(1); Customs Valuation Rules, 2007, rule 3"
+    },
+    {
+      "id": "p2",
+      "label": "Additions to the price",
+      "marks": 1,
+      "description": "The value includes other amounts paid or payable as a condition of sale, such as commissions and brokerage, engineering and design work, royalties and licence fees, and the cost of transport, insurance, loading, unloading and handling up to the place of importation, to the extent set in the rules.",
+      "keywords": [
+        "royalties",
+        "transport and insurance",
+        "commission"
+      ],
+      "references": [],
+      "basis": "Customs Act, 1962, section 14(1); Customs Valuation Rules, 2007, rule 10"
+    },
+    {
+      "id": "p3",
+      "label": "Related buyer and seller",
+      "marks": 1,
+      "description": "Where buyer and seller are related, the transaction value is still accepted if the relationship has not influenced the price, judged from the circumstances of the sale or by comparison with test values.",
+      "keywords": [
+        "related persons",
+        "influenced the price"
+      ],
+      "references": [],
+      "basis": "Customs Valuation Rules, 2007, rule 3(3)"
+    },
+    {
+      "id": "p4",
+      "label": "Doubt about the declared value",
+      "marks": 1,
+      "description": "Where the proper officer has reason to doubt the truth or accuracy of the declared value, he may ask the importer for further information; if the doubt remains, the value is not determined on the declared transaction value but under the later rules.",
+      "keywords": [
+        "reasonable doubt",
+        "further information"
+      ],
+      "references": [],
+      "basis": "Customs Valuation Rules, 2007, rule 12"
+    },
+    {
+      "id": "p5",
+      "label": "Methods applied in sequence",
+      "marks": 1,
+      "description": "The value is then determined in order using the transaction value of identical goods, then similar goods, then the deductive value, then the computed value, and finally the residual method; the importer may ask for computed value to be applied before deductive value.",
+      "keywords": [
+        "identical goods",
+        "similar goods",
+        "deductive",
+        "computed",
+        "residual"
+      ],
+      "references": [],
+      "basis": "Customs Valuation Rules, 2007, rules 4 to 9"
+    }
+  ]
+}

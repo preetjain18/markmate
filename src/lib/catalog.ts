@@ -67,6 +67,7 @@ export function buildCatalog(file: CatalogFile, rubricList: Rubric[], plain: Pla
               text: r ? r.question : p!.question,
               maxMarks: r ? r.maxMarks : (p!.maxMarks ?? null),
               support: support(r),
+              ...(r?.sa ? { source: r.sa } : {}),
               levelId: level.id,
               subjectId: subject.id,
               chapterId: chapter.id,

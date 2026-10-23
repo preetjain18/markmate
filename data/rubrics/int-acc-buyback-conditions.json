@@ -1,0 +1,97 @@
+{
+  "id": "int-acc-buyback-conditions",
+  "version": "1",
+  "sa": "Companies Act, 2013",
+  "topic": "Conditions for buy-back of shares",
+  "question": "State the conditions that a company must satisfy under the Companies Act, 2013 before it buys back its own shares.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "buy-back",
+    "free reserves",
+    "securities premium",
+    "debt-equity ratio",
+    "capital redemption reserve"
+  ],
+  "references": [
+    "Section 68",
+    "Section 69"
+  ],
+  "sources": [
+    "Companies Act, 2013 - section 68 power to purchase own securities",
+    "Companies Act, 2013 - section 69 transfer to capital redemption reserve account"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Sources of funds",
+      "marks": 1,
+      "description": "Buy-back may be made only out of free reserves, the securities premium account, or the proceeds of an issue of shares or other specified securities, but not from the proceeds of an earlier issue of the same kind of shares.",
+      "keywords": [
+        "free reserves",
+        "securities premium"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 68(1)"
+    },
+    {
+      "id": "p2",
+      "label": "Authority and resolution",
+      "marks": 1,
+      "description": "The articles must authorise the buy-back and a special resolution is needed; a Board resolution is enough where the buy-back is ten per cent or less of the total paid-up equity capital and free reserves.",
+      "keywords": [
+        "articles",
+        "special resolution",
+        "board resolution"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 68(2)(a) and (b)"
+    },
+    {
+      "id": "p3",
+      "label": "Size limit",
+      "marks": 1,
+      "description": "The buy-back must not exceed twenty-five per cent of the total paid-up capital and free reserves; for equity shares, not more than twenty-five per cent of the paid-up equity capital in a financial year.",
+      "keywords": [
+        "twenty-five per cent"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 68(2)(c)"
+    },
+    {
+      "id": "p4",
+      "label": "Debt-equity ratio",
+      "marks": 1,
+      "description": "After the buy-back, secured and unsecured debts must not be more than twice the paid-up capital and free reserves (unless a higher ratio is prescribed for a class of companies).",
+      "keywords": [
+        "debt-equity",
+        "twice"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 68(2)(d)"
+    },
+    {
+      "id": "p5",
+      "label": "Fully paid shares and gap between offers",
+      "marks": 1,
+      "description": "Only fully paid-up shares can be bought back, and no new buy-back offer can be made within one year of the previous one.",
+      "keywords": [
+        "fully paid",
+        "one year"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 68(2)(e) and proviso to section 68(2)"
+    },
+    {
+      "id": "p6",
+      "label": "Capital redemption reserve",
+      "marks": 1,
+      "description": "When shares are bought back out of free reserves or securities premium, a sum equal to the nominal value of the shares bought back is transferred to the capital redemption reserve account.",
+      "keywords": [
+        "capital redemption reserve"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 69"
+    }
+  ]
+}

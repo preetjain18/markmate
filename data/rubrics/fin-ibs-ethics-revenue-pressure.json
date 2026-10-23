@@ -1,0 +1,87 @@
+{
+  "id": "fin-ibs-ethics-revenue-pressure",
+  "version": "1",
+  "sa": "Case study: ethics",
+  "topic": "Pressure to recognise revenue early",
+  "question": "Neha, a Chartered Accountant, is CFO of Orbitline Systems Ltd, a fictional unlisted software company raising funds from investors next month. On 30 March, the managing director asks her to record revenue for a large contract that the customer is expected to sign only in April, saying the investors must see higher sales. Discuss the ethical and reporting issues and how Neha should respond.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "integrity",
+    "objectivity",
+    "self-interest threat",
+    "intimidation threat",
+    "Ind AS 115",
+    "audit committee"
+  ],
+  "references": [],
+  "sources": [
+    "ICAI Code of Ethics - fundamental principles and the conceptual framework of threats and safeguards",
+    "Ind AS 115 Revenue from Contracts with Customers - identifying the contract"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Reporting position",
+      "marks": 1.5,
+      "description": "With no signed or otherwise approved contract at year-end, the Ind AS 115 conditions for a contract are not met, so no revenue can be recognised in March; doing so would misstate the financial statements.",
+      "keywords": [
+        "Ind AS 115",
+        "contract",
+        "misstatement"
+      ],
+      "references": [],
+      "basis": "Ind AS 115, criteria for identifying a contract with a customer"
+    },
+    {
+      "id": "p2",
+      "label": "Fundamental principles at risk",
+      "marks": 1,
+      "description": "Integrity, objectivity and professional behaviour would be breached by knowingly being associated with misleading information.",
+      "keywords": [
+        "integrity",
+        "objectivity",
+        "professional behaviour"
+      ],
+      "references": [],
+      "basis": "ICAI Code of Ethics: fundamental principles"
+    },
+    {
+      "id": "p3",
+      "label": "Threats",
+      "marks": 1,
+      "description": "Intimidation threat from the managing director's pressure and self-interest threat (job security, possible bonus linked to fundraising).",
+      "keywords": [
+        "intimidation threat",
+        "self-interest threat"
+      ],
+      "references": [],
+      "basis": "ICAI Code of Ethics: conceptual framework of threats"
+    },
+    {
+      "id": "p4",
+      "label": "Response",
+      "marks": 1.5,
+      "description": "Explain the correct treatment to the managing director, refuse to record the revenue, document the discussion, and escalate to the board or audit committee if pressure continues; consider legal advice and, as a last resort, resignation.",
+      "keywords": [
+        "refuse",
+        "escalate",
+        "document"
+      ],
+      "references": [],
+      "basis": "ICAI Code of Ethics: resolving ethical conflicts and pressure to breach the fundamental principles"
+    },
+    {
+      "id": "p5",
+      "label": "Wider consequences",
+      "marks": 1,
+      "description": "Misleading investors could expose the company and directors to liability for misstatement in fundraising and harm the company's credibility; the auditor would also need to be informed of the facts.",
+      "keywords": [
+        "investors",
+        "liability"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013: responsibility of directors for financial statements; general law on misrepresentation"
+    }
+  ]
+}

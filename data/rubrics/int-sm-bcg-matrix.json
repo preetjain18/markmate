@@ -1,0 +1,80 @@
+{
+  "id": "int-sm-bcg-matrix",
+  "version": "1",
+  "sa": "Strategic management",
+  "topic": "BCG growth-share matrix",
+  "question": "Explain the BCG growth-share matrix and its use in portfolio analysis.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "BCG matrix",
+    "stars",
+    "cash cows",
+    "question marks",
+    "dogs",
+    "relative market share"
+  ],
+  "references": [],
+  "sources": [
+    "Boston Consulting Group (BCG) growth-share matrix"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Axes",
+      "marks": 1,
+      "description": "Business units are placed on a grid of market growth rate (vertical) and relative market share (horizontal).",
+      "keywords": [
+        "market growth rate",
+        "relative market share"
+      ],
+      "references": [],
+      "basis": "BCG matrix: dimensions"
+    },
+    {
+      "id": "p2",
+      "label": "Stars",
+      "marks": 1,
+      "description": "High growth and high share; they need heavy investment to keep growing and may become cash cows later.",
+      "keywords": [
+        "stars"
+      ],
+      "references": [],
+      "basis": "BCG matrix: stars"
+    },
+    {
+      "id": "p3",
+      "label": "Cash cows",
+      "marks": 1,
+      "description": "Low growth but high share; they generate more cash than they need, which funds other units.",
+      "keywords": [
+        "cash cows"
+      ],
+      "references": [],
+      "basis": "BCG matrix: cash cows"
+    },
+    {
+      "id": "p4",
+      "label": "Question marks",
+      "marks": 1,
+      "description": "High growth but low share; they need cash and a decision whether to invest to build share or to drop them.",
+      "keywords": [
+        "question marks"
+      ],
+      "references": [],
+      "basis": "BCG matrix: question marks"
+    },
+    {
+      "id": "p5",
+      "label": "Dogs and use of the matrix",
+      "marks": 1,
+      "description": "Dogs have low growth and low share and are candidates for harvesting or divestment; the matrix helps balance the portfolio and allocate resources among units.",
+      "keywords": [
+        "dogs",
+        "portfolio"
+      ],
+      "references": [],
+      "basis": "BCG matrix: dogs and portfolio strategies"
+    }
+  ]
+}

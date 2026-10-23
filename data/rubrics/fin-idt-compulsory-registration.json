@@ -1,0 +1,91 @@
+{
+  "id": "fin-idt-compulsory-registration",
+  "version": "1",
+  "sa": "CGST Act, 2017 – section 24",
+  "topic": "Compulsory registration",
+  "question": "Explain the categories of persons who must register under GST irrespective of their aggregate turnover, as provided in section 24 of the CGST Act, 2017.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "compulsory registration",
+    "inter-State supply",
+    "reverse charge",
+    "e-commerce operator",
+    "input service distributor"
+  ],
+  "references": [
+    "Section 22",
+    "Section 24"
+  ],
+  "sources": [
+    "CGST Act, 2017, sections 22 and 24"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Relation to the threshold",
+      "marks": 1,
+      "description": "Normally a supplier must register only when its aggregate turnover crosses the threshold in section 22; section 24 overrides this and requires the listed persons to register whatever their turnover, subject to exemptions notified by the Government.",
+      "keywords": [
+        "threshold",
+        "irrespective of turnover",
+        "notified exemptions"
+      ],
+      "references": [
+        "Section 22"
+      ],
+      "basis": "CGST Act, 2017, section 22(1) and opening words of section 24"
+    },
+    {
+      "id": "p2",
+      "label": "Inter-State, casual and non-resident suppliers",
+      "marks": 1,
+      "description": "Persons making inter-State taxable supplies (unless exempted by notification), casual taxable persons making taxable supplies, and non-resident taxable persons making taxable supplies.",
+      "keywords": [
+        "inter-State",
+        "casual taxable person",
+        "non-resident taxable person"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 24"
+    },
+    {
+      "id": "p3",
+      "label": "Persons paying tax as recipients or operators",
+      "marks": 1,
+      "description": "Persons required to pay tax under reverse charge, and persons (such as electronic commerce operators) required to pay tax under section 9(5) on supplies made through them.",
+      "keywords": [
+        "reverse charge",
+        "section 9(5)"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 24, read with section 9(3) and 9(5)"
+    },
+    {
+      "id": "p4",
+      "label": "TDS, TCS and e-commerce",
+      "marks": 1,
+      "description": "Persons required to deduct tax at source under section 51, every electronic commerce operator required to collect tax at source under section 52, and persons supplying through such an operator (other than supplies covered by section 9(5)), subject to notified exemptions.",
+      "keywords": [
+        "tax deducted at source",
+        "tax collected at source",
+        "e-commerce operator"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 24, read with sections 51 and 52"
+    },
+    {
+      "id": "p5",
+      "label": "Agents, input service distributors and OIDAR suppliers",
+      "marks": 1,
+      "description": "Persons making taxable supplies on behalf of other taxable persons as agents, input service distributors, persons supplying online information and database access or retrieval services from outside India to a person in India other than a registered person, and other persons notified by the Government.",
+      "keywords": [
+        "agent",
+        "input service distributor",
+        "OIDAR"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 24"
+    }
+  ]
+}

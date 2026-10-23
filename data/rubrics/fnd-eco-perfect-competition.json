@@ -12,6 +12,9 @@
     "homogeneous"
   ],
   "references": [],
+  "sources": [
+    "Perfect competition (standard microeconomic theory of market structures)"
+  ],
   "points": [
     {
       "id": "p1",
@@ -21,7 +24,8 @@
       "keywords": [
         "price taker"
       ],
-      "references": []
+      "references": [],
+      "basis": "Perfect competition: large number of buyers and sellers; firm as price taker"
     },
     {
       "id": "p2",
@@ -31,7 +35,8 @@
       "keywords": [
         "homogeneous"
       ],
-      "references": []
+      "references": [],
+      "basis": "Perfect competition: homogeneous product"
     },
     {
       "id": "p3",
@@ -41,7 +46,8 @@
       "keywords": [
         "free entry"
       ],
-      "references": []
+      "references": [],
+      "basis": "Perfect competition: free entry and exit"
     },
     {
       "id": "p4",
@@ -51,7 +57,8 @@
       "keywords": [
         "perfect knowledge"
       ],
-      "references": []
+      "references": [],
+      "basis": "Perfect competition: perfect knowledge"
     },
     {
       "id": "p5",
@@ -61,7 +68,8 @@
       "keywords": [
         "perfectly elastic"
       ],
-      "references": []
+      "references": [],
+      "basis": "Perfect competition: perfect mobility, uniform price and perfectly elastic demand curve of the firm"
     }
   ]
 }

@@ -1,0 +1,69 @@
+{
+  "id": "int-law-resolutions",
+  "version": "1",
+  "sa": "Companies Act, 2013",
+  "topic": "Ordinary and special resolutions",
+  "question": "Distinguish between an ordinary resolution and a special resolution under the Companies Act, 2013.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "ordinary resolution",
+    "special resolution",
+    "three times",
+    "notice"
+  ],
+  "references": [
+    "Section 114"
+  ],
+  "sources": [
+    "Companies Act, 2013 - section 114 ordinary and special resolutions"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Ordinary resolution",
+      "marks": 1,
+      "description": "Passed when the notice required under the Act has been duly given and the votes cast in favour (on a show of hands, electronically or on a poll, including the chairman's casting vote, if any) are more than the votes cast against by members entitled to vote.",
+      "keywords": [
+        "ordinary resolution",
+        "exceed"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 114(1)"
+    },
+    {
+      "id": "p2",
+      "label": "Special resolution: stated in the notice",
+      "marks": 1,
+      "description": "The intention to propose the resolution as a special resolution must be clearly stated in the notice of the meeting or other intimation to members.",
+      "keywords": [
+        "specifically mentioned",
+        "notice"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 114(2)(a)"
+    },
+    {
+      "id": "p3",
+      "label": "Special resolution: notice duly given",
+      "marks": 1,
+      "description": "The notice required under the Act must have been duly given.",
+      "keywords": [
+        "notice"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 114(2)(b)"
+    },
+    {
+      "id": "p4",
+      "label": "Special resolution: three-fourths majority",
+      "marks": 1,
+      "description": "The votes cast in favour by members entitled to vote, in person, by proxy or by postal ballot, must be at least three times the votes cast against.",
+      "keywords": [
+        "three times"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 114(2)(c)"
+    }
+  ]
+}

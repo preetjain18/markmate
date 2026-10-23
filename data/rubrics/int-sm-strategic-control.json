@@ -1,0 +1,78 @@
+{
+  "id": "int-sm-strategic-control",
+  "version": "1",
+  "sa": "Strategic management",
+  "topic": "Types of strategic control",
+  "question": "What is strategic control? Explain its types.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "strategic control",
+    "premise control",
+    "strategic surveillance",
+    "special alert control",
+    "implementation control"
+  ],
+  "references": [],
+  "sources": [
+    "Strategic control framework: premise control, strategic surveillance, special alert control and implementation control"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "Strategic control tracks a strategy while it is being carried out, checks whether its assumptions still hold, and makes changes where needed.",
+      "keywords": [
+        "strategic control"
+      ],
+      "references": [],
+      "basis": "Strategy evaluation: meaning of strategic control"
+    },
+    {
+      "id": "p2",
+      "label": "Premise control",
+      "marks": 1,
+      "description": "Systematically checks whether the assumptions (premises) on which the strategy is based are still valid.",
+      "keywords": [
+        "premise control"
+      ],
+      "references": [],
+      "basis": "Strategic control: premise control"
+    },
+    {
+      "id": "p3",
+      "label": "Strategic surveillance",
+      "marks": 1,
+      "description": "A broad, general watch on events inside and outside the firm that may affect the strategy.",
+      "keywords": [
+        "strategic surveillance"
+      ],
+      "references": [],
+      "basis": "Strategic control: strategic surveillance"
+    },
+    {
+      "id": "p4",
+      "label": "Special alert control",
+      "marks": 1,
+      "description": "A quick and thorough review of strategy when a sudden, unexpected event occurs, such as a natural disaster or a competitor's takeover.",
+      "keywords": [
+        "special alert"
+      ],
+      "references": [],
+      "basis": "Strategic control: special alert control"
+    },
+    {
+      "id": "p5",
+      "label": "Implementation control",
+      "marks": 1,
+      "description": "Checks whether the steps and milestones of the strategy are achieved and whether the overall strategy needs to change.",
+      "keywords": [
+        "implementation control",
+        "milestones"
+      ],
+      "references": [],
+      "basis": "Strategic control: implementation control"
+    }
+  ]
+}

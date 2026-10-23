@@ -1,0 +1,88 @@
+{
+  "id": "int-law-fema-capital-current",
+  "version": "1",
+  "sa": "FEMA, 1999",
+  "topic": "Capital and current account transactions",
+  "question": "Distinguish between a capital account transaction and a current account transaction under the Foreign Exchange Management Act, 1999. How is each type of transaction regulated?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "capital account transaction",
+    "current account transaction",
+    "person resident in India"
+  ],
+  "references": [
+    "FEMA, 1999"
+  ],
+  "sources": [
+    "Foreign Exchange Management Act, 1999 - section 2(e) capital account transaction",
+    "Foreign Exchange Management Act, 1999 - section 2(j) current account transaction",
+    "Foreign Exchange Management Act, 1999 - sections 5 and 6"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Capital account transaction: meaning",
+      "marks": 1,
+      "description": "A transaction that changes the assets or liabilities, including contingent liabilities, outside India of persons resident in India, or the assets or liabilities in India of persons resident outside India.",
+      "keywords": [
+        "capital account",
+        "assets or liabilities"
+      ],
+      "references": [],
+      "basis": "FEMA, 1999, section 2(e)"
+    },
+    {
+      "id": "p2",
+      "label": "Capital account: examples",
+      "marks": 1,
+      "description": "For example, investment in foreign securities, borrowing or lending in foreign exchange, buying or transferring immovable property outside India, and guarantees given for a person resident outside India.",
+      "keywords": [
+        "investment",
+        "borrowing",
+        "immovable property"
+      ],
+      "references": [],
+      "basis": "FEMA, 1999, sections 2(e) and 6"
+    },
+    {
+      "id": "p3",
+      "label": "Current account transaction: meaning",
+      "marks": 1,
+      "description": "Any transaction other than a capital account transaction; it includes payments for foreign trade and other current business, services, short-term banking and credit facilities, interest on loans and net income from investments.",
+      "keywords": [
+        "current account",
+        "foreign trade",
+        "interest"
+      ],
+      "references": [],
+      "basis": "FEMA, 1999, section 2(j)"
+    },
+    {
+      "id": "p4",
+      "label": "Current account: other examples",
+      "marks": 1,
+      "description": "It also covers remittances for living expenses of parents, spouse and children living abroad, and expenses for foreign travel, education and medical care of these family members.",
+      "keywords": [
+        "remittances",
+        "living expenses",
+        "education"
+      ],
+      "references": [],
+      "basis": "FEMA, 1999, section 2(j)"
+    },
+    {
+      "id": "p5",
+      "label": "Regulation",
+      "marks": 1,
+      "description": "Current account transactions are generally free, subject to reasonable restrictions imposed by the Central Government in consultation with RBI; capital account transactions are allowed only to the extent permitted - by Central Government rules for non-debt instruments and by RBI regulations for debt instruments.",
+      "keywords": [
+        "freely",
+        "permitted",
+        "RBI"
+      ],
+      "references": [],
+      "basis": "FEMA, 1999, sections 5 and 6"
+    }
+  ]
+}

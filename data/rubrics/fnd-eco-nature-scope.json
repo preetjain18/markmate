@@ -1,0 +1,81 @@
+{
+  "id": "fnd-eco-nature-scope",
+  "version": "1",
+  "sa": "Business Economics",
+  "topic": "Nature of business economics",
+  "question": "Explain the nature of business economics.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "business economics",
+    "applied",
+    "microeconomics",
+    "normative"
+  ],
+  "references": [],
+  "sources": [
+    "Nature and scope of business economics (standard economic theory)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "Business economics applies economic theory and methods to business decision-making, helping firms use scarce resources to reach their goals.",
+      "keywords": [
+        "applied",
+        "decision-making"
+      ],
+      "references": [],
+      "basis": "Business economics: meaning and purpose"
+    },
+    {
+      "id": "p2",
+      "label": "Science and art",
+      "marks": 1,
+      "description": "It is a science because it studies cause-and-effect relations systematically, and an art because it applies this knowledge to solve practical problems.",
+      "keywords": [
+        "science",
+        "art"
+      ],
+      "references": [],
+      "basis": "Business economics: science and art"
+    },
+    {
+      "id": "p3",
+      "label": "Mainly micro with macro inputs",
+      "marks": 1,
+      "description": "It is largely based on microeconomics (the firm, demand, cost, prices) but also uses macroeconomics to understand the environment, such as inflation, interest rates and government policy.",
+      "keywords": [
+        "microeconomics",
+        "macroeconomics"
+      ],
+      "references": [],
+      "basis": "Business economics: micro and macro content"
+    },
+    {
+      "id": "p4",
+      "label": "Pragmatic and interdisciplinary",
+      "marks": 1,
+      "description": "It is practical, adapting theory to real conditions, and draws on other subjects such as statistics, mathematics, accounting and management.",
+      "keywords": [
+        "pragmatic",
+        "interdisciplinary"
+      ],
+      "references": [],
+      "basis": "Business economics: pragmatic and interdisciplinary nature"
+    },
+    {
+      "id": "p5",
+      "label": "Normative and prescriptive",
+      "marks": 1,
+      "description": "It is mainly normative, concerned with what ought to be done, and prescribes the best course of action for a firm.",
+      "keywords": [
+        "normative",
+        "prescriptive"
+      ],
+      "references": [],
+      "basis": "Business economics: normative character"
+    }
+  ]
+}

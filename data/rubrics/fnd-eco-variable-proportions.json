@@ -1,0 +1,78 @@
+{
+  "id": "fnd-eco-variable-proportions",
+  "version": "1",
+  "sa": "Business Economics",
+  "topic": "Law of variable proportions",
+  "question": "State the law of variable proportions and explain its three stages. In which stage will a rational producer operate?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "law of variable proportions",
+    "marginal product",
+    "average product",
+    "total product"
+  ],
+  "references": [],
+  "sources": [
+    "Law of variable proportions (standard microeconomic theory of production, short run)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Statement and assumptions",
+      "marks": 1,
+      "description": "In the short run, when more units of a variable factor are combined with fixed factors, total product first rises at an increasing rate, then at a diminishing rate, and finally falls; it assumes fixed technology, homogeneous units and at least one fixed factor.",
+      "keywords": [
+        "variable factor",
+        "fixed factor"
+      ],
+      "references": [],
+      "basis": "Law of variable proportions: statement and assumptions"
+    },
+    {
+      "id": "p2",
+      "label": "Stage I: increasing returns",
+      "marks": 1,
+      "description": "Total product rises; average product rises and reaches its maximum where it equals marginal product. The fixed factor is under-used.",
+      "keywords": [
+        "increasing returns"
+      ],
+      "references": [],
+      "basis": "Law of variable proportions: stage I"
+    },
+    {
+      "id": "p3",
+      "label": "Stage II: diminishing returns",
+      "marks": 1,
+      "description": "Total product rises at a diminishing rate and reaches its maximum; marginal and average product both fall, and the stage ends where marginal product is zero.",
+      "keywords": [
+        "diminishing returns"
+      ],
+      "references": [],
+      "basis": "Law of variable proportions: stage II"
+    },
+    {
+      "id": "p4",
+      "label": "Stage III: negative returns",
+      "marks": 1,
+      "description": "Total product falls and marginal product becomes negative, as the variable factor is too much for the fixed factor.",
+      "keywords": [
+        "negative returns"
+      ],
+      "references": [],
+      "basis": "Law of variable proportions: stage III"
+    },
+    {
+      "id": "p5",
+      "label": "Rational stage",
+      "marks": 1,
+      "description": "A rational producer operates in Stage II, because in Stage I output can still be raised by adding the variable factor and in Stage III marginal product is negative.",
+      "keywords": [
+        "Stage II",
+        "rational producer"
+      ],
+      "references": [],
+      "basis": "Law of variable proportions: stage of operation"
+    }
+  ]
+}

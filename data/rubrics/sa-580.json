@@ -6,13 +6,78 @@
   "question": "What are written representations under SA 580? When can the auditor doubt their reliability, and what must the auditor do if management refuses to provide them?",
   "maxMarks": 5,
   "verified": false,
-  "keywords": ["written representations", "management", "integrity"],
-  "references": ["SA 580"],
+  "keywords": [
+    "written representations",
+    "management",
+    "integrity"
+  ],
+  "references": [
+    "SA 580"
+  ],
+  "sources": [
+    "SA 580 Written Representations"
+  ],
   "points": [
-    { "id": "p1", "label": "Meaning and purpose", "marks": 1, "description": "A written statement by management confirming certain matters or supporting other audit evidence. They are necessary audit evidence but do not by themselves provide sufficient appropriate evidence.", "keywords": ["audit evidence"], "references": ["SA 580"] },
-    { "id": "p2", "label": "Mandatory representations", "marks": 1, "description": "Management must confirm it has fulfilled its responsibility for preparing the financial statements and for providing the auditor with all relevant information and access.", "keywords": ["responsibility", "financial statements"], "references": [] },
-    { "id": "p3", "label": "Date and form of the letter", "marks": 1, "description": "The letter is addressed to the auditor, dated as near as practicable to, but not after, the date of the auditor's report, and covers all the financial statements and periods referred to.", "keywords": ["date of the auditor's report"], "references": [] },
-    { "id": "p4", "label": "Doubts about reliability", "marks": 1, "description": "If there are concerns about the competence, integrity, ethical values or diligence of management, or the representations conflict with other audit evidence, reconsider the reliability and evaluate the effect on other representations and evidence.", "keywords": ["integrity", "reliability"], "references": [] },
-    { "id": "p5", "label": "Refusal by management", "marks": 1, "description": "If management does not provide a requested representation, discuss with management, re-evaluate integrity and take appropriate action including the effect on the opinion; a disclaimer of opinion applies where management responsibility representations are not provided.", "keywords": ["disclaimer of opinion"], "references": ["SA 705"] }
+    {
+      "id": "p1",
+      "label": "Meaning and purpose",
+      "marks": 1,
+      "description": "A written statement by management confirming certain matters or supporting other audit evidence. They are necessary audit evidence but do not by themselves provide sufficient appropriate evidence.",
+      "keywords": [
+        "audit evidence"
+      ],
+      "references": [
+        "SA 580"
+      ],
+      "basis": "SA 580, definition of written representations and their nature as audit evidence"
+    },
+    {
+      "id": "p2",
+      "label": "Mandatory representations",
+      "marks": 1,
+      "description": "Management must confirm it has fulfilled its responsibility for preparing the financial statements and for providing the auditor with all relevant information and access.",
+      "keywords": [
+        "responsibility",
+        "financial statements"
+      ],
+      "references": [],
+      "basis": "SA 580, written representations about management's responsibilities"
+    },
+    {
+      "id": "p3",
+      "label": "Date and form of the letter",
+      "marks": 1,
+      "description": "The letter is addressed to the auditor, dated as near as practicable to, but not after, the date of the auditor's report, and covers all the financial statements and periods referred to.",
+      "keywords": [
+        "date of the auditor's report"
+      ],
+      "references": [],
+      "basis": "SA 580, date of and period covered by written representations, and their form"
+    },
+    {
+      "id": "p4",
+      "label": "Doubts about reliability",
+      "marks": 1,
+      "description": "If there are concerns about the competence, integrity, ethical values or diligence of management, or the representations conflict with other audit evidence, reconsider the reliability and evaluate the effect on other representations and evidence.",
+      "keywords": [
+        "integrity",
+        "reliability"
+      ],
+      "references": [],
+      "basis": "SA 580, doubt as to the reliability of written representations"
+    },
+    {
+      "id": "p5",
+      "label": "Refusal by management",
+      "marks": 1,
+      "description": "If management does not provide a requested representation, discuss with management, re-evaluate integrity and take appropriate action including the effect on the opinion; a disclaimer of opinion applies where management responsibility representations are not provided.",
+      "keywords": [
+        "disclaimer of opinion"
+      ],
+      "references": [
+        "SA 705"
+      ],
+      "basis": "SA 580, requested written representations not provided"
+    }
   ]
 }

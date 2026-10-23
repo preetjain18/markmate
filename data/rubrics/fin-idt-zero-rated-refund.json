@@ -1,0 +1,96 @@
+{
+  "id": "fin-idt-zero-rated-refund",
+  "version": "1",
+  "sa": "IGST Act, 2017 – section 16",
+  "topic": "Zero-rated supplies and refund",
+  "question": "Explain the meaning of zero-rated supply under the IGST Act, 2017 and the options available to a supplier for claiming refund in respect of such supplies.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "zero-rated supply",
+    "export",
+    "SEZ",
+    "letter of undertaking",
+    "refund of unutilised ITC"
+  ],
+  "references": [
+    "Section 16",
+    "Section 54"
+  ],
+  "sources": [
+    "IGST Act, 2017, section 16",
+    "CGST Act, 2017, section 54",
+    "CGST Rules, 2017, rules 89 and 96"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of zero-rated supply",
+      "marks": 1,
+      "description": "Export of goods or services or both, and supply of goods or services or both for authorised operations to a Special Economic Zone developer or unit.",
+      "keywords": [
+        "export",
+        "SEZ developer or unit",
+        "authorised operations"
+      ],
+      "references": [
+        "Section 16(1)"
+      ],
+      "basis": "IGST Act, 2017, section 16(1)"
+    },
+    {
+      "id": "p2",
+      "label": "Input tax credit allowed",
+      "marks": 1,
+      "description": "Input tax credit may be taken for making zero-rated supplies even if the supply is exempt, subject to the blocked credit provisions.",
+      "keywords": [
+        "input tax credit",
+        "even if exempt"
+      ],
+      "references": [
+        "Section 16(2)"
+      ],
+      "basis": "IGST Act, 2017, section 16(2)"
+    },
+    {
+      "id": "p3",
+      "label": "Supply under bond or LUT",
+      "marks": 1,
+      "description": "The supplier may make the supply under a bond or letter of undertaking without paying integrated tax and claim refund of unutilised input tax credit.",
+      "keywords": [
+        "bond",
+        "letter of undertaking",
+        "unutilised input tax credit"
+      ],
+      "references": [],
+      "basis": "IGST Act, 2017, section 16(3); CGST Rules, 2017, rule 89"
+    },
+    {
+      "id": "p4",
+      "label": "Supply on payment of integrated tax",
+      "marks": 1,
+      "description": "Alternatively, the supplier may pay integrated tax and claim refund of the tax paid; after the 2023 amendment this route is available only to notified classes of persons or supplies. For exported goods, the shipping bill is treated as the refund application once the export details and a valid return are filed.",
+      "keywords": [
+        "payment of integrated tax",
+        "shipping bill deemed application"
+      ],
+      "references": [],
+      "basis": "IGST Act, 2017, section 16 as amended by the Finance Act, 2023 (refund on payment of integrated tax limited to notified classes); CGST Rules, 2017, rule 96"
+    },
+    {
+      "id": "p5",
+      "label": "Time limit and provisional refund",
+      "marks": 1,
+      "description": "A refund application must be made within two years from the relevant date; for zero-rated supplies the proper officer may grant a provisional refund of 90% of the amount claimed, pending final verification.",
+      "keywords": [
+        "two years",
+        "relevant date",
+        "provisional refund 90%"
+      ],
+      "references": [
+        "Section 54"
+      ],
+      "basis": "CGST Act, 2017, section 54(1) and (6)"
+    }
+  ]
+}

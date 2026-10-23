@@ -6,13 +6,78 @@
   "question": "Discuss the purpose and form of audit documentation under SA 230, and the requirements for assembling the final audit file and for changes made after assembly.",
   "maxMarks": 5,
   "verified": false,
-  "keywords": ["audit documentation", "audit file", "experienced auditor"],
-  "references": ["SA 230"],
+  "keywords": [
+    "audit documentation",
+    "audit file",
+    "experienced auditor"
+  ],
+  "references": [
+    "SA 230"
+  ],
+  "sources": [
+    "SA 230 Audit Documentation"
+  ],
   "points": [
-    { "id": "p1", "label": "Purposes of documentation", "marks": 1, "description": "Provides evidence of the basis for the auditor's report and that the audit was planned and performed in accordance with SAs and legal requirements; helps planning, supervision, review and quality control.", "keywords": ["evidence", "quality control"], "references": ["SA 230"] },
-    { "id": "p2", "label": "Sufficient to enable an experienced auditor to understand", "marks": 1, "description": "Documentation must enable an experienced auditor with no previous connection to the audit to understand the nature, timing and extent of procedures, the results and evidence obtained, and significant matters and judgments.", "keywords": ["experienced auditor", "nature, timing and extent"], "references": [] },
-    { "id": "p3", "label": "Content: identifying characteristics and significant matters", "marks": 1, "description": "Record who performed and who reviewed the work and when, the characteristics of items tested, significant matters and conclusions, and discussions with management; any departure from a relevant requirement.", "keywords": ["significant matters", "reviewed"], "references": [] },
-    { "id": "p4", "label": "Assembly of the final audit file", "marks": 1, "description": "Complete the assembly of the final audit file on a timely basis after the date of the auditor's report, not more than 60 days.", "keywords": ["60 days", "final audit file"], "references": [] },
-    { "id": "p5", "label": "Changes after assembly and confidentiality", "marks": 1, "description": "After assembly, do not delete or discard documentation before the end of its retention period; if exceptional circumstances require changes, record the specific reasons, when and by whom made and reviewed.", "keywords": ["retention period"], "references": [] }
+    {
+      "id": "p1",
+      "label": "Purposes of documentation",
+      "marks": 1,
+      "description": "Provides evidence of the basis for the auditor's report and that the audit was planned and performed in accordance with SAs and legal requirements; helps planning, supervision, review and quality control.",
+      "keywords": [
+        "evidence",
+        "quality control"
+      ],
+      "references": [
+        "SA 230"
+      ],
+      "basis": "SA 230, nature and purposes of audit documentation"
+    },
+    {
+      "id": "p2",
+      "label": "Sufficient to enable an experienced auditor to understand",
+      "marks": 1,
+      "description": "Documentation must enable an experienced auditor with no previous connection to the audit to understand the nature, timing and extent of procedures, the results and evidence obtained, and significant matters and judgments.",
+      "keywords": [
+        "experienced auditor",
+        "nature, timing and extent"
+      ],
+      "references": [],
+      "basis": "SA 230, form, content and extent of audit documentation (experienced auditor test)"
+    },
+    {
+      "id": "p3",
+      "label": "Content: identifying characteristics and significant matters",
+      "marks": 1,
+      "description": "Record who performed and who reviewed the work and when, the characteristics of items tested, significant matters and conclusions, and discussions with management; any departure from a relevant requirement.",
+      "keywords": [
+        "significant matters",
+        "reviewed"
+      ],
+      "references": [],
+      "basis": "SA 230, documenting the characteristics of items tested, who performed and reviewed the work, significant matters and discussions, and departures from requirements"
+    },
+    {
+      "id": "p4",
+      "label": "Assembly of the final audit file",
+      "marks": 1,
+      "description": "Complete the assembly of the final audit file on a timely basis after the date of the auditor's report, not more than 60 days.",
+      "keywords": [
+        "60 days",
+        "final audit file"
+      ],
+      "references": [],
+      "basis": "SA 230, assembly of the final audit file (application material: normally within 60 days after the date of the auditor's report)"
+    },
+    {
+      "id": "p5",
+      "label": "Changes after assembly and confidentiality",
+      "marks": 1,
+      "description": "After assembly, do not delete or discard documentation before the end of its retention period; if exceptional circumstances require changes, record the specific reasons, when and by whom made and reviewed.",
+      "keywords": [
+        "retention period"
+      ],
+      "references": [],
+      "basis": "SA 230, changes to audit documentation after assembly of the final audit file"
+    }
   ]
 }

@@ -1,0 +1,80 @@
+{
+  "id": "fnd-law-partnership-essentials",
+  "version": "1",
+  "sa": "Indian Partnership Act, 1932",
+  "topic": "Essentials of a partnership",
+  "question": "Define partnership under the Indian Partnership Act, 1932 and explain its essential elements.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "partnership",
+    "agreement",
+    "sharing profits",
+    "mutual agency"
+  ],
+  "references": [
+    "Section 4"
+  ],
+  "sources": [
+    "Indian Partnership Act, 1932, Sections 4, 5 and 6"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Definition",
+      "marks": 1,
+      "description": "Partnership is the relation between persons who have agreed to share the profits of a business carried on by all or any of them acting for all.",
+      "keywords": [
+        "relation",
+        "share the profits"
+      ],
+      "references": [],
+      "basis": "Indian Partnership Act, 1932, Section 4"
+    },
+    {
+      "id": "p2",
+      "label": "Agreement and association of two or more persons",
+      "marks": 1,
+      "description": "Partnership arises from an agreement (oral or written), not from status or operation of law, between at least two persons.",
+      "keywords": [
+        "agreement",
+        "not from status"
+      ],
+      "references": [],
+      "basis": "Indian Partnership Act, 1932, Sections 4 and 5"
+    },
+    {
+      "id": "p3",
+      "label": "Business",
+      "marks": 1,
+      "description": "The agreement must be to carry on a business, which includes every trade, occupation and profession.",
+      "keywords": [
+        "business"
+      ],
+      "references": [],
+      "basis": "Indian Partnership Act, 1932, Section 2(b) and Section 4"
+    },
+    {
+      "id": "p4",
+      "label": "Sharing of profits",
+      "marks": 1,
+      "description": "The partners must agree to share the profits of the business; sharing of profits alone is not conclusive proof of partnership.",
+      "keywords": [
+        "sharing of profits"
+      ],
+      "references": [],
+      "basis": "Indian Partnership Act, 1932, Sections 4 and 6"
+    },
+    {
+      "id": "p5",
+      "label": "Mutual agency",
+      "marks": 1,
+      "description": "The business must be carried on by all or any of them acting for all, so each partner is both an agent and a principal of the others; this is the true test of a partnership.",
+      "keywords": [
+        "mutual agency"
+      ],
+      "references": [],
+      "basis": "Indian Partnership Act, 1932, Sections 4 and 6"
+    }
+  ]
+}

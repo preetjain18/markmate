@@ -1,0 +1,81 @@
+{
+  "id": "fnd-acc-shares-debentures",
+  "version": "1",
+  "sa": "Companies Act, 2013",
+  "topic": "Shares and debentures",
+  "question": "Distinguish between shares and debentures of a company.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "shares",
+    "debentures",
+    "dividend",
+    "interest"
+  ],
+  "references": [],
+  "sources": [
+    "Companies Act, 2013, definitions of share and debenture",
+    "Standard accounting principles for company accounts (ICAI Foundation syllabus)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Ownership vs debt",
+      "marks": 1,
+      "description": "A share is a part of the company's share capital and the holder is an owner (member); a debenture is an acknowledgement of a debt, and the holder is a creditor of the company.",
+      "keywords": [
+        "owner",
+        "creditor"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, definitions of share and debenture"
+    },
+    {
+      "id": "p2",
+      "label": "Return",
+      "marks": 1,
+      "description": "Shareholders get dividends, which are paid only out of profits and are not fixed; debenture holders get interest at a fixed rate whether or not there are profits.",
+      "keywords": [
+        "dividend",
+        "interest"
+      ],
+      "references": [],
+      "basis": "Accounting principle: dividend is an appropriation of profit, interest is a charge against profit"
+    },
+    {
+      "id": "p3",
+      "label": "Voting rights",
+      "marks": 1,
+      "description": "Equity shareholders have voting rights and a say in management; debenture holders have no voting rights, as a company may not issue debentures carrying voting rights.",
+      "keywords": [
+        "voting rights"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, voting rights of members and prohibition on debentures carrying voting rights"
+    },
+    {
+      "id": "p4",
+      "label": "Security and repayment",
+      "marks": 1,
+      "description": "Shares are usually not secured and share capital is repaid only on winding up (except for buy-back or redeemable preference shares); debentures are usually secured by a charge on assets and are repaid after a fixed period.",
+      "keywords": [
+        "secured",
+        "redemption"
+      ],
+      "references": [],
+      "basis": "Accounting principle: redemption of debentures and share capital"
+    },
+    {
+      "id": "p5",
+      "label": "Priority on winding up",
+      "marks": 1,
+      "description": "On winding up, debenture holders are repaid before shareholders.",
+      "keywords": [
+        "winding up",
+        "priority"
+      ],
+      "references": [],
+      "basis": "Accounting principle: order of payment on liquidation"
+    }
+  ]
+}

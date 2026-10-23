@@ -1,0 +1,81 @@
+{
+  "id": "int-cost-cost-centre-unit",
+  "version": "1",
+  "sa": "Cost accounting",
+  "topic": "Cost centre and cost unit",
+  "question": "Explain the meaning of cost centre and cost unit. State the different types of cost centres.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "cost centre",
+    "cost unit",
+    "personal cost centre",
+    "service cost centre"
+  ],
+  "references": [],
+  "sources": [
+    "Basic cost concepts: cost object, cost centre and cost unit"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of cost centre",
+      "marks": 1,
+      "description": "A cost centre is a location, person, item of equipment or group of these for which costs are collected and used for cost control.",
+      "keywords": [
+        "cost centre",
+        "location"
+      ],
+      "references": [],
+      "basis": "Cost concepts: definition of cost centre"
+    },
+    {
+      "id": "p2",
+      "label": "Meaning of cost unit",
+      "marks": 1,
+      "description": "A cost unit is a unit of product, service or time in relation to which costs are measured, for example per tonne of steel, per passenger-km or per job.",
+      "keywords": [
+        "cost unit",
+        "per tonne"
+      ],
+      "references": [],
+      "basis": "Cost concepts: definition of cost unit"
+    },
+    {
+      "id": "p3",
+      "label": "Personal and impersonal cost centres",
+      "marks": 1,
+      "description": "A personal cost centre is a person or group of persons; an impersonal cost centre is a location or item of equipment.",
+      "keywords": [
+        "personal",
+        "impersonal"
+      ],
+      "references": [],
+      "basis": "Cost concepts: classification of cost centres"
+    },
+    {
+      "id": "p4",
+      "label": "Production and service cost centres",
+      "marks": 1,
+      "description": "Production cost centres convert raw material into products; service cost centres help production centres, such as stores, maintenance and power house.",
+      "keywords": [
+        "production",
+        "service"
+      ],
+      "references": [],
+      "basis": "Cost concepts: classification of cost centres"
+    },
+    {
+      "id": "p5",
+      "label": "Operation and process cost centres",
+      "marks": 1,
+      "description": "An operation cost centre groups machines or people doing the same operation; a process cost centre covers a continuous sequence of operations.",
+      "keywords": [
+        "operation",
+        "process"
+      ],
+      "references": [],
+      "basis": "Cost concepts: classification of cost centres"
+    }
+  ]
+}

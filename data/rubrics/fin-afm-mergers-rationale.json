@@ -1,0 +1,84 @@
+{
+  "id": "fin-afm-mergers-rationale",
+  "version": "1",
+  "sa": "AFM",
+  "topic": "Reasons for mergers and acquisitions",
+  "question": "Explain the main reasons why companies undertake mergers and acquisitions.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "synergy",
+    "economies of scale",
+    "diversification",
+    "tax benefits",
+    "market share"
+  ],
+  "references": [],
+  "sources": [
+    "Generally accepted corporate finance principles on mergers and acquisitions",
+    "Companies Act, 2013, Sections 230 to 232 (compromises, arrangements and amalgamations)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Operating synergy",
+      "marks": 1,
+      "description": "The combined firm is worth more than the two separately through economies of scale and scope, shared facilities and lower costs, or higher combined revenue.",
+      "keywords": [
+        "synergy",
+        "economies of scale"
+      ],
+      "references": [],
+      "basis": "M&A principle: operating synergy"
+    },
+    {
+      "id": "p2",
+      "label": "Financial synergy",
+      "marks": 1,
+      "description": "Better use of surplus cash, greater debt capacity and possibly a lower cost of capital for the combined business.",
+      "keywords": [
+        "financial synergy",
+        "surplus cash",
+        "debt capacity"
+      ],
+      "references": [],
+      "basis": "M&A principle: financial synergy"
+    },
+    {
+      "id": "p3",
+      "label": "Growth and market position",
+      "marks": 1,
+      "description": "Faster growth than building internally, entry into new markets or regions, larger market share and reduced competition (subject to competition law).",
+      "keywords": [
+        "growth",
+        "market share"
+      ],
+      "references": [],
+      "basis": "M&A principle: external growth and market power"
+    },
+    {
+      "id": "p4",
+      "label": "Diversification and resources",
+      "marks": 1,
+      "description": "Spreading business risk across products or markets, and gaining technology, brands, licences, talent or raw material sources.",
+      "keywords": [
+        "diversification",
+        "technology"
+      ],
+      "references": [],
+      "basis": "M&A principle: diversification and access to resources"
+    },
+    {
+      "id": "p5",
+      "label": "Tax and other benefits",
+      "marks": 1,
+      "description": "Tax law allows a successor, in specified amalgamations and subject to conditions, to use accumulated losses and unabsorbed depreciation of the merging company; revival of sick units is another motive.",
+      "keywords": [
+        "tax benefits",
+        "accumulated losses"
+      ],
+      "references": [],
+      "basis": "Income-tax law provisions on carry forward of losses in amalgamation (conditions apply)"
+    }
+  ]
+}

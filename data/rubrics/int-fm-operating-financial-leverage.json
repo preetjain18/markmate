@@ -1,0 +1,81 @@
+{
+  "id": "int-fm-operating-financial-leverage",
+  "version": "1",
+  "sa": "Financial management",
+  "topic": "Operating and financial leverage",
+  "question": "Explain operating leverage and financial leverage. How are they related to business risk and financial risk?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "operating leverage",
+    "financial leverage",
+    "combined leverage",
+    "business risk",
+    "financial risk"
+  ],
+  "references": [],
+  "sources": [
+    "Leverage analysis: operating, financial and combined leverage"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Operating leverage",
+      "marks": 1,
+      "description": "Operating leverage arises from fixed operating costs; because of them a change in sales causes a larger percentage change in EBIT.",
+      "keywords": [
+        "fixed operating costs",
+        "EBIT"
+      ],
+      "references": [],
+      "basis": "Leverage: meaning of operating leverage"
+    },
+    {
+      "id": "p2",
+      "label": "Measure of operating leverage",
+      "marks": 1,
+      "description": "Degree of operating leverage = percentage change in EBIT / percentage change in sales, or contribution / EBIT. Higher operating leverage means higher business risk.",
+      "keywords": [
+        "degree of operating leverage",
+        "business risk"
+      ],
+      "references": [],
+      "basis": "Leverage: degree of operating leverage"
+    },
+    {
+      "id": "p3",
+      "label": "Financial leverage",
+      "marks": 1,
+      "description": "Financial leverage arises from fixed financial charges such as interest on debt (and preference dividend); a change in EBIT causes a larger percentage change in EPS.",
+      "keywords": [
+        "fixed financial charges",
+        "EPS"
+      ],
+      "references": [],
+      "basis": "Leverage: meaning of financial leverage"
+    },
+    {
+      "id": "p4",
+      "label": "Measure of financial leverage",
+      "marks": 1,
+      "description": "Degree of financial leverage = percentage change in EPS / percentage change in EBIT, or EBIT / EBT. Higher financial leverage means higher financial risk.",
+      "keywords": [
+        "degree of financial leverage",
+        "financial risk"
+      ],
+      "references": [],
+      "basis": "Leverage: degree of financial leverage"
+    },
+    {
+      "id": "p5",
+      "label": "Combined leverage",
+      "marks": 1,
+      "description": "Combined leverage = operating leverage x financial leverage; it shows the total risk and the effect of a change in sales on EPS.",
+      "keywords": [
+        "combined leverage"
+      ],
+      "references": [],
+      "basis": "Leverage: combined leverage"
+    }
+  ]
+}

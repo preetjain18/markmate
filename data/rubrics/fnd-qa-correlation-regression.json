@@ -12,6 +12,9 @@
     "coefficient"
   ],
   "references": [],
+  "sources": [
+    "Correlation and regression analysis (standard statistical principles)"
+  ],
   "points": [
     {
       "id": "p1",
@@ -21,7 +24,8 @@
       "keywords": [
         "correlation"
       ],
-      "references": []
+      "references": [],
+      "basis": "Statistics: meaning of correlation and range of the correlation coefficient"
     },
     {
       "id": "p2",
@@ -32,7 +36,8 @@
         "regression",
         "dependent"
       ],
-      "references": []
+      "references": [],
+      "basis": "Statistics: meaning and purpose of regression"
     },
     {
       "id": "p3",
@@ -40,7 +45,8 @@
       "marks": 1,
       "description": "The correlation coefficient is symmetric (rxy = ryx) with no dependent/independent distinction; regression coefficients are not symmetric (byx and bxy differ).",
       "keywords": [],
-      "references": []
+      "references": [],
+      "basis": "Statistics: properties of correlation and regression coefficients"
     },
     {
       "id": "p4",
@@ -51,7 +57,8 @@
         "origin",
         "scale"
       ],
-      "references": []
+      "references": [],
+      "basis": "Statistics: effect of change of origin and scale on correlation and regression coefficients"
     }
   ]
 }

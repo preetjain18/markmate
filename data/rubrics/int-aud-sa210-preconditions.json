@@ -1,0 +1,78 @@
+{
+  "id": "int-aud-sa210-preconditions",
+  "version": "1",
+  "sa": "SA 210",
+  "topic": "Preconditions for an audit",
+  "question": "Explain the preconditions for an audit that the auditor must establish before accepting an engagement under SA 210.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "preconditions",
+    "acceptable financial reporting framework",
+    "management responsibilities"
+  ],
+  "references": [
+    "SA 210"
+  ],
+  "sources": [
+    "SA 210 Agreeing the Terms of Audit Engagements"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of preconditions",
+      "marks": 1,
+      "description": "Preconditions are the use by management of an acceptable financial reporting framework and management's agreement to the premise on which the audit is conducted.",
+      "keywords": [
+        "preconditions"
+      ],
+      "references": [],
+      "basis": "SA 210, definition of preconditions for an audit"
+    },
+    {
+      "id": "p2",
+      "label": "Acceptable framework",
+      "marks": 1,
+      "description": "The auditor checks whether the financial reporting framework to be used in preparing the financial statements is acceptable.",
+      "keywords": [
+        "acceptable framework"
+      ],
+      "references": [],
+      "basis": "SA 210, determining acceptability of the financial reporting framework"
+    },
+    {
+      "id": "p3",
+      "label": "Responsibility for financial statements",
+      "marks": 1,
+      "description": "Management acknowledges its responsibility for preparing the financial statements as per the framework, including fair presentation where relevant.",
+      "keywords": [
+        "preparation"
+      ],
+      "references": [],
+      "basis": "SA 210, agreement of management responsibilities"
+    },
+    {
+      "id": "p4",
+      "label": "Responsibility for internal control",
+      "marks": 1,
+      "description": "Management acknowledges its responsibility for the internal control needed to prepare financial statements free from material misstatement, whether due to fraud or error.",
+      "keywords": [
+        "internal control"
+      ],
+      "references": [],
+      "basis": "SA 210, agreement of management responsibilities"
+    },
+    {
+      "id": "p5",
+      "label": "Access to information and persons",
+      "marks": 1,
+      "description": "Management agrees to give the auditor access to all relevant information, any additional information requested, and unrestricted access to people in the entity; if the preconditions are not present the auditor should not accept the engagement unless required by law.",
+      "keywords": [
+        "access",
+        "unrestricted"
+      ],
+      "references": [],
+      "basis": "SA 210, agreement of management responsibilities; limitation on acceptance"
+    }
+  ]
+}

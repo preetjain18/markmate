@@ -1,0 +1,87 @@
+{
+  "id": "fin-dt-penalty-270a",
+  "version": "1",
+  "sa": "Section 270A",
+  "topic": "Penalty for under-reporting and misreporting of income",
+  "question": "Explain the difference between under-reporting and misreporting of income under section 270A of the Income-tax Act, 1961, and the penalty and immunity provisions that apply.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "under-reported income",
+    "misreporting",
+    "50%",
+    "200%",
+    "immunity"
+  ],
+  "references": [
+    "Section 270A",
+    "Section 270AA"
+  ],
+  "sources": [
+    "Income-tax Act, 1961, sections 270A and 270AA"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Cases of under-reporting",
+      "marks": 1,
+      "description": "Income is under-reported where, for example, income assessed exceeds income determined on processing the return, income assessed exceeds the maximum amount not chargeable to tax where no return was filed, reassessed income exceeds income earlier assessed, or a loss is reduced or converted into income.",
+      "keywords": [
+        "income assessed exceeds",
+        "loss reduced"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 270A(2)"
+    },
+    {
+      "id": "p2",
+      "label": "Penalty for under-reporting",
+      "marks": 1,
+      "description": "The penalty is 50% of the tax payable on the under-reported income.",
+      "keywords": [
+        "50% of tax"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 270A(7)"
+    },
+    {
+      "id": "p3",
+      "label": "Cases of misreporting",
+      "marks": 1,
+      "description": "Misreporting covers misrepresentation or suppression of facts, failure to record investments in the books, claiming expenditure not supported by evidence, recording a false entry, failure to record a receipt that affects total income, and failure to report an international or specified domestic transaction covered by transfer pricing provisions.",
+      "keywords": [
+        "misrepresentation",
+        "false entry",
+        "international transaction"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 270A(9)"
+    },
+    {
+      "id": "p4",
+      "label": "Penalty for misreporting",
+      "marks": 1,
+      "description": "Where under-reported income arises from misreporting, the penalty is 200% of the tax payable on that income.",
+      "keywords": [
+        "200% of tax"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 270A(8)"
+    },
+    {
+      "id": "p5",
+      "label": "Exclusions and immunity",
+      "marks": 1,
+      "description": "Amounts are excluded where the assessee offers a bona fide explanation and discloses all material facts, among other cases. The assessee can seek immunity from penalty (and prosecution) by paying the tax and interest demanded within the time allowed and not filing an appeal, but immunity is not available in cases of misreporting.",
+      "keywords": [
+        "bona fide explanation",
+        "immunity",
+        "no appeal"
+      ],
+      "references": [
+        "Section 270AA"
+      ],
+      "basis": "Income-tax Act, 1961, section 270A(6) and section 270AA"
+    }
+  ]
+}

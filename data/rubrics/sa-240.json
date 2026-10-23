@@ -6,13 +6,78 @@
   "question": "Describe the auditor's responsibilities relating to fraud in an audit of financial statements under SA 240, including the presumed risks and the required team discussion.",
   "maxMarks": 5,
   "verified": false,
-  "keywords": ["fraud", "professional skepticism", "management override"],
-  "references": ["SA 240"],
+  "keywords": [
+    "fraud",
+    "professional skepticism",
+    "management override"
+  ],
+  "references": [
+    "SA 240"
+  ],
+  "sources": [
+    "SA 240 The Auditor's Responsibilities Relating to Fraud in an Audit of Financial Statements"
+  ],
   "points": [
-    { "id": "p1", "label": "Responsibility for prevention and detection", "marks": 1, "description": "Primary responsibility for preventing and detecting fraud lies with those charged with governance and management; the auditor obtains reasonable assurance that financial statements are free from material misstatement due to fraud or error.", "keywords": ["reasonable assurance", "those charged with governance"], "references": ["SA 240"] },
-    { "id": "p2", "label": "Professional skepticism", "marks": 1, "description": "Maintain professional skepticism throughout the audit, recognising that fraud could exist despite past experience of the honesty and integrity of management.", "keywords": ["professional skepticism"], "references": [] },
-    { "id": "p3", "label": "Engagement team discussion", "marks": 1, "description": "Members of the engagement team discuss the susceptibility of the entity's financial statements to material misstatement due to fraud, including the engagement partner.", "keywords": ["discussion", "engagement team"], "references": [] },
-    { "id": "p4", "label": "Presumed risks and management override", "marks": 1, "description": "Presume a risk of fraud in revenue recognition, and treat management override of controls as a risk; test journal entries, review estimates for bias and evaluate significant unusual transactions.", "keywords": ["revenue recognition", "journal entries"], "references": [] },
-    { "id": "p5", "label": "Communication and documentation", "marks": 1, "description": "Communicate identified or suspected fraud to management and those charged with governance on a timely basis, consider reporting responsibilities, and document the risk assessment and responses.", "keywords": ["communicate", "document"], "references": [] }
+    {
+      "id": "p1",
+      "label": "Responsibility for prevention and detection",
+      "marks": 1,
+      "description": "Primary responsibility for preventing and detecting fraud lies with those charged with governance and management; the auditor obtains reasonable assurance that financial statements are free from material misstatement due to fraud or error.",
+      "keywords": [
+        "reasonable assurance",
+        "those charged with governance"
+      ],
+      "references": [
+        "SA 240"
+      ],
+      "basis": "SA 240, responsibility for the prevention and detection of fraud"
+    },
+    {
+      "id": "p2",
+      "label": "Professional skepticism",
+      "marks": 1,
+      "description": "Maintain professional skepticism throughout the audit, recognising that fraud could exist despite past experience of the honesty and integrity of management.",
+      "keywords": [
+        "professional skepticism"
+      ],
+      "references": [],
+      "basis": "SA 240, professional skepticism"
+    },
+    {
+      "id": "p3",
+      "label": "Engagement team discussion",
+      "marks": 1,
+      "description": "Members of the engagement team discuss the susceptibility of the entity's financial statements to material misstatement due to fraud, including the engagement partner.",
+      "keywords": [
+        "discussion",
+        "engagement team"
+      ],
+      "references": [],
+      "basis": "SA 240, discussion among the engagement team"
+    },
+    {
+      "id": "p4",
+      "label": "Presumed risks and management override",
+      "marks": 1,
+      "description": "Presume a risk of fraud in revenue recognition, and treat management override of controls as a risk; test journal entries, review estimates for bias and evaluate significant unusual transactions.",
+      "keywords": [
+        "revenue recognition",
+        "journal entries"
+      ],
+      "references": [],
+      "basis": "SA 240, presumed risk of fraud in revenue recognition and responses to the risk of management override of controls"
+    },
+    {
+      "id": "p5",
+      "label": "Communication and documentation",
+      "marks": 1,
+      "description": "Communicate identified or suspected fraud to management and those charged with governance on a timely basis, consider reporting responsibilities, and document the risk assessment and responses.",
+      "keywords": [
+        "communicate",
+        "document"
+      ],
+      "references": [],
+      "basis": "SA 240, communications to management and those charged with governance, reporting to authorities, and documentation"
+    }
   ]
 }

@@ -1,0 +1,87 @@
+{
+  "id": "fin-ibs-related-party-governance",
+  "version": "1",
+  "sa": "Case study: governance",
+  "topic": "Related party transaction approval",
+  "question": "Pranav Cements Ltd, a fictional listed company, plans to buy coal for five years from a trading firm owned by its promoter's son, at prices slightly above the market. The promoter says the firm is reliable and the deal should be approved quickly at the next board meeting. As an independent director, discuss the governance and compliance issues you would raise.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "related party transaction",
+    "audit committee",
+    "arm's length",
+    "shareholder approval",
+    "independent director"
+  ],
+  "references": [],
+  "sources": [
+    "Companies Act, 2013 - Section 177 (audit committee) and Section 188 (related party transactions)",
+    "SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 - Regulation 23",
+    "Ind AS 24 Related Party Disclosures"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "It is a related party transaction",
+      "marks": 1,
+      "description": "A close family member of a person who controls the company, and an entity he controls, are related parties under Ind AS 24; the son's firm is also likely to be a related party under the Companies Act and SEBI definitions, so the coal contract is a related party transaction.",
+      "keywords": [
+        "related party",
+        "relative"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, Section 2(76) definition of related party; Ind AS 24 definition of related party"
+    },
+    {
+      "id": "p2",
+      "label": "Audit committee and board approval",
+      "marks": 1.5,
+      "description": "The transaction needs prior approval of the audit committee, where only independent directors vote on related party transactions, and board approval with the interested directors not taking part.",
+      "keywords": [
+        "audit committee",
+        "prior approval",
+        "interested director"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, Sections 177 and 188; SEBI LODR Regulation 23"
+    },
+    {
+      "id": "p3",
+      "label": "Arm's length and ordinary course",
+      "marks": 1.5,
+      "description": "Prices above market suggest the deal is not at arm's length; the committee should ask for independent price quotes, the business reason and alternatives before deciding.",
+      "keywords": [
+        "arm's length",
+        "market price",
+        "ordinary course of business"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, Section 188 (exemption only for ordinary-course arm's length transactions)"
+    },
+    {
+      "id": "p4",
+      "label": "Shareholder approval if material",
+      "marks": 1,
+      "description": "If the contract crosses the materiality threshold for listed companies, shareholders' approval is needed and related parties cannot vote in favour.",
+      "keywords": [
+        "material",
+        "shareholder approval"
+      ],
+      "references": [],
+      "basis": "SEBI LODR Regulation 23, material related party transactions"
+    },
+    {
+      "id": "p5",
+      "label": "Disclosure and director duty",
+      "marks": 1,
+      "description": "The transaction must be disclosed (to stock exchanges and in the financial statements under Ind AS 24); an independent director should record dissent if concerns are not resolved.",
+      "keywords": [
+        "disclosure",
+        "Ind AS 24",
+        "dissent"
+      ],
+      "references": [],
+      "basis": "Ind AS 24 disclosures; Companies Act, 2013, Section 149 and Schedule IV (duties of independent directors)"
+    }
+  ]
+}

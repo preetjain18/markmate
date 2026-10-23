@@ -1,0 +1,95 @@
+{
+  "id": "fin-idt-place-of-supply-goods",
+  "version": "1",
+  "sa": "IGST Act, 2017 – section 10",
+  "topic": "Place of supply of goods",
+  "question": "Explain how the place of supply of goods, other than goods imported into or exported from India, is determined under section 10 of the IGST Act, 2017.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "place of supply",
+    "movement terminates",
+    "bill to ship to",
+    "installation",
+    "on board a conveyance"
+  ],
+  "references": [
+    "Section 10"
+  ],
+  "sources": [
+    "IGST Act, 2017, sections 7, 8 and 10"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Supply involving movement of goods",
+      "marks": 1,
+      "description": "Where the supply involves movement of goods, whether by the supplier, the recipient or anyone else, the place of supply is where the movement ends for delivery to the recipient.",
+      "keywords": [
+        "movement terminates",
+        "delivery to the recipient"
+      ],
+      "references": [
+        "Section 10(1)(a)"
+      ],
+      "basis": "IGST Act, 2017, section 10(1)(a)"
+    },
+    {
+      "id": "p2",
+      "label": "Delivery on the direction of a third person",
+      "marks": 1,
+      "description": "Where goods are delivered to the recipient or another person on the direction of a third person (bill-to-ship-to), the third person is treated as having received the goods and the place of supply is the principal place of business of that third person.",
+      "keywords": [
+        "bill to ship to",
+        "principal place of business"
+      ],
+      "references": [
+        "Section 10(1)(b)"
+      ],
+      "basis": "IGST Act, 2017, section 10(1)(b)"
+    },
+    {
+      "id": "p3",
+      "label": "No movement of goods",
+      "marks": 1,
+      "description": "Where the supply does not involve movement of goods, the place of supply is the location of the goods at the time of delivery to the recipient.",
+      "keywords": [
+        "no movement",
+        "location of goods"
+      ],
+      "references": [
+        "Section 10(1)(c)"
+      ],
+      "basis": "IGST Act, 2017, section 10(1)(c)"
+    },
+    {
+      "id": "p4",
+      "label": "Goods assembled or installed at site",
+      "marks": 1,
+      "description": "Where goods are assembled or installed at site, the place of supply is the place of assembly or installation.",
+      "keywords": [
+        "assembly",
+        "installation"
+      ],
+      "references": [
+        "Section 10(1)(d)"
+      ],
+      "basis": "IGST Act, 2017, section 10(1)(d)"
+    },
+    {
+      "id": "p5",
+      "label": "Goods supplied on board a conveyance and significance",
+      "marks": 1,
+      "description": "Where goods are supplied on board a vessel, aircraft, train or motor vehicle, the place of supply is where the goods are taken on board. The place of supply, compared with the supplier's location, decides whether the supply is inter-State (IGST) or intra-State (CGST and SGST).",
+      "keywords": [
+        "taken on board",
+        "inter-State",
+        "intra-State"
+      ],
+      "references": [
+        "Section 10(1)(e)"
+      ],
+      "basis": "IGST Act, 2017, section 10(1)(e), read with sections 7 and 8"
+    }
+  ]
+}

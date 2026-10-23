@@ -1,0 +1,90 @@
+{
+  "id": "fin-ibs-going-concern-reporting",
+  "version": "1",
+  "sa": "Case study: reporting",
+  "topic": "Reporting when going concern is in doubt",
+  "question": "Mehar Auto Parts Ltd, a fictional listed component maker, lost its largest customer in February. At the year-end of 31 March it had breached a covenant on a long-term bank loan, and the bank agreed in May not to demand repayment. The board will approve the accounts in June. Discuss the financial reporting and compliance matters the company must consider.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "going concern",
+    "covenant breach",
+    "current liability",
+    "impairment",
+    "events after the reporting period",
+    "material event"
+  ],
+  "references": [],
+  "sources": [
+    "Ind AS 1 Presentation of Financial Statements - going concern and classification of liabilities",
+    "Ind AS 10 Events after the Reporting Period",
+    "Ind AS 36 Impairment of Assets",
+    "SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 - Regulation 30"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Going concern assessment",
+      "marks": 1.5,
+      "description": "Management must assess, using information for at least twelve months from the reporting date, whether the company can continue; material uncertainties must be disclosed, and if it cannot continue, the going concern basis must not be used.",
+      "keywords": [
+        "going concern",
+        "material uncertainty",
+        "twelve months"
+      ],
+      "references": [],
+      "basis": "Ind AS 1, going concern; Ind AS 10, deterioration in results after the reporting period"
+    },
+    {
+      "id": "p2",
+      "label": "Classification of the loan",
+      "marks": 1.5,
+      "description": "Ind AS 1 differs from IAS 1 here: because the bank agreed after the year-end but before the accounts are approved not to demand repayment, the loan is not classified as current solely due to the breach (under IAS 1 it would be current). The breach and the waiver should be disclosed.",
+      "keywords": [
+        "covenant breach",
+        "waiver",
+        "non-current",
+        "carve-out"
+      ],
+      "references": [],
+      "basis": "Ind AS 1, classification of a long-term loan on breach of a covenant where the lender agrees before approval not to demand payment (Indian carve-out from IAS 1)"
+    },
+    {
+      "id": "p3",
+      "label": "Impairment and other estimates",
+      "marks": 1,
+      "description": "Loss of the main customer is an impairment indicator, so plant and related assets must be tested; receivables, inventory values and onerous contracts should also be reviewed.",
+      "keywords": [
+        "impairment indicator",
+        "recoverable amount"
+      ],
+      "references": [],
+      "basis": "Ind AS 36, indications of impairment"
+    },
+    {
+      "id": "p4",
+      "label": "Disclosure to the market",
+      "marks": 1,
+      "description": "Loss of a major customer and the loan default are likely to be material events or information that must be promptly disclosed to the stock exchanges.",
+      "keywords": [
+        "material event",
+        "stock exchange"
+      ],
+      "references": [],
+      "basis": "SEBI LODR Regulation 30, disclosure of material events or information"
+    },
+    {
+      "id": "p5",
+      "label": "Audit and governance",
+      "marks": 1,
+      "description": "The auditor will evaluate going concern and may include a material uncertainty paragraph; the audit committee and board should review the cash-flow forecasts and recovery plan before approving the accounts.",
+      "keywords": [
+        "auditor",
+        "audit committee",
+        "cash-flow forecast"
+      ],
+      "references": [],
+      "basis": "SA 570 (Revised) Going Concern; Companies Act, 2013, Section 177"
+    }
+  ]
+}

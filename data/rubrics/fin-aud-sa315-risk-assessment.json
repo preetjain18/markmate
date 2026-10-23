@@ -1,0 +1,86 @@
+{
+  "id": "fin-aud-sa315-risk-assessment",
+  "version": "1",
+  "sa": "SA 315",
+  "topic": "Identifying and assessing risks of material misstatement",
+  "question": "Explain the risk assessment procedures an auditor performs under SA 315 to identify and assess the risks of material misstatement.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "risk assessment procedures",
+    "inquiries",
+    "analytical procedures",
+    "observation",
+    "inspection"
+  ],
+  "references": [
+    "SA 315"
+  ],
+  "sources": [
+    "SA 315 Identifying and Assessing the Risks of Material Misstatement"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Purpose of risk assessment procedures",
+      "marks": 1,
+      "description": "The auditor performs these procedures to understand the entity, its environment and its internal control, so as to identify and assess risks of material misstatement at the financial statement level and the assertion level. On their own they do not give sufficient appropriate evidence for the opinion.",
+      "keywords": [
+        "understanding the entity",
+        "assertion level"
+      ],
+      "references": [],
+      "basis": "SA 315, risk assessment procedures and related activities"
+    },
+    {
+      "id": "p2",
+      "label": "Inquiries of management and others",
+      "marks": 1,
+      "description": "Asks management, those charged with governance, internal audit and other staff (for example legal or sales staff) about the business and possible risks, since different people give different views.",
+      "keywords": [
+        "inquiries",
+        "management",
+        "internal audit"
+      ],
+      "references": [],
+      "basis": "SA 315, risk assessment procedures: inquiries of management and others within the entity"
+    },
+    {
+      "id": "p3",
+      "label": "Analytical procedures",
+      "marks": 1,
+      "description": "Compares financial and non-financial data, trends and ratios to spot unusual transactions, amounts or relationships that may point to risks of misstatement.",
+      "keywords": [
+        "analytical procedures",
+        "unusual",
+        "trends"
+      ],
+      "references": [],
+      "basis": "SA 315, risk assessment procedures: analytical procedures"
+    },
+    {
+      "id": "p4",
+      "label": "Observation and inspection",
+      "marks": 1,
+      "description": "Observes the entity's activities and premises and inspects documents such as business plans, internal control manuals and minutes; these support and test what was learnt from inquiries.",
+      "keywords": [
+        "observation",
+        "inspection"
+      ],
+      "references": [],
+      "basis": "SA 315, risk assessment procedures: observation and inspection"
+    },
+    {
+      "id": "p5",
+      "label": "Other information and engagement team discussion",
+      "marks": 1,
+      "description": "Uses relevant information from client acceptance or continuance, previous audits and other engagements for the entity; the engagement partner and key team members discuss how the financial statements could be materially misstated.",
+      "keywords": [
+        "previous audits",
+        "engagement team discussion"
+      ],
+      "references": [],
+      "basis": "SA 315, other sources of information and discussion among the engagement team"
+    }
+  ]
+}

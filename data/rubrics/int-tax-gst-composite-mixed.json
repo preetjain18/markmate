@@ -12,6 +12,12 @@
     "principal supply"
   ],
   "references": [],
+  "sources": [
+    "CGST Act, 2017 - section 2(30) composite supply",
+    "CGST Act, 2017 - section 2(74) mixed supply",
+    "CGST Act, 2017 - section 2(90) principal supply",
+    "CGST Act, 2017 - section 8 tax liability on composite and mixed supplies"
+  ],
   "points": [
     {
       "id": "p1",
@@ -22,7 +28,8 @@
         "composite supply",
         "naturally bundled"
       ],
-      "references": []
+      "references": [],
+      "basis": "CGST Act, 2017, sections 2(30) and 2(90)"
     },
     {
       "id": "p2",
@@ -32,7 +39,8 @@
       "keywords": [
         "principal supply"
       ],
-      "references": []
+      "references": [],
+      "basis": "CGST Act, 2017, section 8(a)"
     },
     {
       "id": "p3",
@@ -42,7 +50,8 @@
       "keywords": [
         "mixed supply"
       ],
-      "references": []
+      "references": [],
+      "basis": "CGST Act, 2017, section 2(74)"
     },
     {
       "id": "p4",
@@ -52,7 +61,8 @@
       "keywords": [
         "highest rate"
       ],
-      "references": []
+      "references": [],
+      "basis": "CGST Act, 2017, section 8(b); illustrations to sections 2(30) and 2(74)"
     }
   ]
 }

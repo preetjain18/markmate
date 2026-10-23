@@ -14,6 +14,9 @@
   "references": [
     "Ind AS 37"
   ],
+  "sources": [
+    "Ind AS 37 Provisions, Contingent Liabilities and Contingent Assets - recognition criteria and definitions"
+  ],
   "points": [
     {
       "id": "p1",
@@ -23,7 +26,8 @@
       "keywords": [
         "present obligation"
       ],
-      "references": []
+      "references": [],
+      "basis": "Ind AS 37, recognition of a provision: present obligation (legal or constructive) from a past event"
     },
     {
       "id": "p2",
@@ -33,7 +37,8 @@
       "keywords": [
         "probable"
       ],
-      "references": []
+      "references": [],
+      "basis": "Ind AS 37, recognition of a provision: probable outflow of resources"
     },
     {
       "id": "p3",
@@ -43,7 +48,8 @@
       "keywords": [
         "reliable estimate"
       ],
-      "references": []
+      "references": [],
+      "basis": "Ind AS 37, recognition of a provision: reliable estimate of the obligation"
     },
     {
       "id": "p4",
@@ -53,7 +59,8 @@
       "keywords": [
         "contingent liability"
       ],
-      "references": []
+      "references": [],
+      "basis": "Ind AS 37, definition of a contingent liability"
     },
     {
       "id": "p5",
@@ -64,7 +71,8 @@
         "disclosed",
         "remote"
       ],
-      "references": []
+      "references": [],
+      "basis": "Ind AS 37, contingent liabilities are not recognised but disclosed unless the outflow is remote"
     }
   ]
 }

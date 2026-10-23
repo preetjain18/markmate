@@ -12,6 +12,9 @@
     "not ordinarily resident"
   ],
   "references": [],
+  "sources": [
+    "Income-tax Act, 1961 - section 6 residence in India"
+  ],
   "points": [
     {
       "id": "p1",
@@ -21,7 +24,8 @@
       "keywords": [
         "182 days"
       ],
-      "references": []
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 6(1)(a)"
     },
     {
       "id": "p2",
@@ -32,7 +36,8 @@
         "60 days",
         "365 days"
       ],
-      "references": []
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 6(1)(c)"
     },
     {
       "id": "p3",
@@ -42,7 +47,8 @@
       "keywords": [
         "citizen"
       ],
-      "references": []
+      "references": [],
+      "basis": "Income-tax Act, 1961, Explanation 1 to section 6(1)"
     },
     {
       "id": "p4",
@@ -52,7 +58,8 @@
       "keywords": [
         "non-resident"
       ],
-      "references": []
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 2(30) read with section 6"
     },
     {
       "id": "p5",
@@ -62,7 +69,8 @@
       "keywords": [
         "not ordinarily resident"
       ],
-      "references": []
+      "references": [],
+      "basis": "Income-tax Act, 1961, sections 6(6) and 6(1A)"
     }
   ]
 }

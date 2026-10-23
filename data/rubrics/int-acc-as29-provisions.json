@@ -1,0 +1,86 @@
+{
+  "id": "int-acc-as29-provisions",
+  "version": "1",
+  "sa": "AS 29",
+  "topic": "Provision and contingent liability",
+  "question": "Distinguish between a provision and a contingent liability under AS 29 'Provisions, Contingent Liabilities and Contingent Assets'.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "present obligation",
+    "possible obligation",
+    "probable outflow",
+    "reliable estimate",
+    "remote"
+  ],
+  "references": [
+    "AS 29"
+  ],
+  "sources": [
+    "AS 29 Provisions, Contingent Liabilities and Contingent Assets - definitions, recognition and disclosure"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of provision",
+      "marks": 1,
+      "description": "A provision is a liability that can be measured only by using a substantial degree of estimation.",
+      "keywords": [
+        "provision",
+        "estimation"
+      ],
+      "references": [],
+      "basis": "AS 29, definition of provision"
+    },
+    {
+      "id": "p2",
+      "label": "Recognition of a provision",
+      "marks": 1,
+      "description": "A provision is recognised when there is a present obligation from a past event, an outflow of resources to settle it is probable, and a reliable estimate can be made.",
+      "keywords": [
+        "present obligation",
+        "probable",
+        "reliable estimate"
+      ],
+      "references": [],
+      "basis": "AS 29, recognition of provisions"
+    },
+    {
+      "id": "p3",
+      "label": "Meaning of contingent liability",
+      "marks": 1,
+      "description": "A possible obligation whose existence will be confirmed only by uncertain future events not wholly within the enterprise's control, or a present obligation not recognised because an outflow is not probable or the amount cannot be estimated reliably.",
+      "keywords": [
+        "possible obligation",
+        "uncertain future events"
+      ],
+      "references": [],
+      "basis": "AS 29, definition of contingent liability"
+    },
+    {
+      "id": "p4",
+      "label": "Treatment of contingent liability",
+      "marks": 1,
+      "description": "A contingent liability is not recognised in the accounts; it is disclosed unless the possibility of an outflow is remote.",
+      "keywords": [
+        "not recognised",
+        "disclosed",
+        "remote"
+      ],
+      "references": [],
+      "basis": "AS 29, contingent liabilities: recognition and disclosure"
+    },
+    {
+      "id": "p5",
+      "label": "Review",
+      "marks": 1,
+      "description": "Provisions are reviewed at each balance sheet date and adjusted to the current best estimate; contingent liabilities are assessed continually, and if an outflow becomes probable a provision is recognised.",
+      "keywords": [
+        "review",
+        "best estimate"
+      ],
+      "references": [],
+      "basis": "AS 29, changes in provisions and assessment of contingent liabilities"
+    }
+  ]
+}

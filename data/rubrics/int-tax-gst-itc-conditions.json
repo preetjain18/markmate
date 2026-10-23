@@ -1,0 +1,98 @@
+{
+  "id": "int-tax-gst-itc-conditions",
+  "version": "1",
+  "sa": "GST",
+  "topic": "Conditions for input tax credit",
+  "question": "State the conditions that a registered person must satisfy to take input tax credit under section 16 of the CGST Act, 2017, and the time limit for taking it.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "input tax credit",
+    "tax invoice",
+    "received",
+    "tax actually paid",
+    "return",
+    "180 days"
+  ],
+  "references": [
+    "Section 16"
+  ],
+  "sources": [
+    "CGST Act, 2017 - section 16 eligibility and conditions for taking input tax credit"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Eligibility",
+      "marks": 1,
+      "description": "A registered person may take credit of tax charged on goods or services used or intended to be used in the course or furtherance of business.",
+      "keywords": [
+        "course or furtherance of business"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 16(1)"
+    },
+    {
+      "id": "p2",
+      "label": "Tax invoice and supplier's details",
+      "marks": 1,
+      "description": "He must hold a tax invoice or debit note, and the supplier must have reported the invoice in his outward supply statement so that it is communicated to the recipient.",
+      "keywords": [
+        "tax invoice",
+        "debit note",
+        "outward supplies"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 16(2)(a) and (aa)"
+    },
+    {
+      "id": "p3",
+      "label": "Receipt of goods or services",
+      "marks": 1,
+      "description": "He must have received the goods or services; goods delivered to another person on his direction count as received. Where goods come in lots, credit is taken on receipt of the last lot.",
+      "keywords": [
+        "received",
+        "last lot"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 16(2)(b) and first proviso"
+    },
+    {
+      "id": "p4",
+      "label": "Tax paid and return filed",
+      "marks": 1,
+      "description": "The tax charged must actually have been paid to the Government by the supplier, and the recipient must have filed his return under section 39.",
+      "keywords": [
+        "tax actually paid",
+        "return"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 16(2)(c) and (d)"
+    },
+    {
+      "id": "p5",
+      "label": "Payment to supplier within 180 days",
+      "marks": 1,
+      "description": "If the recipient does not pay the supplier the value and tax within 180 days of the invoice, the credit taken is added back to his output tax liability with interest; it can be taken again after payment.",
+      "keywords": [
+        "180 days",
+        "reversed"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, second and third provisos to section 16(2)"
+    },
+    {
+      "id": "p6",
+      "label": "Time limit and depreciation",
+      "marks": 1,
+      "description": "Credit cannot be taken after 30 November following the end of the financial year of the invoice, or the filing of the annual return, whichever is earlier; no credit is allowed on the tax component on which depreciation is claimed.",
+      "keywords": [
+        "30 November",
+        "annual return",
+        "depreciation"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 16(3) and (4)"
+    }
+  ]
+}

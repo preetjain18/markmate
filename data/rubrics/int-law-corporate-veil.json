@@ -1,0 +1,84 @@
+{
+  "id": "int-law-corporate-veil",
+  "version": "1",
+  "sa": "Companies Act, 2013",
+  "topic": "Lifting the corporate veil",
+  "question": "Explain the concept of 'lifting the corporate veil'. State the situations in which the courts or the law may disregard the separate legal entity of a company.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "separate legal entity",
+    "corporate veil",
+    "Salomon",
+    "fraud",
+    "enemy character"
+  ],
+  "references": [],
+  "sources": [
+    "Salomon v. Salomon & Co. Ltd. (separate legal entity)",
+    "Gilford Motor Co. v. Horne (sham company)",
+    "Daimler Co. Ltd. v. Continental Tyre and Rubber Co. (enemy character)",
+    "Companies Act, 2013 - provisions imposing personal liability (prospectus, fraudulent conduct of business)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Separate legal entity",
+      "marks": 1,
+      "description": "A company is a legal person distinct from its members, as held in Salomon v. Salomon & Co. Ltd.; this separation is called the corporate veil.",
+      "keywords": [
+        "separate legal entity",
+        "Salomon"
+      ],
+      "references": [],
+      "basis": "Salomon v. Salomon & Co. Ltd.; incorporation under the Companies Act, 2013"
+    },
+    {
+      "id": "p2",
+      "label": "Meaning of lifting the veil",
+      "marks": 1,
+      "description": "In some cases the courts or the statute ignore the separate entity and look at the persons behind the company, holding them personally responsible.",
+      "keywords": [
+        "lifting the corporate veil"
+      ],
+      "references": [],
+      "basis": "Judicial and statutory exceptions to the separate entity principle"
+    },
+    {
+      "id": "p3",
+      "label": "Fraud or sham company",
+      "marks": 1,
+      "description": "Where the company is used as a cloak for fraud or to evade a legal obligation, e.g. Gilford Motor Co. v. Horne, where a company was set up to avoid a restraint of trade.",
+      "keywords": [
+        "fraud",
+        "sham"
+      ],
+      "references": [],
+      "basis": "Gilford Motor Co. v. Horne"
+    },
+    {
+      "id": "p4",
+      "label": "Enemy character and tax evasion",
+      "marks": 1,
+      "description": "To decide whether a company is an enemy company by looking at who controls it (Daimler Co. Ltd. v. Continental Tyre and Rubber Co.), and where a company is formed only to evade tax.",
+      "keywords": [
+        "enemy character",
+        "tax evasion"
+      ],
+      "references": [],
+      "basis": "Daimler Co. Ltd. v. Continental Tyre and Rubber Co.; tax evasion cases"
+    },
+    {
+      "id": "p5",
+      "label": "Statutory cases",
+      "marks": 1,
+      "description": "The Act itself makes persons liable, e.g. for misstatements in a prospectus, for fraudulent conduct of business, and where business continues with fewer than the minimum members for more than six months.",
+      "keywords": [
+        "misstatement in prospectus",
+        "fraudulent conduct"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, provisions imposing personal liability on directors, officers and members"
+    }
+  ]
+}

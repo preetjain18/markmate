@@ -1,0 +1,67 @@
+{
+  "id": "int-cost-activity-based-costing",
+  "version": "1",
+  "sa": "Activity based costing",
+  "topic": "Activity based costing",
+  "question": "What is Activity Based Costing (ABC)? Explain the stages in its use and the benefits it offers.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "activity based costing",
+    "cost driver",
+    "cost pool",
+    "activity"
+  ],
+  "references": [],
+  "sources": [
+    "Activity based costing method: activities, cost pools and cost drivers"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "ABC first assigns overheads to activities and then charges them to products or services according to how much of each activity they use.",
+      "keywords": [
+        "activities"
+      ],
+      "references": [],
+      "basis": "ABC: meaning and concept"
+    },
+    {
+      "id": "p2",
+      "label": "Cost driver",
+      "marks": 1,
+      "description": "A cost driver is the factor that causes the cost of an activity, for example number of set-ups, purchase orders or inspections.",
+      "keywords": [
+        "cost driver"
+      ],
+      "references": [],
+      "basis": "ABC: cost drivers"
+    },
+    {
+      "id": "p3",
+      "label": "Stages",
+      "marks": 1.5,
+      "description": "Identify the main activities, collect their costs in cost pools, choose a cost driver for each pool, work out a rate per unit of driver, and charge products using their actual use of drivers.",
+      "keywords": [
+        "cost pool",
+        "rate"
+      ],
+      "references": [],
+      "basis": "ABC: stages in applying activity based costing"
+    },
+    {
+      "id": "p4",
+      "label": "Benefits",
+      "marks": 1.5,
+      "description": "Gives more accurate product costs where overheads are large and products differ, supports better pricing and product-mix decisions, and shows activities that add no value so they can be cut.",
+      "keywords": [
+        "accurate",
+        "non-value added"
+      ],
+      "references": [],
+      "basis": "ABC: benefits of activity based costing"
+    }
+  ]
+}

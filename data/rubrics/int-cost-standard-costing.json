@@ -1,0 +1,77 @@
+{
+  "id": "int-cost-standard-costing",
+  "version": "1",
+  "sa": "Standard costing",
+  "topic": "Standard costing: advantages and limitations",
+  "question": "Explain standard costing. State its advantages and limitations.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "standard cost",
+    "variance analysis",
+    "management by exception"
+  ],
+  "references": [],
+  "sources": [
+    "Standard costing: setting standards and variance analysis"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "Standard costing sets pre-determined costs for each element of cost and compares them with actual costs to find variances.",
+      "keywords": [
+        "standard cost",
+        "pre-determined"
+      ],
+      "references": [],
+      "basis": "Standard costing: meaning"
+    },
+    {
+      "id": "p2",
+      "label": "Variance analysis",
+      "marks": 1,
+      "description": "Variances are analysed into their causes and responsibility is fixed so that corrective action can be taken.",
+      "keywords": [
+        "variance"
+      ],
+      "references": [],
+      "basis": "Standard costing: variance analysis"
+    },
+    {
+      "id": "p3",
+      "label": "Advantages for control",
+      "marks": 1,
+      "description": "It allows management by exception, makes people cost conscious and helps measure efficiency.",
+      "keywords": [
+        "management by exception"
+      ],
+      "references": [],
+      "basis": "Standard costing: advantages"
+    },
+    {
+      "id": "p4",
+      "label": "Other advantages",
+      "marks": 1,
+      "description": "It helps in fixing prices, valuing inventory, preparing budgets and simplifies record-keeping.",
+      "keywords": [
+        "pricing",
+        "inventory valuation"
+      ],
+      "references": [],
+      "basis": "Standard costing: advantages"
+    },
+    {
+      "id": "p5",
+      "label": "Limitations",
+      "marks": 1,
+      "description": "Setting correct standards is hard and costly, standards become out of date when conditions change, and it may not suit firms making non-standard products.",
+      "keywords": [
+        "out of date"
+      ],
+      "references": [],
+      "basis": "Standard costing: limitations"
+    }
+  ]
+}

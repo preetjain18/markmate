@@ -1,0 +1,84 @@
+{
+  "id": "fin-afm-financial-policy-strategy",
+  "version": "1",
+  "sa": "AFM",
+  "topic": "Financial policy and corporate strategy",
+  "question": "Explain the link between financial policy and corporate strategy, and the main areas where financial decisions support strategic planning.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "financial policy",
+    "corporate strategy",
+    "investment decision",
+    "financing decision",
+    "dividend decision"
+  ],
+  "references": [],
+  "sources": [
+    "ICAI CA Final syllabus (2023 scheme), Paper 2 AFM: Financial Policy and Corporate Strategy",
+    "Generally accepted corporate finance principles on investment, financing and dividend decisions"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Why they are linked",
+      "marks": 1,
+      "description": "Strategy sets where the business wants to go; financial policy decides how resources are raised and used to get there, so a strategy is only workable if it can be financed at an acceptable risk and cost.",
+      "keywords": [
+        "interface",
+        "resources"
+      ],
+      "references": [],
+      "basis": "Corporate finance principle: strategy and finance must be planned together"
+    },
+    {
+      "id": "p2",
+      "label": "Investment decisions",
+      "marks": 1,
+      "description": "Capital is allocated to projects, products and markets that fit the chosen strategy and earn more than the cost of capital.",
+      "keywords": [
+        "investment decision",
+        "cost of capital"
+      ],
+      "references": [],
+      "basis": "Corporate finance principle: capital allocation to value-creating projects"
+    },
+    {
+      "id": "p3",
+      "label": "Financing decisions",
+      "marks": 1,
+      "description": "Choosing the mix of debt and equity and the sources of funds, balancing cost, control, flexibility and financial risk to suit the strategy.",
+      "keywords": [
+        "capital structure",
+        "financial risk"
+      ],
+      "references": [],
+      "basis": "Corporate finance principle: capital structure and sources of finance"
+    },
+    {
+      "id": "p4",
+      "label": "Dividend and retention decisions",
+      "marks": 1,
+      "description": "How much profit to pay out and how much to retain for growth, keeping shareholder expectations and future funding needs in balance.",
+      "keywords": [
+        "dividend policy",
+        "retention"
+      ],
+      "references": [],
+      "basis": "Corporate finance principle: dividend policy"
+    },
+    {
+      "id": "p5",
+      "label": "Balancing goals and risk",
+      "marks": 1,
+      "description": "Financial planning balances liquidity, profitability and risk, and the goals of different stakeholders, with value maximisation as the guiding objective; plans are reviewed as conditions change.",
+      "keywords": [
+        "liquidity",
+        "profitability",
+        "value maximisation"
+      ],
+      "references": [],
+      "basis": "Corporate finance principle: wealth maximisation and balancing financial goals"
+    }
+  ]
+}

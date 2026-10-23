@@ -30,13 +30,23 @@ const CATEGORY_ICON: Record<string, IconName> = {
 };
 
 const STATUS_TONE: Record<SubjectStatus, Tone> = { verified: "success", evaluation: "brand", practice: "neutral", "coming-soon": "neutral" };
-const SUPPORT_TONE: Record<EvalSupport, Tone> = { verified: "success", unverified: "neutral", none: "attention" };
+const SUPPORT_TONE: Record<EvalSupport, Tone> = { verified: "success", unverified: "brand", none: "attention" };
 
 export function SupportBadge({ support }: { support: EvalSupport }) {
   return (
     <Badge tone={SUPPORT_TONE[support]}>
-      <Icon name={support === "verified" ? "shield" : support === "none" ? "alert" : "info"} className="size-3.5" />
+      <Icon name={support === "verified" ? "shield" : support === "none" ? "alert" : "check"} className="size-3.5" />
       {SUPPORT_TEXT[support]}
+    </Badge>
+  );
+}
+
+/** The law or standard a question's marking scheme is based on. */
+function SourceBadge({ source }: { source: string }) {
+  return (
+    <Badge tone="neutral" wrap>
+      <Icon name="book" className="size-3.5" />
+      {source}
     </Badge>
   );
 }
@@ -89,14 +99,20 @@ export function SubjectGrid({ level, onSelect }: { level: LevelView; onSelect: (
                 <span className={cn("grid size-10 shrink-0 place-items-center rounded-control", ready ? "bg-mint text-brand" : "bg-subtle text-muted")}>
                   <Icon name={CATEGORY_ICON[s.category] ?? "book"} className="size-5" />
                 </span>
-                <Badge tone={STATUS_TONE[s.status]}>{STATUS_TEXT[s.status].label}</Badge>
+                {!ready && <Badge tone={STATUS_TONE[s.status]}>{STATUS_TEXT[s.status].label}</Badge>}
               </div>
               {s.paper && <p className="mt-4 text-[13px] text-muted">{s.paper}</p>}
               <h3 className="mt-0.5 text-[17px] font-semibold leading-snug">{s.name}</h3>
-              <p className="mt-auto pt-3 text-[13px] text-muted">
-                {s.stats.questions > 0
-                  ? `${s.stats.questions} question${s.stats.questions === 1 ? "" : "s"} · ${s.stats.evaluable} can be evaluated`
-                  : "No questions added yet"}
+              <p className="mt-auto flex items-center gap-1.5 pt-3 text-[13px] text-muted">
+                {s.stats.questions > 0 ? (
+                  <>
+                    <Icon name="folder" className="size-3.5" /> {s.chapters.length} chapter{s.chapters.length === 1 ? "" : "s"}
+                    <span aria-hidden>·</span>
+                    {s.stats.questions} question{s.stats.questions === 1 ? "" : "s"}
+                  </>
+                ) : (
+                  "No questions added yet"
+                )}
               </p>
               <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-brand opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">
                 Open subject <Icon name="arrow" className="size-3.5" />
@@ -374,6 +390,7 @@ function QuestionRow({ q, chapterName, onOpen }: { q: QuestionView; chapterName?
         <div className="mt-3 flex flex-wrap items-center gap-2">
           {q.maxMarks !== null && <Badge tone="neutral">{q.maxMarks} marks</Badge>}
           <SupportBadge support={q.support} />
+          {q.source && <SourceBadge source={q.source} />}
         </div>
       </div>
       <Icon name="chevron" className="mt-1 size-5 text-muted transition-colors group-hover:text-brand" />
@@ -423,6 +440,7 @@ export function QuestionCard({ q, subjectName }: { q: QuestionView; subjectName:
         <Badge tone="brand">{subjectName}</Badge>
         {q.maxMarks !== null && <Badge tone="neutral">{q.maxMarks} marks</Badge>}
         <SupportBadge support={q.support} />
+        {q.source && <SourceBadge source={q.source} />}
       </div>
       <p className="mt-4 text-[13px] font-medium text-muted">{q.title}</p>
       <h2 className="mt-1 font-sans text-[18px] font-medium leading-relaxed tracking-normal sm:text-[19px]">{q.text}</h2>

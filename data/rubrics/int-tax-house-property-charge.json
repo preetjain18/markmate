@@ -1,0 +1,83 @@
+{
+  "id": "int-tax-house-property-charge",
+  "version": "1",
+  "sa": "Income-tax",
+  "topic": "Charge of income from house property",
+  "question": "State the conditions that must be satisfied for income to be taxed under the head 'Income from house property' under the Income-tax Act, 1961.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "annual value",
+    "owner",
+    "deemed owner",
+    "buildings or lands appurtenant"
+  ],
+  "references": [
+    "Section 22"
+  ],
+  "sources": [
+    "Income-tax Act, 1961 - section 22 income from house property",
+    "Income-tax Act, 1961 - section 23 annual value",
+    "Income-tax Act, 1961 - section 27 deemed owner"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Buildings or lands appurtenant",
+      "marks": 1,
+      "description": "The property must be a building or land attached to a building (such as a compound, garage or courtyard); income from vacant land is not taxed under this head.",
+      "keywords": [
+        "building",
+        "land appurtenant"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 22"
+    },
+    {
+      "id": "p2",
+      "label": "Ownership",
+      "marks": 1,
+      "description": "The assessee must be the owner, including a deemed owner such as a person who transfers property to a spouse without adequate consideration (other than under an agreement to live apart) or to a minor child (other than a married daughter); the actual owner is taxed even if someone else collects the rent.",
+      "keywords": [
+        "owner",
+        "deemed owner"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, sections 22 and 27"
+    },
+    {
+      "id": "p3",
+      "label": "Not used for own business",
+      "marks": 1,
+      "description": "The part of the property used by the owner for his own business or profession, the profits of which are taxable, is not taxed under this head.",
+      "keywords": [
+        "own business"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 22"
+    },
+    {
+      "id": "p4",
+      "label": "Basis is annual value",
+      "marks": 1,
+      "description": "Tax is on the annual value of the property, which is a notional figure; it is taxed even if the property is not let out, subject to the rules for self-occupied and vacant property.",
+      "keywords": [
+        "annual value"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, sections 22 and 23"
+    },
+    {
+      "id": "p5",
+      "label": "Sub-letting",
+      "marks": 1,
+      "description": "Rent received by a tenant from sub-letting is not taxed under this head because the tenant is not the owner; it is taxed as income from other sources or as business income.",
+      "keywords": [
+        "sub-letting",
+        "other sources"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, sections 22 and 56"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "fin-aud-sa705-modified-opinion",
+  "version": "1",
+  "sa": "SA 705",
+  "topic": "Modifications to the opinion",
+  "question": "Explain when an auditor is required to modify the opinion under SA 705, and how the auditor decides between a qualified opinion, an adverse opinion and a disclaimer of opinion.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "modified opinion",
+    "qualified",
+    "adverse",
+    "disclaimer",
+    "pervasive"
+  ],
+  "references": [
+    "SA 705"
+  ],
+  "sources": [
+    "SA 705 Modifications to the Opinion in the Independent Auditor's Report"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "When the opinion is modified",
+      "marks": 1,
+      "description": "The opinion is modified when the auditor concludes, on the evidence obtained, that the financial statements as a whole are not free from material misstatement, or is unable to obtain sufficient appropriate evidence to conclude that they are.",
+      "keywords": [
+        "material misstatement",
+        "unable to obtain sufficient appropriate evidence"
+      ],
+      "references": [],
+      "basis": "SA 705, circumstances when a modification to the auditor's opinion is required"
+    },
+    {
+      "id": "p2",
+      "label": "Qualified opinion",
+      "marks": 1,
+      "description": "Given when misstatements are material but not pervasive, or when the auditor cannot obtain sufficient appropriate evidence and the possible effects of undetected misstatements could be material but not pervasive.",
+      "keywords": [
+        "qualified opinion",
+        "material but not pervasive"
+      ],
+      "references": [],
+      "basis": "SA 705, qualified opinion"
+    },
+    {
+      "id": "p3",
+      "label": "Adverse opinion",
+      "marks": 1,
+      "description": "Given when, having obtained sufficient appropriate evidence, the auditor concludes that misstatements are both material and pervasive.",
+      "keywords": [
+        "adverse opinion",
+        "material and pervasive"
+      ],
+      "references": [],
+      "basis": "SA 705, adverse opinion"
+    },
+    {
+      "id": "p4",
+      "label": "Disclaimer of opinion",
+      "marks": 1,
+      "description": "Given when the auditor cannot obtain sufficient appropriate evidence and the possible effects of undetected misstatements could be both material and pervasive; also in rare cases with multiple uncertainties whose combined effect makes forming an opinion impossible.",
+      "keywords": [
+        "disclaimer of opinion",
+        "multiple uncertainties"
+      ],
+      "references": [],
+      "basis": "SA 705, disclaimer of opinion"
+    },
+    {
+      "id": "p5",
+      "label": "Meaning of pervasive and the basis section",
+      "marks": 1,
+      "description": "Effects are pervasive if they are not confined to specific items, or if confined they form a substantial part of the financial statements, or relate to disclosures fundamental to users' understanding. The report includes a 'Basis for' section describing the matter and, where practicable, quantifying its financial effect.",
+      "keywords": [
+        "pervasive",
+        "basis for qualified opinion"
+      ],
+      "references": [],
+      "basis": "SA 705, definition of pervasive and form and content of the auditor's report when the opinion is modified"
+    }
+  ]
+}

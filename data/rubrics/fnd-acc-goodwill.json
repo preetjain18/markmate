@@ -1,0 +1,70 @@
+{
+  "id": "fnd-acc-goodwill",
+  "version": "1",
+  "sa": "Accounting",
+  "topic": "Goodwill in partnership",
+  "question": "What is goodwill? Explain the factors that affect the value of goodwill of a partnership firm and name the common methods of valuing it.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "goodwill",
+    "super profit",
+    "average profit",
+    "capitalisation"
+  ],
+  "references": [],
+  "sources": [
+    "Standard accounting principles for partnership accounts: nature and valuation of goodwill (ICAI Foundation syllabus)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of goodwill",
+      "marks": 1,
+      "description": "Goodwill is the value of a firm's reputation and connections that lets it earn more than a normal return on its capital; it is an intangible asset that is not fictitious.",
+      "keywords": [
+        "intangible asset",
+        "reputation"
+      ],
+      "references": [],
+      "basis": "Accounting principle: meaning of goodwill"
+    },
+    {
+      "id": "p2",
+      "label": "Business-related factors",
+      "marks": 1,
+      "description": "Nature of the business, favourable location, efficiency of management, and access to supplies or special advantages such as patents and licences.",
+      "keywords": [
+        "location",
+        "management"
+      ],
+      "references": [],
+      "basis": "Accounting principle: factors affecting the value of goodwill"
+    },
+    {
+      "id": "p3",
+      "label": "Market-related factors",
+      "marks": 1,
+      "description": "Market position and competition, steady customer base, and the trend and stability of past profits.",
+      "keywords": [
+        "competition",
+        "profits"
+      ],
+      "references": [],
+      "basis": "Accounting principle: factors affecting the value of goodwill"
+    },
+    {
+      "id": "p4",
+      "label": "Valuation methods",
+      "marks": 1,
+      "description": "Average profit method (simple or weighted), super profit method (super profit multiplied by a number of years), annuity method, and capitalisation method (of average profit or of super profit).",
+      "keywords": [
+        "average profit",
+        "super profit",
+        "capitalisation"
+      ],
+      "references": [],
+      "basis": "Accounting principle: methods of valuation of goodwill"
+    }
+  ]
+}

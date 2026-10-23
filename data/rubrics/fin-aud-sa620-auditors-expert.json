@@ -1,0 +1,96 @@
+{
+  "id": "fin-aud-sa620-auditors-expert",
+  "version": "1",
+  "sa": "SA 620",
+  "topic": "Using the work of an auditor's expert",
+  "question": "Explain the auditor's responsibilities under SA 620 when using the work of an auditor's expert.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "auditor's expert",
+    "competence",
+    "objectivity",
+    "agreement",
+    "adequacy of work"
+  ],
+  "references": [
+    "SA 620"
+  ],
+  "sources": [
+    "SA 620 Using the Work of an Auditor's Expert"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning and sole responsibility",
+      "marks": 1,
+      "description": "An auditor's expert is a person or firm with expertise in a field other than accounting or auditing (for example valuation, actuarial work or law) whose work the auditor uses to obtain evidence; the expert may be internal or external. Using an expert does not reduce the auditor's sole responsibility for the opinion.",
+      "keywords": [
+        "field other than accounting",
+        "sole responsibility"
+      ],
+      "references": [],
+      "basis": "SA 620, definition of auditor's expert and the auditor's responsibility for the audit opinion"
+    },
+    {
+      "id": "p2",
+      "label": "Competence, capabilities and objectivity",
+      "marks": 1,
+      "description": "Evaluates whether the expert has the competence, capabilities and objectivity needed; for an external expert, asks about interests and relationships that could threaten objectivity.",
+      "keywords": [
+        "competence",
+        "objectivity"
+      ],
+      "references": [],
+      "basis": "SA 620, competence, capabilities and objectivity of the auditor's expert"
+    },
+    {
+      "id": "p3",
+      "label": "Understanding the expert's field",
+      "marks": 1,
+      "description": "Obtains enough understanding of the expert's field to decide the nature, scope and objectives of the work and to evaluate whether it is adequate for audit purposes.",
+      "keywords": [
+        "understanding the field"
+      ],
+      "references": [],
+      "basis": "SA 620, obtaining an understanding of the field of expertise"
+    },
+    {
+      "id": "p4",
+      "label": "Agreement with the expert",
+      "marks": 1,
+      "description": "Agrees, in writing where appropriate, the nature, scope and objectives of the work, the roles of the auditor and the expert, how and when they will communicate (including the form of any report), and confidentiality.",
+      "keywords": [
+        "agreement",
+        "scope",
+        "confidentiality"
+      ],
+      "references": [],
+      "basis": "SA 620, agreement with the auditor's expert"
+    },
+    {
+      "id": "p5",
+      "label": "Evaluating the adequacy of the work",
+      "marks": 1,
+      "description": "Evaluates whether the findings are relevant, reasonable and consistent with other evidence, whether the significant assumptions and methods are reasonable, and whether source data used is relevant, complete and accurate; if the work is not adequate, agrees further work with the expert or performs extra procedures.",
+      "keywords": [
+        "assumptions and methods",
+        "source data"
+      ],
+      "references": [],
+      "basis": "SA 620, evaluating the adequacy of the auditor's expert's work"
+    },
+    {
+      "id": "p6",
+      "label": "Reference to the expert in the report",
+      "marks": 1,
+      "description": "The auditor does not refer to the expert in an unmodified report unless law or regulation requires it; if the expert is referred to (for example to explain a modified opinion), the report states that this does not reduce the auditor's responsibility.",
+      "keywords": [
+        "reference in auditor's report",
+        "unmodified"
+      ],
+      "references": [],
+      "basis": "SA 620, reference to the auditor's expert in the auditor's report"
+    }
+  ]
+}

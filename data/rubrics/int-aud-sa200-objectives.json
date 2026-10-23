@@ -14,6 +14,9 @@
   "references": [
     "SA 200"
   ],
+  "sources": [
+    "SA 200 Overall Objectives of the Independent Auditor and the Conduct of an Audit in Accordance with Standards on Auditing"
+  ],
   "points": [
     {
       "id": "p1",
@@ -24,7 +27,8 @@
         "reasonable assurance",
         "material misstatement"
       ],
-      "references": []
+      "references": [],
+      "basis": "SA 200, overall objectives of the auditor"
     },
     {
       "id": "p2",
@@ -34,7 +38,8 @@
       "keywords": [
         "opinion"
       ],
-      "references": []
+      "references": [],
+      "basis": "SA 200, overall objectives of the auditor (opinion and reporting)"
     },
     {
       "id": "p3",
@@ -44,7 +49,8 @@
       "keywords": [
         "absolute"
       ],
-      "references": []
+      "references": [],
+      "basis": "SA 200, meaning of reasonable assurance"
     },
     {
       "id": "p4",
@@ -54,7 +60,8 @@
       "keywords": [
         "inherent limitations"
       ],
-      "references": []
+      "references": [],
+      "basis": "SA 200, inherent limitations of an audit"
     },
     {
       "id": "p5",
@@ -64,7 +71,8 @@
       "keywords": [
         "professional skepticism"
       ],
-      "references": []
+      "references": [],
+      "basis": "SA 200, professional judgement, professional skepticism and where an objective cannot be achieved"
     }
   ]
 }

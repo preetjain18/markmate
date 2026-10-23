@@ -1,0 +1,116 @@
+{
+  "id": "fin-idt-types-of-assessment",
+  "version": "1",
+  "sa": "CGST Act, 2017 – sections 59 to 64",
+  "topic": "Types of assessment under GST",
+  "question": "Explain the different types of assessment provided under the CGST Act, 2017.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "self-assessment",
+    "provisional assessment",
+    "scrutiny",
+    "best judgment",
+    "summary assessment"
+  ],
+  "references": [
+    "Section 59",
+    "Section 60",
+    "Section 61",
+    "Section 62",
+    "Section 63",
+    "Section 64"
+  ],
+  "sources": [
+    "CGST Act, 2017, sections 59 to 64"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Self-assessment",
+      "marks": 1,
+      "description": "Every registered person assesses the tax payable by himself and furnishes a return for each tax period.",
+      "keywords": [
+        "self-assessment"
+      ],
+      "references": [
+        "Section 59"
+      ],
+      "basis": "CGST Act, 2017, section 59"
+    },
+    {
+      "id": "p2",
+      "label": "Provisional assessment",
+      "marks": 1,
+      "description": "Where a taxable person cannot determine the value of goods or services or the rate of tax, he may request the proper officer in writing to allow payment on a provisional basis; the officer passes an order allowing it, the person executes a bond with security, and a final assessment follows within the time allowed.",
+      "keywords": [
+        "unable to determine value or rate",
+        "bond with security",
+        "final assessment"
+      ],
+      "references": [
+        "Section 60"
+      ],
+      "basis": "CGST Act, 2017, section 60"
+    },
+    {
+      "id": "p3",
+      "label": "Scrutiny of returns",
+      "marks": 1,
+      "description": "The proper officer may scrutinise a return to verify its correctness and tell the registered person of any discrepancy, seeking an explanation; if the explanation is accepted, no further action is taken, otherwise the officer may start audit, inspection or demand proceedings.",
+      "keywords": [
+        "discrepancies",
+        "explanation"
+      ],
+      "references": [
+        "Section 61"
+      ],
+      "basis": "CGST Act, 2017, section 61"
+    },
+    {
+      "id": "p4",
+      "label": "Assessment of non-filers of returns",
+      "marks": 1,
+      "description": "If a registered person fails to file a return even after a notice, the officer may assess the tax to the best of his judgment using the available material; the order is deemed withdrawn if a valid return is filed within the time allowed after service of the order.",
+      "keywords": [
+        "non-filer",
+        "best judgment",
+        "deemed withdrawn"
+      ],
+      "references": [
+        "Section 62"
+      ],
+      "basis": "CGST Act, 2017, section 62"
+    },
+    {
+      "id": "p5",
+      "label": "Assessment of unregistered persons",
+      "marks": 1,
+      "description": "Where a taxable person liable to register fails to do so, or whose registration has been cancelled but who was liable to pay tax, the officer may assess the tax to the best of his judgment after issuing a show cause notice and giving an opportunity of being heard.",
+      "keywords": [
+        "unregistered person",
+        "registration cancelled",
+        "show cause notice"
+      ],
+      "references": [
+        "Section 63"
+      ],
+      "basis": "CGST Act, 2017, section 63"
+    },
+    {
+      "id": "p6",
+      "label": "Summary assessment",
+      "marks": 1,
+      "description": "Where the officer has evidence of a tax liability and delay would harm the revenue, he may, with the prior permission of the Additional or Joint Commissioner, assess the liability immediately; the order can be withdrawn on application by the person if found erroneous.",
+      "keywords": [
+        "summary assessment",
+        "interest of revenue",
+        "prior permission"
+      ],
+      "references": [
+        "Section 64"
+      ],
+      "basis": "CGST Act, 2017, section 64"
+    }
+  ]
+}

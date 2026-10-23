@@ -1,0 +1,82 @@
+{
+  "id": "fnd-qa-dispersion",
+  "version": "1",
+  "sa": "Statistics",
+  "topic": "Measures of dispersion",
+  "question": "What is dispersion? Distinguish between absolute and relative measures of dispersion, and explain why the standard deviation is considered the best measure.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "dispersion",
+    "standard deviation",
+    "coefficient of variation"
+  ],
+  "references": [],
+  "sources": [
+    "Measures of dispersion (standard statistical principles)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "Dispersion is the degree to which observations are scattered around a central value; an average alone does not show this spread.",
+      "keywords": [
+        "scatter",
+        "spread"
+      ],
+      "references": [],
+      "basis": "Statistics: meaning of dispersion"
+    },
+    {
+      "id": "p2",
+      "label": "Absolute measures",
+      "marks": 1,
+      "description": "Absolute measures are expressed in the same units as the data: range, quartile deviation, mean deviation and standard deviation.",
+      "keywords": [
+        "range",
+        "quartile deviation",
+        "mean deviation"
+      ],
+      "references": [],
+      "basis": "Statistics: absolute measures of dispersion"
+    },
+    {
+      "id": "p3",
+      "label": "Relative measures",
+      "marks": 1,
+      "description": "Relative measures are ratios free of units, such as coefficient of range, coefficient of quartile deviation, coefficient of mean deviation and coefficient of variation; they are used to compare series with different units or averages.",
+      "keywords": [
+        "coefficient of variation",
+        "unit-free"
+      ],
+      "references": [],
+      "basis": "Statistics: relative measures of dispersion"
+    },
+    {
+      "id": "p4",
+      "label": "Standard deviation",
+      "marks": 1,
+      "description": "Standard deviation is the positive square root of the mean of squared deviations from the arithmetic mean.",
+      "keywords": [
+        "square root",
+        "squared deviations"
+      ],
+      "references": [],
+      "basis": "Statistics: definition of standard deviation"
+    },
+    {
+      "id": "p5",
+      "label": "Why it is the best",
+      "marks": 1,
+      "description": "It is rigidly defined, based on all observations, suitable for further algebraic treatment and less affected by sampling fluctuations; it is independent of change of origin but not of scale. Its limitation is that it gives more weight to extreme values.",
+      "keywords": [
+        "algebraic treatment",
+        "origin",
+        "scale"
+      ],
+      "references": [],
+      "basis": "Statistics: properties, merits and limitations of standard deviation"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "fin-dt-advance-pricing-agreement",
+  "version": "1",
+  "sa": "Section 92CC",
+  "topic": "Advance pricing agreements",
+  "question": "Explain the scheme of Advance Pricing Agreements (APA) under the Income-tax Act, 1961.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "advance pricing agreement",
+    "arm's length price",
+    "rollback",
+    "binding",
+    "modified return"
+  ],
+  "references": [
+    "Section 92CC",
+    "Section 92CD"
+  ],
+  "sources": [
+    "Income-tax Act, 1961, sections 92CC and 92CD",
+    "Income-tax Rules, 1962, rules 10F to 10T (advance pricing agreement rules)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "The Board, with the approval of the Central Government, may enter into an agreement with any person determining the arm's length price, or the method of determining it, for an international transaction that person will enter into.",
+      "keywords": [
+        "Board",
+        "arm's length price",
+        "international transaction"
+      ],
+      "references": [
+        "Section 92CC"
+      ],
+      "basis": "Income-tax Act, 1961, section 92CC(1)"
+    },
+    {
+      "id": "p2",
+      "label": "Types of APA",
+      "marks": 1,
+      "description": "An APA may be unilateral (between the taxpayer and the Indian tax authority), or bilateral or multilateral (also involving the tax authorities of other countries through the mutual agreement procedure).",
+      "keywords": [
+        "unilateral",
+        "bilateral",
+        "multilateral"
+      ],
+      "references": [],
+      "basis": "Income-tax Rules, 1962, advance pricing agreement rules (definitions of unilateral, bilateral and multilateral agreements)"
+    },
+    {
+      "id": "p3",
+      "label": "Period and rollback",
+      "marks": 1,
+      "description": "An APA is valid for the period it specifies, not exceeding five consecutive previous years; it may also be rolled back to apply to international transactions of up to four earlier previous years.",
+      "keywords": [
+        "five consecutive years",
+        "rollback"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 92CC (validity period) and section 92CC(9A) (rollback)"
+    },
+    {
+      "id": "p4",
+      "label": "Binding effect",
+      "marks": 1,
+      "description": "The agreement binds the person and the income-tax authorities for the transactions it covers, but stops binding if the law or facts on which it was based change.",
+      "keywords": [
+        "binding",
+        "change in law or facts"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 92CC"
+    },
+    {
+      "id": "p5",
+      "label": "Void agreements and modified return",
+      "marks": 1,
+      "description": "An APA obtained by fraud or misrepresentation of facts is void from the start. Where returns for covered years were already filed, the person files a modified return in line with the APA within the prescribed time, and assessment is made on that basis.",
+      "keywords": [
+        "void ab initio",
+        "modified return"
+      ],
+      "references": [
+        "Section 92CD"
+      ],
+      "basis": "Income-tax Act, 1961, section 92CC and section 92CD"
+    }
+  ]
+}

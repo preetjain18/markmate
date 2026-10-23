@@ -1,0 +1,90 @@
+{
+  "id": "fin-aud-ethics-previous-auditor",
+  "version": "1",
+  "sa": "CA Act, 1949",
+  "topic": "Communication with the previous auditor",
+  "question": "Explain the requirement under the Chartered Accountants Act, 1949 for a chartered accountant in practice to communicate with the previous auditor before accepting an audit, and discuss when failure to do so amounts to professional misconduct.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "previous auditor",
+    "communication in writing",
+    "professional misconduct",
+    "proof of delivery"
+  ],
+  "references": [
+    "Clause (8) of Part I of the First Schedule"
+  ],
+  "sources": [
+    "The Chartered Accountants Act, 1949, section 22 and First Schedule, Part I",
+    "ICAI Code of Ethics"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "The provision",
+      "marks": 1,
+      "description": "A chartered accountant in practice is guilty of professional misconduct if he accepts a position as auditor previously held by another chartered accountant without first communicating with him in writing.",
+      "keywords": [
+        "professional misconduct",
+        "in writing"
+      ],
+      "references": [
+        "Clause (8)"
+      ],
+      "basis": "Chartered Accountants Act, 1949, First Schedule, Part I, Clause (8), read with section 22"
+    },
+    {
+      "id": "p2",
+      "label": "Purpose of the communication",
+      "marks": 1,
+      "description": "It lets the incoming auditor find out whether there are professional or other reasons not to accept the appointment, protects the outgoing auditor's interests, and guards against a client changing auditors to avoid an unfavourable report.",
+      "keywords": [
+        "professional reasons",
+        "professional courtesy"
+      ],
+      "references": [],
+      "basis": "ICAI Code of Ethics, guidance on Clause (8)"
+    },
+    {
+      "id": "p3",
+      "label": "Mode of communication",
+      "marks": 1,
+      "description": "The communication must be in writing and sent in a way that gives proof of delivery, such as registered post with acknowledgement or hand delivery against a signed receipt; merely posting a letter without proof of delivery is not enough.",
+      "keywords": [
+        "proof of delivery",
+        "registered post"
+      ],
+      "references": [],
+      "basis": "ICAI Code of Ethics, guidance on the mode of communication under Clause (8)"
+    },
+    {
+      "id": "p4",
+      "label": "Audits covered",
+      "marks": 1,
+      "description": "The requirement applies to all kinds of audit, such as statutory audit, tax audit, internal audit and concurrent audit, and not only to company audits.",
+      "keywords": [
+        "tax audit",
+        "internal audit",
+        "all audits"
+      ],
+      "references": [],
+      "basis": "ICAI Code of Ethics, guidance on the scope of Clause (8)"
+    },
+    {
+      "id": "p5",
+      "label": "Effect of the reply and related check",
+      "marks": 1,
+      "description": "The duty is to communicate, not to get the previous auditor's consent; if no reply comes within a reasonable time the incoming auditor may accept, but must consider any reply received. For a company audit the auditor must also check that the provisions of the Companies Act, 2013 on appointment and removal of auditors have been complied with.",
+      "keywords": [
+        "consent not required",
+        "reasonable time",
+        "Companies Act compliance"
+      ],
+      "references": [
+        "Clause (9)"
+      ],
+      "basis": "ICAI Code of Ethics on Clause (8); Chartered Accountants Act, 1949, First Schedule, Part I, Clause (9)"
+    }
+  ]
+}

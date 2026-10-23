@@ -1,0 +1,82 @@
+{
+  "id": "int-aud-ethics-principles",
+  "version": "1",
+  "sa": "Code of Ethics",
+  "topic": "Fundamental principles of ethics",
+  "question": "Explain the fundamental principles of professional ethics that a Chartered Accountant must follow under the ICAI Code of Ethics.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "integrity",
+    "objectivity",
+    "professional competence and due care",
+    "confidentiality",
+    "professional behaviour"
+  ],
+  "references": [
+    "Code of Ethics"
+  ],
+  "sources": [
+    "ICAI Code of Ethics (fundamental principles, based on the IESBA Code)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Integrity",
+      "marks": 1,
+      "description": "Being straightforward and honest in all professional and business relationships, and not being associated with false or misleading information.",
+      "keywords": [
+        "integrity"
+      ],
+      "references": [],
+      "basis": "ICAI Code of Ethics, fundamental principle of integrity"
+    },
+    {
+      "id": "p2",
+      "label": "Objectivity",
+      "marks": 1,
+      "description": "Not allowing bias, conflict of interest or undue influence of others to override professional judgement.",
+      "keywords": [
+        "objectivity",
+        "bias"
+      ],
+      "references": [],
+      "basis": "ICAI Code of Ethics, fundamental principle of objectivity"
+    },
+    {
+      "id": "p3",
+      "label": "Professional competence and due care",
+      "marks": 1,
+      "description": "Keeping professional knowledge and skill at the level needed to give competent service, and acting diligently under applicable standards.",
+      "keywords": [
+        "competence",
+        "due care"
+      ],
+      "references": [],
+      "basis": "ICAI Code of Ethics, fundamental principle of professional competence and due care"
+    },
+    {
+      "id": "p4",
+      "label": "Confidentiality",
+      "marks": 1,
+      "description": "Respecting the confidentiality of information obtained through work, and not disclosing or using it for personal gain without proper authority, unless there is a legal or professional duty to disclose.",
+      "keywords": [
+        "confidentiality"
+      ],
+      "references": [],
+      "basis": "ICAI Code of Ethics, fundamental principle of confidentiality"
+    },
+    {
+      "id": "p5",
+      "label": "Professional behaviour",
+      "marks": 1,
+      "description": "Complying with laws and regulations and avoiding any action that discredits the profession.",
+      "keywords": [
+        "professional behaviour",
+        "discredit"
+      ],
+      "references": [],
+      "basis": "ICAI Code of Ethics, fundamental principle of professional behaviour"
+    }
+  ]
+}

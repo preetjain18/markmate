@@ -1,0 +1,87 @@
+{
+  "id": "fin-afm-interest-rate-derivatives",
+  "version": "1",
+  "sa": "AFM",
+  "topic": "Hedging interest rate risk",
+  "question": "Explain the main derivative instruments a company can use to manage interest rate risk.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "forward rate agreement",
+    "interest rate futures",
+    "interest rate swap",
+    "cap",
+    "floor",
+    "collar",
+    "swaption"
+  ],
+  "references": [],
+  "sources": [
+    "Hull, J. C., Options, Futures, and Other Derivatives - interest rate forwards, futures, swaps and options",
+    "Reserve Bank of India directions on rupee interest rate derivatives"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Forward rate agreement",
+      "marks": 1,
+      "description": "An over-the-counter contract fixing the interest rate for a notional amount for a future period; only the difference between the agreed rate and the market rate is settled.",
+      "keywords": [
+        "forward rate agreement",
+        "notional"
+      ],
+      "references": [],
+      "basis": "Derivatives principle: forward rate agreements"
+    },
+    {
+      "id": "p2",
+      "label": "Interest rate futures",
+      "marks": 1,
+      "description": "Standardised exchange-traded contracts on a notional bond or interest rate, settled daily, used to lock in rates or protect bond values.",
+      "keywords": [
+        "interest rate futures",
+        "exchange-traded"
+      ],
+      "references": [],
+      "basis": "Derivatives principle: interest rate futures"
+    },
+    {
+      "id": "p3",
+      "label": "Interest rate swaps",
+      "marks": 1,
+      "description": "Two parties exchange interest payments on a notional principal, commonly fixed for floating, letting a borrower change the nature of its debt without refinancing.",
+      "keywords": [
+        "interest rate swap",
+        "fixed for floating"
+      ],
+      "references": [],
+      "basis": "Derivatives principle: interest rate swaps"
+    },
+    {
+      "id": "p4",
+      "label": "Caps, floors and collars",
+      "marks": 1,
+      "description": "A cap limits the maximum rate a borrower pays, a floor sets a minimum rate for a lender, and a collar combines a bought cap and sold floor to reduce the premium.",
+      "keywords": [
+        "cap",
+        "floor",
+        "collar",
+        "premium"
+      ],
+      "references": [],
+      "basis": "Derivatives principle: interest rate options"
+    },
+    {
+      "id": "p5",
+      "label": "Swaptions and choice of instrument",
+      "marks": 1,
+      "description": "A swaption gives the right to enter into a swap at a future date; the choice depends on cost, flexibility, counterparty risk and whether the firm wants to keep upside.",
+      "keywords": [
+        "swaption",
+        "counterparty risk"
+      ],
+      "references": [],
+      "basis": "Derivatives principle: options on swaps and instrument selection"
+    }
+  ]
+}

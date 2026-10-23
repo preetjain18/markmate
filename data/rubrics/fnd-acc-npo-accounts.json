@@ -1,0 +1,81 @@
+{
+  "id": "fnd-acc-npo-accounts",
+  "version": "1",
+  "sa": "Accounting",
+  "topic": "Receipts and payments vs income and expenditure account",
+  "question": "Distinguish between a Receipts and Payments Account and an Income and Expenditure Account prepared by a not-for-profit organisation.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "receipts and payments account",
+    "income and expenditure account",
+    "not-for-profit"
+  ],
+  "references": [],
+  "sources": [
+    "Standard accounting principles for financial statements of not-for-profit organisations (ICAI Foundation syllabus)",
+    "Accrual basis of accounting (AS 1 fundamental accounting assumption)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Nature of account",
+      "marks": 1,
+      "description": "A Receipts and Payments Account is a summary of the cash book (a real account); an Income and Expenditure Account is like a profit and loss account (a nominal account).",
+      "keywords": [
+        "real account",
+        "nominal account"
+      ],
+      "references": [],
+      "basis": "Accounting principle: nature of the two accounts of a not-for-profit organisation"
+    },
+    {
+      "id": "p2",
+      "label": "Basis of accounting",
+      "marks": 1,
+      "description": "Receipts and Payments records actual cash received and paid during the year (cash basis); Income and Expenditure records income and expenses of the year on accrual basis, including outstanding and prepaid items.",
+      "keywords": [
+        "cash basis",
+        "accrual basis"
+      ],
+      "references": [],
+      "basis": "Accrual assumption under AS 1 applied to the Income and Expenditure Account"
+    },
+    {
+      "id": "p3",
+      "label": "Capital and revenue items",
+      "marks": 1,
+      "description": "Receipts and Payments includes both capital and revenue items; Income and Expenditure includes only revenue items of the current period.",
+      "keywords": [
+        "capital items",
+        "revenue items"
+      ],
+      "references": [],
+      "basis": "Accounting principle: capital and revenue distinction"
+    },
+    {
+      "id": "p4",
+      "label": "Balances and result",
+      "marks": 1,
+      "description": "Receipts and Payments starts with the opening cash and bank balance and ends with the closing balance; Income and Expenditure has no opening balance and ends with a surplus (income over expenditure) or deficit.",
+      "keywords": [
+        "surplus",
+        "deficit",
+        "opening balance"
+      ],
+      "references": [],
+      "basis": "Accounting principle: preparation of the two accounts"
+    },
+    {
+      "id": "p5",
+      "label": "Non-cash items",
+      "marks": 1,
+      "description": "Non-cash items like depreciation do not appear in Receipts and Payments but are shown in Income and Expenditure.",
+      "keywords": [
+        "depreciation"
+      ],
+      "references": [],
+      "basis": "Accounting principle: treatment of non-cash expenses"
+    }
+  ]
+}

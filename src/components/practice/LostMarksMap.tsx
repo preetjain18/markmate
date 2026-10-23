@@ -80,7 +80,7 @@ export default function LostMarksMap({
                   <Icon name="info" className="size-3.5" />
                   {result.aiUsed ? "AI-generated practice estimate" : "Rule-based practice estimate"} · not an ICAI mark
                 </Badge>
-                <Badge tone={result.verified ? "success" : "neutral"}>{result.verified ? "Verified marking scheme" : "Unverified marking scheme"}</Badge>
+                <Badge tone={result.verified ? "success" : "neutral"}>{result.verified ? "Verified marking scheme" : "Practice marking scheme"}</Badge>
                 {fromScan && (
                   <Badge tone="brand">
                     <Icon name="camera" className="size-3.5" /> From your scanned answer
@@ -108,8 +108,8 @@ export default function LostMarksMap({
             </summary>
             <ul className="mt-2 space-y-1.5 pl-5 text-muted [list-style:disc]">
               <li>
-                The question&apos;s marking scheme has {result.points.length} marking points worth {result.maxMarks} marks in total. It is a draft scheme,
-                {result.verified ? " checked by a CA" : " not yet verified by a CA"}.
+                The question&apos;s marking scheme has {result.points.length} marking points worth {result.maxMarks} marks in total
+                {result.sources?.length ? <>, based on {result.sources.join("; ")}</> : null}. It is a practice scheme, not an official ICAI one.
               </li>
               <li>
                 {result.aiUsed ? "The AI" : "The rule-based marker"} judged each point. MarkMate&apos;s code then gave marks only where it could find supporting words
@@ -389,6 +389,14 @@ function PointItem({ p, index, open, onToggle }: { p: PointResult; index: number
           <div className="space-y-4">
           <Detail label="What this point needs">
             <p className="leading-relaxed text-ink">{p.requirement}</p>
+            {p.basis && (
+              <p className="mt-1.5 flex items-start gap-1.5 text-[12.5px] text-muted">
+                <Icon name="book" className="mt-0.5 size-3.5 shrink-0" />
+                <span>
+                  <span className="font-medium text-ink">Based on:</span> {p.basis}
+                </span>
+              </p>
+            )}
           </Detail>
 
           <Detail label="Evidence from your answer">

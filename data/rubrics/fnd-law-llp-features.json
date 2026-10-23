@@ -1,0 +1,81 @@
+{
+  "id": "fnd-law-llp-features",
+  "version": "1",
+  "sa": "Limited Liability Partnership Act, 2008",
+  "topic": "Features of an LLP",
+  "question": "Explain the main features of a Limited Liability Partnership under the Limited Liability Partnership Act, 2008.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "body corporate",
+    "limited liability",
+    "perpetual succession",
+    "designated partner"
+  ],
+  "references": [
+    "Section 3"
+  ],
+  "sources": [
+    "Limited Liability Partnership Act, 2008"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Body corporate and separate legal entity",
+      "marks": 1,
+      "description": "An LLP is a body corporate formed and incorporated under the Act, a legal entity separate from its partners; it can own property and sue and be sued in its own name.",
+      "keywords": [
+        "body corporate",
+        "separate legal entity"
+      ],
+      "references": [],
+      "basis": "Limited Liability Partnership Act, 2008, Section 3"
+    },
+    {
+      "id": "p2",
+      "label": "Perpetual succession",
+      "marks": 1,
+      "description": "An LLP has perpetual succession; a change in partners does not affect its existence, rights or liabilities.",
+      "keywords": [
+        "perpetual succession"
+      ],
+      "references": [],
+      "basis": "Limited Liability Partnership Act, 2008, Section 3"
+    },
+    {
+      "id": "p3",
+      "label": "Limited liability",
+      "marks": 1,
+      "description": "The LLP's obligations are met out of its own property; a partner is not personally liable for them merely by being a partner, so a partner's risk is generally limited to the agreed contribution, and a partner is not personally liable for another partner's wrongful act or omission.",
+      "keywords": [
+        "limited liability",
+        "contribution"
+      ],
+      "references": [],
+      "basis": "Limited Liability Partnership Act, 2008, liability of the LLP and of its partners"
+    },
+    {
+      "id": "p4",
+      "label": "Partners and designated partners",
+      "marks": 1,
+      "description": "An LLP must have at least two partners and at least two designated partners who are individuals, with at least one of them resident in India; designated partners are responsible for compliance under the Act.",
+      "keywords": [
+        "designated partner",
+        "minimum two"
+      ],
+      "references": [],
+      "basis": "Limited Liability Partnership Act, 2008, provisions on partners and designated partners"
+    },
+    {
+      "id": "p5",
+      "label": "LLP agreement and partnership law",
+      "marks": 1,
+      "description": "The mutual rights and duties of partners are governed by the LLP agreement (or, failing it, by the Act's default provisions); the Indian Partnership Act, 1932 does not apply to an LLP.",
+      "keywords": [
+        "LLP agreement"
+      ],
+      "references": [],
+      "basis": "Limited Liability Partnership Act, 2008, LLP agreement and non-application of the Indian Partnership Act, 1932"
+    }
+  ]
+}

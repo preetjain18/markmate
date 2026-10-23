@@ -1,0 +1,83 @@
+{
+  "id": "fnd-law-quasi-contracts",
+  "version": "1",
+  "sa": "Indian Contract Act, 1872",
+  "topic": "Quasi-contracts",
+  "question": "What are quasi-contracts? Explain the situations recognised as quasi-contracts under the Indian Contract Act, 1872.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "quasi-contract",
+    "necessaries",
+    "unjust enrichment",
+    "finder of goods"
+  ],
+  "references": [
+    "Section 68",
+    "Section 72"
+  ],
+  "sources": [
+    "Indian Contract Act, 1872, Sections 68 to 72 (certain relations resembling those created by contract)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "Quasi-contracts are relations resembling contracts that the law creates without any agreement between the parties, based on the principle that no one should be unjustly enriched at another's expense.",
+      "keywords": [
+        "unjust enrichment"
+      ],
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Chapter V (Sections 68 to 72), principle of unjust enrichment"
+    },
+    {
+      "id": "p2",
+      "label": "Necessaries to an incapable person",
+      "marks": 1,
+      "description": "A person who supplies necessaries suited to the condition in life of a person incapable of contracting (such as a minor or a person of unsound mind) can be reimbursed from that person's property; there is no personal liability.",
+      "keywords": [
+        "necessaries",
+        "incapable"
+      ],
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Section 68"
+    },
+    {
+      "id": "p3",
+      "label": "Payment by an interested person",
+      "marks": 1,
+      "description": "A person interested in the payment of money that another is bound by law to pay, and who pays it, is entitled to be reimbursed by the other.",
+      "keywords": [
+        "interested person",
+        "reimbursed"
+      ],
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Section 69"
+    },
+    {
+      "id": "p4",
+      "label": "Non-gratuitous act",
+      "marks": 1,
+      "description": "Where a person lawfully does something or delivers something for another, not intending to do so gratuitously, and the other enjoys the benefit, the other must pay compensation or return the thing.",
+      "keywords": [
+        "non-gratuitous"
+      ],
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Section 70"
+    },
+    {
+      "id": "p5",
+      "label": "Finder of goods and payment by mistake",
+      "marks": 1,
+      "description": "A finder of goods belonging to another who takes them into custody has the same responsibility as a bailee; and a person to whom money is paid or anything delivered by mistake or under coercion must repay or return it.",
+      "keywords": [
+        "finder of goods",
+        "mistake",
+        "coercion"
+      ],
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Sections 71 and 72"
+    }
+  ]
+}

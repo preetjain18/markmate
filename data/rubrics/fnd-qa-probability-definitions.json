@@ -1,0 +1,68 @@
+{
+  "id": "fnd-qa-probability-definitions",
+  "version": "1",
+  "sa": "Statistics",
+  "topic": "Definitions of probability",
+  "question": "Explain the classical, relative frequency and axiomatic definitions of probability, stating a limitation of the classical definition.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "classical probability",
+    "relative frequency",
+    "axiomatic",
+    "equally likely"
+  ],
+  "references": [],
+  "sources": [
+    "Theory of probability: classical, statistical (relative frequency) and axiomatic approaches (standard principles)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Classical definition",
+      "marks": 1,
+      "description": "If an experiment has n mutually exclusive, exhaustive and equally likely outcomes, of which m are favourable to an event A, then P(A) = m/n.",
+      "keywords": [
+        "equally likely",
+        "m/n"
+      ],
+      "references": [],
+      "basis": "Probability: classical (a priori) definition"
+    },
+    {
+      "id": "p2",
+      "label": "Limitation of classical definition",
+      "marks": 1,
+      "description": "It cannot be used when outcomes are not equally likely or when the number of outcomes is infinite or unknown.",
+      "keywords": [
+        "limitation"
+      ],
+      "references": [],
+      "basis": "Probability: limitations of the classical definition"
+    },
+    {
+      "id": "p3",
+      "label": "Relative frequency definition",
+      "marks": 1,
+      "description": "If an experiment is repeated n times under the same conditions and event A occurs m times, the probability of A is the limit of m/n as n becomes very large.",
+      "keywords": [
+        "relative frequency",
+        "limit"
+      ],
+      "references": [],
+      "basis": "Probability: statistical (empirical) definition"
+    },
+    {
+      "id": "p4",
+      "label": "Axiomatic definition",
+      "marks": 1,
+      "description": "Probability is a function on events of the sample space S such that P(A) ≥ 0 for every event, P(S) = 1, and for mutually exclusive events P(A ∪ B) = P(A) + P(B).",
+      "keywords": [
+        "axioms",
+        "sample space"
+      ],
+      "references": [],
+      "basis": "Probability: axiomatic definition (Kolmogorov)"
+    }
+  ]
+}

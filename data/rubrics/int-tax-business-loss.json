@@ -1,0 +1,84 @@
+{
+  "id": "int-tax-business-loss",
+  "version": "1",
+  "sa": "Income-tax",
+  "topic": "Set-off and carry forward of business losses",
+  "question": "Explain the provisions of the Income-tax Act, 1961 on set-off and carry forward of losses from business, including speculation business.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "set off",
+    "carry forward",
+    "speculation business",
+    "eight assessment years",
+    "unabsorbed depreciation"
+  ],
+  "references": [
+    "Section 72",
+    "Section 73"
+  ],
+  "sources": [
+    "Income-tax Act, 1961 - sections 70, 71, 72, 73 and 80",
+    "Income-tax Act, 1961 - section 32(2) unabsorbed depreciation"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Set-off in the same year",
+      "marks": 1,
+      "description": "A loss from a non-speculation business can be set off against income from another business in the same year and, if any remains, against income under other heads.",
+      "keywords": [
+        "set off",
+        "other heads"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, sections 70 and 71"
+    },
+    {
+      "id": "p2",
+      "label": "Not against salary",
+      "marks": 1,
+      "description": "Business loss cannot be set off against income under the head 'Salaries'.",
+      "keywords": [
+        "salaries"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 71(2A)"
+    },
+    {
+      "id": "p3",
+      "label": "Carry forward of non-speculation loss",
+      "marks": 1,
+      "description": "Loss not set off can be carried forward for eight assessment years and set off only against business or profession income; the business need not be continuing.",
+      "keywords": [
+        "eight assessment years"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 72"
+    },
+    {
+      "id": "p4",
+      "label": "Speculation loss",
+      "marks": 1,
+      "description": "Loss from a speculation business can be set off only against speculation income, and can be carried forward for four assessment years.",
+      "keywords": [
+        "speculation",
+        "four assessment years"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 73"
+    },
+    {
+      "id": "p5",
+      "label": "Return filed in time; depreciation",
+      "marks": 1,
+      "description": "A business loss can be carried forward only if the loss return is filed by the due date under section 139(1); unabsorbed depreciation is not subject to this and can be carried forward without time limit.",
+      "keywords": [
+        "due date",
+        "unabsorbed depreciation"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, sections 80 and 32(2)"
+    }
+  ]
+}

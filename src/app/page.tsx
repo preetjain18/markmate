@@ -54,12 +54,51 @@ export default function Home() {
                   <Icon name="check" className="text-success" /> Photos or PDF
                 </li>
                 <li className="flex items-center gap-1.5">
-                  <Icon name="check" className="text-success" /> {catalog.questions.length} questions, all 16 papers
+                  <Icon name="check" className="text-success" /> Every CA paper
                 </li>
               </ul>
             </div>
             <div className="min-w-0">
               <HeroPreview />
+            </div>
+          </div>
+        </section>
+
+        {/* Papers */}
+        <section aria-labelledby="papers-heading" className="border-b border-line bg-surface">
+          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <Eyebrow>Every paper covered</Eyebrow>
+                <h2 id="papers-heading" className="mt-2 text-[1.5rem] font-bold leading-tight sm:text-[1.75rem]">
+                  Practise the way your syllabus is organised.
+                </h2>
+              </div>
+              <p className="max-w-sm text-[15px] text-muted">Pick your level, paper and chapter. Each question&apos;s marking scheme names the law or standard behind it.</p>
+            </div>
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
+              {catalog.levels.map((l) => (
+                <Link
+                  key={l.id}
+                  href={`/practice?level=${l.id}`}
+                  className="group rounded-card bg-canvas p-5 ring-1 ring-line transition-[box-shadow,background-color] duration-150 hover:bg-surface hover:shadow-lift"
+                >
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-[17px] font-semibold">{l.name}</h3>
+                    <Icon name="arrow" className="size-4 text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-brand" />
+                  </div>
+                  <ul className="mt-3 space-y-1.5">
+                    {l.subjects.map((s) => (
+                      <li key={s.id} className="flex items-baseline justify-between gap-3 text-[14px]">
+                        <span className="text-ink">{s.short ?? s.name}</span>
+                        <span className="shrink-0 text-[12px] text-muted">
+                          {s.chapters.length} chapter{s.chapters.length === 1 ? "" : "s"}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
@@ -159,7 +198,7 @@ export default function Home() {
               </table>
             </div>
             <p className="mt-4 text-[13px] text-muted">
-              Marks are practice estimates from draft marking schemes, not ICAI marks. The AI suggests; MarkMate&apos;s code decides the numbers.
+              Marks are practice estimates from MarkMate&apos;s marking schemes, not ICAI marks. The AI suggests; MarkMate&apos;s code decides the numbers.
             </p>
           </div>
         </section>

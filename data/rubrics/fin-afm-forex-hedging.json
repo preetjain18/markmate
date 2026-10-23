@@ -13,6 +13,10 @@
     "money market hedge"
   ],
   "references": [],
+  "sources": [
+    "Generally accepted international financial management principles on hedging currency risk",
+    "Hull, J. C., Options, Futures, and Other Derivatives - forwards, futures, options and swaps"
+  ],
   "points": [
     {
       "id": "p1",
@@ -22,7 +26,8 @@
       "keywords": [
         "forward contract"
       ],
-      "references": []
+      "references": [],
+      "basis": "Derivatives principle: currency forward contracts"
     },
     {
       "id": "p2",
@@ -32,7 +37,8 @@
       "keywords": [
         "futures"
       ],
-      "references": []
+      "references": [],
+      "basis": "Derivatives principle: exchange-traded currency futures and daily marking to market"
     },
     {
       "id": "p3",
@@ -43,7 +49,8 @@
         "options",
         "premium"
       ],
-      "references": []
+      "references": [],
+      "basis": "Derivatives principle: currency options (right without obligation, premium paid)"
     },
     {
       "id": "p4",
@@ -53,7 +60,8 @@
       "keywords": [
         "money market hedge"
       ],
-      "references": []
+      "references": [],
+      "basis": "International financial management principle: money market hedge using borrowing and deposits"
     },
     {
       "id": "p5",
@@ -64,7 +72,8 @@
         "netting",
         "leading and lagging"
       ],
-      "references": []
+      "references": [],
+      "basis": "International financial management principle: currency swaps and internal hedging techniques"
     }
   ]
 }

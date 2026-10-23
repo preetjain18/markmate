@@ -1,0 +1,95 @@
+{
+  "id": "fin-afm-option-premium-factors",
+  "version": "1",
+  "sa": "AFM",
+  "topic": "Factors affecting option prices",
+  "question": "Explain the factors that affect the price (premium) of a call option and a put option.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "spot price",
+    "strike price",
+    "time to expiry",
+    "volatility",
+    "risk-free rate",
+    "dividends"
+  ],
+  "references": [],
+  "sources": [
+    "Black, F. and Scholes, M. (1973), 'The Pricing of Options and Corporate Liabilities', Journal of Political Economy",
+    "Hull, J. C., Options, Futures, and Other Derivatives - factors affecting option prices"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Price of the underlying",
+      "marks": 1,
+      "description": "A higher price of the underlying asset raises the value of a call and lowers the value of a put.",
+      "keywords": [
+        "spot price",
+        "underlying"
+      ],
+      "references": [],
+      "basis": "Option pricing theory: effect of the underlying price"
+    },
+    {
+      "id": "p2",
+      "label": "Strike price",
+      "marks": 1,
+      "description": "A higher strike price lowers the value of a call and raises the value of a put.",
+      "keywords": [
+        "strike price",
+        "exercise price"
+      ],
+      "references": [],
+      "basis": "Option pricing theory: effect of the strike price"
+    },
+    {
+      "id": "p3",
+      "label": "Time to expiry",
+      "marks": 1,
+      "description": "More time to expiry generally raises the value of both calls and puts because there is more chance of a favourable move (always true for American options).",
+      "keywords": [
+        "time to expiry",
+        "time value"
+      ],
+      "references": [],
+      "basis": "Option pricing theory: effect of time to expiration"
+    },
+    {
+      "id": "p4",
+      "label": "Volatility",
+      "marks": 1,
+      "description": "Higher volatility of the underlying raises the value of both calls and puts, since the holder gains from large favourable moves while losses are limited to the premium.",
+      "keywords": [
+        "volatility"
+      ],
+      "references": [],
+      "basis": "Option pricing theory: effect of volatility"
+    },
+    {
+      "id": "p5",
+      "label": "Risk-free interest rate",
+      "marks": 1,
+      "description": "A higher risk-free rate raises call values and lowers put values, as the present value of the strike price paid or received falls.",
+      "keywords": [
+        "risk-free rate",
+        "present value"
+      ],
+      "references": [],
+      "basis": "Option pricing theory: effect of interest rates"
+    },
+    {
+      "id": "p6",
+      "label": "Dividends",
+      "marks": 1,
+      "description": "Expected dividends during the option's life reduce the share price on the ex-dividend date, lowering call values and raising put values.",
+      "keywords": [
+        "dividends",
+        "ex-dividend"
+      ],
+      "references": [],
+      "basis": "Option pricing theory: effect of expected dividends"
+    }
+  ]
+}

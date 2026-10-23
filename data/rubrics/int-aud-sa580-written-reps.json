@@ -1,0 +1,80 @@
+{
+  "id": "int-aud-sa580-written-reps",
+  "version": "1",
+  "sa": "SA 580",
+  "topic": "Written representations",
+  "question": "What are written representations under SA 580? State the matters on which the auditor should request them from management.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "written representations",
+    "management responsibilities",
+    "date of auditor's report"
+  ],
+  "references": [
+    "SA 580"
+  ],
+  "sources": [
+    "SA 580 Written Representations"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "A written representation is a written statement by management given to the auditor to confirm certain matters or to support other audit evidence.",
+      "keywords": [
+        "written statement"
+      ],
+      "references": [],
+      "basis": "SA 580, definition of written representations"
+    },
+    {
+      "id": "p2",
+      "label": "Preparation of financial statements",
+      "marks": 1,
+      "description": "Management confirms it has fulfilled its responsibility for preparing the financial statements as per the applicable framework, as set out in the terms of the engagement.",
+      "keywords": [
+        "preparation",
+        "framework"
+      ],
+      "references": [],
+      "basis": "SA 580, management's responsibilities: preparation of financial statements"
+    },
+    {
+      "id": "p3",
+      "label": "Information provided and transactions recorded",
+      "marks": 1,
+      "description": "Management confirms it has given the auditor all relevant information and access agreed in the terms of engagement, and that all transactions are recorded and reflected in the financial statements.",
+      "keywords": [
+        "all transactions",
+        "access"
+      ],
+      "references": [],
+      "basis": "SA 580, management's responsibilities: information provided and completeness of transactions"
+    },
+    {
+      "id": "p4",
+      "label": "Form and date",
+      "marks": 1,
+      "description": "Representations are in a letter addressed to the auditor, dated as near as practicable to, but not after, the date of the auditor's report.",
+      "keywords": [
+        "representation letter",
+        "date"
+      ],
+      "references": [],
+      "basis": "SA 580, date of and period covered by written representations; form"
+    },
+    {
+      "id": "p5",
+      "label": "Not sufficient on their own",
+      "marks": 1,
+      "description": "Written representations are necessary audit evidence but do not by themselves give sufficient appropriate evidence about the matters they cover.",
+      "keywords": [
+        "sufficient appropriate"
+      ],
+      "references": [],
+      "basis": "SA 580, written representations as audit evidence"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "int-acc-as10-ppe",
+  "version": "1",
+  "sa": "AS 10",
+  "topic": "Recognition of property, plant and equipment",
+  "question": "Explain the recognition criteria for an item of property, plant and equipment under AS 10. How are spare parts and subsequent costs treated?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "future economic benefits",
+    "measured reliably",
+    "spare parts",
+    "subsequent costs"
+  ],
+  "references": [
+    "AS 10"
+  ],
+  "sources": [
+    "AS 10 Property, Plant and Equipment - definitions, recognition and subsequent costs"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of PPE",
+      "marks": 1,
+      "description": "Tangible items held for use in producing or supplying goods or services, for rental to others or for administrative purposes, and expected to be used for more than one period.",
+      "keywords": [
+        "tangible",
+        "more than one period"
+      ],
+      "references": [],
+      "basis": "AS 10, definition of property, plant and equipment"
+    },
+    {
+      "id": "p2",
+      "label": "Probable future economic benefits",
+      "marks": 1,
+      "description": "The cost of an item is recognised as an asset only if it is probable that future economic benefits linked to it will flow to the enterprise.",
+      "keywords": [
+        "future economic benefits"
+      ],
+      "references": [],
+      "basis": "AS 10, recognition criteria"
+    },
+    {
+      "id": "p3",
+      "label": "Reliable measurement",
+      "marks": 1,
+      "description": "The second condition is that the cost of the item can be measured reliably.",
+      "keywords": [
+        "measured reliably"
+      ],
+      "references": [],
+      "basis": "AS 10, recognition criteria"
+    },
+    {
+      "id": "p4",
+      "label": "Spare parts and servicing equipment",
+      "marks": 1,
+      "description": "Spare parts, stand-by equipment and servicing equipment are recognised as PPE when they meet the definition; otherwise they are treated as inventory.",
+      "keywords": [
+        "spare parts",
+        "stand-by equipment"
+      ],
+      "references": [],
+      "basis": "AS 10, recognition: spare parts, stand-by and servicing equipment"
+    },
+    {
+      "id": "p5",
+      "label": "Subsequent costs",
+      "marks": 1,
+      "description": "Day-to-day servicing is charged to profit or loss; replacement of parts and major inspections are added to the carrying amount if the recognition criteria are met, and the carrying amount of the replaced part is derecognised.",
+      "keywords": [
+        "day-to-day servicing",
+        "replacement",
+        "derecognised"
+      ],
+      "references": [],
+      "basis": "AS 10, recognition of subsequent costs"
+    }
+  ]
+}

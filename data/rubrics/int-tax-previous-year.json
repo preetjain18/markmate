@@ -1,0 +1,95 @@
+{
+  "id": "int-tax-previous-year",
+  "version": "1",
+  "sa": "Income-tax",
+  "topic": "Previous year and its exceptions",
+  "question": "Explain the meaning of 'previous year' under the Income-tax Act, 1961. In which cases is the income of a previous year taxed in that previous year itself?",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "previous year",
+    "assessment year",
+    "shipping business",
+    "persons leaving India",
+    "discontinued business"
+  ],
+  "references": [
+    "Section 3"
+  ],
+  "sources": [
+    "Income-tax Act, 1961 - section 3 previous year",
+    "Income-tax Act, 1961 - sections 172, 174, 174A, 175 and 176"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "The previous year is the financial year immediately before the assessment year; for a newly set up business or profession, or a new source of income, it runs from the date of setting up or the date the source arises to the end of that financial year.",
+      "keywords": [
+        "previous year",
+        "financial year"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 3"
+    },
+    {
+      "id": "p2",
+      "label": "General rule and why exceptions exist",
+      "marks": 1,
+      "description": "Normally income of a previous year is taxed in the next (assessment) year; exceptions exist where waiting could lead to loss of revenue.",
+      "keywords": [
+        "assessment year"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, sections 3 and 4"
+    },
+    {
+      "id": "p3",
+      "label": "Shipping business of non-residents",
+      "marks": 1,
+      "description": "Income of a non-resident from carrying passengers, goods or mail from a port in India is taxed on each voyage before the ship leaves.",
+      "keywords": [
+        "shipping",
+        "non-resident"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 172"
+    },
+    {
+      "id": "p4",
+      "label": "Persons leaving India",
+      "marks": 1,
+      "description": "Where an individual is likely to leave India during the year with no present intention of returning, income up to the date of departure can be assessed in the same year.",
+      "keywords": [
+        "leaving India"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 174"
+    },
+    {
+      "id": "p5",
+      "label": "AOP or BOI for a particular event",
+      "marks": 1,
+      "description": "An association of persons, body of individuals or artificial juridical person formed for a particular event or purpose that is likely to be dissolved can be assessed in the same year.",
+      "keywords": [
+        "association of persons",
+        "particular event"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 174A"
+    },
+    {
+      "id": "p6",
+      "label": "Transfer to avoid tax and discontinued business",
+      "marks": 1,
+      "description": "Persons likely to transfer their assets to avoid tax, and businesses or professions that are discontinued, may also be assessed in the same year.",
+      "keywords": [
+        "transfer property",
+        "discontinued"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, sections 175 and 176"
+    }
+  ]
+}

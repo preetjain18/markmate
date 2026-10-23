@@ -1,0 +1,78 @@
+{
+  "id": "int-fm-working-capital-factors",
+  "version": "1",
+  "sa": "Financial management",
+  "topic": "Factors determining working capital",
+  "question": "Discuss the factors that determine the working capital requirement of a business.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "working capital",
+    "operating cycle",
+    "credit policy",
+    "seasonality"
+  ],
+  "references": [],
+  "sources": [
+    "Management of working capital: determinants of working capital requirement"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Nature and size of business",
+      "marks": 1,
+      "description": "Trading and manufacturing firms need more working capital than service firms; larger firms need more in absolute terms.",
+      "keywords": [
+        "nature of business"
+      ],
+      "references": [],
+      "basis": "Working capital: nature and scale of business"
+    },
+    {
+      "id": "p2",
+      "label": "Production and operating cycle",
+      "marks": 1,
+      "description": "A longer production process and operating cycle ties up more funds in inventory and receivables.",
+      "keywords": [
+        "operating cycle"
+      ],
+      "references": [],
+      "basis": "Working capital: length of operating cycle"
+    },
+    {
+      "id": "p3",
+      "label": "Credit policy",
+      "marks": 1,
+      "description": "Liberal credit to customers raises working capital needs; credit received from suppliers reduces them.",
+      "keywords": [
+        "credit policy"
+      ],
+      "references": [],
+      "basis": "Working capital: credit terms"
+    },
+    {
+      "id": "p4",
+      "label": "Seasonal and business conditions",
+      "marks": 1,
+      "description": "Seasonal businesses need more working capital in peak season; boom and growth raise needs, recession lowers them.",
+      "keywords": [
+        "seasonal",
+        "growth"
+      ],
+      "references": [],
+      "basis": "Working capital: seasonality, growth and business cycle"
+    },
+    {
+      "id": "p5",
+      "label": "Inventory policy and efficiency",
+      "marks": 1,
+      "description": "Policies on stock levels, availability of raw materials and efficient operations affect how much is needed.",
+      "keywords": [
+        "inventory",
+        "efficiency"
+      ],
+      "references": [],
+      "basis": "Working capital: inventory policy and operating efficiency"
+    }
+  ]
+}

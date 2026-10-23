@@ -1,0 +1,86 @@
+{
+  "id": "fnd-law-free-consent",
+  "version": "1",
+  "sa": "Indian Contract Act, 1872",
+  "topic": "Free consent",
+  "question": "What is meant by consent and free consent? Briefly explain the factors that take away the freedom of consent under the Indian Contract Act, 1872.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "free consent",
+    "coercion",
+    "undue influence",
+    "fraud",
+    "misrepresentation"
+  ],
+  "references": [
+    "Section 13",
+    "Section 14"
+  ],
+  "sources": [
+    "Indian Contract Act, 1872, Sections 13 to 22"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Consent and free consent",
+      "marks": 1,
+      "description": "Consent means two or more persons agreeing on the same thing in the same sense; consent is free when it is not caused by coercion, undue influence, fraud, misrepresentation or mistake.",
+      "keywords": [
+        "same sense",
+        "free consent"
+      ],
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Sections 13 and 14"
+    },
+    {
+      "id": "p2",
+      "label": "Coercion",
+      "marks": 1,
+      "description": "Committing or threatening any act forbidden by the Indian Penal Code (now the Bharatiya Nyaya Sanhita), or unlawfully detaining or threatening to detain property, to make a person enter into an agreement.",
+      "keywords": [
+        "coercion"
+      ],
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Section 15"
+    },
+    {
+      "id": "p3",
+      "label": "Undue influence",
+      "marks": 1,
+      "description": "Where one party is in a position to dominate the will of the other (for example, real or apparent authority, a fiduciary relation, or mental distress of the other) and uses that position to gain an unfair advantage.",
+      "keywords": [
+        "undue influence",
+        "dominate the will"
+      ],
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Section 16"
+    },
+    {
+      "id": "p4",
+      "label": "Fraud and misrepresentation",
+      "marks": 1,
+      "description": "Fraud is a false statement or active concealment made knowingly with intent to deceive; misrepresentation is an untrue statement made innocently, believing it to be true. Both make the contract voidable at the option of the deceived party.",
+      "keywords": [
+        "fraud",
+        "misrepresentation",
+        "voidable"
+      ],
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Sections 17, 18 and 19"
+    },
+    {
+      "id": "p5",
+      "label": "Mistake and effect",
+      "marks": 1,
+      "description": "A bilateral mistake of fact essential to the agreement makes it void; mistake of Indian law does not. Contracts caused by coercion, undue influence, fraud or misrepresentation are voidable at the option of the party whose consent was so caused.",
+      "keywords": [
+        "mistake",
+        "void",
+        "voidable"
+      ],
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Sections 19, 19A, 20, 21 and 22"
+    }
+  ]
+}

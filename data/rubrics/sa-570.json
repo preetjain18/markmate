@@ -6,13 +6,83 @@
   "question": "Explain the auditor's responsibilities under SA 570 when events or conditions cast significant doubt on the entity's ability to continue as a going concern, and how the audit report is affected.",
   "maxMarks": 5,
   "verified": false,
-  "keywords": ["going concern", "material uncertainty", "cash flow forecasts"],
-  "references": ["SA 570", "SA 705"],
+  "keywords": [
+    "going concern",
+    "material uncertainty",
+    "cash flow forecasts"
+  ],
+  "references": [
+    "SA 570",
+    "SA 705"
+  ],
+  "sources": [
+    "SA 570 Going Concern",
+    "SA 705 Modifications to the Opinion in the Independent Auditor's Report"
+  ],
   "points": [
-    { "id": "p1", "label": "Management's assessment and basis of accounting", "marks": 1, "description": "Financial statements are prepared on the going concern basis; management must assess the entity's ability to continue, normally for at least twelve months from the balance sheet date.", "keywords": ["going concern basis", "twelve months"], "references": ["SA 570"] },
-    { "id": "p2", "label": "Events or conditions that cast doubt", "marks": 1, "description": "Gives examples of events or conditions: financial (net current liabilities, losses, loan defaults), operating (loss of key management or market) and other (legal proceedings, non-compliance).", "keywords": ["net current liabilities", "default"], "references": [] },
-    { "id": "p3", "label": "Evaluating management's plans", "marks": 1, "description": "Auditor evaluates management's plans for future action and cash flow forecasts, whether they are feasible and the outcome likely to improve the position, and performs additional procedures.", "keywords": ["cash flow forecasts", "management's plans"], "references": [] },
-    { "id": "p4", "label": "Material uncertainty adequately disclosed", "marks": 1, "description": "If a material uncertainty exists and is adequately disclosed, give an unmodified opinion with a separate section 'Material Uncertainty Related to Going Concern'.", "keywords": ["material uncertainty", "unmodified opinion"], "references": [] },
-    { "id": "p5", "label": "Inadequate disclosure or wrong basis", "marks": 1, "description": "If disclosure is inadequate, express a qualified or adverse opinion; if management will not assess or extend its assessment, consider the effect on the audit and the opinion.", "keywords": ["qualified", "adverse"], "references": ["SA 705"] }
+    {
+      "id": "p1",
+      "label": "Management's assessment and basis of accounting",
+      "marks": 1,
+      "description": "Financial statements are prepared on the going concern basis; management must assess the entity's ability to continue, normally for at least twelve months from the balance sheet date.",
+      "keywords": [
+        "going concern basis",
+        "twelve months"
+      ],
+      "references": [
+        "SA 570"
+      ],
+      "basis": "SA 570, going concern basis of accounting and management's responsibility to assess going concern"
+    },
+    {
+      "id": "p2",
+      "label": "Events or conditions that cast doubt",
+      "marks": 1,
+      "description": "Gives examples of events or conditions: financial (net current liabilities, losses, loan defaults), operating (loss of key management or market) and other (legal proceedings, non-compliance).",
+      "keywords": [
+        "net current liabilities",
+        "default"
+      ],
+      "references": [],
+      "basis": "SA 570, examples of events or conditions that may cast significant doubt (application material)"
+    },
+    {
+      "id": "p3",
+      "label": "Evaluating management's plans",
+      "marks": 1,
+      "description": "Auditor evaluates management's plans for future action and cash flow forecasts, whether they are feasible and the outcome likely to improve the position, and performs additional procedures.",
+      "keywords": [
+        "cash flow forecasts",
+        "management's plans"
+      ],
+      "references": [],
+      "basis": "SA 570, additional audit procedures when events or conditions are identified, including evaluating management's plans"
+    },
+    {
+      "id": "p4",
+      "label": "Material uncertainty adequately disclosed",
+      "marks": 1,
+      "description": "If a material uncertainty exists and is adequately disclosed, give an unmodified opinion with a separate section 'Material Uncertainty Related to Going Concern'.",
+      "keywords": [
+        "material uncertainty",
+        "unmodified opinion"
+      ],
+      "references": [],
+      "basis": "SA 570, use of the going concern basis appropriate but a material uncertainty exists and is adequately disclosed"
+    },
+    {
+      "id": "p5",
+      "label": "Inadequate disclosure or wrong basis",
+      "marks": 1,
+      "description": "If disclosure is inadequate, express a qualified or adverse opinion; if management will not assess or extend its assessment, consider the effect on the audit and the opinion.",
+      "keywords": [
+        "qualified",
+        "adverse"
+      ],
+      "references": [
+        "SA 705"
+      ],
+      "basis": "SA 570 read with SA 705, inadequate disclosure of a material uncertainty and management unwilling to make or extend its assessment"
+    }
   ]
 }

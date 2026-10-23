@@ -1,0 +1,85 @@
+{
+  "id": "int-law-agm",
+  "version": "1",
+  "sa": "Companies Act, 2013",
+  "topic": "Annual general meeting",
+  "question": "Explain the provisions of the Companies Act, 2013 on the time and place of holding the annual general meeting of a company.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "annual general meeting",
+    "nine months",
+    "six months",
+    "fifteen months",
+    "business hours"
+  ],
+  "references": [
+    "Section 96"
+  ],
+  "sources": [
+    "Companies Act, 2013 - section 96 annual general meeting"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Duty to hold AGM",
+      "marks": 1,
+      "description": "Every company other than a One Person Company must hold an annual general meeting each year in addition to any other meetings, and the notice must call it the annual general meeting.",
+      "keywords": [
+        "One Person Company",
+        "every year"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 96(1)"
+    },
+    {
+      "id": "p2",
+      "label": "First AGM",
+      "marks": 1,
+      "description": "The first AGM must be held within nine months from the close of the first financial year; no AGM is then needed in the year of incorporation.",
+      "keywords": [
+        "nine months",
+        "first financial year"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, first proviso to section 96(1)"
+    },
+    {
+      "id": "p3",
+      "label": "Later AGMs",
+      "marks": 1,
+      "description": "Later AGMs must be held within six months from the close of the financial year, and the gap between two AGMs must not exceed fifteen months.",
+      "keywords": [
+        "six months",
+        "fifteen months"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 96(1)"
+    },
+    {
+      "id": "p4",
+      "label": "Extension",
+      "marks": 1,
+      "description": "For special reasons the Registrar may extend the time for any AGM other than the first by up to three months.",
+      "keywords": [
+        "Registrar",
+        "three months"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, third proviso to section 96(1)"
+    },
+    {
+      "id": "p5",
+      "label": "Time and place",
+      "marks": 1,
+      "description": "It must be held during business hours (9 a.m. to 6 p.m.) on a day that is not a national holiday, at the registered office or elsewhere in the city, town or village where it is situated; an unlisted company may hold it anywhere in India if all members consent in advance.",
+      "keywords": [
+        "business hours",
+        "national holiday",
+        "registered office"
+      ],
+      "references": [],
+      "basis": "Companies Act, 2013, section 96(2) and its provisos"
+    }
+  ]
+}

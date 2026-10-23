@@ -3,10 +3,13 @@
 Answer-writing practice for CA students. Pick your CA level, subject, chapter and question, write an
 answer, see the Lost Marks Map, rewrite it in the Improvement Lab, compare attempts, and track progress.
 
-**Evaluation coverage today:** 39 written-answer questions across all 16 papers of CA Foundation,
-Intermediate and Final (10 for Final Audit, 1–2 for every other paper). Every marking scheme is a draft
-(`"verified": false`, not ICAI text). Numerical papers have written theory questions only; numerical
-problems aren't marked yet. Students can also paste their own question and model answer for any paper.
+**Evaluation coverage today:** 160 written-answer questions across 125 chapters in all 16 papers of CA
+Foundation, Intermediate and Final (6 to 18 per paper; chapters follow the ICAI syllabus). Every marking
+scheme names its `sources` (the Act, standard or principle), and every marking point names its `basis`
+(the exact section, paragraph or principle), shown to students beside the feedback. Schemes are written in
+MarkMate's own words, not ICAI text, and are `"verified": false`. Numerical papers have written theory
+questions only; numerical problems aren't marked yet. Students can also paste their own question and model
+answer for any paper. Income-tax section numbers follow the Income-tax Act, 1961.
 
 **Scan My Answer (`/scan`):** the main way in. Step 1 picks the question: from the bank, typed in with its
 model answer, or read from a photo of the question paper. Step 2 uploads up to 4 photos or PDFs (about
@@ -62,7 +65,7 @@ No variable uses the `NEXT_PUBLIC_` prefix, so none is sent to the browser.
 ## Data and persistence
 
 - `data/catalog.json` — levels and papers (ICAI New Scheme 2023), Final Audit chapters grouped by SA series (MarkMate's grouping, not ICAI's chapter order).
-- `data/rubrics/*.json` — the 10 questions with their draft marking schemes. `data/questions/*.json` may hold practice-only questions without a scheme.
+- `data/rubrics/*.json` — one file per question with its marking scheme, `sources` and per-point `basis`. `data/questions/*.json` may hold practice-only questions without a scheme.
 - **Progress** is stored only in the student's browser (`localStorage`, key `markmate-history-v1`): one compact record per evaluation (no answer text). It is per device and per browser; there are no accounts.
 - **Drafts** are stored per question in the browser.
 - **Faculty logs**: each evaluation (including answer text) is appended to `data/logs/*.jsonl` on the server. On Vercel this folder is temporary and is lost on redeploys.

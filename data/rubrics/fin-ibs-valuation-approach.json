@@ -1,0 +1,86 @@
+{
+  "id": "fin-ibs-valuation-approach",
+  "version": "1",
+  "sa": "Case study: valuation",
+  "topic": "Choosing a valuation approach",
+  "question": "Kesar Valley Foods Pvt Ltd, a fictional family-owned snack maker, has steady profits but plans a large new plant in two years. A private equity fund wants to buy a 30% stake and has asked the promoters for a valuation. The promoters' advisor has proposed using only the book value of net assets. Advise the promoters on suitable valuation approaches and the key judgements involved.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "income approach",
+    "discounted cash flow",
+    "market approach",
+    "net asset value",
+    "minority discount"
+  ],
+  "references": [],
+  "sources": [
+    "ICAI Valuation Standards 2018 - ICAI Valuation Standard 103 Valuation Approaches and Methods",
+    "Ind AS 113 Fair Value Measurement - valuation techniques"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Book value alone is not suitable",
+      "marks": 1,
+      "description": "Net asset book value ignores future earnings, the new plant, brands and goodwill, so it would understate the value of a profitable going concern; it is better used as a floor or cross-check.",
+      "keywords": [
+        "book value",
+        "going concern"
+      ],
+      "references": [],
+      "basis": "ICAI Valuation Standard 103: cost/asset approach and when it is appropriate"
+    },
+    {
+      "id": "p2",
+      "label": "Income approach",
+      "marks": 1.5,
+      "description": "A discounted cash flow valuation of free cash flows, including the planned plant and its funding, discounted at a rate reflecting the business's risk, suits a growing profitable company.",
+      "keywords": [
+        "discounted cash flow",
+        "free cash flow",
+        "discount rate"
+      ],
+      "references": [],
+      "basis": "ICAI Valuation Standard 103: income approach"
+    },
+    {
+      "id": "p3",
+      "label": "Market approach",
+      "marks": 1,
+      "description": "Multiples (such as EV/EBITDA or P/E) of comparable listed companies or recent deals, adjusted for size, growth and the lack of a listing, give a market-based check.",
+      "keywords": [
+        "comparable companies",
+        "multiples"
+      ],
+      "references": [],
+      "basis": "ICAI Valuation Standard 103: market approach"
+    },
+    {
+      "id": "p4",
+      "label": "Key judgements",
+      "marks": 1.5,
+      "description": "Reliability of the promoters' projections, the discount rate and terminal growth, and choice of comparables; results from different methods are reconciled and weighted with reasons.",
+      "keywords": [
+        "projections",
+        "terminal value",
+        "weighting"
+      ],
+      "references": [],
+      "basis": "ICAI Valuation Standard 103: selecting and weighting approaches"
+    },
+    {
+      "id": "p5",
+      "label": "Stake-specific factors",
+      "marks": 1,
+      "description": "A 30% non-controlling stake may attract a discount for lack of control and marketability, offset by investor protection rights; the valuation base and date should be stated in the report.",
+      "keywords": [
+        "minority discount",
+        "marketability",
+        "valuation date"
+      ],
+      "references": [],
+      "basis": "ICAI Valuation Standards: valuation bases and premise; general valuation practice on control and marketability"
+    }
+  ]
+}

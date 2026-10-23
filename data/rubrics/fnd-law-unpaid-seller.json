@@ -13,6 +13,9 @@
     "resale"
   ],
   "references": [],
+  "sources": [
+    "Sale of Goods Act, 1930, Sections 45 to 54"
+  ],
   "points": [
     {
       "id": "p1",
@@ -22,7 +25,8 @@
       "keywords": [
         "unpaid seller"
       ],
-      "references": []
+      "references": [],
+      "basis": "Sale of Goods Act, 1930, Section 45"
     },
     {
       "id": "p2",
@@ -32,7 +36,8 @@
       "keywords": [
         "lien"
       ],
-      "references": []
+      "references": [],
+      "basis": "Sale of Goods Act, 1930, Sections 46 to 49"
     },
     {
       "id": "p3",
@@ -42,7 +47,8 @@
       "keywords": [
         "stoppage in transit"
       ],
-      "references": []
+      "references": [],
+      "basis": "Sale of Goods Act, 1930, Sections 50 to 52"
     },
     {
       "id": "p4",
@@ -52,7 +58,8 @@
       "keywords": [
         "resale"
       ],
-      "references": []
+      "references": [],
+      "basis": "Sale of Goods Act, 1930, Section 54"
     },
     {
       "id": "p5",
@@ -62,7 +69,8 @@
       "keywords": [
         "withhold delivery"
       ],
-      "references": []
+      "references": [],
+      "basis": "Sale of Goods Act, 1930, Section 46(2)"
     }
   ]
 }

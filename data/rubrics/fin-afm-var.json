@@ -12,6 +12,10 @@
     "time horizon"
   ],
   "references": [],
+  "sources": [
+    "J.P. Morgan/Reuters, RiskMetrics Technical Document (1996)",
+    "Basel Committee on Banking Supervision market risk framework (use of VaR and its shortcomings)"
+  ],
   "points": [
     {
       "id": "p1",
@@ -22,7 +26,8 @@
         "maximum",
         "confidence level"
       ],
-      "references": []
+      "references": [],
+      "basis": "Risk management principle: definition of Value at Risk"
     },
     {
       "id": "p2",
@@ -33,7 +38,8 @@
         "time horizon",
         "volatility"
       ],
-      "references": []
+      "references": [],
+      "basis": "Risk management principle: parameters of VaR (holding period, confidence level, volatility)"
     },
     {
       "id": "p3",
@@ -43,7 +49,8 @@
       "keywords": [
         "risk limits"
       ],
-      "references": []
+      "references": [],
+      "basis": "Risk management principle: uses of VaR in limits, capital and reporting"
     },
     {
       "id": "p4",
@@ -53,7 +60,8 @@
       "keywords": [
         "historical"
       ],
-      "references": []
+      "references": [],
+      "basis": "Risk management principle: limitations of VaR (tail losses, model and data dependence)"
     }
   ]
 }

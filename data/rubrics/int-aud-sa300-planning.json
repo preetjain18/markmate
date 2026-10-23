@@ -1,0 +1,91 @@
+{
+  "id": "int-aud-sa300-planning",
+  "version": "1",
+  "sa": "SA 300",
+  "topic": "Planning an audit",
+  "question": "Explain the benefits of planning an audit of financial statements under SA 300.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "audit planning",
+    "overall audit strategy",
+    "audit plan"
+  ],
+  "references": [
+    "SA 300"
+  ],
+  "sources": [
+    "SA 300 Planning an Audit of Financial Statements"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Attention to important areas",
+      "marks": 1,
+      "description": "Planning helps the auditor give proper attention to the important areas of the audit.",
+      "keywords": [
+        "important areas"
+      ],
+      "references": [],
+      "basis": "SA 300, role and benefits of planning"
+    },
+    {
+      "id": "p2",
+      "label": "Identify problems early",
+      "marks": 1,
+      "description": "Planning helps identify and resolve possible problems in good time.",
+      "keywords": [
+        "timely"
+      ],
+      "references": [],
+      "basis": "SA 300, role and benefits of planning"
+    },
+    {
+      "id": "p3",
+      "label": "Organise and manage the engagement",
+      "marks": 1,
+      "description": "Planning helps organise and manage the audit so it is done effectively and efficiently.",
+      "keywords": [
+        "effective",
+        "efficient"
+      ],
+      "references": [],
+      "basis": "SA 300, role and benefits of planning"
+    },
+    {
+      "id": "p4",
+      "label": "Selecting and assigning the team",
+      "marks": 1,
+      "description": "Planning helps select team members with the right skills and assign work to them properly.",
+      "keywords": [
+        "engagement team"
+      ],
+      "references": [],
+      "basis": "SA 300, role and benefits of planning"
+    },
+    {
+      "id": "p5",
+      "label": "Direction, supervision and review",
+      "marks": 1,
+      "description": "Planning helps in directing and supervising the team and reviewing their work.",
+      "keywords": [
+        "supervision",
+        "review"
+      ],
+      "references": [],
+      "basis": "SA 300, role and benefits of planning"
+    },
+    {
+      "id": "p6",
+      "label": "Coordination with others",
+      "marks": 1,
+      "description": "Planning helps coordinate work done by auditors of components and by experts.",
+      "keywords": [
+        "experts",
+        "coordination"
+      ],
+      "references": [],
+      "basis": "SA 300, role and benefits of planning"
+    }
+  ]
+}

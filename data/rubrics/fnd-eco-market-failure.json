@@ -1,0 +1,80 @@
+{
+  "id": "fnd-eco-market-failure",
+  "version": "1",
+  "sa": "Business Economics",
+  "topic": "Market failure",
+  "question": "What is market failure? Explain the main reasons why markets fail.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "market failure",
+    "externalities",
+    "public goods",
+    "information"
+  ],
+  "references": [],
+  "sources": [
+    "Market failure and the role of government (standard public finance / welfare economics)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "Market failure is a situation where free markets, left alone, do not allocate resources efficiently, so social welfare is not maximised.",
+      "keywords": [
+        "inefficient allocation"
+      ],
+      "references": [],
+      "basis": "Market failure: meaning"
+    },
+    {
+      "id": "p2",
+      "label": "Market power",
+      "marks": 1,
+      "description": "Monopoly or other market power lets firms restrict output and charge prices above marginal cost.",
+      "keywords": [
+        "market power",
+        "monopoly"
+      ],
+      "references": [],
+      "basis": "Market failure: market power"
+    },
+    {
+      "id": "p3",
+      "label": "Externalities",
+      "marks": 1,
+      "description": "Externalities are costs or benefits that fall on third parties and are not reflected in prices, such as pollution (negative) or vaccination (positive); goods with negative externalities are over-produced and those with positive ones under-produced.",
+      "keywords": [
+        "externalities"
+      ],
+      "references": [],
+      "basis": "Market failure: externalities"
+    },
+    {
+      "id": "p4",
+      "label": "Public goods",
+      "marks": 1,
+      "description": "Public goods are non-rival and non-excludable, so people can enjoy them without paying (free-rider problem) and markets under-supply them.",
+      "keywords": [
+        "public goods",
+        "free rider"
+      ],
+      "references": [],
+      "basis": "Market failure: public goods"
+    },
+    {
+      "id": "p5",
+      "label": "Incomplete information",
+      "marks": 1,
+      "description": "When buyers or sellers lack information, or one side knows more than the other (asymmetric information), problems like adverse selection and moral hazard arise.",
+      "keywords": [
+        "asymmetric information",
+        "adverse selection",
+        "moral hazard"
+      ],
+      "references": [],
+      "basis": "Market failure: incomplete and asymmetric information"
+    }
+  ]
+}

@@ -25,6 +25,7 @@ export function scorePoints(rubric: Rubric, answer: string, output: ModelOutput)
       pointId: rp.id,
       label: rp.label,
       requirement: rp.description,
+      ...(rp.basis ? { basis: rp.basis } : {}),
       allocated: rp.marks,
     };
     if (!m) {

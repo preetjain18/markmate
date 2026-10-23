@@ -12,6 +12,10 @@
     "constructive notice"
   ],
   "references": [],
+  "sources": [
+    "Royal British Bank v. Turquand (doctrine of indoor management)",
+    "Companies Act, 2013 - memorandum and articles as public documents (doctrine of constructive notice)"
+  ],
   "points": [
     {
       "id": "p1",
@@ -21,7 +25,8 @@
       "keywords": [
         "indoor management"
       ],
-      "references": []
+      "references": [],
+      "basis": "Rule in Royal British Bank v. Turquand"
     },
     {
       "id": "p2",
@@ -32,7 +37,8 @@
         "Turquand",
         "constructive notice"
       ],
-      "references": []
+      "references": [],
+      "basis": "Royal British Bank v. Turquand; relationship with the doctrine of constructive notice"
     },
     {
       "id": "p3",
@@ -42,7 +48,8 @@
       "keywords": [
         "knowledge"
       ],
-      "references": []
+      "references": [],
+      "basis": "Exception: actual knowledge of the irregularity (e.g. Howard v. Patent Ivory Manufacturing Co.)"
     },
     {
       "id": "p4",
@@ -53,7 +60,8 @@
         "forgery",
         "suspicion"
       ],
-      "references": []
+      "references": [],
+      "basis": "Exceptions: suspicion of irregularity and forgery (e.g. Ruben v. Great Fingall Consolidated)"
     },
     {
       "id": "p5",
@@ -63,7 +71,8 @@
       "keywords": [
         "authority"
       ],
-      "references": []
+      "references": [],
+      "basis": "Exception: acts beyond the company's powers or the officer's apparent authority"
     }
   ]
 }

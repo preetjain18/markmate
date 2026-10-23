@@ -1,0 +1,91 @@
+{
+  "id": "int-law-interpretation-rules",
+  "version": "1",
+  "sa": "Interpretation of Statutes",
+  "topic": "Literal, mischief and harmonious rules",
+  "question": "Explain the following rules of interpretation of statutes: (a) the literal rule, (b) the mischief rule, and (c) the rule of harmonious construction.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "literal rule",
+    "mischief rule",
+    "Heydon's case",
+    "harmonious construction"
+  ],
+  "references": [],
+  "sources": [
+    "Principles of interpretation of statutes: literal rule, mischief rule (Heydon's case), rule of harmonious construction"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Literal rule: meaning",
+      "marks": 1,
+      "description": "Words of a statute are given their plain, ordinary and grammatical meaning; if the words are clear, the court applies them as they stand.",
+      "keywords": [
+        "literal rule",
+        "plain meaning"
+      ],
+      "references": [],
+      "basis": "Literal rule of interpretation"
+    },
+    {
+      "id": "p2",
+      "label": "Literal rule: applies even if harsh",
+      "marks": 1,
+      "description": "The court does not change clear words merely because the result seems harsh; it departs from the literal meaning only where that would lead to absurdity or defeat the clear purpose of the Act.",
+      "keywords": [
+        "absurdity"
+      ],
+      "references": [],
+      "basis": "Literal rule and its limits"
+    },
+    {
+      "id": "p3",
+      "label": "Mischief rule: meaning",
+      "marks": 1,
+      "description": "From Heydon's case: the court looks at the law before the Act, the mischief or defect it did not provide for, the remedy Parliament chose, and the true reason for that remedy.",
+      "keywords": [
+        "mischief rule",
+        "Heydon's case"
+      ],
+      "references": [],
+      "basis": "Mischief rule (Heydon's case)"
+    },
+    {
+      "id": "p4",
+      "label": "Mischief rule: effect",
+      "marks": 1,
+      "description": "The court adopts the meaning that suppresses the mischief and advances the remedy, used mainly where words are ambiguous.",
+      "keywords": [
+        "suppress the mischief",
+        "advance the remedy"
+      ],
+      "references": [],
+      "basis": "Mischief rule (Heydon's case)"
+    },
+    {
+      "id": "p5",
+      "label": "Harmonious construction: meaning",
+      "marks": 1,
+      "description": "Where two provisions of the same statute appear to conflict, the court reads them together so that both can operate, since the legislature is not presumed to contradict itself.",
+      "keywords": [
+        "harmonious construction",
+        "conflict"
+      ],
+      "references": [],
+      "basis": "Rule of harmonious construction"
+    },
+    {
+      "id": "p6",
+      "label": "Harmonious construction: effect",
+      "marks": 1,
+      "description": "No provision should be read so as to make another useless; only where they cannot be reconciled does the court decide which one prevails.",
+      "keywords": [
+        "give effect to both"
+      ],
+      "references": [],
+      "basis": "Rule of harmonious construction"
+    }
+  ]
+}

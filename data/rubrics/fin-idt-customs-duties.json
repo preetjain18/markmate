@@ -12,6 +12,11 @@
     "safeguard"
   ],
   "references": [],
+  "sources": [
+    "Customs Act, 1962",
+    "Customs Tariff Act, 1975",
+    "Finance Act, 2018 (Social Welfare Surcharge)"
+  ],
   "points": [
     {
       "id": "p1",
@@ -21,7 +26,8 @@
       "keywords": [
         "basic customs duty"
       ],
-      "references": []
+      "references": [],
+      "basis": "Customs Act, 1962, section 12 (charge of customs duty) read with the First Schedule to the Customs Tariff Act, 1975"
     },
     {
       "id": "p2",
@@ -31,7 +37,8 @@
       "keywords": [
         "integrated tax"
       ],
-      "references": []
+      "references": [],
+      "basis": "Customs Tariff Act, 1975, section 3 (additional duties, including integrated tax and GST compensation cess on imports)"
     },
     {
       "id": "p3",
@@ -41,7 +48,8 @@
       "keywords": [
         "social welfare surcharge"
       ],
-      "references": []
+      "references": [],
+      "basis": "Finance Act, 2018, section 110 (Social Welfare Surcharge)"
     },
     {
       "id": "p4",
@@ -52,7 +60,8 @@
         "anti-dumping",
         "countervailing"
       ],
-      "references": []
+      "references": [],
+      "basis": "Customs Tariff Act, 1975, section 9 (countervailing duty on subsidised articles) and section 9A (anti-dumping duty)"
     },
     {
       "id": "p5",
@@ -62,7 +71,8 @@
       "keywords": [
         "safeguard"
       ],
-      "references": []
+      "references": [],
+      "basis": "Customs Tariff Act, 1975, section 8B (safeguard duty)"
     }
   ]
 }

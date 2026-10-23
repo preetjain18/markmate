@@ -1,0 +1,77 @@
+{
+  "id": "int-cost-marginal-vs-absorption",
+  "version": "1",
+  "sa": "Marginal costing",
+  "topic": "Marginal and absorption costing",
+  "question": "Distinguish between marginal costing and absorption costing.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "marginal costing",
+    "absorption costing",
+    "contribution",
+    "fixed cost"
+  ],
+  "references": [],
+  "sources": [
+    "Marginal costing and absorption costing principles"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Treatment of fixed costs",
+      "marks": 1,
+      "description": "Under marginal costing fixed costs are period costs charged to profit; under absorption costing they are part of product cost.",
+      "keywords": [
+        "period cost",
+        "product cost"
+      ],
+      "references": [],
+      "basis": "Marginal costing: treatment of fixed costs"
+    },
+    {
+      "id": "p2",
+      "label": "Valuation of inventory",
+      "marks": 1,
+      "description": "Marginal costing values closing stock at variable cost only; absorption costing includes a share of fixed production overheads.",
+      "keywords": [
+        "inventory valuation"
+      ],
+      "references": [],
+      "basis": "Marginal costing vs absorption costing: inventory valuation"
+    },
+    {
+      "id": "p3",
+      "label": "Difference in profit",
+      "marks": 1,
+      "description": "When opening and closing stock levels differ, the two methods give different profits because fixed overhead is carried in stock under absorption costing.",
+      "keywords": [
+        "profit difference"
+      ],
+      "references": [],
+      "basis": "Marginal costing vs absorption costing: reconciliation of profit"
+    },
+    {
+      "id": "p4",
+      "label": "Presentation",
+      "marks": 1,
+      "description": "Marginal costing shows contribution (sales less variable cost); absorption costing shows gross profit after full production cost.",
+      "keywords": [
+        "contribution"
+      ],
+      "references": [],
+      "basis": "Marginal costing: contribution approach"
+    },
+    {
+      "id": "p5",
+      "label": "Use in decisions",
+      "marks": 1,
+      "description": "Marginal costing is more useful for short-term decisions such as make or buy, pricing and product mix; absorption costing suits external reporting and long-term pricing.",
+      "keywords": [
+        "decision making"
+      ],
+      "references": [],
+      "basis": "Marginal costing: use in managerial decisions"
+    }
+  ]
+}

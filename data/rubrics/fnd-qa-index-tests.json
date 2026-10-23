@@ -1,0 +1,77 @@
+{
+  "id": "fnd-qa-index-tests",
+  "version": "1",
+  "sa": "Statistics",
+  "topic": "Tests of adequacy of index numbers",
+  "question": "Explain the tests used to check the adequacy of an index number formula. Which of these tests does Fisher's ideal index satisfy?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "time reversal test",
+    "factor reversal test",
+    "circular test",
+    "Fisher's ideal index"
+  ],
+  "references": [],
+  "sources": [
+    "Index numbers: tests of adequacy (standard statistical principles)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Unit test",
+      "marks": 1,
+      "description": "The formula should give a result that does not depend on the units in which prices or quantities are quoted; all common formulas except the simple aggregative index satisfy it.",
+      "keywords": [
+        "unit test"
+      ],
+      "references": [],
+      "basis": "Index numbers: unit test"
+    },
+    {
+      "id": "p2",
+      "label": "Time reversal test",
+      "marks": 1,
+      "description": "If the base and current periods are interchanged, the two indices should be reciprocals: P01 × P10 = 1 (ignoring the factor 100).",
+      "keywords": [
+        "time reversal test"
+      ],
+      "references": [],
+      "basis": "Index numbers: time reversal test"
+    },
+    {
+      "id": "p3",
+      "label": "Factor reversal test",
+      "marks": 1,
+      "description": "If price and quantity are interchanged, the product of the price index and the quantity index should equal the value index: P01 × Q01 = V01.",
+      "keywords": [
+        "factor reversal test",
+        "value index"
+      ],
+      "references": [],
+      "basis": "Index numbers: factor reversal test"
+    },
+    {
+      "id": "p4",
+      "label": "Circular test",
+      "marks": 1,
+      "description": "An index should work in a chain so that P01 × P12 × P20 = 1; it is satisfied by the simple geometric mean of price relatives and by a fixed-weight aggregative index.",
+      "keywords": [
+        "circular test"
+      ],
+      "references": [],
+      "basis": "Index numbers: circular test"
+    },
+    {
+      "id": "p5",
+      "label": "Fisher's ideal index",
+      "marks": 1,
+      "description": "Fisher's index, the geometric mean of the Laspeyres and Paasche indices, satisfies the unit, time reversal and factor reversal tests but not the circular test, which is why it is called ideal.",
+      "keywords": [
+        "Fisher's ideal index"
+      ],
+      "references": [],
+      "basis": "Index numbers: properties of Fisher's ideal index"
+    }
+  ]
+}

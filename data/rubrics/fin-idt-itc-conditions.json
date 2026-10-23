@@ -14,6 +14,9 @@
   "references": [
     "Section 16"
   ],
+  "sources": [
+    "CGST Act, 2017, section 16"
+  ],
   "points": [
     {
       "id": "p1",
@@ -23,7 +26,8 @@
       "keywords": [
         "tax invoice"
       ],
-      "references": []
+      "references": [],
+      "basis": "CGST Act, 2017, section 16(2)(a)"
     },
     {
       "id": "p2",
@@ -33,7 +37,8 @@
       "keywords": [
         "furnished"
       ],
-      "references": []
+      "references": [],
+      "basis": "CGST Act, 2017, section 16(2)(aa)"
     },
     {
       "id": "p3",
@@ -43,7 +48,8 @@
       "keywords": [
         "received"
       ],
-      "references": []
+      "references": [],
+      "basis": "CGST Act, 2017, section 16(2)(b) and its Explanation"
     },
     {
       "id": "p4",
@@ -54,7 +60,8 @@
         "paid to the Government",
         "return"
       ],
-      "references": []
+      "references": [],
+      "basis": "CGST Act, 2017, section 16(2)(c) and (d)"
     },
     {
       "id": "p5",
@@ -64,7 +71,8 @@
       "keywords": [
         "180 days"
       ],
-      "references": []
+      "references": [],
+      "basis": "CGST Act, 2017, provisos to section 16(2) (goods received in lots; payment within 180 days) and section 16(3) (no credit on tax component claimed as depreciation)"
     }
   ]
 }

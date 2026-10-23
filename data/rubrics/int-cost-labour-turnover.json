@@ -1,0 +1,77 @@
+{
+  "id": "int-cost-labour-turnover",
+  "version": "1",
+  "sa": "Employee cost",
+  "topic": "Causes of labour turnover",
+  "question": "Discuss the causes of labour (employee) turnover and the steps that can be taken to reduce it.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "labour turnover",
+    "avoidable causes",
+    "unavoidable causes",
+    "exit interview"
+  ],
+  "references": [],
+  "sources": [
+    "Employee cost: labour turnover, its causes and remedial steps"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "Labour turnover is the rate at which employees leave the organisation and are replaced during a period.",
+      "keywords": [
+        "labour turnover"
+      ],
+      "references": [],
+      "basis": "Employee cost: meaning of labour turnover"
+    },
+    {
+      "id": "p2",
+      "label": "Personal causes",
+      "marks": 1,
+      "description": "Employees leave for personal reasons such as a better job elsewhere, family problems, ill health or moving to another place.",
+      "keywords": [
+        "personal causes"
+      ],
+      "references": [],
+      "basis": "Employee cost: causes of labour turnover"
+    },
+    {
+      "id": "p3",
+      "label": "Unavoidable causes",
+      "marks": 1,
+      "description": "Some leaving cannot be avoided, such as retirement, death, disablement, seasonal work ending or discharge for misconduct.",
+      "keywords": [
+        "unavoidable"
+      ],
+      "references": [],
+      "basis": "Employee cost: causes of labour turnover"
+    },
+    {
+      "id": "p4",
+      "label": "Avoidable causes",
+      "marks": 1,
+      "description": "Some leaving can be avoided, such as low pay, poor working conditions, no chance of promotion and bad relations with supervisors.",
+      "keywords": [
+        "avoidable"
+      ],
+      "references": [],
+      "basis": "Employee cost: causes of labour turnover"
+    },
+    {
+      "id": "p5",
+      "label": "Steps to reduce it",
+      "marks": 1,
+      "description": "Careful selection and training, fair pay and working conditions, a clear promotion policy, welfare schemes and exit interviews to find and remove the reasons for leaving.",
+      "keywords": [
+        "exit interview",
+        "promotion"
+      ],
+      "references": [],
+      "basis": "Employee cost: remedial steps for labour turnover"
+    }
+  ]
+}

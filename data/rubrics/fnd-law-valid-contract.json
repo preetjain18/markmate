@@ -15,6 +15,9 @@
   "references": [
     "Section 10"
   ],
+  "sources": [
+    "Indian Contract Act, 1872, Sections 2, 10 to 30 and 56"
+  ],
   "points": [
     {
       "id": "p1",
@@ -25,7 +28,8 @@
         "offer",
         "acceptance"
       ],
-      "references": []
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Section 2(a), (b) and (e)"
     },
     {
       "id": "p2",
@@ -36,7 +40,8 @@
         "legal relations",
         "consideration"
       ],
-      "references": []
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Sections 2(d), 23 and 25; intention to create legal relations (common-law principle, Balfour v Balfour)"
     },
     {
       "id": "p3",
@@ -46,7 +51,8 @@
       "keywords": [
         "competent"
       ],
-      "references": []
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Sections 11 and 12"
     },
     {
       "id": "p4",
@@ -57,7 +63,8 @@
         "free consent",
         "coercion"
       ],
-      "references": []
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Sections 13 to 22"
     },
     {
       "id": "p5",
@@ -67,7 +74,8 @@
       "keywords": [
         "lawful object"
       ],
-      "references": []
+      "references": [],
+      "basis": "Indian Contract Act, 1872, Section 23 (lawful object), Sections 24 to 30 (agreements expressly declared void, including uncertainty in Section 29) and Section 56 (impossibility)"
     }
   ]
 }

@@ -1,0 +1,83 @@
+{
+  "id": "fin-aud-sa320-materiality",
+  "version": "1",
+  "sa": "SA 320",
+  "topic": "Materiality in planning and performing an audit",
+  "question": "Discuss the concept of materiality under SA 320, including performance materiality and the circumstances in which the auditor revises materiality during the audit.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "materiality",
+    "benchmark",
+    "performance materiality",
+    "revision"
+  ],
+  "references": [
+    "SA 320"
+  ],
+  "sources": [
+    "SA 320 Materiality in Planning and Performing an Audit"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of materiality",
+      "marks": 1,
+      "description": "Misstatements, including omissions, are material if, alone or together, they could reasonably be expected to influence the economic decisions users take on the basis of the financial statements; the judgment depends on the size and nature of the item and the surrounding circumstances.",
+      "keywords": [
+        "influence economic decisions",
+        "size and nature"
+      ],
+      "references": [],
+      "basis": "SA 320, materiality in the context of an audit"
+    },
+    {
+      "id": "p2",
+      "label": "Materiality for the financial statements as a whole",
+      "marks": 1,
+      "description": "Set when establishing the overall audit strategy, usually by applying a percentage to a suitable benchmark such as profit before tax, revenue, total expenses or net assets, chosen according to the entity and what users focus on.",
+      "keywords": [
+        "benchmark",
+        "overall audit strategy"
+      ],
+      "references": [],
+      "basis": "SA 320, determining materiality when planning the audit (use of benchmarks, application material)"
+    },
+    {
+      "id": "p3",
+      "label": "Lower materiality for particular items",
+      "marks": 1,
+      "description": "Where misstatements of smaller amounts in particular classes of transactions, balances or disclosures could influence users (for example related party transactions or managerial remuneration), the auditor sets a lower materiality level for them.",
+      "keywords": [
+        "particular classes",
+        "related party"
+      ],
+      "references": [],
+      "basis": "SA 320, materiality level for particular classes of transactions, account balances or disclosures"
+    },
+    {
+      "id": "p4",
+      "label": "Performance materiality",
+      "marks": 1,
+      "description": "An amount set below materiality to reduce to an appropriately low level the chance that uncorrected and undetected misstatements together exceed materiality; it guides the nature, timing and extent of further audit procedures.",
+      "keywords": [
+        "performance materiality",
+        "aggregate"
+      ],
+      "references": [],
+      "basis": "SA 320, determining performance materiality"
+    },
+    {
+      "id": "p5",
+      "label": "Revision and documentation",
+      "marks": 1,
+      "description": "Materiality is revised if the auditor learns of information during the audit that would have led to a different amount at the start (for example actual results differ a lot from forecasts); if it is lowered, performance materiality and further procedures are reconsidered. The amounts and factors used are documented.",
+      "keywords": [
+        "revise",
+        "documentation"
+      ],
+      "references": [],
+      "basis": "SA 320, revision as the audit progresses, and documentation"
+    }
+  ]
+}

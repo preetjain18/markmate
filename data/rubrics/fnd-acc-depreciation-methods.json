@@ -1,0 +1,81 @@
+{
+  "id": "fnd-acc-depreciation-methods",
+  "version": "1",
+  "sa": "AS 10",
+  "topic": "Straight line and written down value methods",
+  "question": "What is depreciation? Distinguish between the straight line method and the written down value method of charging depreciation.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "depreciation",
+    "straight line method",
+    "written down value method"
+  ],
+  "references": [
+    "AS 10"
+  ],
+  "sources": [
+    "AS 10, Property, Plant and Equipment (issued by ICAI) - depreciation",
+    "Standard accounting principles on depreciation methods"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of depreciation",
+      "marks": 1,
+      "description": "Depreciation is the systematic allocation of the depreciable amount of an asset (cost less residual value) over its useful life; it reflects the using up of the asset's economic benefits.",
+      "keywords": [
+        "depreciable amount",
+        "useful life"
+      ],
+      "references": [],
+      "basis": "AS 10, definitions of depreciation and depreciable amount"
+    },
+    {
+      "id": "p2",
+      "label": "Basis of calculation",
+      "marks": 1,
+      "description": "Under the straight line method depreciation is charged on the original cost (depreciable amount); under the written down value method it is charged at a fixed rate on the reducing book value at the start of each year.",
+      "keywords": [
+        "original cost",
+        "book value"
+      ],
+      "references": [],
+      "basis": "Accounting principle: computation under straight line and written down value methods"
+    },
+    {
+      "id": "p3",
+      "label": "Amount of yearly charge",
+      "marks": 1,
+      "description": "Straight line gives an equal charge every year; written down value gives a higher charge in early years that falls year after year.",
+      "keywords": [
+        "equal",
+        "decreasing"
+      ],
+      "references": [],
+      "basis": "AS 10, depreciation methods (straight-line gives a constant charge, diminishing balance a decreasing charge)"
+    },
+    {
+      "id": "p4",
+      "label": "Asset value at end of life",
+      "marks": 1,
+      "description": "Under straight line the book value can be brought down to zero or to residual value; under written down value the book value never becomes zero.",
+      "keywords": [
+        "residual value"
+      ],
+      "references": [],
+      "basis": "Accounting principle: features of written down value method"
+    },
+    {
+      "id": "p5",
+      "label": "Suitability",
+      "marks": 1,
+      "description": "Straight line suits assets whose benefits are used evenly over time (such as leases or patents); written down value suits assets like plant and machinery where repairs rise and benefits fall as the asset ages. The method chosen should reflect the pattern in which the asset's benefits are expected to be used.",
+      "keywords": [
+        "pattern of consumption"
+      ],
+      "references": [],
+      "basis": "AS 10, depreciation method should reflect the expected pattern of consumption of future economic benefits"
+    }
+  ]
+}

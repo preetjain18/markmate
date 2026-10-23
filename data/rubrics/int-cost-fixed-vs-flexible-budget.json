@@ -1,0 +1,75 @@
+{
+  "id": "int-cost-fixed-vs-flexible-budget",
+  "version": "1",
+  "sa": "Budgetary control",
+  "topic": "Fixed and flexible budgets",
+  "question": "Distinguish between a fixed budget and a flexible budget.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "fixed budget",
+    "flexible budget",
+    "level of activity"
+  ],
+  "references": [],
+  "sources": [
+    "Budgets and budgetary control: fixed and flexible budgets"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "A fixed budget is prepared for one level of activity; a flexible budget is prepared for different levels of activity.",
+      "keywords": [
+        "level of activity"
+      ],
+      "references": [],
+      "basis": "Budgetary control: meaning of fixed and flexible budgets"
+    },
+    {
+      "id": "p2",
+      "label": "Rigidity",
+      "marks": 1,
+      "description": "A fixed budget does not change when actual activity changes; a flexible budget can be adjusted to the actual level reached.",
+      "keywords": [
+        "rigid"
+      ],
+      "references": [],
+      "basis": "Budgetary control: nature of fixed and flexible budgets"
+    },
+    {
+      "id": "p3",
+      "label": "Cost classification",
+      "marks": 1,
+      "description": "A flexible budget needs costs split into fixed, variable and semi-variable; a fixed budget does not.",
+      "keywords": [
+        "semi-variable"
+      ],
+      "references": [],
+      "basis": "Budgetary control: preparation of flexible budget"
+    },
+    {
+      "id": "p4",
+      "label": "Comparison and control",
+      "marks": 1,
+      "description": "A flexible budget allows a fair comparison of actual cost with the allowed cost at the actual level, so it is better for control; a fixed budget comparison can mislead when activity changes.",
+      "keywords": [
+        "control"
+      ],
+      "references": [],
+      "basis": "Budgetary control: use of flexible budget for performance evaluation"
+    },
+    {
+      "id": "p5",
+      "label": "Suitability",
+      "marks": 1,
+      "description": "A fixed budget suits stable conditions where output can be forecast; a flexible budget suits businesses where demand or output varies.",
+      "keywords": [
+        "suitability"
+      ],
+      "references": [],
+      "basis": "Budgetary control: conditions favouring each type"
+    }
+  ]
+}

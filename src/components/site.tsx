@@ -67,7 +67,7 @@ export function SiteFooter() {
           </nav>
         </div>
         <p className="mt-8 border-t border-line pt-6 text-[13px] text-muted">
-          Marks shown in MarkMate are practice estimates, not ICAI marks. Marking schemes are unverified drafts, not ICAI text.
+          Marks shown in MarkMate are practice estimates, not ICAI marks. Marking schemes are written by MarkMate from the relevant laws and standards; they are not ICAI text.
         </p>
       </div>
     </footer>

@@ -1,0 +1,81 @@
+{
+  "id": "fnd-eco-national-income-methods",
+  "version": "1",
+  "sa": "Business Economics",
+  "topic": "Methods of measuring national income",
+  "question": "Explain the methods of measuring national income.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "value added method",
+    "income method",
+    "expenditure method",
+    "double counting"
+  ],
+  "references": [],
+  "sources": [
+    "National income accounting (standard macroeconomic theory)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Product (value added) method",
+      "marks": 1,
+      "description": "National income is measured as the sum of gross value added by all producing units in the economy, i.e. value of output less intermediate consumption, across primary, secondary and tertiary sectors.",
+      "keywords": [
+        "value added",
+        "intermediate consumption"
+      ],
+      "references": [],
+      "basis": "National income: value added method"
+    },
+    {
+      "id": "p2",
+      "label": "Avoiding double counting",
+      "marks": 1,
+      "description": "Only final goods or value added are counted, not intermediate goods, to avoid counting the same output more than once.",
+      "keywords": [
+        "double counting"
+      ],
+      "references": [],
+      "basis": "National income: problem of double counting"
+    },
+    {
+      "id": "p3",
+      "label": "Income method",
+      "marks": 1,
+      "description": "National income is the sum of factor incomes earned: compensation of employees, rent, interest, profit and mixed income of the self-employed.",
+      "keywords": [
+        "factor incomes",
+        "compensation of employees"
+      ],
+      "references": [],
+      "basis": "National income: income method"
+    },
+    {
+      "id": "p4",
+      "label": "Expenditure method",
+      "marks": 1,
+      "description": "National income is measured from final expenditure: private final consumption, government final consumption, gross capital formation and net exports.",
+      "keywords": [
+        "final expenditure",
+        "net exports"
+      ],
+      "references": [],
+      "basis": "National income: expenditure method"
+    },
+    {
+      "id": "p5",
+      "label": "Adjustments and equality",
+      "marks": 1,
+      "description": "To get national income (NNP at factor cost) from domestic product, depreciation and net indirect taxes are deducted and net factor income from abroad is added; in principle all three methods give the same figure.",
+      "keywords": [
+        "net factor income from abroad",
+        "depreciation",
+        "net indirect taxes"
+      ],
+      "references": [],
+      "basis": "National income: aggregates and equality of the three methods"
+    }
+  ]
+}

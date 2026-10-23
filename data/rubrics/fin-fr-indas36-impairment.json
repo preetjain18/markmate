@@ -1,0 +1,100 @@
+{
+  "id": "fin-fr-indas36-impairment",
+  "version": "1",
+  "sa": "Ind AS 36",
+  "topic": "Impairment of assets",
+  "question": "Explain when an entity must test an asset for impairment under Ind AS 36, how the impairment loss is measured and recognised, and when it may be reversed.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "recoverable amount",
+    "value in use",
+    "fair value less costs of disposal",
+    "cash-generating unit",
+    "goodwill"
+  ],
+  "references": [
+    "Ind AS 36"
+  ],
+  "sources": [
+    "Ind AS 36 Impairment of Assets"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "When to test",
+      "marks": 1,
+      "description": "At each reporting date the entity checks for any indication of impairment, from external sources (market value falls, adverse changes, higher interest rates) or internal sources (damage, obsolescence, poor performance); if there is one, recoverable amount is estimated.",
+      "keywords": [
+        "indication",
+        "external",
+        "internal"
+      ],
+      "references": [],
+      "basis": "Ind AS 36, identifying an asset that may be impaired"
+    },
+    {
+      "id": "p2",
+      "label": "Annual test regardless of indicators",
+      "marks": 1,
+      "description": "Goodwill acquired in a business combination, intangible assets with an indefinite useful life and intangible assets not yet available for use are tested every year even without any indication.",
+      "keywords": [
+        "goodwill",
+        "indefinite useful life",
+        "annual"
+      ],
+      "references": [],
+      "basis": "Ind AS 36, annual impairment test requirements"
+    },
+    {
+      "id": "p3",
+      "label": "Recoverable amount",
+      "marks": 1,
+      "description": "Recoverable amount is the higher of fair value less costs of disposal and value in use (present value of expected future cash flows from the asset); an asset is impaired when its carrying amount exceeds this.",
+      "keywords": [
+        "recoverable amount",
+        "value in use",
+        "fair value less costs of disposal"
+      ],
+      "references": [],
+      "basis": "Ind AS 36, measuring recoverable amount"
+    },
+    {
+      "id": "p4",
+      "label": "Recognising the loss",
+      "marks": 1,
+      "description": "The loss is recognised in profit or loss, unless the asset is carried at a revalued amount, when it is first treated as a revaluation decrease; depreciation is then based on the new carrying amount.",
+      "keywords": [
+        "profit or loss",
+        "revaluation decrease"
+      ],
+      "references": [],
+      "basis": "Ind AS 36, recognising and measuring an impairment loss"
+    },
+    {
+      "id": "p5",
+      "label": "Cash-generating units",
+      "marks": 1,
+      "description": "If recoverable amount cannot be found for a single asset, it is found for the smallest group of assets producing largely independent cash inflows; goodwill is allocated to such units and a loss is set first against goodwill and then pro rata against other assets.",
+      "keywords": [
+        "cash-generating unit",
+        "allocation",
+        "pro rata"
+      ],
+      "references": [],
+      "basis": "Ind AS 36, cash-generating units and goodwill"
+    },
+    {
+      "id": "p6",
+      "label": "Reversal",
+      "marks": 1,
+      "description": "A loss on an asset other than goodwill is reversed if the estimates used have changed, but only up to the carrying amount that would have existed had no loss been recognised; an impairment loss on goodwill is never reversed.",
+      "keywords": [
+        "reversal",
+        "goodwill not reversed"
+      ],
+      "references": [],
+      "basis": "Ind AS 36, reversing an impairment loss"
+    }
+  ]
+}

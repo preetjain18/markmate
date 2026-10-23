@@ -12,6 +12,9 @@
     "mode"
   ],
   "references": [],
+  "sources": [
+    "Measures of central tendency (standard statistical principles)"
+  ],
   "points": [
     {
       "id": "p1",
@@ -21,7 +24,8 @@
       "keywords": [
         "arithmetic mean"
       ],
-      "references": []
+      "references": [],
+      "basis": "Statistics: definition of arithmetic mean"
     },
     {
       "id": "p2",
@@ -29,7 +33,8 @@
       "marks": 1,
       "description": "Merit: rigidly defined and based on all observations. Limitation: unduly affected by extreme values.",
       "keywords": [],
-      "references": []
+      "references": [],
+      "basis": "Statistics: merits and limitations of arithmetic mean"
     },
     {
       "id": "p3",
@@ -39,7 +44,8 @@
       "keywords": [
         "median"
       ],
-      "references": []
+      "references": [],
+      "basis": "Statistics: definition of median"
     },
     {
       "id": "p4",
@@ -47,7 +53,8 @@
       "marks": 1,
       "description": "Merit: not affected by extreme values and usable with open-end classes. Limitation: not based on all observations and not suited to further algebraic treatment.",
       "keywords": [],
-      "references": []
+      "references": [],
+      "basis": "Statistics: merits and limitations of median"
     },
     {
       "id": "p5",
@@ -57,7 +64,8 @@
       "keywords": [
         "mode"
       ],
-      "references": []
+      "references": [],
+      "basis": "Statistics: definition of mode"
     },
     {
       "id": "p6",
@@ -65,7 +73,8 @@
       "marks": 1,
       "description": "Merit: easy to understand and not affected by extreme values. Limitation: may be ill-defined, or there may be more than one mode.",
       "keywords": [],
-      "references": []
+      "references": [],
+      "basis": "Statistics: merits and limitations of mode"
     }
   ]
 }

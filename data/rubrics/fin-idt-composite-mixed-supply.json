@@ -1,0 +1,94 @@
+{
+  "id": "fin-idt-composite-mixed-supply",
+  "version": "1",
+  "sa": "CGST Act, 2017 – section 8",
+  "topic": "Composite and mixed supply",
+  "question": "Distinguish between a composite supply and a mixed supply under the CGST Act, 2017 and explain how the tax liability on each is determined.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "composite supply",
+    "naturally bundled",
+    "principal supply",
+    "mixed supply",
+    "single price"
+  ],
+  "references": [
+    "Section 2(30)",
+    "Section 2(74)",
+    "Section 8"
+  ],
+  "sources": [
+    "CGST Act, 2017, sections 2(30), 2(74), 2(90) and 8"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Composite supply",
+      "marks": 1,
+      "description": "A supply by a taxable person to a recipient of two or more taxable supplies of goods or services or both which are naturally bundled and supplied together in the ordinary course of business, one of which is the principal supply.",
+      "keywords": [
+        "naturally bundled",
+        "ordinary course of business"
+      ],
+      "references": [
+        "Section 2(30)"
+      ],
+      "basis": "CGST Act, 2017, section 2(30)"
+    },
+    {
+      "id": "p2",
+      "label": "Principal supply",
+      "marks": 1,
+      "description": "The main element of a composite supply, to which the other supplies are only ancillary; for example, when goods are sold with packing, transport and insurance, the goods are the principal supply.",
+      "keywords": [
+        "principal supply",
+        "ancillary"
+      ],
+      "references": [
+        "Section 2(90)"
+      ],
+      "basis": "CGST Act, 2017, section 2(90)"
+    },
+    {
+      "id": "p3",
+      "label": "Mixed supply",
+      "marks": 1,
+      "description": "Two or more individual supplies of goods or services made together for a single price, where the combination is not a composite supply; for example, a festive hamper of soft drinks, chocolates and a toy sold for one price.",
+      "keywords": [
+        "individual supplies",
+        "single price"
+      ],
+      "references": [
+        "Section 2(74)"
+      ],
+      "basis": "CGST Act, 2017, section 2(74)"
+    },
+    {
+      "id": "p4",
+      "label": "Tax treatment",
+      "marks": 1,
+      "description": "A composite supply is treated as a supply of the principal supply; a mixed supply is treated as a supply of the item in it that attracts the highest rate of tax.",
+      "keywords": [
+        "treated as principal supply",
+        "highest rate"
+      ],
+      "references": [
+        "Section 8"
+      ],
+      "basis": "CGST Act, 2017, section 8(a) and (b)"
+    },
+    {
+      "id": "p5",
+      "label": "Test of natural bundling",
+      "marks": 1,
+      "description": "Whether items are naturally bundled depends on whether they are normally supplied together in that trade, how customers see the package, whether a single price is charged, and whether the items are usually available separately; items that are normally sold separately and are simply grouped point to a mixed supply.",
+      "keywords": [
+        "customer perception",
+        "normally sold separately"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 2(30): meaning of 'naturally bundled' in the ordinary course of business"
+    }
+  ]
+}

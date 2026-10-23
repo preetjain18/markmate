@@ -116,7 +116,7 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
             <p className="mt-1 text-[15px] text-muted">MarkMate marks your answer against that question&apos;s marking points, so it needs to know the question first.</p>
           </div>
           <div role="radiogroup" aria-label="Where the question comes from" className="grid gap-3 sm:grid-cols-3">
-            <SourceCard on={source === "bank"} onClick={() => setSource("bank")} icon="book" title="From the question bank" body="39 questions across Foundation, Inter and Final, with marking schemes ready." />
+            <SourceCard on={source === "bank"} onClick={() => setSource("bank")} icon="book" title="From the question bank" body="Questions for every Foundation, Inter and Final paper, each with a marking scheme ready." />
             <SourceCard on={source === "typed"} onClick={() => setSource("typed")} icon="edit" title="Type the question" body="Paste any question with its model answer, e.g. an ICAI suggested answer you have." />
             <SourceCard on={source === "paper"} onClick={() => setSource("paper")} icon="camera" title="Photo of the question paper" body="We read the question from a photo; you add the model answer." />
           </div>
@@ -136,7 +136,7 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
                 <div className="sm:col-span-3">
                   <p className="rounded-control bg-canvas p-3.5 text-[15px] leading-relaxed text-ink ring-1 ring-inset ring-line">{question.text}</p>
                   <p className="mt-2 flex flex-wrap items-center gap-2 text-[13px] text-muted">
-                    <Badge tone="neutral">{question.maxMarks} marks</Badge> Draft marking scheme, not yet verified by a CA.
+                    <Badge tone="neutral">{question.maxMarks} marks</Badge> {question.source ? `Marking scheme based on ${question.source}.` : "Marking scheme ready."}
                   </p>
                 </div>
               )}

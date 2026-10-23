@@ -1,0 +1,89 @@
+{
+  "id": "fin-fr-indas110-control",
+  "version": "1",
+  "sa": "Ind AS 110",
+  "topic": "Control under Ind AS 110",
+  "question": "Explain how an investor decides whether it controls an investee under Ind AS 110.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "power",
+    "variable returns",
+    "relevant activities",
+    "substantive rights",
+    "principal",
+    "agent"
+  ],
+  "references": [
+    "Ind AS 110"
+  ],
+  "sources": [
+    "Ind AS 110 Consolidated Financial Statements - control and its assessment"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Three elements of control",
+      "marks": 1,
+      "description": "An investor controls an investee only if it has power over the investee, exposure or rights to variable returns from it, and the ability to use its power to affect those returns.",
+      "keywords": [
+        "power",
+        "variable returns",
+        "link between power and returns"
+      ],
+      "references": [],
+      "basis": "Ind AS 110, definition and elements of control"
+    },
+    {
+      "id": "p2",
+      "label": "Power and relevant activities",
+      "marks": 1,
+      "description": "Power comes from existing rights giving the current ability to direct the relevant activities, meaning those that significantly affect the investee's returns; it may come from voting rights or contracts.",
+      "keywords": [
+        "relevant activities",
+        "existing rights",
+        "current ability"
+      ],
+      "references": [],
+      "basis": "Ind AS 110, power"
+    },
+    {
+      "id": "p3",
+      "label": "Substantive and protective rights",
+      "marks": 1,
+      "description": "Only substantive rights (that the holder has the practical ability to exercise) count, including substantive potential voting rights; protective rights that only guard the holder's interests do not give power.",
+      "keywords": [
+        "substantive rights",
+        "protective rights",
+        "potential voting rights"
+      ],
+      "references": [],
+      "basis": "Ind AS 110, substantive and protective rights"
+    },
+    {
+      "id": "p4",
+      "label": "Less than a majority of votes",
+      "marks": 1,
+      "description": "An investor with under half the votes may still have power, for example through agreements with other holders, contractual rights, or a large holding relative to a widely dispersed group of other holders.",
+      "keywords": [
+        "less than a majority",
+        "dispersed"
+      ],
+      "references": [],
+      "basis": "Ind AS 110, power with less than a majority of voting rights"
+    },
+    {
+      "id": "p5",
+      "label": "Principal or agent, and reassessment",
+      "marks": 1,
+      "description": "A decision-maker acting mainly as an agent for others does not control; control is reassessed whenever facts and circumstances show a change in any of the three elements.",
+      "keywords": [
+        "principal",
+        "agent",
+        "reassessment"
+      ],
+      "references": [],
+      "basis": "Ind AS 110, delegated power and continuous assessment"
+    }
+  ]
+}

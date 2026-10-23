@@ -46,6 +46,7 @@ export function rubricFromDraft(question: string, modelAnswer: string, maxMarks:
     })),
     keywords: [],
     references: [],
+    sources: [],
   };
 }
 
@@ -100,5 +101,6 @@ export function buildCustomRubric(question: string, modelAnswer: string, maxMark
     points,
     keywords: [],
     references: [],
+    sources: [],
   };
 }

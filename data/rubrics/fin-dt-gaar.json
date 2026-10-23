@@ -1,0 +1,101 @@
+{
+  "id": "fin-dt-gaar",
+  "version": "1",
+  "sa": "Chapter X-A (GAAR)",
+  "topic": "General Anti-Avoidance Rule",
+  "question": "Explain when an arrangement is treated as an 'impermissible avoidance arrangement' under the General Anti-Avoidance Rule in the Income-tax Act, 1961, and the consequences that follow.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "impermissible avoidance arrangement",
+    "main purpose",
+    "tax benefit",
+    "commercial substance",
+    "Approving Panel"
+  ],
+  "references": [
+    "Section 96",
+    "Section 97",
+    "Section 98"
+  ],
+  "sources": [
+    "Income-tax Act, 1961, Chapter X-A (sections 95 to 102), sections 90(2A) and 144BA",
+    "Income-tax Rules, 1962, rule 10U"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Main purpose test",
+      "marks": 1,
+      "description": "The main purpose of the arrangement must be to obtain a tax benefit; an arrangement is presumed to have that main purpose if the main purpose of any step in it, or part of it, is to obtain a tax benefit, even if the whole arrangement has another main purpose.",
+      "keywords": [
+        "main purpose",
+        "tax benefit",
+        "presumption"
+      ],
+      "references": [
+        "Section 96"
+      ],
+      "basis": "Income-tax Act, 1961, section 96(1) and (2)"
+    },
+    {
+      "id": "p2",
+      "label": "The tainted elements",
+      "marks": 1,
+      "description": "In addition, the arrangement must create rights or obligations not normally created between persons dealing at arm's length, result in misuse or abuse of the Act, lack commercial substance, or be carried out in a way not normally used for genuine purposes.",
+      "keywords": [
+        "arm's length",
+        "misuse or abuse",
+        "lacks commercial substance",
+        "bona fide purposes"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 96(1)(a) to (d)"
+    },
+    {
+      "id": "p3",
+      "label": "Lack of commercial substance",
+      "marks": 1,
+      "description": "An arrangement lacks commercial substance where, for example, its substance differs significantly from its form, it involves round trip financing or an accommodating party, its elements offset each other, or it disguises the value, location or ownership of funds, or locates an asset or transaction mainly to obtain a tax benefit.",
+      "keywords": [
+        "round trip financing",
+        "accommodating party",
+        "substance over form"
+      ],
+      "references": [
+        "Section 97"
+      ],
+      "basis": "Income-tax Act, 1961, section 97"
+    },
+    {
+      "id": "p4",
+      "label": "Consequences",
+      "marks": 1,
+      "description": "The tax consequences are determined as if the arrangement had not been entered into, for example by disregarding or recharacterising steps, ignoring an accommodating party, reallocating income or expenses, looking through a corporate structure, treating equity as debt or the reverse, or denying a treaty benefit.",
+      "keywords": [
+        "disregard",
+        "recharacterise",
+        "deny treaty benefit"
+      ],
+      "references": [
+        "Section 98"
+      ],
+      "basis": "Income-tax Act, 1961, section 98"
+    },
+    {
+      "id": "p5",
+      "label": "Procedure and threshold",
+      "marks": 1,
+      "description": "The Assessing Officer refers the case to the Principal Commissioner or Commissioner, and if needed to the Approving Panel, before invoking GAAR; it applies only where the tax benefit from the arrangement in the year exceeds the threshold prescribed in the Rules, and it overrides treaty benefits.",
+      "keywords": [
+        "Approving Panel",
+        "threshold",
+        "treaty override"
+      ],
+      "references": [
+        "Section 144BA"
+      ],
+      "basis": "Income-tax Act, 1961, section 144BA and section 90(2A); Income-tax Rules, 1962, rule 10U"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "fin-aud-sa706-eom-other-matter",
+  "version": "1",
+  "sa": "SA 706",
+  "topic": "Emphasis of Matter and Other Matter paragraphs",
+  "question": "Distinguish between an Emphasis of Matter paragraph and an Other Matter paragraph under SA 706, giving examples of when each may be used.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "emphasis of matter",
+    "other matter",
+    "fundamental to understanding",
+    "not modified"
+  ],
+  "references": [
+    "SA 706"
+  ],
+  "sources": [
+    "SA 706 Emphasis of Matter Paragraphs and Other Matter Paragraphs in the Independent Auditor's Report",
+    "SA 701 Communicating Key Audit Matters in the Independent Auditor's Report"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of Emphasis of Matter",
+      "marks": 1,
+      "description": "A paragraph that draws attention to a matter already properly presented or disclosed in the financial statements which, in the auditor's judgment, is so important that it is fundamental to users' understanding of them.",
+      "keywords": [
+        "emphasis of matter",
+        "properly presented or disclosed"
+      ],
+      "references": [],
+      "basis": "SA 706, definition of Emphasis of Matter paragraph"
+    },
+    {
+      "id": "p2",
+      "label": "Conditions for using Emphasis of Matter",
+      "marks": 1,
+      "description": "Used only when the auditor would not modify the opinion for that matter and, where SA 701 applies, the matter has not been determined to be a key audit matter; it refers only to information in the financial statements.",
+      "keywords": [
+        "not modified",
+        "key audit matter"
+      ],
+      "references": [
+        "SA 701"
+      ],
+      "basis": "SA 706, requirements for including an Emphasis of Matter paragraph"
+    },
+    {
+      "id": "p3",
+      "label": "Examples of Emphasis of Matter",
+      "marks": 1,
+      "description": "For example an uncertainty about the outcome of unusual litigation or regulatory action, a significant event after the reporting date, early adoption of a new accounting standard with a pervasive effect, or a major disaster that has badly affected the entity's financial position.",
+      "keywords": [
+        "litigation",
+        "subsequent event",
+        "catastrophe"
+      ],
+      "references": [],
+      "basis": "SA 706, examples of circumstances for an Emphasis of Matter paragraph (application material)"
+    },
+    {
+      "id": "p4",
+      "label": "Meaning and examples of Other Matter",
+      "marks": 1,
+      "description": "A paragraph on a matter not presented or disclosed in the financial statements that is relevant to users' understanding of the audit, the auditor's responsibilities or the report, for example a restriction on distribution or use of the report, reporting on more than one set of financial statements, or prior period statements audited by another auditor.",
+      "keywords": [
+        "other matter",
+        "restriction on use",
+        "predecessor auditor"
+      ],
+      "references": [],
+      "basis": "SA 706, definition of and requirements for an Other Matter paragraph"
+    },
+    {
+      "id": "p5",
+      "label": "Presentation and limits",
+      "marks": 1,
+      "description": "Each goes in a separate section with a suitable heading; an Emphasis of Matter section states that the opinion is not modified for the matter. Neither replaces a modified opinion, the going concern material uncertainty section or required disclosures, and the auditor tells those charged with governance in advance.",
+      "keywords": [
+        "separate section",
+        "not a substitute",
+        "communication with those charged with governance"
+      ],
+      "references": [],
+      "basis": "SA 706, placement in the report and communication with those charged with governance"
+    }
+  ]
+}

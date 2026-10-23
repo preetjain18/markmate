@@ -1,0 +1,67 @@
+{
+  "id": "fnd-qa-permutation-combination",
+  "version": "1",
+  "sa": "Business Mathematics",
+  "topic": "Permutations and combinations",
+  "question": "State the fundamental principle of counting. Distinguish between a permutation and a combination, and show how the two are related.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "fundamental principle of counting",
+    "permutation",
+    "combination",
+    "factorial"
+  ],
+  "references": [],
+  "sources": [
+    "Permutations and combinations (standard principles of counting)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Fundamental principle of counting",
+      "marks": 1,
+      "description": "If one operation can be done in m ways and, after it, a second in n ways, both together can be done in m × n ways (multiplication rule); if they are alternatives that cannot happen together, either can be done in m + n ways (addition rule).",
+      "keywords": [
+        "multiplication rule",
+        "addition rule"
+      ],
+      "references": [],
+      "basis": "Fundamental principle of counting"
+    },
+    {
+      "id": "p2",
+      "label": "Permutation",
+      "marks": 1,
+      "description": "A permutation is an arrangement of objects in which order matters; the number of permutations of n different things taken r at a time is n!/(n − r)!.",
+      "keywords": [
+        "arrangement",
+        "order"
+      ],
+      "references": [],
+      "basis": "Definition and formula of nPr"
+    },
+    {
+      "id": "p3",
+      "label": "Combination",
+      "marks": 1,
+      "description": "A combination is a selection of objects in which order does not matter; the number of combinations of n different things taken r at a time is n!/[r!(n − r)!].",
+      "keywords": [
+        "selection"
+      ],
+      "references": [],
+      "basis": "Definition and formula of nCr"
+    },
+    {
+      "id": "p4",
+      "label": "Relation and example",
+      "marks": 1,
+      "description": "Each combination of r things can be arranged in r! ways, so nPr = r! × nCr; for example, choosing 2 of 3 people for a team is a combination (3 ways), while choosing a captain and vice-captain is a permutation (6 ways).",
+      "keywords": [
+        "nPr = r! × nCr"
+      ],
+      "references": [],
+      "basis": "Relation between permutations and combinations"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "int-sm-porter-five-forces",
+  "version": "1",
+  "sa": "Strategic management",
+  "topic": "Porter's five forces",
+  "question": "Explain Porter's five forces model for analysing the competitive environment of an industry.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "five forces",
+    "new entrants",
+    "bargaining power",
+    "substitutes",
+    "rivalry"
+  ],
+  "references": [],
+  "sources": [
+    "Porter's five forces model"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Threat of new entrants",
+      "marks": 1,
+      "description": "New firms add capacity and compete for share; the threat is lower when entry barriers such as scale, capital needs and brand loyalty are high.",
+      "keywords": [
+        "new entrants",
+        "entry barriers"
+      ],
+      "references": [],
+      "basis": "Porter's five forces: threat of new entrants"
+    },
+    {
+      "id": "p2",
+      "label": "Bargaining power of buyers",
+      "marks": 1,
+      "description": "Strong buyers can push prices down or demand better quality, especially when they buy in bulk or can switch easily.",
+      "keywords": [
+        "buyers"
+      ],
+      "references": [],
+      "basis": "Porter's five forces: bargaining power of buyers"
+    },
+    {
+      "id": "p3",
+      "label": "Bargaining power of suppliers",
+      "marks": 1,
+      "description": "Strong suppliers can raise prices or reduce quality, especially when there are few of them or no close substitutes for their inputs.",
+      "keywords": [
+        "suppliers"
+      ],
+      "references": [],
+      "basis": "Porter's five forces: bargaining power of suppliers"
+    },
+    {
+      "id": "p4",
+      "label": "Threat of substitutes",
+      "marks": 1,
+      "description": "Products from other industries that meet the same need limit the price an industry can charge.",
+      "keywords": [
+        "substitutes"
+      ],
+      "references": [],
+      "basis": "Porter's five forces: threat of substitute products"
+    },
+    {
+      "id": "p5",
+      "label": "Rivalry among existing firms",
+      "marks": 1,
+      "description": "Competition through price, advertising and new products is intense when there are many similar competitors, slow growth or high exit barriers.",
+      "keywords": [
+        "rivalry"
+      ],
+      "references": [],
+      "basis": "Porter's five forces: rivalry among existing competitors"
+    },
+    {
+      "id": "p6",
+      "label": "Use of the model",
+      "marks": 1,
+      "description": "Together the forces decide the profit potential of an industry and help a firm find where it can position itself.",
+      "keywords": [
+        "industry attractiveness"
+      ],
+      "references": [],
+      "basis": "Porter's five forces: purpose of industry analysis"
+    }
+  ]
+}

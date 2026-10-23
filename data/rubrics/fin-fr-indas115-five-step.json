@@ -13,6 +13,9 @@
   "references": [
     "Ind AS 115"
   ],
+  "sources": [
+    "Ind AS 115 Revenue from Contracts with Customers - core principle and the five steps"
+  ],
   "points": [
     {
       "id": "p1",
@@ -22,7 +25,8 @@
       "keywords": [
         "contract"
       ],
-      "references": []
+      "references": [],
+      "basis": "Ind AS 115, Step 1: identifying the contract and the criteria a contract must meet"
     },
     {
       "id": "p2",
@@ -32,7 +36,8 @@
       "keywords": [
         "performance obligation"
       ],
-      "references": []
+      "references": [],
+      "basis": "Ind AS 115, Step 2: identifying performance obligations (distinct goods or services)"
     },
     {
       "id": "p3",
@@ -42,7 +47,8 @@
       "keywords": [
         "transaction price"
       ],
-      "references": []
+      "references": [],
+      "basis": "Ind AS 115, Step 3: determining the transaction price, including variable consideration and significant financing components"
     },
     {
       "id": "p4",
@@ -52,7 +58,8 @@
       "keywords": [
         "stand-alone selling price"
       ],
-      "references": []
+      "references": [],
+      "basis": "Ind AS 115, Step 4: allocating the transaction price on a relative stand-alone selling price basis"
     },
     {
       "id": "p5",
@@ -63,7 +70,8 @@
         "point in time",
         "over time"
       ],
-      "references": []
+      "references": [],
+      "basis": "Ind AS 115, Step 5: satisfaction of performance obligations over time or at a point in time"
     }
   ]
 }

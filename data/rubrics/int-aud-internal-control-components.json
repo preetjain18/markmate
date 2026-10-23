@@ -1,0 +1,81 @@
+{
+  "id": "int-aud-internal-control-components",
+  "version": "1",
+  "sa": "SA 315",
+  "topic": "Components of internal control",
+  "question": "Explain the components of internal control that the auditor considers when understanding the entity under SA 315.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "control environment",
+    "risk assessment process",
+    "information system",
+    "control activities",
+    "monitoring"
+  ],
+  "references": [
+    "SA 315"
+  ],
+  "sources": [
+    "SA 315 Identifying and Assessing the Risks of Material Misstatement"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Control environment",
+      "marks": 1,
+      "description": "The attitude and actions of those charged with governance and management about internal control, such as integrity, ethical values and commitment to competence.",
+      "keywords": [
+        "control environment"
+      ],
+      "references": [],
+      "basis": "SA 315, components of internal control: control environment"
+    },
+    {
+      "id": "p2",
+      "label": "Entity's risk assessment process",
+      "marks": 1,
+      "description": "How the entity identifies business risks that affect financial reporting, judges their significance and decides how to deal with them.",
+      "keywords": [
+        "risk assessment process"
+      ],
+      "references": [],
+      "basis": "SA 315, components of internal control: risk assessment process"
+    },
+    {
+      "id": "p3",
+      "label": "Information system and communication",
+      "marks": 1,
+      "description": "The procedures and records used to start, record, process and report transactions, and how roles and matters about financial reporting are communicated.",
+      "keywords": [
+        "information system",
+        "communication"
+      ],
+      "references": [],
+      "basis": "SA 315, components of internal control: information system and communication"
+    },
+    {
+      "id": "p4",
+      "label": "Control activities",
+      "marks": 1,
+      "description": "Policies and procedures that make sure management's directions are carried out, such as authorisation, reconciliations, physical controls and segregation of duties.",
+      "keywords": [
+        "control activities",
+        "segregation of duties"
+      ],
+      "references": [],
+      "basis": "SA 315, components of internal control: control activities"
+    },
+    {
+      "id": "p5",
+      "label": "Monitoring of controls",
+      "marks": 1,
+      "description": "The process of checking over time whether controls are working as intended and fixing weaknesses.",
+      "keywords": [
+        "monitoring"
+      ],
+      "references": [],
+      "basis": "SA 315, components of internal control: monitoring of controls"
+    }
+  ]
+}

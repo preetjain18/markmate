@@ -1,0 +1,92 @@
+{
+  "id": "int-acc-as14-merger",
+  "version": "1",
+  "sa": "AS 14",
+  "topic": "Amalgamation in the nature of merger",
+  "question": "State the conditions that an amalgamation must satisfy to be an amalgamation in the nature of merger under AS 14 'Accounting for Amalgamations'. Which accounting method applies to each type of amalgamation?",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "amalgamation in the nature of merger",
+    "amalgamation in the nature of purchase",
+    "pooling of interests",
+    "purchase method"
+  ],
+  "references": [
+    "AS 14"
+  ],
+  "sources": [
+    "AS 14 Accounting for Amalgamations - definitions and methods of accounting"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "All assets and liabilities transferred",
+      "marks": 1,
+      "description": "All the assets and liabilities of the transferor company become those of the transferee company.",
+      "keywords": [
+        "assets and liabilities"
+      ],
+      "references": [],
+      "basis": "AS 14, conditions for amalgamation in the nature of merger"
+    },
+    {
+      "id": "p2",
+      "label": "90 per cent shareholders",
+      "marks": 1,
+      "description": "Shareholders holding at least 90 per cent of the face value of the transferor's equity shares (excluding shares already held by the transferee or its subsidiaries or their nominees) become equity shareholders of the transferee.",
+      "keywords": [
+        "90 per cent"
+      ],
+      "references": [],
+      "basis": "AS 14, conditions for amalgamation in the nature of merger"
+    },
+    {
+      "id": "p3",
+      "label": "Consideration in equity shares",
+      "marks": 1,
+      "description": "The consideration to those equity shareholders is paid wholly by issue of equity shares of the transferee, except that cash may be paid for fractional shares.",
+      "keywords": [
+        "equity shares",
+        "fractional shares"
+      ],
+      "references": [],
+      "basis": "AS 14, conditions for amalgamation in the nature of merger"
+    },
+    {
+      "id": "p4",
+      "label": "Business continued",
+      "marks": 1,
+      "description": "The transferee intends to carry on the business of the transferor company.",
+      "keywords": [
+        "business"
+      ],
+      "references": [],
+      "basis": "AS 14, conditions for amalgamation in the nature of merger"
+    },
+    {
+      "id": "p5",
+      "label": "No change in book values",
+      "marks": 1,
+      "description": "No adjustment is made to the book values of the transferor's assets and liabilities, except to make accounting policies uniform.",
+      "keywords": [
+        "book values",
+        "uniformity"
+      ],
+      "references": [],
+      "basis": "AS 14, conditions for amalgamation in the nature of merger"
+    },
+    {
+      "id": "p6",
+      "label": "Methods of accounting",
+      "marks": 1,
+      "description": "An amalgamation meeting all the conditions is accounted for by the pooling of interests method; one that fails any condition is an amalgamation in the nature of purchase and uses the purchase method.",
+      "keywords": [
+        "pooling of interests",
+        "purchase method"
+      ],
+      "references": [],
+      "basis": "AS 14, methods of accounting for amalgamations"
+    }
+  ]
+}

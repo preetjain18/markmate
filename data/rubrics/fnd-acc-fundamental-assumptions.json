@@ -14,6 +14,9 @@
   "references": [
     "AS 1"
   ],
+  "sources": [
+    "AS 1, Disclosure of Accounting Policies (issued by ICAI)"
+  ],
   "points": [
     {
       "id": "p1",
@@ -23,7 +26,8 @@
       "keywords": [
         "going concern"
       ],
-      "references": []
+      "references": [],
+      "basis": "AS 1, fundamental accounting assumptions: going concern"
     },
     {
       "id": "p2",
@@ -33,7 +37,8 @@
       "keywords": [
         "consistency"
       ],
-      "references": []
+      "references": [],
+      "basis": "AS 1, fundamental accounting assumptions: consistency"
     },
     {
       "id": "p3",
@@ -43,7 +48,8 @@
       "keywords": [
         "accrual"
       ],
-      "references": []
+      "references": [],
+      "basis": "AS 1, fundamental accounting assumptions: accrual"
     },
     {
       "id": "p4",
@@ -51,7 +57,8 @@
       "marks": 1,
       "description": "If the fundamental accounting assumptions are followed, they are presumed and specific disclosure is not required.",
       "keywords": [],
-      "references": []
+      "references": [],
+      "basis": "AS 1, disclosure of fundamental accounting assumptions when followed"
     },
     {
       "id": "p5",
@@ -59,7 +66,8 @@
       "marks": 1,
       "description": "If a fundamental accounting assumption is not followed, that fact should be disclosed.",
       "keywords": [],
-      "references": []
+      "references": [],
+      "basis": "AS 1, disclosure when a fundamental accounting assumption is not followed"
     }
   ]
 }

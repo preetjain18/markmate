@@ -1,0 +1,70 @@
+{
+  "id": "fin-afm-forex-exposure-types",
+  "version": "1",
+  "sa": "AFM",
+  "topic": "Types of foreign exchange exposure",
+  "question": "What is foreign exchange exposure? Explain transaction, translation and economic exposure.",
+  "maxMarks": 4,
+  "verified": false,
+  "keywords": [
+    "transaction exposure",
+    "translation exposure",
+    "economic exposure",
+    "operating exposure"
+  ],
+  "references": [],
+  "sources": [
+    "Generally accepted international financial management principles on foreign exchange exposure",
+    "Ind AS 21 The Effects of Changes in Foreign Exchange Rates (for translation of foreign operations)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "The sensitivity of a firm's cash flows, assets, liabilities or value to unexpected changes in exchange rates.",
+      "keywords": [
+        "exposure",
+        "sensitivity"
+      ],
+      "references": [],
+      "basis": "International financial management principle: definition of currency exposure"
+    },
+    {
+      "id": "p2",
+      "label": "Transaction exposure",
+      "marks": 1,
+      "description": "Arises on contracted foreign currency receivables, payables, loans or orders where the rate may change between the contract date and settlement; it affects actual cash flows.",
+      "keywords": [
+        "transaction exposure",
+        "settlement"
+      ],
+      "references": [],
+      "basis": "International financial management principle: transaction exposure"
+    },
+    {
+      "id": "p3",
+      "label": "Translation exposure",
+      "marks": 1,
+      "description": "Also called accounting exposure; arises when the financial statements of foreign operations are translated into the reporting currency for consolidation, affecting reported figures rather than cash.",
+      "keywords": [
+        "translation exposure",
+        "consolidation"
+      ],
+      "references": [],
+      "basis": "Ind AS 21, translation of the results and financial position of a foreign operation"
+    },
+    {
+      "id": "p4",
+      "label": "Economic exposure",
+      "marks": 1,
+      "description": "Also called operating exposure; the effect of exchange rate changes on the present value of future operating cash flows and competitive position, even for firms with no direct foreign transactions.",
+      "keywords": [
+        "economic exposure",
+        "competitive position"
+      ],
+      "references": [],
+      "basis": "International financial management principle: economic (operating) exposure"
+    }
+  ]
+}

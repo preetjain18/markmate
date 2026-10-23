@@ -1,0 +1,86 @@
+{
+  "id": "fnd-acc-bill-promissory",
+  "version": "1",
+  "sa": "Negotiable Instruments Act, 1881",
+  "topic": "Bill of exchange and promissory note",
+  "question": "Distinguish between a bill of exchange and a promissory note.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "bill of exchange",
+    "promissory note",
+    "acceptance",
+    "drawer",
+    "maker"
+  ],
+  "references": [
+    "Section 4",
+    "Section 5"
+  ],
+  "sources": [
+    "Negotiable Instruments Act, 1881, Section 4 (promissory note) and Section 5 (bill of exchange)",
+    "Standard accounting treatment of bills of exchange"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Nature of instrument",
+      "marks": 1,
+      "description": "A promissory note contains an unconditional promise by the maker to pay; a bill of exchange contains an unconditional order by the drawer directing the drawee to pay.",
+      "keywords": [
+        "promise",
+        "order"
+      ],
+      "references": [],
+      "basis": "Negotiable Instruments Act, 1881, Sections 4 and 5"
+    },
+    {
+      "id": "p2",
+      "label": "Number of parties",
+      "marks": 1,
+      "description": "A promissory note has two parties, the maker and the payee; a bill has three, the drawer, the drawee and the payee (though drawer and payee may be the same person).",
+      "keywords": [
+        "maker",
+        "drawer",
+        "drawee",
+        "payee"
+      ],
+      "references": [],
+      "basis": "Negotiable Instruments Act, 1881, Sections 4 and 5 and parties to the instruments"
+    },
+    {
+      "id": "p3",
+      "label": "Acceptance",
+      "marks": 1,
+      "description": "A promissory note needs no acceptance because the maker himself promises to pay; a bill must be accepted by the drawee before it binds him.",
+      "keywords": [
+        "acceptance"
+      ],
+      "references": [],
+      "basis": "Negotiable Instruments Act, 1881, acceptance of a bill by the drawee"
+    },
+    {
+      "id": "p4",
+      "label": "Liability of maker or drawer",
+      "marks": 1,
+      "description": "The maker of a note is primarily and unconditionally liable; the drawer of a bill is liable only secondarily, if the drawee (acceptor) fails to pay.",
+      "keywords": [
+        "primary liability",
+        "secondary liability"
+      ],
+      "references": [],
+      "basis": "Negotiable Instruments Act, 1881, liability of maker, drawer and acceptor"
+    },
+    {
+      "id": "p5",
+      "label": "Notice of dishonour",
+      "marks": 1,
+      "description": "On dishonour of a note, notice to the maker is not needed; on dishonour of a bill, notice must be given to the drawer and indorsers to hold them liable.",
+      "keywords": [
+        "notice of dishonour"
+      ],
+      "references": [],
+      "basis": "Negotiable Instruments Act, 1881, notice of dishonour"
+    }
+  ]
+}

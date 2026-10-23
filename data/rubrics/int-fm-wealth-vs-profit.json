@@ -12,6 +12,9 @@
     "time value"
   ],
   "references": [],
+  "sources": [
+    "Objectives of financial management: profit maximisation and wealth maximisation"
+  ],
   "points": [
     {
       "id": "p1",
@@ -21,7 +24,8 @@
       "keywords": [
         "profit maximisation"
       ],
-      "references": []
+      "references": [],
+      "basis": "Profit maximisation objective"
     },
     {
       "id": "p2",
@@ -32,7 +36,8 @@
         "time value",
         "risk"
       ],
-      "references": []
+      "references": [],
+      "basis": "Limitations of profit maximisation"
     },
     {
       "id": "p3",
@@ -43,7 +48,8 @@
         "wealth maximisation",
         "net present value"
       ],
-      "references": []
+      "references": [],
+      "basis": "Wealth maximisation objective (value maximisation)"
     },
     {
       "id": "p4",
@@ -53,7 +59,8 @@
       "keywords": [
         "shareholders"
       ],
-      "references": []
+      "references": [],
+      "basis": "Superiority of wealth maximisation"
     }
   ]
 }

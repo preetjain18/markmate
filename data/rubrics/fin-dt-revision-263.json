@@ -1,0 +1,90 @@
+{
+  "id": "fin-dt-revision-263",
+  "version": "1",
+  "sa": "Section 263",
+  "topic": "Revision of orders prejudicial to the revenue",
+  "question": "Explain the power of the Principal Commissioner or Commissioner of Income-tax under section 263 to revise an order that is erroneous and prejudicial to the interests of the revenue.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "erroneous",
+    "prejudicial to the interests of the revenue",
+    "opportunity of being heard",
+    "two years"
+  ],
+  "references": [
+    "Section 263"
+  ],
+  "sources": [
+    "Income-tax Act, 1961, sections 263 and 253",
+    "Malabar Industrial Co. Ltd. v. CIT (Supreme Court)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Twin conditions",
+      "marks": 1,
+      "description": "The order must be both erroneous and prejudicial to the interests of the revenue; if only one condition is met, it cannot be revised. Where the Assessing Officer has taken one of two possible views, the order is not erroneous merely because the Commissioner prefers the other view.",
+      "keywords": [
+        "erroneous",
+        "prejudicial",
+        "two possible views"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 263(1), as explained by the Supreme Court in Malabar Industrial Co. Ltd. v. CIT"
+    },
+    {
+      "id": "p2",
+      "label": "Procedure and powers",
+      "marks": 1,
+      "description": "The Commissioner may call for and examine the records of any proceeding and, after giving the assessee an opportunity of being heard and making any inquiry needed, may enhance or modify the assessment, cancel it, or direct a fresh assessment.",
+      "keywords": [
+        "call for records",
+        "opportunity of being heard",
+        "fresh assessment"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, section 263(1)"
+    },
+    {
+      "id": "p3",
+      "label": "Orders deemed erroneous",
+      "marks": 1,
+      "description": "An order is deemed erroneous and prejudicial if it was passed without the inquiries or verification that should have been made, allows relief without inquiring into the claim, is not in line with a Board order or instruction under section 119, or is not in line with a binding decision of the jurisdictional High Court or the Supreme Court.",
+      "keywords": [
+        "without inquiry",
+        "Board instruction",
+        "jurisdictional High Court"
+      ],
+      "references": [
+        "Explanation 2"
+      ],
+      "basis": "Income-tax Act, 1961, Explanation 2 to section 263(1)"
+    },
+    {
+      "id": "p4",
+      "label": "Matters decided in appeal",
+      "marks": 1,
+      "description": "Where the order has been the subject of an appeal, the revision power extends only to matters that were not considered and decided in that appeal.",
+      "keywords": [
+        "not considered and decided in appeal"
+      ],
+      "references": [],
+      "basis": "Income-tax Act, 1961, Explanation 1(c) to section 263(1)"
+    },
+    {
+      "id": "p5",
+      "label": "Time limit and appeal",
+      "marks": 1,
+      "description": "No revision order can be passed after two years from the end of the financial year in which the order sought to be revised was passed; the assessee can appeal against the revision order to the Income-tax Appellate Tribunal.",
+      "keywords": [
+        "two years",
+        "Appellate Tribunal"
+      ],
+      "references": [
+        "Section 253"
+      ],
+      "basis": "Income-tax Act, 1961, section 263(2) and section 253"
+    }
+  ]
+}

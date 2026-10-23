@@ -1,0 +1,90 @@
+{
+  "id": "fin-aud-sa800-special-purpose",
+  "version": "1",
+  "sa": "SA 800",
+  "topic": "Audits of special purpose financial statements",
+  "question": "Explain the special considerations an auditor applies under SA 800 when auditing financial statements prepared in accordance with a special purpose framework.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "special purpose framework",
+    "acceptability",
+    "intended users",
+    "alert",
+    "emphasis of matter"
+  ],
+  "references": [
+    "SA 800"
+  ],
+  "sources": [
+    "SA 800 Special Considerations - Audits of Financial Statements Prepared in Accordance with Special Purpose Frameworks",
+    "SA 210 Agreeing the Terms of Audit Engagements",
+    "SA 700 Forming an Opinion and Reporting on Financial Statements"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of special purpose framework",
+      "marks": 1,
+      "description": "A financial reporting framework designed to meet the needs of specific users, for example a tax basis, a cash receipts and payments basis, or reporting provisions set by a regulator or by a contract such as a loan or grant agreement.",
+      "keywords": [
+        "special purpose framework",
+        "specific users"
+      ],
+      "references": [],
+      "basis": "SA 800, definitions of special purpose financial statements and special purpose framework"
+    },
+    {
+      "id": "p2",
+      "label": "Acceptability of the framework",
+      "marks": 1,
+      "description": "Before accepting, the auditor decides whether the framework is acceptable, understanding the purpose of the statements, the intended users and the steps management took to decide that the framework is suitable.",
+      "keywords": [
+        "acceptability",
+        "intended users",
+        "purpose"
+      ],
+      "references": [],
+      "basis": "SA 800, considerations when accepting the engagement (read with SA 210)"
+    },
+    {
+      "id": "p3",
+      "label": "Planning and performing the audit",
+      "marks": 1,
+      "description": "All relevant SAs still apply; the auditor considers whether applying them needs special care in the circumstances and, where the statements follow a contract, understands any significant interpretations management made of that contract.",
+      "keywords": [
+        "all relevant SAs",
+        "interpretation of contract"
+      ],
+      "references": [],
+      "basis": "SA 800, considerations when planning and performing the audit"
+    },
+    {
+      "id": "p4",
+      "label": "Forming the opinion",
+      "marks": 1,
+      "description": "Applies SA 700 in forming the opinion; checks that the statements properly refer to or describe the framework and, for contract-based statements, adequately describe significant interpretations of the contract. The report describes the purpose of the statements and, if relevant, the intended users.",
+      "keywords": [
+        "SA 700",
+        "description of the framework"
+      ],
+      "references": [
+        "SA 700"
+      ],
+      "basis": "SA 800, forming an opinion and reporting considerations"
+    },
+    {
+      "id": "p5",
+      "label": "Alerting readers",
+      "marks": 1,
+      "description": "The report includes an Emphasis of Matter paragraph alerting users that the statements are prepared under a special purpose framework and may not be suitable for another purpose; the auditor may also restrict distribution or use of the report.",
+      "keywords": [
+        "emphasis of matter",
+        "not suitable for another purpose",
+        "restriction on use"
+      ],
+      "references": [],
+      "basis": "SA 800, alerting readers that the financial statements are prepared in accordance with a special purpose framework"
+    }
+  ]
+}

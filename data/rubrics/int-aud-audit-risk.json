@@ -1,0 +1,82 @@
+{
+  "id": "int-aud-audit-risk",
+  "version": "1",
+  "sa": "Audit risk",
+  "topic": "Components of audit risk",
+  "question": "Explain audit risk and its components.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "audit risk",
+    "inherent risk",
+    "control risk",
+    "detection risk",
+    "risk of material misstatement"
+  ],
+  "references": [
+    "SA 200"
+  ],
+  "sources": [
+    "SA 200 Overall Objectives of the Independent Auditor and the Conduct of an Audit in Accordance with Standards on Auditing",
+    "SA 315 Identifying and Assessing the Risks of Material Misstatement"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of audit risk",
+      "marks": 1,
+      "description": "Audit risk is the risk that the auditor gives an inappropriate opinion when the financial statements are materially misstated. It depends on the risk of material misstatement and detection risk.",
+      "keywords": [
+        "audit risk",
+        "inappropriate opinion"
+      ],
+      "references": [],
+      "basis": "SA 200, definition of audit risk"
+    },
+    {
+      "id": "p2",
+      "label": "Risk of material misstatement",
+      "marks": 1,
+      "description": "The risk that the financial statements are materially misstated before the audit; at assertion level it has two parts, inherent risk and control risk.",
+      "keywords": [
+        "risk of material misstatement"
+      ],
+      "references": [],
+      "basis": "SA 200, definition of risk of material misstatement"
+    },
+    {
+      "id": "p3",
+      "label": "Inherent risk",
+      "marks": 1,
+      "description": "The chance that an assertion is misstated, before considering any controls, for example complex estimates or cash that is easy to steal.",
+      "keywords": [
+        "inherent risk"
+      ],
+      "references": [],
+      "basis": "SA 200, definition of inherent risk"
+    },
+    {
+      "id": "p4",
+      "label": "Control risk",
+      "marks": 1,
+      "description": "The risk that a misstatement will not be prevented, or detected and corrected, in time by the entity's internal control.",
+      "keywords": [
+        "control risk"
+      ],
+      "references": [],
+      "basis": "SA 200, definition of control risk"
+    },
+    {
+      "id": "p5",
+      "label": "Detection risk",
+      "marks": 1,
+      "description": "The risk that the auditor's procedures do not detect a material misstatement; the auditor reduces it by changing the nature, timing and extent of procedures, and it moves inversely with the assessed risk of material misstatement.",
+      "keywords": [
+        "detection risk",
+        "nature, timing and extent"
+      ],
+      "references": [],
+      "basis": "SA 200, definition of detection risk; SA 330 responses to assessed risks"
+    }
+  ]
+}

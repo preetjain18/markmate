@@ -1,0 +1,81 @@
+{
+  "id": "fnd-qa-index-construction",
+  "version": "1",
+  "sa": "Statistics",
+  "topic": "Problems in constructing index numbers",
+  "question": "What are index numbers? Explain the problems that must be addressed while constructing an index number.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "index numbers",
+    "base period",
+    "weights",
+    "price quotations"
+  ],
+  "references": [],
+  "sources": [
+    "Index numbers: construction of index numbers (standard statistical principles)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "An index number is a statistical measure of the relative change in a variable or a group of related variables (such as prices or quantities) over time or between places, compared with a base.",
+      "keywords": [
+        "relative change",
+        "base"
+      ],
+      "references": [],
+      "basis": "Index numbers: meaning"
+    },
+    {
+      "id": "p2",
+      "label": "Purpose and selection of items",
+      "marks": 1,
+      "description": "The purpose must be clearly defined, and a representative sample of commodities or items relevant to that purpose must be chosen.",
+      "keywords": [
+        "purpose",
+        "selection of items"
+      ],
+      "references": [],
+      "basis": "Index numbers: purpose and choice of items"
+    },
+    {
+      "id": "p3",
+      "label": "Base period",
+      "marks": 1,
+      "description": "The base period should be normal (free from unusual events like wars or famines) and not too far in the past; a fixed base or chain base may be used.",
+      "keywords": [
+        "base period",
+        "chain base"
+      ],
+      "references": [],
+      "basis": "Index numbers: choice of base period"
+    },
+    {
+      "id": "p4",
+      "label": "Price quotations",
+      "marks": 1,
+      "description": "Prices must be collected from representative markets and sources, and it must be decided whether wholesale or retail prices are to be used.",
+      "keywords": [
+        "price quotations"
+      ],
+      "references": [],
+      "basis": "Index numbers: collection of prices"
+    },
+    {
+      "id": "p5",
+      "label": "Average, weights and formula",
+      "marks": 1,
+      "description": "A suitable average (arithmetic mean or geometric mean) must be chosen, items must be given weights according to their importance, and the index formula (for example Laspeyres, Paasche or Fisher) must be selected.",
+      "keywords": [
+        "weights",
+        "geometric mean",
+        "formula"
+      ],
+      "references": [],
+      "basis": "Index numbers: choice of average, weighting and formula"
+    }
+  ]
+}

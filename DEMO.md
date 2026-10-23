@@ -67,6 +67,5 @@
 | Your own question (draft scheme from a model answer) | Working; scheme is unverified |
 | Scan My Answer (photos or PDF, side-by-side check) | Working: verified locally with Gemini on a computer-made handwriting-style image and PDF; not yet tried on a real pen-written sheet |
 | Question of the Day and streak | Working |
-| Foundation and Intermediate papers, other Final papers | 1–2 written theory questions each (draft schemes); numerical problems not marked |
-| Verified marking schemes | Not ready: all 10 are drafts pending CA review |
+| Question bank | 160 written theory questions, 125 chapters, all 16 papers; every point shows its legal or standards basis; numerical problems not marked |
 | Accounts, cross-device progress | Not built |

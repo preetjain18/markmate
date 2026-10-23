@@ -1,0 +1,95 @@
+{
+  "id": "int-acc-as1-policies",
+  "version": "1",
+  "sa": "AS 1",
+  "topic": "Disclosure of accounting policies",
+  "question": "Explain the fundamental accounting assumptions under AS 1 'Disclosure of Accounting Policies'. What are the major considerations in selecting accounting policies, and what does AS 1 require to be disclosed?",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "going concern",
+    "consistency",
+    "accrual",
+    "prudence",
+    "substance over form",
+    "materiality"
+  ],
+  "references": [
+    "AS 1"
+  ],
+  "sources": [
+    "AS 1 Disclosure of Accounting Policies"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Going concern",
+      "marks": 1,
+      "description": "The enterprise is assumed to continue in operation for the foreseeable future, with no intention or need to liquidate or sharply cut down its operations.",
+      "keywords": [
+        "going concern"
+      ],
+      "references": [],
+      "basis": "AS 1, fundamental accounting assumptions: going concern"
+    },
+    {
+      "id": "p2",
+      "label": "Consistency",
+      "marks": 1,
+      "description": "Accounting policies are assumed to be applied in the same way from one period to the next.",
+      "keywords": [
+        "consistency"
+      ],
+      "references": [],
+      "basis": "AS 1, fundamental accounting assumptions: consistency"
+    },
+    {
+      "id": "p3",
+      "label": "Accrual",
+      "marks": 1,
+      "description": "Revenues and costs are recognised as they are earned or incurred, not as cash is received or paid, and recorded in the periods to which they relate.",
+      "keywords": [
+        "accrual"
+      ],
+      "references": [],
+      "basis": "AS 1, fundamental accounting assumptions: accrual"
+    },
+    {
+      "id": "p4",
+      "label": "Disclosure of the assumptions",
+      "marks": 1,
+      "description": "If these assumptions are followed, no separate disclosure is needed; if any of them is not followed, that fact must be disclosed.",
+      "keywords": [
+        "not followed",
+        "disclosed"
+      ],
+      "references": [],
+      "basis": "AS 1, disclosure of fundamental accounting assumptions"
+    },
+    {
+      "id": "p5",
+      "label": "Considerations in selecting policies",
+      "marks": 1,
+      "description": "Policies should be chosen so the statements give a true and fair view, guided mainly by prudence, substance over form and materiality.",
+      "keywords": [
+        "prudence",
+        "substance over form",
+        "materiality"
+      ],
+      "references": [],
+      "basis": "AS 1, considerations in the selection of accounting policies"
+    },
+    {
+      "id": "p6",
+      "label": "Disclosure of policies and changes",
+      "marks": 1,
+      "description": "All significant accounting policies should be disclosed together in one place as part of the financial statements; a change in policy with a material effect must be disclosed and its effect quantified where it can be ascertained.",
+      "keywords": [
+        "significant accounting policies",
+        "change"
+      ],
+      "references": [],
+      "basis": "AS 1, disclosure of accounting policies and changes in them"
+    }
+  ]
+}

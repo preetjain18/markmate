@@ -1,0 +1,91 @@
+{
+  "id": "fin-fr-framework-qualitative",
+  "version": "1",
+  "sa": "Conceptual Framework",
+  "topic": "Qualitative characteristics of useful financial information",
+  "question": "Explain the qualitative characteristics that make financial information useful, as set out in the Conceptual Framework for Financial Reporting under Ind AS.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "relevance",
+    "faithful representation",
+    "comparability",
+    "verifiability",
+    "timeliness",
+    "understandability"
+  ],
+  "references": [
+    "Conceptual Framework"
+  ],
+  "sources": [
+    "Conceptual Framework for Financial Reporting under Indian Accounting Standards (Ind AS), issued by ICAI - Chapter 2, Qualitative characteristics of useful financial information"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Fundamental and enhancing characteristics",
+      "marks": 1,
+      "description": "The Framework separates two fundamental characteristics (relevance and faithful representation) from four enhancing characteristics; information must have both fundamental ones to be useful.",
+      "keywords": [
+        "fundamental",
+        "enhancing"
+      ],
+      "references": [],
+      "basis": "Conceptual Framework, Chapter 2: fundamental and enhancing qualitative characteristics"
+    },
+    {
+      "id": "p2",
+      "label": "Relevance and materiality",
+      "marks": 1,
+      "description": "Relevant information can change users' decisions because it has predictive value, confirmatory value or both; materiality is an entity-specific aspect of relevance, judged by nature or size.",
+      "keywords": [
+        "relevance",
+        "predictive value",
+        "confirmatory value",
+        "materiality"
+      ],
+      "references": [],
+      "basis": "Conceptual Framework, Chapter 2: relevance, including materiality"
+    },
+    {
+      "id": "p3",
+      "label": "Faithful representation",
+      "marks": 1,
+      "description": "Information should show the substance of what it claims to show, being complete, neutral and free from error; prudence (caution under uncertainty) supports neutrality.",
+      "keywords": [
+        "faithful representation",
+        "complete",
+        "neutral",
+        "free from error",
+        "prudence"
+      ],
+      "references": [],
+      "basis": "Conceptual Framework, Chapter 2: faithful representation"
+    },
+    {
+      "id": "p4",
+      "label": "Enhancing characteristics",
+      "marks": 1.5,
+      "description": "Comparability (across entities and periods), verifiability (independent observers could agree), timeliness (available in time to influence decisions) and understandability (clear and concise for users with reasonable knowledge).",
+      "keywords": [
+        "comparability",
+        "verifiability",
+        "timeliness",
+        "understandability"
+      ],
+      "references": [],
+      "basis": "Conceptual Framework, Chapter 2: enhancing qualitative characteristics"
+    },
+    {
+      "id": "p5",
+      "label": "Cost constraint",
+      "marks": 0.5,
+      "description": "Cost is a general limit on reporting: the benefits of providing information should justify the cost of producing and using it.",
+      "keywords": [
+        "cost constraint"
+      ],
+      "references": [],
+      "basis": "Conceptual Framework, Chapter 2: the cost constraint on useful financial reporting"
+    }
+  ]
+}

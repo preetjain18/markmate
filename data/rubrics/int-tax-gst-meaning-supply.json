@@ -1,0 +1,99 @@
+{
+  "id": "int-tax-gst-meaning-supply",
+  "version": "1",
+  "sa": "GST",
+  "topic": "Meaning and scope of supply",
+  "question": "Explain the scope of 'supply' under section 7 of the CGST Act, 2017. Which activities are treated as supply even when made without consideration?",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "supply",
+    "consideration",
+    "course or furtherance of business",
+    "Schedule I",
+    "related persons"
+  ],
+  "references": [
+    "Section 7",
+    "Schedule I"
+  ],
+  "sources": [
+    "CGST Act, 2017 - section 7 scope of supply",
+    "CGST Act, 2017 - Schedule I, Schedule II and Schedule III"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Supply for consideration",
+      "marks": 1,
+      "description": "All forms of supply of goods or services, such as sale, transfer, barter, exchange, licence, rental, lease or disposal, made or agreed to be made for consideration in the course or furtherance of business.",
+      "keywords": [
+        "consideration",
+        "course or furtherance of business"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 7(1)(a)"
+    },
+    {
+      "id": "p2",
+      "label": "Clubs and associations; import of services",
+      "marks": 1,
+      "description": "Activities of a person other than an individual for its members for consideration are supply; so is import of services for consideration, whether or not in the course of business.",
+      "keywords": [
+        "members",
+        "import of services"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 7(1)(aa) and (b)"
+    },
+    {
+      "id": "p3",
+      "label": "Without consideration: business assets",
+      "marks": 1,
+      "description": "Permanent transfer or disposal of business assets on which input tax credit has been availed is a supply even without consideration.",
+      "keywords": [
+        "business assets",
+        "input tax credit"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, Schedule I, para 1"
+    },
+    {
+      "id": "p4",
+      "label": "Without consideration: related or distinct persons",
+      "marks": 1,
+      "description": "Supplies between related persons or between distinct persons (such as branches in different States) in the course of business are supply even without consideration.",
+      "keywords": [
+        "related persons",
+        "distinct persons"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, Schedule I, para 2"
+    },
+    {
+      "id": "p5",
+      "label": "Without consideration: agents and imports",
+      "marks": 1,
+      "description": "Supply of goods between a principal and an agent who supplies or receives them on the principal's behalf, and import of services from a related person or own establishment outside India in the course of business, are also covered.",
+      "keywords": [
+        "principal",
+        "agent",
+        "related person"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, Schedule I, paras 3 and 4"
+    },
+    {
+      "id": "p6",
+      "label": "Activities that are not supply",
+      "marks": 1,
+      "description": "Activities in Schedule III, such as services by an employee to the employer in the course of employment and services of courts, are neither supply of goods nor services; Schedule II decides whether an activity is goods or services.",
+      "keywords": [
+        "Schedule III",
+        "employee"
+      ],
+      "references": [],
+      "basis": "CGST Act, 2017, section 7(2) and (1A); Schedules II and III"
+    }
+  ]
+}

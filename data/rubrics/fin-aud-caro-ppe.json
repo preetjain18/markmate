@@ -1,0 +1,98 @@
+{
+  "id": "fin-aud-caro-ppe",
+  "version": "1",
+  "sa": "CARO 2020",
+  "topic": "CARO 2020: property, plant and equipment",
+  "question": "State the matters on which the auditor of a company must report under the Companies (Auditor's Report) Order, 2020 in respect of property, plant and equipment and intangible assets.",
+  "maxMarks": 6,
+  "verified": false,
+  "keywords": [
+    "proper records",
+    "physical verification",
+    "title deeds",
+    "revaluation",
+    "benami"
+  ],
+  "references": [
+    "CARO 2020",
+    "Paragraph 3(i)"
+  ],
+  "sources": [
+    "Companies (Auditor's Report) Order, 2020, paragraphs 3(i) and 4",
+    "Companies Act, 2013, section 143(11)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Proper records",
+      "marks": 1,
+      "description": "Whether the company keeps proper records showing full particulars, including quantitative details and location, of property, plant and equipment, and proper records of intangible assets.",
+      "keywords": [
+        "proper records",
+        "quantitative details"
+      ],
+      "references": [],
+      "basis": "CARO 2020, paragraph 3(i)(a)"
+    },
+    {
+      "id": "p2",
+      "label": "Physical verification",
+      "marks": 1,
+      "description": "Whether management has physically verified property, plant and equipment at reasonable intervals, whether any material discrepancies were found, and whether they were properly dealt with in the books.",
+      "keywords": [
+        "physical verification",
+        "material discrepancies"
+      ],
+      "references": [],
+      "basis": "CARO 2020, paragraph 3(i)(b)"
+    },
+    {
+      "id": "p3",
+      "label": "Title deeds of immovable property",
+      "marks": 1,
+      "description": "Whether title deeds of all immovable property shown in the financial statements (other than property taken on a duly executed lease) are held in the company's name; if not, the auditor gives the prescribed details, such as the description, carrying value, name in which held and reason.",
+      "keywords": [
+        "title deeds",
+        "held in the name of the company"
+      ],
+      "references": [],
+      "basis": "CARO 2020, paragraph 3(i)(c)"
+    },
+    {
+      "id": "p4",
+      "label": "Revaluation",
+      "marks": 1,
+      "description": "Whether the company revalued its property, plant and equipment (including right-of-use assets) or intangible assets during the year, whether this was based on a registered valuer's valuation, and the amount of change where it is 10% or more of the net carrying value of a class.",
+      "keywords": [
+        "revaluation",
+        "registered valuer"
+      ],
+      "references": [],
+      "basis": "CARO 2020, paragraph 3(i)(d)"
+    },
+    {
+      "id": "p5",
+      "label": "Benami property proceedings",
+      "marks": 1,
+      "description": "Whether any proceedings have been started or are pending against the company for holding benami property under the Benami Transactions (Prohibition) Act, 1988, and whether the company has properly disclosed the details.",
+      "keywords": [
+        "benami property",
+        "proceedings"
+      ],
+      "references": [],
+      "basis": "CARO 2020, paragraph 3(i)(e)"
+    },
+    {
+      "id": "p6",
+      "label": "Reasons for unfavourable answers",
+      "marks": 1,
+      "description": "Where the answer to any of these matters is unfavourable or qualified, the auditor also states the reasons in the report.",
+      "keywords": [
+        "unfavourable or qualified",
+        "reasons"
+      ],
+      "references": [],
+      "basis": "CARO 2020, paragraph 4"
+    }
+  ]
+}

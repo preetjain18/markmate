@@ -1,0 +1,82 @@
+{
+  "id": "fnd-law-condition-warranty",
+  "version": "1",
+  "sa": "Sale of Goods Act, 1930",
+  "topic": "Condition and warranty",
+  "question": "Distinguish between a condition and a warranty under the Sale of Goods Act, 1930. When may a breach of condition be treated as a breach of warranty?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "condition",
+    "warranty",
+    "repudiate",
+    "damages"
+  ],
+  "references": [
+    "Section 12",
+    "Section 13"
+  ],
+  "sources": [
+    "Sale of Goods Act, 1930, Sections 12 and 13"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning of condition",
+      "marks": 1,
+      "description": "A condition is a stipulation essential to the main purpose of the contract.",
+      "keywords": [
+        "essential",
+        "main purpose"
+      ],
+      "references": [],
+      "basis": "Sale of Goods Act, 1930, Section 12(2)"
+    },
+    {
+      "id": "p2",
+      "label": "Meaning of warranty",
+      "marks": 1,
+      "description": "A warranty is a stipulation collateral (subsidiary) to the main purpose of the contract.",
+      "keywords": [
+        "collateral"
+      ],
+      "references": [],
+      "basis": "Sale of Goods Act, 1930, Section 12(3)"
+    },
+    {
+      "id": "p3",
+      "label": "Remedy for breach",
+      "marks": 1,
+      "description": "Breach of a condition gives the aggrieved party the right to treat the contract as repudiated (and also claim damages); breach of warranty gives only a right to claim damages, not to reject the goods.",
+      "keywords": [
+        "repudiate",
+        "damages"
+      ],
+      "references": [],
+      "basis": "Sale of Goods Act, 1930, Section 12(2) and (3)"
+    },
+    {
+      "id": "p4",
+      "label": "Test is substance, not name",
+      "marks": 1,
+      "description": "Whether a stipulation is a condition or a warranty depends on the construction of the contract in each case; a stipulation may be a condition even if it is called a warranty.",
+      "keywords": [
+        "construction of the contract"
+      ],
+      "references": [],
+      "basis": "Sale of Goods Act, 1930, Section 12(4)"
+    },
+    {
+      "id": "p5",
+      "label": "Condition treated as warranty",
+      "marks": 1,
+      "description": "A breach of condition is treated as a breach of warranty where the buyer waives the condition or chooses to do so, or where the contract is not severable and the buyer has accepted the goods or part of them (unless the contract says otherwise).",
+      "keywords": [
+        "waive",
+        "accepted the goods"
+      ],
+      "references": [],
+      "basis": "Sale of Goods Act, 1930, Section 13"
+    }
+  ]
+}

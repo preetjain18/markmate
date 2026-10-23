@@ -11,6 +11,10 @@
     "financial accounting"
   ],
   "references": [],
+  "sources": [
+    "Cost accounting and financial accounting: objectives and scope",
+    "Companies Act, 2013, section 148 (cost records)"
+  ],
   "points": [
     {
       "id": "p1",
@@ -21,7 +25,8 @@
         "external",
         "management"
       ],
-      "references": []
+      "references": [],
+      "basis": "Objectives of cost accounting compared with financial accounting"
     },
     {
       "id": "p2",
@@ -31,7 +36,8 @@
       "keywords": [
         "compulsory"
       ],
-      "references": []
+      "references": [],
+      "basis": "Companies Act, 2013, section 148 (cost records where prescribed); financial statements required by law"
     },
     {
       "id": "p3",
@@ -41,7 +47,8 @@
       "keywords": [
         "product"
       ],
-      "references": []
+      "references": [],
+      "basis": "Scope of cost accounting: analysis by cost object"
     },
     {
       "id": "p4",
@@ -52,7 +59,8 @@
         "historical",
         "standards"
       ],
-      "references": []
+      "references": [],
+      "basis": "Nature of cost accounting data and reporting frequency"
     }
   ]
 }

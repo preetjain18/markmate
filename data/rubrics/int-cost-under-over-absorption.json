@@ -1,0 +1,78 @@
+{
+  "id": "int-cost-under-over-absorption",
+  "version": "1",
+  "sa": "Overheads",
+  "topic": "Under and over absorption of overheads",
+  "question": "Explain the meaning of under-absorption and over-absorption of overheads. State their causes and how they are treated in cost accounts.",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "under-absorption",
+    "over-absorption",
+    "supplementary rate",
+    "costing profit and loss account"
+  ],
+  "references": [],
+  "sources": [
+    "Overheads: absorption of overheads using pre-determined rates and treatment of under/over absorbed overheads"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Meaning",
+      "marks": 1,
+      "description": "Overheads are absorbed using a pre-determined rate; if absorbed overheads are less than actual overheads it is under-absorption, and if more it is over-absorption.",
+      "keywords": [
+        "pre-determined rate",
+        "under-absorption"
+      ],
+      "references": [],
+      "basis": "Overheads: absorption using pre-determined rates"
+    },
+    {
+      "id": "p2",
+      "label": "Causes",
+      "marks": 1,
+      "description": "Actual overhead expenses or actual activity (hours or output) differ from the estimates used to set the rate, for example due to idle capacity, seasonal changes or a change in methods.",
+      "keywords": [
+        "estimate",
+        "actual"
+      ],
+      "references": [],
+      "basis": "Overheads: causes of under/over absorption"
+    },
+    {
+      "id": "p3",
+      "label": "Supplementary rate",
+      "marks": 1,
+      "description": "Where the difference is large, a supplementary rate is used to adjust it over cost of sales, finished goods and work-in-progress.",
+      "keywords": [
+        "supplementary rate"
+      ],
+      "references": [],
+      "basis": "Overheads: treatment of under/over absorption"
+    },
+    {
+      "id": "p4",
+      "label": "Write off to costing P&L",
+      "marks": 1,
+      "description": "Where the difference is small or due to abnormal reasons such as idle capacity or defective planning, it is written off to the costing profit and loss account.",
+      "keywords": [
+        "costing profit and loss"
+      ],
+      "references": [],
+      "basis": "Overheads: treatment of under/over absorption"
+    },
+    {
+      "id": "p5",
+      "label": "Carry forward",
+      "marks": 1,
+      "description": "Where the rate was set for a longer cycle (such as a seasonal business) the balance may be carried forward to the next period instead of being written off.",
+      "keywords": [
+        "carry forward"
+      ],
+      "references": [],
+      "basis": "Overheads: treatment of under/over absorption"
+    }
+  ]
+}

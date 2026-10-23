@@ -1,0 +1,79 @@
+{
+  "id": "fnd-acc-errors",
+  "version": "1",
+  "sa": "Accounting",
+  "topic": "Classification of errors and suspense account",
+  "question": "Explain the different types of errors that may occur in the books of account. Which of them affect the agreement of the trial balance, and when is a suspense account opened?",
+  "maxMarks": 5,
+  "verified": false,
+  "keywords": [
+    "errors of omission",
+    "errors of commission",
+    "errors of principle",
+    "compensating errors",
+    "suspense account"
+  ],
+  "references": [],
+  "sources": [
+    "Standard accounting principles: rectification of errors and the trial balance (ICAI Foundation syllabus, accounting process)"
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "label": "Errors of principle",
+      "marks": 1,
+      "description": "An entry made against a basic accounting principle, such as treating capital expenditure as revenue expenditure or the other way round (for example, cost of machinery debited to purchases account).",
+      "keywords": [
+        "errors of principle"
+      ],
+      "references": [],
+      "basis": "Accounting principle: classification of errors - errors of principle"
+    },
+    {
+      "id": "p2",
+      "label": "Errors of omission",
+      "marks": 1,
+      "description": "A transaction is left out of the books wholly (complete omission) or partly (partial omission, such as recorded in the journal but not posted to the ledger).",
+      "keywords": [
+        "errors of omission"
+      ],
+      "references": [],
+      "basis": "Accounting principle: classification of errors - errors of omission"
+    },
+    {
+      "id": "p3",
+      "label": "Errors of commission",
+      "marks": 1,
+      "description": "Wrong recording such as wrong amount, wrong casting (totalling), wrong carrying forward, wrong side or wrong account posting.",
+      "keywords": [
+        "errors of commission"
+      ],
+      "references": [],
+      "basis": "Accounting principle: classification of errors - errors of commission"
+    },
+    {
+      "id": "p4",
+      "label": "Compensating errors",
+      "marks": 1,
+      "description": "Two or more errors whose effects cancel out each other, so the trial balance still agrees.",
+      "keywords": [
+        "compensating errors"
+      ],
+      "references": [],
+      "basis": "Accounting principle: classification of errors - compensating errors"
+    },
+    {
+      "id": "p5",
+      "label": "Effect on trial balance and suspense account",
+      "marks": 1,
+      "description": "Complete omission, errors of principle, compensating errors and posting to the wrong account on the correct side do not disturb the trial balance; one-sided errors (wrong totals, partial postings, wrong side) do. If the trial balance does not agree and the error cannot be found at once, the difference is put in a suspense account, which is closed when the errors are rectified.",
+      "keywords": [
+        "trial balance",
+        "suspense account",
+        "one-sided errors"
+      ],
+      "references": [],
+      "basis": "Accounting principle: trial balance and use of a suspense account in rectification of errors"
+    }
+  ]
+}
