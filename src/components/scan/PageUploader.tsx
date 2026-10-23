@@ -106,6 +106,28 @@ export function PageUploader({
         />
       </label>
 
+      {files.length < SCAN_MAX_FILES && (
+        <label
+          className={cn(
+            "inline-flex h-10 cursor-pointer items-center gap-2 rounded-control bg-surface px-4 font-display text-[14px] font-semibold text-ink ring-1 ring-inset ring-line-strong transition-colors hover:bg-canvas",
+            (disabled || preparing) && "pointer-events-none opacity-60",
+          )}
+        >
+          <Icon name="camera" /> Take a photo
+          <input
+            type="file"
+            accept="image/*"
+            capture="environment"
+            className="sr-only"
+            disabled={disabled || preparing}
+            onChange={(e) => {
+              void add(e.target.files);
+              e.target.value = "";
+            }}
+          />
+        </label>
+      )}
+
       <input
         ref={replaceRef}
         type="file"

@@ -5,7 +5,7 @@
  * then hand over to the practice workspace, where the existing pipeline marks it.
  */
 import { useRouter } from "next/navigation";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { answerProblem } from "@/lib/answer";
 import type { CatalogView } from "@/lib/catalog-types";
 import { practiceHref } from "@/lib/progress";
@@ -49,6 +49,17 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
   const [readError, setReadError] = useState("");
   const [text, setText] = useState("");
   const [model, setModel] = useState("");
+
+  // Bring the newly shown details into view when the student switches source (the cards stack on phones).
+  const detailsRef = useRef<HTMLDivElement>(null);
+  const [picked, setPicked] = useState(false);
+  const pick = (s: Source) => {
+    setSource(s);
+    setPicked(true);
+  };
+  useEffect(() => {
+    if (picked && source !== "bank") detailsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [source, picked]);
 
   const customOk = qText.trim().length >= 10 && modelAnswer.trim().length >= 30 && marks >= 1 && marks <= 20;
   const questionOk = source === "bank" ? !!question : customOk;
@@ -116,9 +127,9 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
             <p className="mt-1 text-[15px] text-muted">MarkMate marks your answer against that question&apos;s marking points, so it needs to know the question first.</p>
           </div>
           <div role="radiogroup" aria-label="Where the question comes from" className="grid gap-3 sm:grid-cols-3">
-            <SourceCard on={source === "bank"} onClick={() => setSource("bank")} icon="book" title="From the question bank" body="Questions for every Foundation, Inter and Final paper, each with a marking scheme ready." />
-            <SourceCard on={source === "typed"} onClick={() => setSource("typed")} icon="edit" title="Type the question" body="Paste any question with its model answer, e.g. an ICAI suggested answer you have." />
-            <SourceCard on={source === "paper"} onClick={() => setSource("paper")} icon="camera" title="Photo of the question paper" body="We read the question from a photo; you add the model answer." />
+            <SourceCard on={source === "bank"} onClick={() => pick("bank")} icon="book" title="From the question bank" body="Questions for every Foundation, Inter and Final paper, each with a marking scheme ready." />
+            <SourceCard on={source === "typed"} onClick={() => pick("typed")} icon="edit" title="Type the question" body="Paste any question with its model answer, e.g. an ICAI suggested answer you have." />
+            <SourceCard on={source === "paper"} onClick={() => pick("paper")} icon="camera" title="Photo of the question paper" body="Upload a photo or PDF of the paper; we read the question, you add the model answer." />
           </div>
 
           {source === "bank" && (
@@ -144,11 +155,18 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
           )}
 
           {source !== "bank" && (
+            <div ref={detailsRef} className="scroll-mt-24">
             <Card className="space-y-4 p-5">
               {source === "paper" && (
-                <div className="space-y-3">
+                <div className="space-y-3 border-b border-line pb-5">
+                  <div>
+                    <h3 className="font-display text-[17px] font-semibold">Upload the question paper</h3>
+                    <p className="mt-0.5 text-[14px] text-muted">
+                      Photograph the question you answered, or upload the paper as a PDF. If the page has several questions, write which one in the box below after reading.
+                    </p>
+                  </div>
                   <PageUploader files={paperFiles} onChange={setPaperFiles} disabled={paperBusy} label="question paper" />
-                  <Button type="button" variant="secondary" size="sm" onClick={readQuestionPaper} disabled={!paperFiles.length || paperBusy}>
+                  <Button type="button" onClick={readQuestionPaper} disabled={!paperFiles.length || paperBusy}>
                     {paperBusy ? <><Icon name="loader" className="animate-spin" /> Reading the question…</> : <><Icon name="scan" /> Read the question</>}
                   </Button>
                   {paperError && <Alert tone="error">{paperError}</Alert>}
@@ -165,6 +183,7 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
               </Field>
               <p className="text-[13px] text-muted">You&apos;ll check the drafted marking points before your answer is marked. They&apos;re labelled unverified.</p>
             </Card>
+            </div>
           )}
 
           <div className="flex justify-end">
