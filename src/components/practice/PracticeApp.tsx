@@ -143,6 +143,7 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
           setCQuestion(String(pre.question ?? ""));
           setCModel(String(pre.modelAnswer ?? ""));
           if (Number(pre.marks) > 0) setCMarks(Number(pre.marks));
+          if (pre.question && pre.modelAnswer) setAutoDraft(true);
         }
       } catch {}
       setQuestionId(CUSTOM);
@@ -278,6 +279,15 @@ export default function PracticeApp({ catalog }: { catalog: CatalogView }) {
     setQuestionId(null);
     scrollTop();
   }
+
+  // Arriving from Scan My Answer with a question and solution: draft the marking points straight away.
+  const [autoDraft, setAutoDraft] = useState(false);
+  useEffect(() => {
+    if (!autoDraft || !cQuestion || !cModel) return;
+    setAutoDraft(false);
+    void makeDraft();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [autoDraft, cQuestion, cModel]);
 
   async function makeDraft() {
     setBusy("draft");

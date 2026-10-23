@@ -41,6 +41,10 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
   const [paperFiles, setPaperFiles] = useState<ScanFile[]>([]);
   const [paperBusy, setPaperBusy] = useState(false);
   const [paperError, setPaperError] = useState("");
+  const [solFiles, setSolFiles] = useState<ScanFile[]>([]);
+  const [solBusy, setSolBusy] = useState(false);
+  const [solError, setSolError] = useState("");
+  const [marksFromPaper, setMarksFromPaper] = useState(false);
 
   // Answer scan
   const [files, setFiles] = useState<ScanFile[]>([]);
@@ -66,16 +70,29 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
   const questionText = source === "bank" ? question?.text : qText.trim();
   const problem = text ? answerProblem(text) : null;
 
-  async function readQuestionPaper() {
-    setPaperBusy(true);
-    setPaperError("");
+  /** Reads the question paper or the solution as soon as files are added. */
+  async function readPaper(list: ScanFile[], mode: "question" | "solution") {
+    if (!list.length) return;
+    const [setBusy, setError] = mode === "question" ? [setPaperBusy, setPaperError] : [setSolBusy, setSolError];
+    setBusy(true);
+    setError("");
     try {
-      const t = await readScan(paperFiles, { mode: "question" });
-      setQText(t.text);
+      const t = await readScan(list, { mode, question: mode === "solution" ? qText.trim() || undefined : undefined });
+      if (mode === "question") {
+        setQText(t.text);
+        const m = t.text.match(/(\d+(?:\.5)?)\s*marks?\b/i);
+        const n = m ? Number(m[1]) : NaN;
+        if (n >= 1 && n <= 20) {
+          setMarks(n);
+          setMarksFromPaper(true);
+        }
+      } else {
+        setModelAnswer(t.text);
+      }
     } catch (e) {
-      setPaperError((e as Error).message);
+      setError((e as Error).message);
     } finally {
-      setPaperBusy(false);
+      setBusy(false);
     }
   }
 
@@ -129,7 +146,7 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
           <div role="radiogroup" aria-label="Where the question comes from" className="grid gap-3 sm:grid-cols-3">
             <SourceCard on={source === "bank"} onClick={() => pick("bank")} icon="book" title="From the question bank" body="Questions for every Foundation, Inter and Final paper, each with a marking scheme ready." />
             <SourceCard on={source === "typed"} onClick={() => pick("typed")} icon="edit" title="Type the question" body="Paste any question with its model answer, e.g. an ICAI suggested answer you have." />
-            <SourceCard on={source === "paper"} onClick={() => pick("paper")} icon="camera" title="Photo of the question paper" body="Upload a photo or PDF of the paper; we read the question, you add the model answer." />
+            <SourceCard on={source === "paper"} onClick={() => pick("paper")} icon="camera" title="Photo of the question paper" body="Upload photos of the question and its solution; we read both and set up the marking." />
           </div>
 
           {source === "bank" && (
@@ -154,25 +171,68 @@ export default function ScanWizard({ catalog }: { catalog: CatalogView }) {
             </Card>
           )}
 
-          {source !== "bank" && (
+          {source === "paper" && (
+            <div ref={detailsRef} className="scroll-mt-24 space-y-4">
+              <PhotoStep
+                n={1}
+                title="Upload the question"
+                body="A photo or PDF of the question you answered. We read it as soon as it's added."
+                label="question paper"
+                files={paperFiles}
+                onFiles={(next) => {
+                  const added = next.length > paperFiles.length;
+                  setPaperFiles(next);
+                  if (added) void readPaper(next, "question");
+                }}
+                busy={paperBusy}
+                busyText="Reading the question…"
+                error={paperError}
+                onRetry={() => void readPaper(paperFiles, "question")}
+                textId="qt"
+                textLabel="Question"
+                textHint="Read from your photo. Check it and fix anything misread. If the page has several questions, keep only the one you answered."
+                text={qText}
+                onText={setQText}
+                rows={4}
+              />
+              <PhotoStep
+                n={2}
+                title="Upload the solution"
+                body="A photo or PDF of the model or suggested answer. MarkMate turns it into marking points."
+                label="solution"
+                files={solFiles}
+                onFiles={(next) => {
+                  const added = next.length > solFiles.length;
+                  setSolFiles(next);
+                  if (added) void readPaper(next, "solution");
+                }}
+                busy={solBusy}
+                busyText="Reading the solution…"
+                error={solError}
+                onRetry={() => void readPaper(solFiles, "solution")}
+                textId="ma"
+                textLabel="Solution"
+                textHint="Read from your photo. Check it and fix anything misread."
+                text={modelAnswer}
+                onText={setModelAnswer}
+                rows={8}
+              />
+              <Card className="space-y-2 p-5">
+                <h3 className="flex items-center gap-2 font-display text-[17px] font-semibold">
+                  <span className="grid size-6 place-items-center rounded-full bg-brand text-[13px] text-white">3</span> Total marks
+                </h3>
+                <Input id="mk" aria-label="Total marks" type="number" min={1} max={20} step={0.5} value={marks} onChange={(e) => { setMarks(Number(e.target.value)); setMarksFromPaper(false); }} className="w-28" />
+                <p className="text-[13px] text-muted">
+                  {marksFromPaper ? "Taken from the question paper. Change it if it's wrong." : "How many marks the question carries."} You&apos;ll check the marking points drafted from the solution before your answer is marked.
+                </p>
+              </Card>
+            </div>
+          )}
+
+          {source === "typed" && (
             <div ref={detailsRef} className="scroll-mt-24">
             <Card className="space-y-4 p-5">
-              {source === "paper" && (
-                <div className="space-y-3 border-b border-line pb-5">
-                  <div>
-                    <h3 className="font-display text-[17px] font-semibold">Upload the question paper</h3>
-                    <p className="mt-0.5 text-[14px] text-muted">
-                      Photograph the question you answered, or upload the paper as a PDF. If the page has several questions, write which one in the box below after reading.
-                    </p>
-                  </div>
-                  <PageUploader files={paperFiles} onChange={setPaperFiles} disabled={paperBusy} label="question paper" />
-                  <Button type="button" onClick={readQuestionPaper} disabled={!paperFiles.length || paperBusy}>
-                    {paperBusy ? <><Icon name="loader" className="animate-spin" /> Reading the question…</> : <><Icon name="scan" /> Read the question</>}
-                  </Button>
-                  {paperError && <Alert tone="error">{paperError}</Alert>}
-                </div>
-              )}
-              <Field id="qt" label="Question" hint={source === "paper" ? "Filled in from your photo. Check it and fix anything misread." : undefined}>
+              <Field id="qt" label="Question">
                 <Textarea id="qt" rows={4} value={qText} onChange={(e) => setQText(e.target.value)} placeholder="The exam question" />
               </Field>
               <Field id="ma" label="Model answer" hint="Needed to build the marking points. Paste a suggested answer you have access to.">
@@ -292,6 +352,69 @@ function SourceCard({ on, onClick, icon, title, body }: { on: boolean; onClick: 
       <span className="mt-3 font-display text-[15px] font-semibold text-ink">{title}</span>
       <span className="mt-1 text-[13px] leading-relaxed text-muted">{body}</span>
     </button>
+  );
+}
+
+/** One numbered upload in the photo path: upload, read automatically, then check the text (or type it instead). */
+function PhotoStep(p: {
+  n: number;
+  title: string;
+  body: string;
+  label: string;
+  files: ScanFile[];
+  onFiles: (files: ScanFile[]) => void;
+  busy: boolean;
+  busyText: string;
+  error: string;
+  onRetry: () => void;
+  textId: string;
+  textLabel: string;
+  textHint: string;
+  text: string;
+  onText: (t: string) => void;
+  rows: number;
+}) {
+  const [typing, setTyping] = useState(false);
+  const showText = typing || p.text.length > 0;
+  return (
+    <Card className="space-y-3 p-5">
+      <div>
+        <h3 className="flex items-center gap-2 font-display text-[17px] font-semibold">
+          <span className={cn("grid size-6 place-items-center rounded-full text-[13px] text-white", p.text ? "bg-success" : "bg-brand")}>
+            {p.text ? <Icon name="check" className="size-3.5" /> : p.n}
+          </span>
+          {p.title}
+        </h3>
+        <p className="mt-0.5 text-[14px] text-muted">{p.body}</p>
+      </div>
+      <PageUploader files={p.files} onChange={p.onFiles} disabled={p.busy} label={p.label} />
+      {p.busy && (
+        <p aria-live="polite" className="flex items-center gap-2 text-[14px] font-medium text-brand">
+          <Icon name="loader" className="animate-spin" /> {p.busyText}
+        </p>
+      )}
+      {p.error && (
+        <Alert tone="error">
+          {p.error}{" "}
+          {p.files.length > 0 && (
+            <button type="button" onClick={p.onRetry} className="font-semibold underline underline-offset-2">
+              Try again
+            </button>
+          )}
+        </Alert>
+      )}
+      {showText ? (
+        <Field id={p.textId} label={p.textLabel} hint={p.text && !typing ? p.textHint : undefined}>
+          <Textarea id={p.textId} rows={p.rows} value={p.text} onChange={(e) => p.onText(e.target.value)} />
+        </Field>
+      ) : (
+        !p.busy && (
+          <button type="button" onClick={() => setTyping(true)} className="text-[13px] font-medium text-brand underline underline-offset-2">
+            No photo? Type it instead
+          </button>
+        )
+      )}
+    </Card>
   );
 }
 

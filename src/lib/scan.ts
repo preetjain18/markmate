@@ -92,7 +92,7 @@ export const totalPages = (files: ScanFile[]) => files.reduce((s, f) => s + f.pa
  */
 export function readScan(
   files: ScanFile[],
-  opts: { question?: string; mode?: "answer" | "question"; onProgress?: (pct: number) => void },
+  opts: { question?: string; mode?: "answer" | "question" | "solution"; onProgress?: (pct: number) => void },
 ): Promise<Transcript> {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
